@@ -49,7 +49,7 @@
     "cardNewPriceWeight": "400",
     "tagPosition": "top-right",
     "dynamicCheckout": false,
-    "cartAction": "upsell",
+    "cartAction": "minicart",
     "BPDynTitle": "BabyCare",
     "cartTimer": true,
     "countdown": true,
