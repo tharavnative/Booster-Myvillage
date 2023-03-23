@@ -10,7 +10,7 @@ class="h-reset product__title product__title--{{block.id}}
 font__family--{{-block.settings.fontFamily}} font__size--{{-block.settings.fontSize}} 
  {% if block.settings.noMargin or noMargin %}margin__bottom--reduced{%endif-%}" {{block.shopify_attributes}}>{{ product.title }}</h1>
 
-
+{% render 'judgeme_widgets', widget_type: 'judgeme_preview_badge', jm_style: '', concierge_install: true, product: product %}
 {% comment %}
 {% blockdef %}
 
