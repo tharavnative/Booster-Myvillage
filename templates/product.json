@@ -67,8 +67,8 @@
           "type": "productPageAccordion",
           "settings": {
             "noMargin": true,
-            "heading": "Overview",
-            "content": "custom",
+            "heading": "Description",
+            "content": "description",
             "metafieldNS": "global",
             "metafieldKey": "",
             "page": "",
@@ -79,10 +79,10 @@
           "type": "productPageAccordion",
           "settings": {
             "noMargin": true,
-            "heading": "Description",
-            "content": "custom",
-            "metafieldNS": "global",
-            "metafieldKey": "",
+            "heading": "Supplement",
+            "content": "metafield",
+            "metafieldNS": "ns-sf",
+            "metafieldKey": "supplement_facts",
             "page": "",
             "customContent": "<p>Ingredients We're Proud of\n• Jojoba Oil\n• Aloe\n• Lavender &amp; Chamomile Oil\n\n<\/p><p>No Sketchy Stuff!™\n✘ parabens, PEGs, phthalates, sulfates, synthetic fragrance<\/p>"
           }
@@ -91,8 +91,8 @@
           "type": "productPageAccordion",
           "settings": {
             "noMargin": false,
-            "heading": "HOW TO USE",
-            "content": "description",
+            "heading": "Reviews",
+            "content": "reviews",
             "metafieldNS": "global",
             "metafieldKey": "",
             "page": "",
