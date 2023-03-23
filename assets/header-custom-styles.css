@@ -1,0 +1,24 @@
+/*pages/shop-by-brands*/
+#instant-brand-page .instant-brand-page-az ul li { list-style: none; display: inline-block; padding: 0 17px; margin-bottom: 0 !important; font-size: 14px;}
+#instant-brand-page .instant-brand-page-az ul { margin-bottom: 0; padding: 0; text-align: center;}
+#instant-brand-page .instant-brand-page-az { padding: 10px; border: 1px solid #e6e6e6; margin-bottom: 50px;}
+#instant-brand-page .instant-brand-page-az ul li a { color: #000; } 
+#instant-brand-page .instant-brand-listing a.instant-brand-item { color: #000; }
+#instant-brand-page .instant-brand-listing a.instant-brand-item:hover { color: #999b04; text-decoration: none;}
+.instant-brand-grid-block h4.instant-brand-header { text-decoration: none !important; font-weight: 600;}
+.instant-brand-grid-block { border-bottom: 1px solid #e2e2e2; margin-bottom: 13px; padding-bottom: 13px; }
+.instant-brand-listing { width: 16%; }
+.anchor { display: block; height: 160px; margin-top: -160px; visibility: hidden; }
+.instant-brand-header { margin-bottom: 16px !important; }
+.instant-brand-item { font-size: 12px; border-bottom: 0px !important; }
+.instant-brand-listing { display: inline-block; width: 24%; }
+#brand_top_sec ul { margin: 0; padding: 0; list-style: none; }
+#brand_top_sec ul li { display: inline-block; margin: 0; margin-right: 20px;}
+#brand_top_sec ul li.blue { background: url(https://cdn.shopify.com/s/files/1/0319/0960/9603/files/blue.png?v=1582796902) no-repeat 0px 4px; padding-left: 20px; }
+#brand_top_sec ul li.diamond { background: url(https://cdn.shopify.com/s/files/1/0319/0960/9603/files/diamond.png?v=1582878597) no-repeat 0px 1px; padding-left: 20px; }
+#brand_top_sec { margin-bottom: 60px; }
+#brand_top_sec ul li.diamond a { color: #00577f; }
+#brand_top_sec ul li.diamond a:hover { color: #979500; }
+#instant-brand-page .instant-brand-listing a.brand_access { background: url(https://cdn.shopify.com/s/files/1/0319/0960/9603/files/brand_access.png?v=1582880334) no-repeat 100% 0px; padding-right: 35px; }
+#instant-brand-page .instant-brand-listing a.blue_icon { background: url(https://cdn.shopify.com/s/files/1/0319/0960/9603/files/blue.png?v=1582796902) no-repeat 100% 2px; padding-right: 20px; }
+#instant-brand-page .instant-brand-listing a.diamond_icon { background: url(https://cdn.shopify.com/s/files/1/0319/0960/9603/files/diamond.png?v=1582878597) no-repeat 100% 0px; padding-right: 20px; }
