@@ -72,11 +72,11 @@
           "settings": {
             "noMargin": false,
             "color": "rgba(0,0,0,0)",
-            "newPriceColor": "rgba(0,0,0,0)",
-            "oldPriceColor": "rgba(0,0,0,0)",
+            "newPriceColor": "#3982a0",
+            "oldPriceColor": "rgb(0,0,0)",
             "fontFamily": "base",
             "fontSize": "medium",
-            "saleType": "percent"
+            "saleType": "none"
           }
         },
         "ppSwatch": {
