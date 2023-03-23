@@ -3,12 +3,12 @@
     "banner": {
       "type": "banner--page",
       "settings": {
-        "layout": "default",
+        "layout": "boxed",
         "height": 300,
-        "horizontalAlignment": "center",
+        "horizontalAlignment": "start",
         "verticalAlignment": "middle",
-        "fontSize": "medium",
-        "contentColor": "rgba(0,0,0,0)",
+        "fontSize": "big",
+        "contentColor": "#3982a0",
         "fillColor": "rgba(0,0,0,0)",
         "defaultBackgroundImage": "{{ page.metafields.custom.banner_image.value }}",
         "overlayOpacity": 0,
