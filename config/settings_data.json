@@ -28,6 +28,7 @@
     "subHeadingFontSize": 30,
     "primaryButtonHover": "darken",
     "primaryButtonCustomBorder": true,
+    "headerType": "inline-search",
     "cardDesktop": "3",
     "baseCardPadding": 20,
     "cardImageFit": "contain",
@@ -72,21 +73,14 @@
       "top-info-bar": {
         "type": "top-info-bar",
         "blocks": {
-          "df96f44f-b579-4ba2-a13e-cd2b3d346d96": {
-            "type": "social",
-            "settings": {
-              "enabled": true,
-              "enabledMobile": true,
-              "align": "auto"
-            }
-          },
-          "a3752054-0035-4709-aa87-74ca74f4250b": {
-            "type": "barTextMarquee",
+          "81322984-6dc2-4b84-bf55-05d3baf87a24": {
+            "type": "contact",
             "settings": {
               "enabled": true,
               "enabledMobile": true,
               "align": "auto",
-              "messages": "<p><strong>FREE SHIPPING<\/strong><\/p><p><strong>ON ORDERS OVER $40<\/strong><\/p>"
+              "showPhone": true,
+              "showEmail": false
             }
           },
           "ea7c1653-fbe0-4a55-904f-79a3118183d9": {
@@ -100,8 +94,7 @@
           }
         },
         "block_order": [
-          "df96f44f-b579-4ba2-a13e-cd2b3d346d96",
-          "a3752054-0035-4709-aa87-74ca74f4250b",
+          "81322984-6dc2-4b84-bf55-05d3baf87a24",
           "ea7c1653-fbe0-4a55-904f-79a3118183d9"
         ],
         "settings": {
@@ -314,24 +307,22 @@
       "bottom-info-bar": {
         "type": "bottom-info-bar",
         "blocks": {
-          "1bc6cdab-a6c9-486e-949f-0eecf06bd794": {
-            "type": "freeShippingBar",
+          "4dee3cc4-ef2b-40f3-a7b8-9c7abe92a88c": {
+            "type": "linkList",
             "settings": {
               "enabled": true,
               "enabledMobile": true,
               "align": "auto",
-              "freeText": "Only %AMOUNT% more for free shipping!",
-              "gotFreeText": "You are eligible for free shipping!",
-              "barHeight": 8
+              "links": "main-menu"
             }
           }
         },
         "block_order": [
-          "1bc6cdab-a6c9-486e-949f-0eecf06bd794"
+          "4dee3cc4-ef2b-40f3-a7b8-9c7abe92a88c"
         ],
         "settings": {
-          "enabled": true,
-          "enabledMobile": true,
+          "enabled": false,
+          "enabledMobile": false,
           "layout": "default",
           "height": 30,
           "fontSize": "font__size--small",
@@ -360,6 +351,74 @@
         ],
         "settings": {
           "defaultCollection": ""
+        }
+      },
+      "header--logo-top": {
+        "type": "header--logo-top",
+        "settings": {
+          "layout": "default",
+          "minHeight": 0,
+          "borderRadius": 0,
+          "shadow": true,
+          "menuLinks": "",
+          "megamenu": true,
+          "linkPosition": "center",
+          "logoWidth": 160,
+          "logoHeight": 0,
+          "desktopLogoPosition": "left",
+          "sticky": true,
+          "contentMargin": 0,
+          "desktopCart": true,
+          "headerBg": "rgba(0,0,0,0)",
+          "linkColor": "#000000",
+          "accentColor": "#000000",
+          "hoverStyle": "fill",
+          "tagBgColor": "#000",
+          "tagTextColor": "#FFF",
+          "transparent": false,
+          "linkColorT": "#FFF",
+          "accentColorT": "#EFEFEF",
+          "fontSize": "base",
+          "customFont": false,
+          "fontFamily": "work_sans_n6",
+          "cartIcon": "shopping-cart",
+          "mobileLogoPosition": "left",
+          "mobileCart": true
+        }
+      },
+      "header--inline-search": {
+        "type": "header--inline-search",
+        "settings": {
+          "layout": "default",
+          "minHeight": 0,
+          "borderRadius": 0,
+          "shadow": true,
+          "menuLinks": "main-menu",
+          "megamenu": true,
+          "linkPosition": "center",
+          "logoWidth": 300,
+          "logoHeight": 0,
+          "desktopLogoPosition": "left",
+          "sticky": true,
+          "contentMargin": 0,
+          "desktopCart": true,
+          "headerBg": "rgba(0,0,0,0)",
+          "linkColor": "#000000",
+          "accentColor": "#000000",
+          "hoverStyle": "fill",
+          "tagBgColor": "#000",
+          "tagTextColor": "#FFF",
+          "transparent": false,
+          "linkColorT": "#FFF",
+          "accentColorT": "#EFEFEF",
+          "searchBg": "rgba(0,0,0,0)",
+          "searchText": "rgba(0,0,0,0)",
+          "fontSize": "base",
+          "customFont": false,
+          "fontFamily": "work_sans_n6",
+          "cartIcon": "shopping-cart",
+          "mobileLogoPosition": "left",
+          "mobileCart": true
         }
       }
     },
