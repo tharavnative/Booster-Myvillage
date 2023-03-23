@@ -22,3 +22,9 @@
 #instant-brand-page .instant-brand-listing a.brand_access { background: url(https://cdn.shopify.com/s/files/1/0319/0960/9603/files/brand_access.png?v=1582880334) no-repeat 100% 0px; padding-right: 35px; }
 #instant-brand-page .instant-brand-listing a.blue_icon { background: url(https://cdn.shopify.com/s/files/1/0319/0960/9603/files/blue.png?v=1582796902) no-repeat 100% 2px; padding-right: 20px; }
 #instant-brand-page .instant-brand-listing a.diamond_icon { background: url(https://cdn.shopify.com/s/files/1/0319/0960/9603/files/diamond.png?v=1582878597) no-repeat 100% 0px; padding-right: 20px; }
+
+
+
+.search__results.search__results--abs {
+    display: none!important;
+}
