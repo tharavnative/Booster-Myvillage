@@ -56,8 +56,8 @@
           "type": "productPageTitle",
           "settings": {
             "noMargin": true,
-            "color": "rgba(0,0,0,0)",
-            "fontFamily": "base",
+            "color": "rgb(0,0,0)",
+            "fontFamily": "title",
             "fontSize": "medium"
           }
         },
