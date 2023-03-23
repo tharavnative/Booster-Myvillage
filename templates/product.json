@@ -6,6 +6,49 @@
       "settings": {
       }
     },
+    "5941f29f-6a19-4b3c-bb89-3d657f3c0d2c": {
+      "type": "section__content",
+      "blocks": {
+        "2ef2344e-4adf-4933-80e8-e3b0f6dae0a4": {
+          "type": "separator",
+          "settings": {
+            "blockWidth": "col-md-12",
+            "vertPadding": 0,
+            "horPadding": 4,
+            "horAlign": "center",
+            "vertAlign": "middle",
+            "height": 15,
+            "dividerHeight": 0,
+            "dividerWidth": 5,
+            "dividerColor": "#000",
+            "position": "left"
+          }
+        }
+      },
+      "block_order": [
+        "2ef2344e-4adf-4933-80e8-e3b0f6dae0a4"
+      ],
+      "settings": {
+        "displayFor": "display--both",
+        "layout": "default",
+        "nomargin": false,
+        "scopedCSS": "",
+        "height": 0,
+        "padding": 0,
+        "lineMargin": 12,
+        "backgroundColor": "rgba(0,0,0,0)",
+        "backgroundPosition": "middle",
+        "backgroundFilter": "none",
+        "backdropIntensity": 50,
+        "parallax": false,
+        "backgroundPattern": false,
+        "overlayOpacity": 0,
+        "overlayColor": "#000000",
+        "contentColor": "rgba(0,0,0,0)",
+        "horizontalAlignment": "center",
+        "verticalAlignment": "middle"
+      }
+    },
     "page": {
       "type": "product-page__product",
       "blocks": {
@@ -205,6 +248,7 @@
   },
   "order": [
     "breadcrumbs",
+    "5941f29f-6a19-4b3c-bb89-3d657f3c0d2c",
     "page",
     "1661487737e8d46d13",
     "upsell",
