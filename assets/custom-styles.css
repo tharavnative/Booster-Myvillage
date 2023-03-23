@@ -1,6 +1,8 @@
 
 
-
+.search__container.focused .search__results {
+    display: none !important;
+}
 .search__results.search__results--abs {
     display: none!important;
 }
