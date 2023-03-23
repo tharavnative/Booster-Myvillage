@@ -19,7 +19,7 @@
       "type": "page",
       "settings": {
         "layout": "default",
-        "enableShortcodes": false
+        "enableShortcodes": true
       }
     }
   },
