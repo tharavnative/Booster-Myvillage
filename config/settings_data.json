@@ -167,40 +167,50 @@
       "footer": {
         "type": "footer",
         "blocks": {
-          "0bd026df-8ebd-4855-878c-f296af573699": {
-            "type": "footerImage",
+          "5d95a1a3-6387-4bd5-809a-0d290543a12d": {
+            "type": "footerLinks",
             "settings": {
-              "width": "1-5",
+              "width": "3",
               "horizontalAlignment": "start",
               "verticalAlignment": "top",
-              "imageWidth": 100,
-              "url": ""
-            }
-          },
-          "0e188e08-01bf-4244-8aa3-997ce12eca05": {
-            "type": "footerText",
-            "settings": {
-              "width": "1-5",
-              "horizontalAlignment": "start",
-              "verticalAlignment": "top",
-              "heading": "Booster 6 revolution",
-              "text": "<p>Join over 46,127+ top shopify sellers using Booster Theme.<\/p><p>This is a demo store. You can shop this product in the <a href=\"https:\/\/www.proudly.com\/\" target=\"_blank\" title=\"https:\/\/www.proudly.com\/\">Proudly Website<\/a><\/p>"
+              "heading": "Learning Resources",
+              "links": "footer"
             }
           },
           "79c988f6-1297-4df0-9e07-f6f74537046f": {
             "type": "footerLinks",
             "settings": {
-              "width": "1-5",
+              "width": "3",
               "horizontalAlignment": "start",
               "verticalAlignment": "top",
-              "heading": "Links",
-              "links": "footer"
+              "heading": "Customer Care",
+              "links": "footer-menu2"
+            }
+          },
+          "d27fea8a-bdc5-407c-a21f-5a07556fc5d8": {
+            "type": "footerLinks",
+            "settings": {
+              "width": "3",
+              "horizontalAlignment": "start",
+              "verticalAlignment": "top",
+              "heading": "General Information",
+              "links": "footer-menu3"
+            }
+          },
+          "8144afc8-2312-4109-a3f6-9c81b9ab5e3c": {
+            "type": "footerText",
+            "settings": {
+              "width": "3",
+              "horizontalAlignment": "start",
+              "verticalAlignment": "top",
+              "heading": "stay connected",
+              "text": "<p>Village Green Apothecary<br\/>5415 W Cedar Ln<br\/>Bethesda, Maryland, 2081<br\/>(301) 530-080<br\/>Toll Free: (800) 869-9159<br\/><\/p>"
             }
           },
           "63b21902-98ae-4e86-b746-45541a85da14": {
             "type": "blockNewsletter",
             "settings": {
-              "width": "auto",
+              "width": "9",
               "horizontalAlignment": "start",
               "verticalAlignment": "top",
               "heading": "Sign up to receive company news, special promotions, exclusive giveaways and events and so much more. See our privacy notice details on how your personal information is used and shared.",
@@ -216,35 +226,24 @@
           "ad578254-d3e0-409d-9798-bd81282a961f": {
             "type": "footerSocial",
             "settings": {
-              "width": "6",
-              "horizontalAlignment": "start",
-              "verticalAlignment": "middle",
-              "heading": ""
-            }
-          },
-          "0b0a1f55-8b8b-4b14-ae6e-9210658503cb": {
-            "type": "footerPayment",
-            "settings": {
-              "width": "6",
+              "width": "3",
               "horizontalAlignment": "end",
               "verticalAlignment": "middle",
-              "heading": "",
-              "customIcons": true,
-              "icons": "afterpay, american_express, apple_pay, bitcoin,"
+              "heading": ""
             }
           }
         },
         "block_order": [
-          "0bd026df-8ebd-4855-878c-f296af573699",
-          "0e188e08-01bf-4244-8aa3-997ce12eca05",
+          "5d95a1a3-6387-4bd5-809a-0d290543a12d",
           "79c988f6-1297-4df0-9e07-f6f74537046f",
+          "d27fea8a-bdc5-407c-a21f-5a07556fc5d8",
+          "8144afc8-2312-4109-a3f6-9c81b9ab5e3c",
           "63b21902-98ae-4e86-b746-45541a85da14",
-          "ad578254-d3e0-409d-9798-bd81282a961f",
-          "0b0a1f55-8b8b-4b14-ae6e-9210658503cb"
+          "ad578254-d3e0-409d-9798-bd81282a961f"
         ],
         "settings": {
           "layout": "default",
-          "fillColor": "#f0eaff",
+          "fillColor": "#FFFFFF",
           "contentColor": "#373737",
           "spacing": 16
         }
@@ -259,7 +258,7 @@
               "horizontalAlignment": "center",
               "verticalAlignment": "middle",
               "heading": "",
-              "text": "<p>Designed and developed by <a href=\"https:\/\/boostertheme.com\/\" target=\"_blank\">BoosterTheme™<\/a><\/p>"
+              "text": "<p>© 2021 Village Green Apothecary - All Rights Reserved. The information provided on this site is not intended to be a substitute for advice or treatment from a qualified physician, nor is it intended to diagnose or treat a health problem or disease. Consult your physician prior to starting any new health program or if you any questions regarding a medical condition.<\/p>"
             }
           }
         },
@@ -268,8 +267,8 @@
         ],
         "settings": {
           "layout": "default",
-          "fillColor": "#6951a1",
-          "contentColor": "#ffffff",
+          "fillColor": "#FFFFFF",
+          "contentColor": "rgb(0,0,0)",
           "spacing": 0
         }
       },
