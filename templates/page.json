@@ -4,7 +4,7 @@
       "type": "banner--page",
       "settings": {
         "layout": "boxed",
-        "height": 300,
+        "height": 310,
         "horizontalAlignment": "start",
         "verticalAlignment": "middle",
         "fontSize": "big",
