@@ -1,7 +1,54 @@
 {
   "sections": {
+    "aa391eea-57f0-4d0f-8515-481fb5425f5d": {
+      "type": "section__slider--adaptive",
+      "blocks": {
+        "template--16771356393710__aa391eea-57f0-4d0f-8515-481fb5425f5d-16795772786b6cfda2-0": {
+          "type": "imageSlideAdaptive",
+          "settings": {
+            "horizontalAlignment": "center",
+            "verticalAlignment": "middle",
+            "padding": 16,
+            "contentSpacing": 12,
+            "backgroundColor": "rgba(0,0,0,0)",
+            "backgroundImage": "shopify:\/\/shop_images\/SpringSale2023banner.jpg",
+            "backgroundPosition": "middle",
+            "overlayOpacity": 0,
+            "overlayColor": "#000000",
+            "slideURL": "",
+            "heading": "",
+            "headingColor": "rgba(0,0,0,0)",
+            "content": "",
+            "contentColor": "rgba(0,0,0,0)",
+            "button1Text": "",
+            "button1Link": "",
+            "button1Style": "primary",
+            "button1Type": "default",
+            "button2Text": "",
+            "button2Link": "",
+            "button2Style": "secondary",
+            "button2Type": "default"
+          }
+        }
+      },
+      "block_order": [
+        "template--16771356393710__aa391eea-57f0-4d0f-8515-481fb5425f5d-16795772786b6cfda2-0"
+      ],
+      "settings": {
+        "displayFor": "display--both",
+        "layout": "default",
+        "nomargin": false,
+        "height": 0,
+        "contentColor": "rgba(0,0,0,0)",
+        "autoplay": true,
+        "slideSpeed": 3,
+        "animation": "none",
+        "delayAnimation": false
+      }
+    },
     "1658982451aec4bb5c": {
       "type": "section__auto-grid",
+      "disabled": true,
       "blocks": {
         "91e2efe7-d458-43fb-8c09-1614d991b8be": {
           "type": "gridImage",
@@ -121,28 +168,6 @@
         "gap": 10
       }
     },
-    "16265529277430f275": {
-      "type": "section__featured-collection",
-      "settings": {
-        "displayFor": "display--both",
-        "layout": "default",
-        "nomargin": false,
-        "scopedCSS": "",
-        "height": 390,
-        "padding": 35,
-        "backgroundColor": "rgba(0,0,0,0)",
-        "heading": "BUNDLES",
-        "headingColor": "rgba(0,0,0,0)",
-        "subheading": "SHOP",
-        "subheadingColor": "rgba(0,0,0,0)",
-        "subheadingPosition": "above",
-        "headingAlignment": "center",
-        "collection": "bundles",
-        "productCount": 3,
-        "showMore": false,
-        "showMoreAlignment": "center"
-      }
-    },
     "16265528618af17c6c": {
       "type": "section__cta",
       "blocks": {
@@ -259,251 +284,6 @@
         "roundedImages": true
       }
     },
-    "165898776695068632": {
-      "type": "section__image-text",
-      "blocks": {
-        "1658987765d938cfa6-0": {
-          "type": "title",
-          "settings": {
-            "fullWidth": true,
-            "content": "EXTRA-SPECIAL SKIN",
-            "textColor": "rgba(0,0,0,0)",
-            "fontFamily": "title",
-            "fontSize": "medium"
-          }
-        },
-        "1658987765d938cfa6-1": {
-          "type": "richText",
-          "settings": {
-            "fullWidth": true,
-            "maxBWidth": 100,
-            "content": "<p>Learn more about what makes our skin extra-special and how we developed products made just for us.<\/p>",
-            "detectLists": true,
-            "textColor": "rgba(0,0,0,0)",
-            "fontFamily": "base",
-            "fontSize": "base"
-          }
-        },
-        "1658987765d938cfa6-2": {
-          "type": "button",
-          "settings": {
-            "fullWidth": true,
-            "text": "Get this now!",
-            "url": "shopify:\/\/products\/moisture-layering-bundle",
-            "icon": "",
-            "iconPosition": "icon--left",
-            "wideButton": false,
-            "buttonStyle": "primary",
-            "buttonType": "default",
-            "fontSize": "base",
-            "fontFamily": "base",
-            "animation": "none",
-            "animationDuration": 1000,
-            "animationInfinite": true
-          }
-        }
-      },
-      "block_order": [
-        "1658987765d938cfa6-0",
-        "1658987765d938cfa6-1",
-        "1658987765d938cfa6-2"
-      ],
-      "settings": {
-        "displayFor": "display--both",
-        "layout": "default",
-        "nomargin": false,
-        "scopedCSS": "",
-        "height": 0,
-        "padding": 30,
-        "lineMargin": 12,
-        "backgroundColor": "rgba(0,0,0,0)",
-        "backgroundPosition": "middle",
-        "backgroundFilter": "none",
-        "backdropIntensity": 50,
-        "parallax": false,
-        "backgroundPattern": false,
-        "overlayOpacity": 0,
-        "overlayColor": "#000000",
-        "contentColor": "rgba(0,0,0,0)",
-        "horizontalAlignment": "center",
-        "verticalAlignment": "middle",
-        "imagePosition": "left",
-        "imageWidth": "6",
-        "imageOverlayOpacity": 0,
-        "imageOverlayColor": "#000000"
-      }
-    },
-    "1658988409a575072d": {
-      "type": "section__lookbook",
-      "blocks": {
-        "5e8aabc7-b7b5-4dab-a19c-9835baa0a458": {
-          "type": "lookbookPin",
-          "settings": {
-            "color": "#6951a1",
-            "product": "gentle-baby-wash",
-            "offsetTop": 43,
-            "offsetLeft": 41
-          }
-        },
-        "51c49b0a-c8c3-48aa-8467-18c29ea5db2b": {
-          "type": "lookbookPin",
-          "settings": {
-            "color": "#6951a1",
-            "product": "hydrating-baby-lotion",
-            "offsetTop": 27,
-            "offsetLeft": 58
-          }
-        },
-        "785b2dad-e1db-4fc8-8570-b353334878d1": {
-          "type": "lookbookPin",
-          "settings": {
-            "color": "#6951a1",
-            "product": "all-over-balm",
-            "offsetTop": 77,
-            "offsetLeft": 53
-          }
-        },
-        "78f3cb1d-98c0-453a-83a7-5640b8af86e2": {
-          "type": "lookbookPin",
-          "settings": {
-            "color": "#6951a1",
-            "product": "nourishing-oil",
-            "offsetTop": 47,
-            "offsetLeft": 65
-          }
-        },
-        "f2946bc2-ff2e-47e0-ac59-fc11dcbc7483": {
-          "type": "lookbookPin",
-          "settings": {
-            "color": "#6951a1",
-            "product": "gentle-touch-baby-wipes",
-            "offsetTop": 80,
-            "offsetLeft": 80
-          }
-        }
-      },
-      "block_order": [
-        "5e8aabc7-b7b5-4dab-a19c-9835baa0a458",
-        "51c49b0a-c8c3-48aa-8467-18c29ea5db2b",
-        "785b2dad-e1db-4fc8-8570-b353334878d1",
-        "78f3cb1d-98c0-453a-83a7-5640b8af86e2",
-        "f2946bc2-ff2e-47e0-ac59-fc11dcbc7483"
-      ],
-      "settings": {
-        "displayFor": "display--both",
-        "layout": "default",
-        "nomargin": false,
-        "scopedCSS": "",
-        "height": 0,
-        "padding": 20,
-        "backgroundColor": "rgba(0,0,0,0)",
-        "contentColor": "rgba(0,0,0,0)",
-        "horizontalAlignment": "center",
-        "verticalAlignment": "middle",
-        "heading": "Explore our plant-based collection",
-        "headingColor": "#cabbef",
-        "subheading": "THIS IS A SUBHEADING",
-        "subheadingColor": "rgba(0,0,0,0)",
-        "subheadingPosition": "above",
-        "headingAlignment": "center"
-      }
-    },
-    "16589877570eb6abda": {
-      "type": "section__image-text",
-      "blocks": {
-        "165898775772428542-0": {
-          "type": "title",
-          "settings": {
-            "fullWidth": true,
-            "content": "MADE FOR MELANATED BABIES",
-            "textColor": "rgba(0,0,0,0)",
-            "fontFamily": "title",
-            "fontSize": "medium"
-          }
-        },
-        "165898775772428542-1": {
-          "type": "richText",
-          "settings": {
-            "fullWidth": true,
-            "maxBWidth": 100,
-            "content": "<p>We do our research so you don’t have to. We look at the latest scientific studies on melanated skin and co-formulated products with physicians of color treating melanated patients. We know you’re checking The Dirty List from Credo Beauty and the Skin Deep Database from EWG—we are, too. The bottom line?  We’re doing our best and we’re constantly learning—just like you.<\/p>",
-            "detectLists": true,
-            "textColor": "rgba(0,0,0,0)",
-            "fontFamily": "base",
-            "fontSize": "base"
-          }
-        },
-        "165898775772428542-2": {
-          "type": "button",
-          "settings": {
-            "fullWidth": true,
-            "text": "Buy Now!",
-            "url": "shopify:\/\/products\/bath-basics-bundle",
-            "icon": "",
-            "iconPosition": "icon--left",
-            "wideButton": false,
-            "buttonStyle": "primary",
-            "buttonType": "default",
-            "fontSize": "base",
-            "fontFamily": "base",
-            "animation": "none",
-            "animationDuration": 1000,
-            "animationInfinite": true
-          }
-        }
-      },
-      "block_order": [
-        "165898775772428542-0",
-        "165898775772428542-1",
-        "165898775772428542-2"
-      ],
-      "settings": {
-        "displayFor": "display--both",
-        "layout": "default",
-        "nomargin": false,
-        "scopedCSS": "",
-        "height": 0,
-        "padding": 30,
-        "lineMargin": 12,
-        "backgroundColor": "rgba(0,0,0,0)",
-        "backgroundPosition": "middle",
-        "backgroundFilter": "none",
-        "backdropIntensity": 50,
-        "parallax": false,
-        "backgroundPattern": false,
-        "overlayOpacity": 0,
-        "overlayColor": "#000000",
-        "contentColor": "rgba(0,0,0,0)",
-        "horizontalAlignment": "center",
-        "verticalAlignment": "middle",
-        "imagePosition": "right",
-        "imageWidth": "6",
-        "imageOverlayOpacity": 0,
-        "imageOverlayColor": "#000000"
-      }
-    },
-    "1658991270e1c03355": {
-      "type": "section__featured-collection",
-      "settings": {
-        "displayFor": "display--both",
-        "layout": "default",
-        "nomargin": false,
-        "scopedCSS": "",
-        "height": 390,
-        "padding": 35,
-        "backgroundColor": "rgba(0,0,0,0)",
-        "heading": "FREE SHIPPING ON ORDERS OVER $40",
-        "headingColor": "rgba(0,0,0,0)",
-        "subheading": "Free Standard Shipping On $40 Within The Contiguous US Only.",
-        "subheadingColor": "rgba(0,0,0,0)",
-        "subheadingPosition": "above",
-        "headingAlignment": "center",
-        "collection": "all",
-        "productCount": 6,
-        "showMore": true,
-        "showMoreAlignment": "center"
-      }
-    },
     "16795577260e00d58f": {
       "type": "apps",
       "blocks": {
@@ -522,14 +302,10 @@
     }
   },
   "order": [
+    "aa391eea-57f0-4d0f-8515-481fb5425f5d",
     "1658982451aec4bb5c",
-    "16265529277430f275",
     "16265528618af17c6c",
     "16265531878648c50b",
-    "165898776695068632",
-    "1658988409a575072d",
-    "16589877570eb6abda",
-    "1658991270e1c03355",
     "16795577260e00d58f"
   ]
 }
