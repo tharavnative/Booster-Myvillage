@@ -79,6 +79,13 @@
             "saleType": "none"
           }
         },
+        "ff021f31-3a9e-4ad7-810a-f39948420967": {
+          "type": "productPageDescription",
+          "settings": {
+            "heading": "Product description",
+            "noMargin": false
+          }
+        },
         "ppSwatch": {
           "type": "productPageSwatch",
           "settings": {
@@ -100,46 +107,40 @@
             "stickyATC": "scroll"
           }
         },
-        "95ae0c43-2917-4e99-8b97-bb286187fdcf": {
-          "type": "productPageAccordion",
+        "7604ce43-bc1c-454c-8780-b1821b4f86a0": {
+          "type": "productPageTab",
           "settings": {
-            "noMargin": true,
+            "showInline": false,
             "heading": "Description",
             "content": "description",
             "metafieldNS": "global",
             "metafieldKey": "",
             "page": "",
-            "customContent": "<p>PROUDLY™ MADE\n<\/p><p>pH-balanced with moisturizing jojoba oil, aloe, and lightly scented with a natural, gentle fragrance.\n\n<\/p><p>Why You'll Love It\n<\/p><p>It's a simple cleanser with a natural, gentle fragrance that calms your littlest love (and you!) before bedtime or naptime.<\/p>"
+            "customContent": "<p>Add custom content here!<\/p>"
           }
         },
-        "24b22389-200e-4c1c-9731-74ed04bec400": {
-          "type": "productPageAccordion",
+        "b2ddb55b-83a5-485f-a11f-033a10d37725": {
+          "type": "productPageTab",
           "settings": {
-            "noMargin": true,
+            "showInline": false,
             "heading": "Supplement",
             "content": "metafield",
             "metafieldNS": "ns-sf",
             "metafieldKey": "supplement_facts",
             "page": "",
-            "customContent": "<p>Ingredients We're Proud of\n• Jojoba Oil\n• Aloe\n• Lavender &amp; Chamomile Oil\n\n<\/p><p>No Sketchy Stuff!™\n✘ parabens, PEGs, phthalates, sulfates, synthetic fragrance<\/p>"
+            "customContent": "<p>Add custom content here!<\/p>"
           }
         },
-        "c757fb9e-a111-45e3-a447-10615399a47a": {
-          "type": "productPageAccordion",
+        "3ca11f65-d217-4b81-8c68-1f156db9a071": {
+          "type": "productPageTab",
           "settings": {
-            "noMargin": false,
+            "showInline": false,
             "heading": "Reviews",
             "content": "reviews",
             "metafieldNS": "global",
             "metafieldKey": "",
             "page": "",
-            "customContent": "<p>Gently bathe your littlest love with a calming, soft wash that cleans them up from head-to-toe without stripping moisture.\n\n<\/p><p>Tip: use warm water (never hot!) and a clean washcloth. When clean, gently pat dry.<\/p>"
-          }
-        },
-        "63f347dc-65a8-42f7-80ea-a5cc9351519e": {
-          "type": "productPageShare",
-          "settings": {
-            "noMargin": false
+            "customContent": "<p>Add custom content here!<\/p>"
           }
         }
       },
@@ -147,13 +148,13 @@
         "ppTitle",
         "efaa6b92-d20a-45e3-bbdf-2f2b22f2fd7b",
         "ppPrice",
+        "ff021f31-3a9e-4ad7-810a-f39948420967",
         "ppSwatch",
         "ppStock",
         "ppATC",
-        "95ae0c43-2917-4e99-8b97-bb286187fdcf",
-        "24b22389-200e-4c1c-9731-74ed04bec400",
-        "c757fb9e-a111-45e3-a447-10615399a47a",
-        "63f347dc-65a8-42f7-80ea-a5cc9351519e"
+        "7604ce43-bc1c-454c-8780-b1821b4f86a0",
+        "b2ddb55b-83a5-485f-a11f-033a10d37725",
+        "3ca11f65-d217-4b81-8c68-1f156db9a071"
       ],
       "settings": {
         "view": "default",
