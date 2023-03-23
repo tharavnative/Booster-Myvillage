@@ -2,6 +2,7 @@
   "sections": {
     "banner": {
       "type": "banner--page",
+      "disabled": true,
       "settings": {
         "layout": "default",
         "height": 300,
