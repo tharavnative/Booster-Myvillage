@@ -55,7 +55,8 @@
     {% if template contains 'product' and settings.jQuery %}
         {{ 'jquery.zoom.min.js' | asset_url | script_tag }}
     {% endif %}
-  </head>
+    {% render 'judgeme_core' %}
+</head>
   <body class="template--{{template}}">
           <!--
 888888b.                              888                88888888888 888                                      
