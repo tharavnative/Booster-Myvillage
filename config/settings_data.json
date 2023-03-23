@@ -12,11 +12,11 @@
     "sTikTok": "https:\/\/www.tiktok.com\/@theproudlyco",
     "baseMaxWidth": "1200",
     "baseText": "rgb(0,0,0)",
-    "baseTitle": "#3982a0",
+    "baseTitle": "#006990",
     "baseSecondaryBackground": "#dedede",
     "baseSecondaryText": "#637605",
-    "baseLink": "#3982a0",
-    "primaryAccentBackground": "#3982a0",
+    "baseLink": "#006990",
+    "primaryAccentBackground": "#006990",
     "secondaryAccentBackground": "#637605",
     "secondaryAccentText": "#FFFFFF",
     "baseAlert": "#e95144",
@@ -243,7 +243,7 @@
         ],
         "settings": {
           "layout": "default",
-          "fillColor": "#FFFFFF",
+          "fillColor": "#ffffff",
           "contentColor": "#373737",
           "spacing": 16
         }
@@ -267,8 +267,8 @@
         ],
         "settings": {
           "layout": "default",
-          "fillColor": "#FFFFFF",
-          "contentColor": "rgb(0,0,0)",
+          "fillColor": "#ffffff",
+          "contentColor": "#000000",
           "spacing": 0
         }
       },
@@ -405,11 +405,11 @@
           "linkColor": "#000000",
           "accentColor": "#000000",
           "hoverStyle": "fill",
-          "tagBgColor": "#000",
-          "tagTextColor": "#FFF",
+          "tagBgColor": "#000000",
+          "tagTextColor": "#ffffff",
           "transparent": false,
-          "linkColorT": "#FFF",
-          "accentColorT": "#EFEFEF",
+          "linkColorT": "#ffffff",
+          "accentColorT": "#efefef",
           "searchBg": "rgba(0,0,0,0)",
           "searchText": "rgba(0,0,0,0)",
           "fontSize": "base",
