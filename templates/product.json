@@ -131,11 +131,11 @@
         "71c07e1d-fbc8-43b2-84ec-f4960f8a0136": {
           "type": "html",
           "settings": {
-            "blockWidth": "col-md-3",
+            "blockWidth": "col-md-12",
             "vertPadding": 0,
             "horPadding": 0,
             "horAlign": "center",
-            "vertAlign": "middle",
+            "vertAlign": "top",
             "html": "<div id=\"upsell\"><\/div>",
             "customCSS": ""
           }
