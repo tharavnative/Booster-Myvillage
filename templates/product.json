@@ -82,7 +82,7 @@
         "ff021f31-3a9e-4ad7-810a-f39948420967": {
           "type": "productPageDescription",
           "settings": {
-            "heading": "Product description",
+            "heading": "",
             "noMargin": false
           }
         },
