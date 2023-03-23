@@ -79,13 +79,6 @@
             "saleType": "none"
           }
         },
-        "ff021f31-3a9e-4ad7-810a-f39948420967": {
-          "type": "productPageDescription",
-          "settings": {
-            "heading": "",
-            "noMargin": false
-          }
-        },
         "ppSwatch": {
           "type": "productPageSwatch",
           "settings": {
@@ -148,7 +141,6 @@
         "ppTitle",
         "efaa6b92-d20a-45e3-bbdf-2f2b22f2fd7b",
         "ppPrice",
-        "ff021f31-3a9e-4ad7-810a-f39948420967",
         "ppSwatch",
         "ppStock",
         "ppATC",
