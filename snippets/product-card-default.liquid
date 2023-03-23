@@ -79,6 +79,7 @@
 {% if product.compare_at_price_min > 0 %}
 {% assign sale = true %}
 {% endif %}
+  {% render 'judgeme_widgets', widget_type: 'judgeme_preview_badge', jm_style: '', concierge_install: true, product: product %}
 <span class="card__price {% if sale == true %}card__price--sale{% endif %}">
 {% if product.price_varies %}
 {{'product_page.card.from'|t}} <span class="jsPrice">{{ product.price_min | money | strip_html }}</span>
