@@ -2,6 +2,7 @@
   "sections": {
     "breadcrumbs": {
       "type": "breadcrumbs",
+      "disabled": true,
       "settings": {
       }
     },
@@ -121,7 +122,7 @@
         "galleryImageFit": "cover",
         "galleryImageGap": 16,
         "productNavigation": true,
-        "productMainImageSize": "crop"
+        "productMainImageSize": "full_ratio"
       }
     },
     "1661487737e8d46d13": {
@@ -166,6 +167,7 @@
     },
     "upsell": {
       "type": "api__upsell--inline",
+      "disabled": true,
       "blocks": {
         "646f7acd-0f6b-44eb-809c-0296e8bae632": {
           "type": "priceSpecific",
@@ -186,48 +188,9 @@
       "settings": {
       }
     },
-    "166148773002c5da6c": {
-      "type": "section__content",
-      "blocks": {
-        "c4659d4f-e2e8-4f7d-a2c5-9f95ac293381": {
-          "type": "html",
-          "settings": {
-            "blockWidth": "col-md-3",
-            "vertPadding": 0,
-            "horPadding": 0,
-            "horAlign": "center",
-            "vertAlign": "middle",
-            "html": "<div id=\"reco\"> <\/div>",
-            "customCSS": ""
-          }
-        }
-      },
-      "block_order": [
-        "c4659d4f-e2e8-4f7d-a2c5-9f95ac293381"
-      ],
-      "settings": {
-        "displayFor": "display--both",
-        "layout": "default",
-        "nomargin": false,
-        "scopedCSS": "",
-        "height": 0,
-        "padding": 0,
-        "lineMargin": 12,
-        "backgroundColor": "rgba(0,0,0,0)",
-        "backgroundPosition": "middle",
-        "backgroundFilter": "none",
-        "backdropIntensity": 50,
-        "parallax": false,
-        "backgroundPattern": false,
-        "overlayOpacity": 0,
-        "overlayColor": "#000000",
-        "contentColor": "rgba(0,0,0,0)",
-        "horizontalAlignment": "center",
-        "verticalAlignment": "middle"
-      }
-    },
     "recommended": {
       "type": "product-page__recommended",
+      "disabled": true,
       "settings": {
         "enabled": true,
         "personalizedOffers": true,
@@ -245,7 +208,6 @@
     "page",
     "1661487737e8d46d13",
     "upsell",
-    "166148773002c5da6c",
     "recommended"
   ]
 }
