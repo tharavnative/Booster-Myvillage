@@ -35,13 +35,6 @@
             "saleType": "percent"
           }
         },
-        "d53b709f-0bb2-4a34-9de4-d5dd98b1a6f4": {
-          "type": "productPageDescription",
-          "settings": {
-            "heading": "Product description",
-            "noMargin": false
-          }
-        },
         "ppSwatch": {
           "type": "productPageSwatch",
           "settings": {
@@ -110,7 +103,6 @@
         "ppTitle",
         "efaa6b92-d20a-45e3-bbdf-2f2b22f2fd7b",
         "ppPrice",
-        "d53b709f-0bb2-4a34-9de4-d5dd98b1a6f4",
         "ppSwatch",
         "ppStock",
         "ppATC",
@@ -194,86 +186,6 @@
       "settings": {
       }
     },
-    "165899394518ff1707": {
-      "type": "section__columns",
-      "blocks": {
-        "59f0b9b0-5f30-4199-80fd-578cdb6a89bd": {
-          "type": "columnImage",
-          "settings": {
-            "imageSize": 30,
-            "heading": "<p>MADE FOR US<\/p>",
-            "content": "<p>Our products are thoughtfully made for babies of color to meet the specific needs of melanated skin.<\/p>",
-            "buttonText": "",
-            "buttonURL": "",
-            "openTab": false,
-            "buttonStyle": "secondary",
-            "buttonType": "filled"
-          }
-        },
-        "cf4e6b28-3d7a-413a-9559-070518c48cd3": {
-          "type": "columnImage",
-          "settings": {
-            "imageSize": 30,
-            "heading": "<p>MADE BY US<\/p>",
-            "content": "<p>Dermatologist of color-developed for our littlest loves. We are proud to be diversely-founded, owned, and operated.<\/p>",
-            "buttonText": "",
-            "buttonURL": "",
-            "openTab": false,
-            "buttonStyle": "secondary",
-            "buttonType": "filled"
-          }
-        },
-        "54a19771-1aec-4c32-a0a6-17bc4c247681": {
-          "type": "columnImage",
-          "settings": {
-            "imageSize": 30,
-            "heading": "<p>LOVE OUR EARTH<\/p>",
-            "content": "<p>Thoughtfully made with earth-friendly ingredients and sustainable packaging, because our children will inherit our planet.<\/p>",
-            "buttonText": "",
-            "buttonURL": "",
-            "openTab": false,
-            "buttonStyle": "secondary",
-            "buttonType": "filled"
-          }
-        }
-      },
-      "block_order": [
-        "59f0b9b0-5f30-4199-80fd-578cdb6a89bd",
-        "cf4e6b28-3d7a-413a-9559-070518c48cd3",
-        "54a19771-1aec-4c32-a0a6-17bc4c247681"
-      ],
-      "settings": {
-        "displayFor": "display--both",
-        "layout": "default",
-        "nomargin": false,
-        "scopedCSS": "",
-        "height": 0,
-        "padding": 0,
-        "lineMargin": 12,
-        "backgroundColor": "rgba(0,0,0,0)",
-        "backgroundPosition": "middle",
-        "backgroundFilter": "none",
-        "backdropIntensity": 50,
-        "parallax": false,
-        "backgroundPattern": false,
-        "overlayOpacity": 0,
-        "overlayColor": "#000000",
-        "contentColor": "rgba(0,0,0,0)",
-        "horizontalAlignment": "center",
-        "verticalAlignment": "middle",
-        "heading": "OUR VALUES",
-        "headingColor": "rgba(0,0,0,0)",
-        "subheading": "",
-        "subheadingColor": "rgba(0,0,0,0)",
-        "subheadingPosition": "above",
-        "headingAlignment": "center",
-        "colHeight": 240,
-        "colGap": 65,
-        "textAlign": "center",
-        "contentAlign": "top",
-        "colCount": "col-md-4"
-      }
-    },
     "166148773002c5da6c": {
       "type": "section__content",
       "blocks": {
@@ -333,7 +245,6 @@
     "page",
     "1661487737e8d46d13",
     "upsell",
-    "165899394518ff1707",
     "166148773002c5da6c",
     "recommended"
   ]
