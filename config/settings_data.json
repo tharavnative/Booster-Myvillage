@@ -415,8 +415,8 @@
           "searchText": "rgba(0,0,0,0)",
           "fontSize": "base",
           "customFont": false,
-          "fontFamily": "work_sans_n6",
-          "cartIcon": "shopping-cart",
+          "fontFamily": "montserrat_n4",
+          "cartIcon": "shopping-bag",
           "mobileLogoPosition": "left",
           "mobileCart": true
         }
