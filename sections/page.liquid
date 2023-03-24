@@ -1,7 +1,8 @@
 {% capture layoutConfig %}{% render 'common-layout' with section as section %}{% endcapture %}
 
 <div class="row layout__{{-layoutConfig}}">
-    <div class="col-12 unflex layout__content section__page ">
+  <div class="col-4 unflex layout__content section__page "></div>
+    <div class="col-8 unflex layout__content section__page ">
       {% if section.settings.enableShortcodes %}
         {% assign c = page.content %}
         {% assign sc = c | split: 'endinsert]' %} {% comment %} split content {% endcomment %}
