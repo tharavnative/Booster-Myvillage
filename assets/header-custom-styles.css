@@ -28,4 +28,35 @@ h1.font__size--big {
 
 
 /*Default page*/
-
+#shopify-section-page-sidebar { box-shadow: 0px 0px 10px 2px #f0f0f0;  padding: 15px 20px;  margin-bottom: 50px; padding-top: 30px;}
+.sidebar-nav-bar ul { list-style: none; padding: 0;}
+.sidebar-nav-bar ul.site-nav-dropdown {    padding: 0;  margin: 0; margin-top: 17px; background: none;}
+.sidebar-nav-bar ul a.menu__moblie span {color: #006990;font-weight: 600;font-family: Montserrat;font-size: 18px;text-decoration: none;}
+.sidebar-nav-bar .site-nav-dropdown li:hover > a { color: #999b04; }
+.inner_sidebar { padding-top: 30px; }
+.site-nav-dropdown li:hover > a { padding-left: 40px;color:#fff; }
+.site-nav-dropdown li:hover > a:before { content:""; width: 15px; height: 1px; position: absolute; top: 16px; left: 20px; }
+.site-nav-dropdown a {
+    -webkit-transition: all 0.5s;
+    transition-duration: 0.5s;
+    transition-timing-function: ease;
+    transition-delay: 0s;
+    transition-property: all;
+    -moz-transition: all 0.5s;
+    -o-transition: all 0.5s;
+    transition: all 0.5s;
+    transition-duration: 0.5s;
+    transition-timing-function: ease;
+    transition-delay: 0s;
+    transition-property: all;
+    text-decoration: none;
+}
+.sidebar-nav-bar ul a.menu__moblie {
+    text-decoration: none;
+}
+ul.site-nav-dropdown li {
+    margin-bottom: 27px;
+}
+.site-nav-dropdown a:hover span {
+    color: #637605;
+}
