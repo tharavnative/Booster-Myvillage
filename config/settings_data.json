@@ -1,5 +1,6 @@
 {
   "current": {
+    "textLogo": "Village Green",
     "defaultLogo": "shopify:\/\/shop_images\/logo_new_1_e0f90160-491c-4ab7-81dd-1fc4512dbd7e.jpg",
     "darkLogo": "shopify:\/\/shop_images\/babycare-1.png",
     "transparentLogo": "shopify:\/\/shop_images\/babycare_87268684-e2fb-4c54-b327-d8e8702a4b2c.png",
@@ -12,6 +13,7 @@
     "sPinterest": "https:\/\/www.pinterest.com\/villagegreen1\/",
     "sTikTok": "https:\/\/www.tiktok.com\/@theproudlyco",
     "baseMaxWidth": "1200",
+    "breadcrumbs": false,
     "baseText": "rgb(0,0,0)",
     "baseTitle": "#006990",
     "baseSecondaryBackground": "#dedede",
