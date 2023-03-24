@@ -1,115 +1,344 @@
+<div class="widget sidebar-links sidebar-custom inner_sidebar">
+            <div id="shopify-section-page-sidebar" class="shopify-section"><div class="nav-bar-mobile">
+  <nav class="sidebar-nav-bar" role="navigation">
+     
+ 
+
 <ul class="site-nav2">
-  {% for link in linklists.sidebar-menu.links %}
-  	{% assign i = forloop.index | downcase %}
-    {% assign cat = link.title | handleize %}
   
-  	{% if section.settings.display_megamenu %}
-      
-      	{% assign is_megamenu = false %}
-        {% for block in section.blocks %}
-      	  {% for i in (1..4) %}
+  	
+    
   
-          {% capture cap_megamenu_item %}megamenu_items_{{ i }}{% endcapture %}  
-          {% capture cap_banner_first_style %}banner_first_style_{{ i }}{% endcapture %}
-          {% capture cap_banner_second_style %}banner_second_style_{{ i }}{% endcapture %}
-          {% capture cap_banner_third_style %}banner_third_style_{{ i }}{% endcapture %}
+  	  
   
-          {% capture cap_link_banner_first_style %}link_banner_first_style_{{ i }}{% endcapture %}
-  		  {% capture cap_link_banner_second_style %}link_banner_second_style_{{ i }}{% endcapture %}
-  		  {% capture cap_link_banner_third_style %}link_banner_third_style_{{ i }}{% endcapture %}
-  
-          {% capture cap_featured_collection %}featured_collection_{{ i }}{% endcapture %}
-          {% capture cap_title_featured_product %}title_featured_product_{{ i }}{% endcapture %}
-          {% capture cap_main_linklist %}main_linklist_{{ i }}{% endcapture %}
-  
-  		  {% comment %}
-            For style 4
-          {% endcomment %}
-          {% capture cap_banner_four_style %}banner_four_style_{{ i }}{% endcapture %}
-  
-          {% if block.settings[cap_megamenu_item] != blank %}
-            {% assign megamenu_item = block.settings[cap_megamenu_item] | handleize %}
-            {% if megamenu_item == cat %}
-              {% assign is_megamenu = true %}
-              {% assign block_style = block.type %}
-  
-  			  {% assign banner_first_style = block.settings[cap_banner_first_style] %}
-  			  {% assign banner_second_style = block.settings[cap_banner_second_style] %}
-  			  {% assign banner_third_style = block.settings[cap_banner_third_style] %}
-  			  
-  			  {% assign link_banner_first_style = block.settings[cap_link_banner_first_style] %}
-  			  {% assign link_banner_second_style = block.settings[cap_link_banner_second_style] %}
-  			  {% assign link_banner_third_style = block.settings[cap_link_banner_third_style] %}
-  
-  			  {% assign featured_collection = block.settings[cap_featured_collection] %}
-  			  {% assign title_featured_product = block.settings[cap_title_featured_product] %}  			  
-  			  {%- assign product = all_products[featured_product] -%}
-  
-  			  {% comment %}
-  				For style 4
-  			  {% endcomment %}
-  			  {% assign banner_four_style = block.settings[cap_banner_four_style] %}	
-  			  
-  
-  
-  			  {% assign main_linklist = block.settings[cap_main_linklist] %}
-  
-  
-            {% endif %}
-          {% endif %}
-  		  
-  		  {% case block.settings.width %}
-        	{% when 'small' %}
-  			{%- assign width_product = '120x160' -%}
-        	{% when 'medium' %}
-  			{%- assign width_product = '180x220' -%}
-        	{% when 'large' %}
-  			{%- assign width_product = '220x260' -%}
-  		  {% endcase %}
-  
-  
-          {% endfor %}
-        {% endfor %}
-  
-  	{% endif %}  
-  
-    <li class="item{% if is_megamenu %} dropdown mega-menu{% else %}{% if linklists[link.handle] != empty %} dropdown{% endif %}{% endif %}">
-      <a {%if linklists[link.handle] != empty %}class="menu__moblie" {% endif %} href="{{ link.url }}" class=" {% if link.active %}current{% endif %}">
+    <li class="item dropdown">
+      <a class="menu__moblie" href="#">
         <span>
-          {% if settings.enable_multilang %}
-          <span class="lang1">{{ link.title | split: '|' | first }}</span>
-          <span class="lang2">{{ link.title | split: '|' | last }}</span>
-          {% else %}
-          {{ link.title | split: '|' | first }}
-          {% endif %}
+          
+          Brands
+          
         </span>
-        {% if linklists[link.handle] != empty and section.settings.show_dropdown_arrow %}<span class="icon-dropdown"><i class="fa fa-angle-down level-1" aria-hidden="true"></i></span>{% endif %}
+        
       </a> 	
     
-      {% comment %}
-      Check if menu item is Mega menu
-      {% endcomment %}
       
-      {% assign link_child = link.handle %}
-      {% if section.settings.display_megamenu %}  
       
-      	{% if is_megamenu %}
-          <div class="site-nav-dropdown {{ block_style }}">
-            <div class="container"><div class="row">{% render 'header--link-submenu' with link_child %}</div></div>
-          </div>
-        {% else %}
-          {% if linklists[link.handle] != empty %}
-            {% render 'header--link-submenu' with link_child %}
-          {% endif %}
-        {% endif %}
       
-      {% else %}
-        {% if linklists[link.handle] != empty %}
-          {% render 'header--link-submenu' with link_child %}
-        {% endif %}
-      {% endif %}
       
-    </li>
-  {% endfor %}
+        
+          <ul class="site-nav-dropdown">
+  
+  <li>
+    <a href="/collections/pathway">
+      
+<span>Pathway</span>
+
+      
+    </a>
+    
+  </li>
+  
+  <li>
+    <a href="/collections/metagenics">
+      
+<span>Metagenics</span>
+
+      
+    </a>
+    
+  </li>
+  
+  <li>
+    <a href="/collections/nordic-naturals">
+      
+<span>Nordic Naturals</span>
+
+      
+    </a>
+    
+  </li>
+  
+  <li>
+    <a href="/collections/thorne-research">
+      
+<span>Thorne Research</span>
+
+      
+    </a>
+    
+  </li>
+  
+  <li>
+    <a href="/collections/sinus-survival">
+      
+<span>Sinus Survival</span>
+
+      
+    </a>
+    
+  </li>
+  
+  <li>
+    <a href="https://myvillagegreen.myshopify.com/pages/shop-by-brands">
+      
+<span>View All <i class="fa fa-angle-double-right" aria-hidden="true"></i></span>
+
+      
+    </a>
+    
+  </li>
   
 </ul>
+        
+      
+      
+    </li>
+  
+  	
+    
+  
+  	  
+  
+    <li class="item dropdown">
+      <a class="menu__moblie" href="#">
+        <span>
+          
+          Categories
+          
+        </span>
+        
+      </a> 	
+    
+      
+      
+      
+      
+        
+          <ul class="site-nav-dropdown">
+  
+  <li>
+    <a href="/collections/antioxidants">
+      
+<span>Antioxidants</span>
+
+      
+    </a>
+    
+  </li>
+  
+  <li>
+    <a href="/collections/calcium">
+      
+<span>Calcium</span>
+
+      
+    </a>
+    
+  </li>
+  
+  <li>
+    <a href="/collections/fish-oil">
+      
+<span>Fish Oil</span>
+
+      
+    </a>
+    
+  </li>
+  
+  <li>
+    <a href="/collections/probiotics">
+      
+<span>Probiotics</span>
+
+      
+    </a>
+    
+  </li>
+  
+  <li>
+    <a href="https://myvillagegreen.myshopify.com/pages/shop-by">
+      
+<span>View All <i class="fa fa-angle-double-right" aria-hidden="true"></i></span>
+
+      
+    </a>
+    
+  </li>
+  
+</ul>
+        
+      
+      
+    </li>
+  
+  	
+    
+  
+  	  
+  
+    <li class="item dropdown">
+      <a class="menu__moblie" href="#">
+        <span>
+          
+          Health Concerns
+          
+        </span>
+        
+      </a> 	
+    
+      
+      
+      
+      
+        
+          <ul class="site-nav-dropdown">
+  
+  <li>
+    <a href="/collections/allergies-sinus">
+      
+<span>Allergies &amp;<span>Sinus</span></span>
+
+      
+    </a>
+    
+  </li>
+  
+  <li>
+    <a href="/collections/brain-health">
+      
+<span>Brain<span> Health</span></span>
+
+      
+    </a>
+    
+  </li>
+  
+  <li>
+    <a href="/collections/weight-management-1">
+      
+<span>Weight<span> Management</span></span>
+
+      
+    </a>
+    
+  </li>
+  
+  <li>
+    <a href="https://myvillagegreen.myshopify.com/pages/shop-by">
+      
+<span>View All <i class="fa fa-angle-double-right" aria-hidden="true"></i></span>
+
+      
+    </a>
+    
+  </li>
+  
+</ul>
+        
+      
+      
+    </li>
+  
+  
+</ul>
+ 
+
+
+
+ 
+  
+
+      
+  </nav>
+</div>
+
+<style>
+
+  /*-------------------------- */
+  .have-fixed .header-bottom .top-cart #cartCount{
+  background:#f6740a;
+  }
+  
+  .site-nav > li > a:after{
+    background:#c7c7c7;}
+  }
+
+  .header-bottom.on .top-cart a #cartCount,
+  .header-bottom.on .nav-search-fix .icon-search,
+  .header-bottom .top-cart .icon{ color: #ffffff;}
+  .site-nav > li > a{color:#ffffff;}
+  .site-nav > li:hover > a{ color: #ffffff; }
+
+
+  .site-nav li.dropdown .icon-dropdown { border-top-color: #ffffff; }
+  .site-nav-dropdown  .col-3 a{padding:0!important;}
+  .nav-bar .site-nav-dropdown li a .icon-dropdown .level-1 {color:;}
+  .nav-bar .site-nav-dropdown li a:hover .icon-dropdown .level-1{color:#ffffff;}
+  .icon-dropdown .fa-angle-down{color:;font-size: 15px;font-weight: 700;}
+  
+
+  .nav-bar .site-nav li.dropdown:hover > a > .icon-dropdown{
+    border-top-color: #ffffff;
+  }
+
+  .have-fixed .nav-bar{background:#3a3e46;}
+  .have-fixed .header-bottom .top-cart .icon .fa-shopping-cart,
+  .have-fixed .nav-bar .site-nav > li > a{ color:#ffffff; }
+  .have-fixed .site-nav > li > a:hover {color :#ffffff;}
+  .have-fixed .nav-search .icon-search .fa-search{color:#ffffff; }
+  .have-fixed .site-nav > li > a:after{background:#787f8d!important;}
+  .have-fixed .nav-search{border:1px solid #787f8d; border-top:none;border-bottom:none;}
+  /* dropdown menu */
+  .site-nav-dropdown {
+    border-style: ; 
+    border-color: ; 
+    background: #ffffff; 
+  }
+  .site-nav-dropdown .col-1 ul.dropdown li a:hover span{border-color:#ffffff;}
+  
+  .site-nav-dropdown li:hover > a:before{background:#ffffff;}
+  .site-nav-dropdown .col-1 .inner .dropdown li a:hover{color:#ffffff;}
+  .site-nav .widget-featured-product .widget-title h3,
+  .site-nav-dropdown .col-1 .inner > a{color:#db2769;}
+  .site-nav-dropdown .inner > .current, 
+  .site-nav-dropdown .inner >  .current,
+  .site-nav-dropdown .grid-view-item h3.title{ color:#db2769; font-weight:600; font-size: 13px; text-transform: uppercase;}  
+  .site-nav-dropdown .col-1 ul.dropdown li a,
+  .site-nav-dropdown .col ul.dropdown li a,
+  .grid-view-item_title a,
+  .nav-bar .site-nav-dropdown li a{
+    color:#505050;
+  }
+  .site-nav > li:hover > a > span > span{
+    border-bottom: 1px dotted #ffffff;
+  }
+  .site-nav-dropdown li:hover > a{
+    color:#ffffff;
+  }
+  @media (min-width: 768px){
+    .have-fixed .header-bottom .top-cart{border:0; padding-left:0};
+    .have-fixed .nav-search .icon-search{
+      color:#787f8d;
+    }
+  }
+   @media (max-width: 1024px){
+  .header-bottom .top-cart #cartCount{
+    background:#f6740a;
+  }
+   }
+  a.button-menu{
+    border-width: 1px;
+    border-style: solid;
+    padding:3px 6px;
+    letter-spacing: 0.1em;
+    font-weight: 500;
+  }
+  a.button-menu:hover{
+    text-decoration: none;
+  }
+  
+</style>
+
+</div>
+      	</div>
