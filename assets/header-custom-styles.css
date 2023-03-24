@@ -43,7 +43,7 @@ h1.font__size--big {
 }
 
 .row.layout__boxed.default-page {
-    margin-top: 30px;
+    margin-top: 60px;
 }
 #shopify-section-page-sidebar { box-shadow: 0px 0px 10px 2px #f0f0f0;  padding: 15px 20px;  margin-bottom: 50px; padding-top: 30px;}
 .sidebar-nav-bar ul { list-style: none; padding: 0;}
