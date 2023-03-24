@@ -17,6 +17,7 @@
     },
     "content": {
       "type": "page",
+      "disabled": true,
       "settings": {
         "layout": "default",
         "enableShortcodes": false
