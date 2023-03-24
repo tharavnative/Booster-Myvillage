@@ -28,7 +28,7 @@ h1.font__size--big {
 
 
 /*Default page*/
-.row.layout__boxed.default-page  .middle-container a {
+.row.layout__boxed.default-page  .middle-container a, .row.layout__boxed.default-page  .middle-container a span {
     color: #73adc2;
     text-decoration: none !important;
     font-weight: 600;
