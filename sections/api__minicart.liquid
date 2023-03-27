@@ -22,6 +22,7 @@
           <a href="{{ item.url }}">{{ item.product.title }}</a>
           <span class="minicart__variation">{% unless item.product.has_only_default_variant %}{{ item.variant.title }}{% endunless %}</span>
           <span class="minicart__price">
+            <span class="Bold-theme-hook-DO-NOT-DELETE bold_cart_item_price" data-item-key="{{item.key}}" style="display:none !important;"></span>
             <span class="jsPrice">{{ item.price | money | strip_html }}</span> 
 
             {%- if item.original_line_price != item.line_price -%}
@@ -53,7 +54,7 @@
   </div>
   {% unless cart.items.size == 0 %}
   <div class="minicart__bottom">
-    <span class="minicart__total">Total: <span class="jsPrice">{{ cart.total_price | money | strip_html }}</span></span>
+    <span class="minicart__total">Total: <span class="jsPrice"><span class="Bold-theme-hook-DO-NOT-DELETE bold_cart_total" style="display:none !important;"></span>{{ cart.total_price | money | strip_html }}</span></span>
     {% assign root_url = routes.root_url %}
     {% assign checkout_url = root_url | append: 'checkout' %}
     {% if root_url != '/' %}

@@ -23,9 +23,9 @@
 
 <span class="card__price jsPrice">
 {% comment %} {% if product.price_varies %}
-from {{ product.price_min | money }}
+from <span class="money" data-product-id="{{ product.id }}">{{ product.price_min | money }}</span>
 {% else %}
-{{ product.price | money }}
+<span class="money" data-product-id="{{ product.id }}">{{ product.price | money }}</span>
 {% endif %} {% endcomment %}
 </span>
 

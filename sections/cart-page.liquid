@@ -78,6 +78,7 @@
             {% render 'get-icon', icon: 'trash' %}
         </div>
         <div class="col-md-2 cart__punit hide-mobile">
+      <span class="Bold-theme-hook-DO-NOT-DELETE bold_cart_item_price" data-item-key="{{item.key}}" style="display:none !important;"></span>
             <span class="jsPrice">{{ item.price | money | strip_html }}</span>
             {% if product.compare_at_price > 0 %}
             <span class="cart__compare-price cart__compare-price--punit jsPrice">{{product.compare_at_price | money | strip_html}}</span>
@@ -110,6 +111,7 @@
                     </div>
                 {%- else -%}
                     <div class="product-option">
+                  <span class="Bold-theme-hook-DO-NOT-DELETE bold_cart_item_total" data-item-key="{{item.key}}" style="display:none !important;"></span>
                         <span class="jsPrice">{{- item.line_price | money | strip_html -}}</span>
                     </div>
                 {%- endif -%}
@@ -157,7 +159,7 @@
                     </span>
                 </span>
                 {% endif %}
-                <span class="cart__grandtotal">{{'cart.page.grand_total' | t}}: <span class="jsPrice">{{ cart.total_price | money | strip_html }}</span></span>
+                <span class="cart__grandtotal">{{'cart.page.grand_total' | t}}: <span class="jsPrice"><span class="Bold-theme-hook-DO-NOT-DELETE bold_cart_total" style="display:none !important;"></span>{{ cart.total_price | money | strip_html }}</span></span>
                 {% render 'button__submit', text: tran_checkout, name: 'checkout', class: 'button--full-width' %}
             </div>
         </div>

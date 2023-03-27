@@ -40,6 +40,7 @@
     </div>
 </div>
 {% for product in collections[section.settings.collection].products limit: section.settings.productCount %}
+<script type='application/json' class='bold-product-json'>{{ product | json }}</script>
   <div class="col-{{mobile}} col-md-{{-desktop}} card--holder s__block">
   {% render 'product-card-default', product: product, dsize: '3' %}
   </div>

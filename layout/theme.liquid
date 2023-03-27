@@ -32,6 +32,8 @@
     {% render 'layout__favicon' %}
 
     {{ content_for_header }}
+{%- render 'bold-pr' -%}
+{{ 'bold-csp-custom.css' | asset_url | stylesheet_tag }}
     <link href="//maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css" rel="stylesheet" type="text/css" media="all">
     <style>
       {% render 'global-scss' %}
@@ -69,6 +71,12 @@
 888   d88P Y88..88P Y88..88P      X88 Y88b. Y8b.     888     888     888  888 Y8b.     888  888  888 Y8b.     
 8888888P"   "Y88P"   "Y88P"   88888P'  "Y888 "Y8888  888     888     888  888  "Y8888  888  888  888  "Y8888  
 -->
+
+    <!-- Bold: Memberships -->
+{% if customer %}
+<div class="bold_customer_id" hidden>{{ customer.id }}</div>
+{% endif %}
+<!-- end Bold code -->
     <div class="container">
       <div class="container__top-part">
         {% section 'top-info-bar' %}
