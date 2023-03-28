@@ -1,0 +1,81 @@
+{% if customer %}
+  {% for tag in customer.tags %}
+  {% if tag=='mvg-membership' %}
+  		{% assign bold_member = true %}
+  		 {% break %}
+  {% endif %}
+  {% endfor %}
+  {% if bold_member %}
+  {% else %}
+  	<script>
+  		jQuery(window).on("load", function() {
+          
+          //jQuery('#popup_sec .buy_btn')[0].click();
+          jQuery("h3.step2_title").show();
+          
+        });
+      
+       var incStr=false;
+    function fetchdata_cust(){
+ jQuery.ajax({
+  url: '/?sections=header',
+  type: 'GET',
+  success: function(data){
+   //Perform operation on return value
+    
+    var strng=data.header;
+    //console.log( data.header);
+    incStr = strng.includes("customer-id");
+    if(window.cus_id===null){
+      
+       
+       if(incStr===true){
+        
+       			window.location.reload();
+       }
+      
+    }
+    else if(incStr){
+      
+     jQuery('#box2_out').removeClass('loading');
+    }
+   
+    else{
+    
+    }
+    
+    
+ 
+  },
+  complete:function(data){
+    //console.log( 'loopinggggggggggggggggggg');
+    
+    
+    if(!incStr){
+      setTimeout(fetchdata_cust,2000);
+    }
+    
+   
+  }
+ });
+}
+
+jQuery(document).ready(function(){
+   
+
+  if(window.location.href==='https://myvillagegreen.com/pages/signup-landing'){
+
+  }
+  else{
+    setTimeout(fetchdata_cust,2000);
+  }
+ 
+
+});
+
+      
+      
+	</script>
+  {% endif %}
+{% else %}
+{% endif %}
