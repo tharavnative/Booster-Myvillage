@@ -153,7 +153,9 @@
                                                                             <tr>
                                                                                 <td><div data-id="{{order.id}}" class="identixweb_advance_reorder"></div></td>
                                                                                 <td>{{ order.name | link_to: order.customer_url }}</td>
+                                                                              {% comment %}
                                                                                 <td>{{ order.created_at | date: format: 'month_day_year' }}</td>
+                                                                              {% endcomment %}
                                                                                 <td>{{ order.financial_status_label }}</td>
                                                                                 <td>{{ order.fulfillment_status_label }}</td>
                                                                                 <td>{{ order.total_price | money }}</td>
