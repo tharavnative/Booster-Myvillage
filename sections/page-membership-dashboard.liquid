@@ -4,7 +4,7 @@
 
 {% if section.settings.enable %}
 <div class="dashboard_outer">
-    <div class="container">
+    <div class="container-bootstrap">
         <div class="row">
             <div class="col-sm-12">
                 <div class="shopify-section dashboard_templt">
@@ -239,7 +239,7 @@
                                                                   <label for="address_country_new" {% if settings.enable_multilang %}data-translate="customer.addresses.country"{% endif %}>{{ 'customer.addresses.country' | t }}</label>
                                                                   <select id="address_country_new" name="address[country]" data-default="{{form.country}}">{{ country_option_tags }}</select>
 
-                                                                  <div id="address_province_container_new" style="display:none">
+                                                                  <div id="address_province_container-bootstrap_new" style="display:none">
                                                                     <label for="address_province_new" {% if settings.enable_multilang %}data-translate="customer.addresses.province"{% endif %}>{{ 'customer.addresses.province' | t }}</label>
                                                                     <select id="address_province_new" class="address_form" name="address[province]" data-default="{{form.province}}"></select>
                                                                   </div>
@@ -337,7 +337,7 @@
                                                                       <label for="address_country_{{form.id}}" {% if settings.enable_multilang %}data-translate="customer.addresses.country"{% endif %}>{{ 'customer.addresses.country' | t }}</label>
                                                                       <select id="address_country_{{form.id}}" name="address[country]" data-default="{{form.country}}">{{ country_option_tags }}</select>
 
-                                                                      <div id="address_province_container_{{form.id}}" style="display:none">
+                                                                      <div id="address_province_container-bootstrap_{{form.id}}" style="display:none">
                                                                         <label for="address_province_{{form.id}}" {% if settings.enable_multilang %}data-translate="customer.addresses.province"{% endif %}>{{ 'customer.addresses.province' | t }}</label>
                                                                         <select id="address_province_{{form.id}}" class="address_form" name="address[province]" data-default="{{form.province}}"></select>
                                                                       </div>
@@ -597,7 +597,7 @@
                                                                 <h3>We'll Call You - Schedule A Quick 10 Minute Call</h3>
                                                                 <p>Schedule a time that is convenient for you, and a nutrition expert will call to answer your question.</p>
 <!--                                                                 <button id="schedule_btn_in">Schedule a call back now!</button> -->
-  <div class="bta-product-button-widget-container" data-mode="button" data-id="60284" id="call_back_btn" >
+  <div class="bta-product-button-widget-container-bootstrap" data-mode="button" data-id="60284" id="call_back_btn" >
 </div>
                                                             </div> 
                                                         </div>
@@ -1233,13 +1233,13 @@
     var Shopify = Shopify || {};
   // Initialize observers on address selectors
   new Shopify.CountryProvinceSelector('address_country_new', 'address_province_new', {
-    hideElement: 'address_province_container_new'
+    hideElement: 'address_province_container-bootstrap_new'
   });
 
   // Setup province selector on each customer address
   {% for address in customer.addresses %}
     new Shopify.CountryProvinceSelector('address_country_{{address.id}}', 'address_province_{{address.id}}', {
-      hideElement: 'address_province_container_{{address.id}}'}
+      hideElement: 'address_province_container-bootstrap_{{address.id}}'}
     );
   {% endfor %}
 
