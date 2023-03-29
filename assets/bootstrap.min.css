@@ -632,7 +632,9 @@ dd {
   .dl-horizontal dd {
     margin-left: 180px;
   }
-  
+  .container-bootstrap {
+    width: 760px;
+  }
 }
 abbr[data-original-title],
 abbr[title] {
@@ -727,7 +729,11 @@ pre {
   border: 1px solid #ccc;
   border-radius: 4px;
 }
-
+.container-bootstrap,
+.container-bootstrap-fluid {
+  margin-right: auto;
+  margin-left: auto;
+}
 pre code {
   padding: 0;
   font-size: inherit;
@@ -735,12 +741,25 @@ pre code {
   white-space: pre-wrap;
   border-radius: 0;
 }
-
+.container-bootstrap,
+.container-bootstrap-fluid {
+  padding-right: 15px;
+  padding-left: 15px;
+}
 .pre-scrollable {
   max-height: 340px;
   overflow-y: scroll;
 }
-
+@media (min-width: 992px) {
+  .container-bootstrap {
+    width: 980px;
+  }
+}
+@media (min-width: 1200px) {
+  .container-bootstrap {
+    width: 1200px;
+  }
+}
 .row {
   margin-right: -15px;
   margin-left: -15px;
@@ -3692,7 +3711,13 @@ textarea.input-group-sm > .input-group-btn > .btn {
 .progress {
   overflow: hidden;
 }
-
+.container-bootstrap-fluid > .navbar-collapse,
+.container-bootstrap-fluid > .navbar-header,
+.container-bootstrap > .navbar-collapse,
+.container-bootstrap > .navbar-header {
+  margin-right: -15px;
+  margin-left: -15px;
+}
 .navbar-static-top {
   z-index: 1000;
   border-width: 0 0 1px;
@@ -3725,13 +3750,22 @@ textarea.input-group-sm > .input-group-btn > .btn {
   text-decoration: none;
 }
 @media (min-width: 768px) {
-
+  .container-bootstrap-fluid > .navbar-collapse,
+  .container-bootstrap-fluid > .navbar-header,
+  .container-bootstrap > .navbar-collapse,
+  .container-bootstrap > .navbar-header {
+    margin-right: 0;
+    margin-left: 0;
+  }
   .navbar-fixed-bottom,
   .navbar-fixed-top,
   .navbar-static-top {
     border-radius: 0;
   }
-
+  .navbar > .container-bootstrap .navbar-brand,
+  .navbar > .container-bootstrap-fluid .navbar-brand {
+    margin-left: -15px;
+  }
 }
 .navbar-toggle {
   position: relative;
@@ -4367,14 +4401,21 @@ a.list-group-item.active > .badge {
 .close {
   font-weight: 700;
 }
-
-
+.container-bootstrap .jumbotron {
+  border-radius: 6px;
+}
+.jumbotron .container-bootstrap {
+  max-width: 100%;
+}
 @media screen and (min-width: 768px) {
   .jumbotron {
     padding-top: 48px;
     padding-bottom: 48px;
   }
-
+  .container-bootstrap .jumbotron {
+    padding-right: 60px;
+    padding-left: 60px;
+  }
   .jumbotron .h1,
   .jumbotron h1 {
     font-size: 63px;
@@ -5706,6 +5747,10 @@ button.close {
 .btn-toolbar:before,
 .clearfix:after,
 .clearfix:before,
+.container-bootstrap-fluid:after,
+.container-bootstrap-fluid:before,
+.container-bootstrap:after,
+.container-bootstrap:before,
 .form-horizontal .form-group:after,
 .form-horizontal .form-group:before,
 .modal-footer:after,
@@ -5730,6 +5775,8 @@ button.close {
 .btn-group-vertical > .btn-group:after,
 .btn-toolbar:after,
 .clearfix:after,
+.container-bootstrap-fluid:after,
+.container-bootstrap:after,
 .form-horizontal .form-group:after,
 .modal-footer:after,
 .nav:after,
