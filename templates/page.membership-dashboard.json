@@ -1,10 +1,5 @@
 {
   "sections": {
-    "membership": {
-      "type": "page-membership-dashboard",
-      "settings": {
-      }
-    },
     "banner": {
       "type": "banner--page",
       "settings": {
@@ -18,6 +13,53 @@
         "defaultBackgroundImage": "{{ page.metafields.custom.banner_image.value }}",
         "overlayOpacity": 0,
         "overlayColor": "#000000"
+      }
+    },
+    "membership": {
+      "type": "page-membership-dashboard",
+      "settings": {
+        "enable": true,
+        "member_img": "shopify:\/\/shop_images\/sign_banner_logo_20edc938-a47f-43ec-9bac-beb60d38e378.png",
+        "member_detail": "<h3>Jennifer Smith<\/h3>\n<p>Member since 2016<\/p>",
+        "health_score_btn": "<span>Click here<\/span> to unlock your Health Score",
+        "health_score_popup": "<h4>Health Score<\/h4> \t\t\t\t\t\t\t\t\t\t\t\t\t\t<p>\t\t\t\t\t\t\t\t\t\t\t<\/p><div class=\"your_score_detail\">\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t<h2>Your Health Score: <span>?<\/span>\n<\/h2>\n<a href=\"javascript:void(0)\" data-toggle=\"modal\" data-target=\"#health_qstns_modal\" class=\"complete_qtns\">Complete your health questionnaire<\/a>\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t<\/div><p>Your health score reflects your overall health status and provides a directional indicator on how your health is evolving. Using advanced technology and scientific data, we look at numerous factors in your life, including your demographics, health conditions, family history, diet and lifestyle habits, lab results, and DNA, and how they are impacting your health. Therefore, the more data you provide, the more accurate your health score and more customized your recommendations can be. Based on a scale of 0-100, a higher score is suggestive of better health. As you make positive health changes and improve your lab values, remember to update your health questionnaire so that your health score can reflect your progress. <\/p>",
+        "health_score_link": "",
+        "metabolic_score_btn": "<span>Click here<\/span> to unlock your Metabolic Score",
+        "metabolic_score_popup": "<h4>Metabolic Score<\/h4> \t\t\t\t\t\t\t\t\t\t\t\t\t\t<p>\t\t\t\t\t\t\t\t\t\t\t<\/p><div class=\"your_score_detail\">\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t<h2>Your Metabolic Score: <span>?<\/span>\n<\/h2>\n<a href=\"javascript:void(0)\" data-toggle=\"modal\" data-target=\"#health_qstns_modal\" class=\"complete_qtns\">Complete your health questionnaire<\/a>\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t<\/div><p>Your metabolic score reflects a deep dive into the many factors that affect your cardiovascular health, including blood sugar balance, lipid levels, blood pressure, and BMI. Also factored in is your exposure to common environmental toxins that can cause metabolic disturbances. Calculated on a scale from 0 (higher risk) to 100 (lower risk), with the data you’ve provided, this score represents a snapshot of your current likelihood of developing heart disease, diabetes, or other cardiovascular issues. Your customized recommendations include key action steps for improving your cardiometabolic health. <\/p>",
+        "metabolic_score_link": "",
+        "toxin_score_btn": "<span>Click here<\/span> to unlock your Toxin Score",
+        "toxin_score_popup": "<h4>Toxin Score<\/h4> \t\t\t\t\t\t\t\t\t\t\t\t\t\t<p>\t\t\t\t\t\t\t\t\t\t\t<\/p><div class=\"your_score_detail\">\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t<h2>Your Toxin Score: <span>?<\/span>\n<\/h2>\t\n<a href=\"javascript:void(0)\" data-toggle=\"modal\" data-target=\"#health_qstns_modal\" class=\"complete_qtns\">Complete your health questionnaire<\/a>\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t<\/div><p>Based on a scale from 0 (higher risk) to 100 (lower risk), your toxin score is a calculation of your estimated exposure to environmental toxins, as well as your body’s unique ability to detoxify pollutants, chemicals and other toxins. This score factors in all the information you provided, including your answers to the health questionnaire, your lab values, DNA results, as well as data gathered from air and water quality in your area. You can work to improve your toxin score by making the recommended changes to your diet and lifestyle, which can help to reduce your exposure to toxins as well as enhance your detoxification pathways.<\/p>",
+        "toxin_score_link": "",
+        "my_lapreport": "My Lab & DNA <br> Reports",
+        "my_lapreport_link": "",
+        "dashboard_title": "Your Personalized Health Dashboard",
+        "dashboard_cont": "<p>Welcome! Your dashboard is home base for your Humanized+ membership, and is the shopping portal for ordering super-discounted lab tests and supplements, as well as nutrition consultations.\n\n<\/p>\n<p>In addition, Humanized+ provides a current data-based look at your health, plus customized recommendations and action steps to help you feel your best. Use this information to help you make better diet and lifestyle choices, target nutritional deficiencies, and learn about your toxin risk.<\/p>\n<p>Science-based health solutions work best when you pinpoint as many contributing factors as possible. To keep your health dashboard accurate and get the most personalized recommendations, provide as much information as you can on the health questionnaire, and consider doing lab testing and DNA to add to your profile. Remember to revisit the health questionnaire every few months and have new lab work done annually, or as needed. <\/p>",
+        "top_recommend": "Your Custom Recommendations",
+        "unlock_personalized_link": "",
+        "unlock_personalized": "<span>Click here<\/span> to unlock your personalized Top Recommendations",
+        "unlock_personalized_popup": "<div class=\"your_score_detail recomd_detail\">\n<a href=\"javascript:void(0)\" data-toggle=\"modal\" data-target=\"#health_qstns_modal\" class=\"complete_qtns\">Complete your Health Questions<\/a>\n<\/div>Your Humanized+ Health Score gives you a baseline for the current state of your body. From there our  cutting edge technology is able to assess what you need to improve your health and avoid potential problems. Personalized recommendations based on your eating habits, lifestyle choices, DNA, toxin exposure, vitamin and mineral deficiencies, blood sugar balance, inflammation levels, and other factors give you actionable steps to make positive changes.<p><\/p>",
+        "dashboard_sidebar_title": "HAVE A QUESTION?",
+        "call_icon": "shopify:\/\/shop_images\/side_icon1_0bcb25f5-a44b-408d-87bc-a3f9e7177d02.png",
+        "sidebar_call": "<h3>Call Us<\/h3>\n<p>Call <span>240-335-7365<\/span><br> Mon - Sat 10 am -7 pm EST  to speak with a nutrition expert.<\/p>",
+        "chat_icon": "shopify:\/\/shop_images\/Component_15_1_ebe71367-7350-4b26-b9ff-b1e5829558cb.png",
+        "humanized_icon": "shopify:\/\/shop_images\/Podcast-button_cc9d5dbd-4c53-45f5-a160-9b83a2427a8b.png",
+        "sidebar_chat": "<h3>Important FAQs<\/h3>\n<p><span>Check out answers<\/span> to some commonly asked questions about Humanized+ <\/p>",
+        "sidebar_faq_popup": "",
+        "ask_icon": "shopify:\/\/shop_images\/side_icon3_654bc9f9-0e66-4f57-825a-86dd7ae00ce3.png",
+        "sidebar_ask": "<h3>Ask A Nutritionist<\/h3>\n<p>Have a nutrition or supplement question? Professional advice is just a <span>click away<\/span>.<\/p>",
+        "ask_popup_content": "<p>Have a nutrition or supplement-related question? Please fill out the form below with your name, email address, and your question. \nOne of our nutrition advisors will get back to you via email in 24 hours.<\/p> <p>If you're looking for more in-depth advice or information, consider booking an appointment with one of our nutritionists.<\/p>",
+        "schedule_icon": "shopify:\/\/shop_images\/side_icon4_402b7571-572d-4c97-8a55-0570db3bb0de.png",
+        "sidebar_schedule": "<h3>We’ll Call You<\/h3>\n<p><span>Schedule a time<\/span> that is convenient for you, and a nutrition expert will call to answer your question.<\/p>",
+        "consultation_icon": "shopify:\/\/shop_images\/Component_14_1_87d6dd43-8430-4848-91fd-894c3f57916a.png",
+        "sidebar_consultation": "<h3>SCHEDULE A <br>CONSULTATION<\/h3> \n<p><span>Make an appointment<\/span> with a nutritionist for in-depth one-on-one guidance and support. <\/p>",
+        "consultation_content": "<h3>Nutritionist Guidance &amp; Support<\/h3> \n<p>Working with a nutritionist can give you greater insights into your health, nutrition, and lifestyle habits. It can also help you understand your lab work in ways that can best support you in reaching your health goals and addressing specific health concerns. As a Humanized+ member, you will receive special pricing on all nutrition consultation services. <\/p> \n<a href=\"https:\/\/myvillagegreen.com\/pages\/member-consultations\" class=\"book_now\">Book a consultation now!<\/a>",
+        "box1_layout": "<a href=\"https:\/\/myvillagegreen.com\/collections\/labs-dna\">\n<h3>Labs &amp; Dna<\/h3>\n<img src=\"https:\/\/cdn.shopify.com\/s\/files\/1\/0317\/4635\/9433\/files\/lab_dna_icon_33b134c2-411d-48c3-bab3-3bf2d946c25f.png?v=1626953689\"> \n<p>An in-depth look into your unique biochemistry and genetic risks. <\/p>\n<br><p><span> Order lab testing and DNA analysis here<\/span><\/p><\/a>",
+        "box2_layout": "<a href=\"javascript:void(0)\" data-toggle=\"modal\" data-target=\"#health_qstns_modal\" class=\"health_qstn_btn\">\n<h3>Health <br>QUESTIONNAIRE\n<\/h3>\n<img src=\"https:\/\/cdn.shopify.com\/s\/files\/1\/0317\/4635\/9433\/files\/health_qtn_icon_63d3cd48-2deb-4756-9e46-9750811d0321.png?v=1626953689\"> \n<p>Your answers help to paint an in-depth portrait of your current health status. <\/p>\n<br><p><span>Click here for the questionnaire<\/span><\/p>\n<\/a>",
+        "box3_layout": "<h3>Special Members-<br>Only Prices<\/h3>\n<img src=\"https:\/\/cdn.shopify.com\/s\/files\/1\/0317\/4635\/9433\/files\/spcl_icon_aff02231-1f85-4746-8a7c-599fad9a6e1b.png?v=1626955158\"> \n<p>Get deep member discounts every day on nutritional supplements, body care products, and shipping.<\/p>\n<br>\n<a href=\"javascript:void(0)\" data-toggle=\"modal\" data-target=\"#discount_popup\"><p><span>Shop Now<\/span><\/p><\/a><br>\n<a href=\"javascript:void(0)\" data-toggle=\"modal\" data-target=\"#compound_popup\"><p><span>Compounding Pharmacy Orders<\/span><\/p><\/a>",
+        "box3_layout_popup": "<h3>Special Members-<br> Only Prices<\/h3>\n<p>With our wide selection of over 10,000 high-quality nutritional supplements and natural body care products, you can feel confident in finding just what you need. We carry top, trusted brands that are driven by cutting-edge scientific research and are tested for purity and effectiveness.<\/p>\n<p>As a Humanized+ member, you receive 35% off our exclusive in-house brand, Pathway, plus 30% off all other supplements, including many high-end practitioner brands, and 25% off our full selection of natural body care products. In addition, get free shipping on all orders within the continental US.<\/p>\n<p>Browse all of our products or search for something specific. If you can’t find what you are looking for, please reach out. We are happy to help! <\/p><span>Call <a href=\"tel:240-335-7365\">240-335-7365<\/a><\/span>",
+        "box3_layout_compound_popup": "<h3>Compounding Pharmacy Orders<\/h3>\n<p>As a Humanized+ member you will receive a 10% off all 90-day custom compound orders. Contact us for more information.<\/p>",
+        "box4_layout": "<a href=\"javascript:void(0)\" data-toggle=\"modal\" data-target=\"#guidance_popup\">\n<h3>Nutritionist CONSULTATION<\/h3>\n<img src=\"https:\/\/cdn.shopify.com\/s\/files\/1\/0319\/0960\/9603\/files\/NUTRI-CONSULT.png?v=1639638401\">\n<p>Make an appointment with a nutritionist for in-depth one-on-one guidance and support.<\/p>\n<br> \n<p><span>Schedule now<\/span><\/p>\n<\/a>",
+        "box4_layout_popup": "<h3>Nutritionist Guidance &amp; Support<\/h3> \n<p>Working with a nutritionist can give you greater insights into your health, nutrition, and lifestyle habits. It can also help you understand your lab work in ways that can best support you in reaching your health goals and addressing specific health concerns. As a Humanized+ member, you will receive special pricing on all nutrition consultation services. <\/p> \n<a href=\"https:\/\/myvillagegreen.com\/pages\/member-consultations\" class=\"book_now\">Book a consultation now!<\/a>"
       }
     }
   },
