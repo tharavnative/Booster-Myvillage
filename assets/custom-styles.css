@@ -39,7 +39,10 @@ color: #00577f;
 text-transform: capitalize;
 font-weight: 500;
 }
-
+table {
+    background: #ffffff;
+    border: 1px solid #dedede;
+}
 #contactFormWrapper label { font-weight: 600;color: #00577f; }
 
 #contactFormWrapper input[type="text"], #contactFormWrapper input[type="email"], #contactFormWrapper input[type="tel"] {
