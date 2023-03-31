@@ -2,11 +2,11 @@
 {% include 'bold_mem_helper' with 'page' %}
 <!-- end Bold code -->
 
-{% assign sidebar = false %}
+{% assign sidebar = true %}
 {% assign list_pages = 'practitioner-brand, practitioner-brands' | split: ", " %}
 {% for page_l in list_pages %}
    {% if page_l == page.handle %}
-     {{ page_l }}
+     {% assign sidebar = false %}
    {% endif %}
 {%- endfor %}
 
@@ -14,11 +14,11 @@
 {% capture layoutConfig %}{% render 'common-layout' with section as section %}{% endcapture %}
 
 <div class="row layout__{{-layoutConfig}} default-page">
-   {% if section.settings.enableSidebar %}
+   {% if sidebar %}
       <div class="col-3 unflex layout__content section__page ">{% render 'page-sidebar-nav' %}</div>
 
    {% endif %}
-    <div class="{% if section.settings.enableSidebar %}col-9 {% else %} col-12 {% endif %} unflex layout__content section__page ">
+    <div class="{% if sidebar %} col-9 {% else %} col-12 {% endif %} unflex layout__content section__page ">
       {% if section.settings.enableShortcodes %}
         {% assign c = page.content %}
         {% assign sc = c | split: 'endinsert]' %} {% comment %} split content {% endcomment %}
