@@ -1,1 +1,31 @@
-{"sections":{"banner":{"type":"banner--page","settings":{"layout":"boxed","height":310,"horizontalAlignment":"start","verticalAlignment":"middle","fontSize":"big","contentColor":"#3982a0","fillColor":"rgba(0,0,0,0)","defaultBackgroundImage":"{{ page.metafields.custom.banner_image.value }}","overlayOpacity":0,"overlayColor":"#000000"}},"content":{"type":"page","settings":{"layout":"boxed","enableShortcodes":true}}},"order":["banner","content"]}
+{
+  "sections": {
+    "banner": {
+      "type": "banner--page",
+      "settings": {
+        "layout": "boxed",
+        "height": 310,
+        "horizontalAlignment": "start",
+        "verticalAlignment": "middle",
+        "fontSize": "big",
+        "contentColor": "#3982a0",
+        "fillColor": "rgba(0,0,0,0)",
+        "defaultBackgroundImage": "{{ page.metafields.custom.banner_image.value }}",
+        "overlayOpacity": 0,
+        "overlayColor": "#000000"
+      }
+    },
+    "content": {
+      "type": "page",
+      "settings": {
+        "enableSidebar": false,
+        "layout": "boxed",
+        "enableShortcodes": true
+      }
+    }
+  },
+  "order": [
+    "banner",
+    "content"
+  ]
+}
