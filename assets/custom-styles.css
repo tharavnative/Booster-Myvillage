@@ -6,3 +6,99 @@
 .search__results.search__results--abs {
     display: none!important;
 }
+/******************* Inner *********************/
+.template-collection .page-header h1 {
+   line-height: 75px;
+   text-transform:uppercase;
+   border-bottom: none;
+   position: absolute;
+   bottom: 60px;
+   font-family: Montserrat;
+   font-size: 70px;
+   font-weight: 700;
+   color: #fff;
+   margin: 0;
+   left: 50px;
+   letter-spacing: 0;
+}
+.template-collection .page-header h1 span
+{
+font-family: 'susies_handregular';
+color: #00577f;
+text-transform: capitalize;
+font-weight: 500;
+}
+.template-page .rte { padding: 30px 0; margin: 0 15px; padding-bottom: 60px;}
+#contactFormWrapper label { font-weight: 600;color: #00577f; }
+
+#contactFormWrapper input[type="text"], #contactFormWrapper input[type="email"], #contactFormWrapper input[type="tel"] {
+    background:none;
+    border:1px solid #73adc2; 
+    width:100%; 
+    font-size:14px; 
+    color:#000; 
+    font-family: 'Montserrat';
+    padding:0 10px; 
+    height:40px;
+    margin-bottom:15px;
+    border-radius: 5px;
+}
+    
+#contactFormWrapper textarea{ 
+    background:none;
+    border:1px solid #73adc2; 
+    width:100%; 
+    max-width: 100%;
+    font-size:14px; 
+    color:#000; 
+    font-family: 'Montserrat';
+    padding:10px; 
+    height:120px;
+    border-radius: 5px;
+   outline: none;
+}
+#contactFormWrapper input[type="submit"] { 
+    background:#00577f; 
+    color:#fff; 
+    font-family: 'Montserrat';
+    font-size:16px; 
+    height:35px; 
+    line-height:35px; 
+    border:none;
+    display:inline-block;
+    text-align: left;
+    padding: 0 17px;
+    border-radius: 4px;
+    text-transform:uppercase;  
+    font-weight: bold;
+    
+}
+#contactFormWrapper input[type="submit"]:hover {
+    background:#73adc2;
+    color: #fff;
+}
+
+#contactFormWrapper ::-webkit-input-placeholder { 
+  color: #000;
+}
+  
+/* .rte a, .rte a span, .middle-container a { color: #3982a0; text-decoration: none !important; font-weight: 600;} */
+.rte a, .rte a span, .middle-container a { color: #73adc2; text-decoration: none !important; font-weight: 600;}
+.rte a span:hover, .rte a:hover, .middle-container a:hover {     color: #00577f; }
+#contact_form .page-header  { clear: both; }
+#orders, #policies, #pricing, #products, #shipping { padding-top: 56px; margin-top: -56px; }
+.contactus-page { padding-bottom: 40px; }
+.shopify-section .contactus-page .middle-container h2 { color: #00577f; font-weight: 600; }
+.blogr_prfl { border-bottom: 1px solid #addff0; padding-bottom: 5px; margin-bottom: 20px; }
+.infusion-submit .infusion-recaptcha, .infusion-submit button { padding: 10px 20px; background: #00577f; color: #fff; border: none; }
+ 
+.sidebar { width: 22.3%!important; }
+.template-collection .col-xs-9 { width: 77.7%!important; }
+.shopify-section .collection-des h2 { font-size: 30px;font-weight: 500; }
+.template-page .rte h2 { text-transform: capitalize; }
+.rte p { margin-bottom: 15px; }
+.car_img img {  max-width: inherit; }
+.search-page .col-main { width: 75% !important; }
+.rte h2, .template-page .rte h2 { color: #3982a0; font-size: 27px; }
+.rte h3, .template-page .rte h2 { color: #73adc2; }
+.rte img { margin-bottom: 15px; }
