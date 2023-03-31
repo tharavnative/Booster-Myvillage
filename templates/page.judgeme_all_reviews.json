@@ -15,17 +15,14 @@
         "overlayColor": "#000000"
       }
     },
-    "content": {
-      "type": "page",
+    "judge": {
+      "type": "page-judgeme_all_reviews",
       "settings": {
-        "enableSidebar": true,
-        "layout": "boxed",
-        "enableShortcodes": true
       }
     }
   },
   "order": [
     "banner",
-    "content"
+    "judge"
   ]
 }
