@@ -3,10 +3,11 @@
 <!-- end Bold code -->
 
 {% assign sidebar = false %}
-{% assign list_pages = 'test, test2' | split: ", " %}
-{% for page in list_pages %}
-  
-   {{ page }}
+{% assign list_pages = 'practitioner-brand, practitioner-brands' | split: ", " %}
+{% for page_l in list_pages %}
+   {% if page_l == page.handle %}
+     {{ page_l }}
+   {% endif %}
 {%- endfor %}
 
 
