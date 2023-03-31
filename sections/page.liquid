@@ -6,8 +6,11 @@
 {% capture layoutConfig %}{% render 'common-layout' with section as section %}{% endcapture %}
 
 <div class="row layout__{{-layoutConfig}} default-page">
-  <div class="col-3 unflex layout__content section__page ">{% render 'page-sidebar-nav' %}</div>
-    <div class="col-9 unflex layout__content section__page ">
+   {% if section.settings.enableSidebar %}
+      <div class="col-3 unflex layout__content section__page ">{% render 'page-sidebar-nav' %}</div>
+
+   {% endif %}
+    <div class="{% if section.settings.enableSidebar %}col-9 {% else %} col-12 {% endif %} unflex layout__content section__page ">
       {% if section.settings.enableShortcodes %}
         {% assign c = page.content %}
         {% assign sc = c | split: 'endinsert]' %} {% comment %} split content {% endcomment %}
