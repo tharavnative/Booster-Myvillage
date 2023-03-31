@@ -2,6 +2,13 @@
 {% include 'bold_mem_helper' with 'page' %}
 <!-- end Bold code -->
 
+{% assign sidebar = false %}
+{% assign list_pages = 'test, test2' | split: ", " %}
+{% for page in list_pages %}
+  
+   {{ page }}
+{%- endfor %}
+
 
 {% capture layoutConfig %}{% render 'common-layout' with section as section %}{% endcapture %}
 
