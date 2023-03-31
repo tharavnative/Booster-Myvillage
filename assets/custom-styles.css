@@ -1,4 +1,6 @@
-
+tr:hover {
+    background-color: none;
+}
 
 .search__container.focused .search__results {
     display: none !important;
