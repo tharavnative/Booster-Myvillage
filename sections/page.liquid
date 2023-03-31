@@ -13,12 +13,12 @@
 
 {% capture layoutConfig %}{% render 'common-layout' with section as section %}{% endcapture %}
 
-<div class="row layout__{{-layoutConfig}} default-page">
+<div class="row layout__{{-layoutConfig}} default-page template-page">
    {% if sidebar %}
       <div class="col-3 unflex layout__content section__page ">{% render 'page-sidebar-nav' %}</div>
 
    {% endif %}
-    <div class="{% if sidebar %} col-9 {% else %} col-12 {% endif %} unflex layout__content section__page ">
+    <div class="{% if sidebar %} col-9 {% else %} col-12 {% endif %} unflex layout__content section__page rte">
       {% if section.settings.enableShortcodes %}
         {% assign c = page.content %}
         {% assign sc = c | split: 'endinsert]' %} {% comment %} split content {% endcomment %}
