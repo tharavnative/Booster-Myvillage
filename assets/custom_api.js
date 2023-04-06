@@ -642,7 +642,8 @@ jQuery( document ).ready(function($) {
     var url = $(location).attr('href'),
         parts = url.split("/"),
         last_part = parts[parts.length - 1];
-    if (last_part == 'membership-dashboard') {
+    /*
+  if (last_part == 'membership-dashboard') {
         Accentuate($("#metafields_form"), function (data) {
             $("#metafields_form").find("p.success").remove();
             if (data.status == 'OK') {
@@ -650,7 +651,7 @@ jQuery( document ).ready(function($) {
             }
         });
     }
-
+*/
 
     $(document).on('keyup', '#edit-drugsearch', function () {
 
