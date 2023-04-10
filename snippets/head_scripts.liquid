@@ -60,10 +60,8 @@
   type: 'GET',
   success: function(data){
    //Perform operation on return value
-     console.log('Dsss', data);
-    var strng=data.header;
-    console.log('rtr', strng);
-    incStr = strng.includes("customer-id");
+    
+    incStr = data.includes("customer-id");
     console.log('Dss', incStr);
     if(window.cus_id===null){
       
