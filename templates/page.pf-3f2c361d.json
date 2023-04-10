@@ -1,31 +1,12 @@
 {
   "sections": {
-    "banner": {
-      "type": "banner--page",
+    "pf-3f2c361d": {
+      "type": "pf-3f2c361d",
       "settings": {
-        "layout": "boxed",
-        "height": 310,
-        "horizontalAlignment": "start",
-        "verticalAlignment": "middle",
-        "fontSize": "big",
-        "contentColor": "#3982a0",
-        "fillColor": "rgba(0,0,0,0)",
-        "defaultBackgroundImage": "{{ page.metafields.custom.banner_image.value }}",
-        "overlayOpacity": 0,
-        "overlayColor": "#000000"
-      }
-    },
-    "content": {
-      "type": "page",
-      "settings": {
-        "enableSidebar": true,
-        "layout": "boxed",
-        "enableShortcodes": true
       }
     }
   },
   "order": [
-    "banner",
-    "content"
+    "pf-3f2c361d"
   ]
 }
