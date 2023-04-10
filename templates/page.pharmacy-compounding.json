@@ -3,6 +3,13 @@
     "banner": {
       "type": "pharmacy_compounding",
       "settings": {
+        "main-image-banner": "shopify:\/\/shop_images\/compound_banner_31fb9e54-4743-4707-a792-58e742979293.jpg",
+        "left-image-banner": "shopify:\/\/shop_images\/store1.jpg",
+        "text-box-pdf": "You can also use these handy charts as references:",
+        "pdf_link_one": "https:\/\/cdn.shopify.com\/s\/files\/1\/0319\/0960\/9603\/files\/Drug-Nutrient-Interactions-Chart_52ff120f-0e00-4995-8762-23d347d58774.pdf?647",
+        "pdflinktext": "Drug- Nutrient Interaction Chart",
+        "pdf_link_two": "https:\/\/cdn.shopify.com\/s\/files\/1\/0319\/0960\/9603\/files\/Nutrient-Depletion-Chart_dc3fddff-cbc2-4e27-9597-96e96460cb6b.pdf?648",
+        "pdflinktextsecond": "Nutrient Depletion Chart"
       }
     },
     "content": {
