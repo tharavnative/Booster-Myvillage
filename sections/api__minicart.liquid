@@ -63,6 +63,7 @@
     {% endif %}
     <a class="button button--primary button--filled button--primary__filled button--full-width" href="{{ checkout_url }}">{{'general.buttons.checkout' | t}}</a>
     <a style="margin-top: 0.75rem; font-size: 0.9em; padding: 0.25rem" class="button button--primary button--text button--text button--full-width" href="{{ routes.cart_url }}">{{ 'general.buttons.view_cart' | t }}</a>
+    <savedby-container side-cart></savedby-container>
   </div>
   {% endunless %}
 </div>
