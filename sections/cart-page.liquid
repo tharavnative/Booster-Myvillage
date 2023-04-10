@@ -144,6 +144,8 @@
                 <span>{{ 'general.buttons.continue' | t }}</span></a>
         </div>
         <div class="col-12 col-md end cart__additional--right">
+          
+  <savedby-container cart-page></savedby-container>
             <div class="cart__notes col">
                 <span>{{'cart.page.additional_notes' | t}}</span>
                 <textarea class="cart__notes--note" name="note" placeholder="{{'cart.page.additional_notes' | t}}" rows="6"></textarea>
@@ -162,8 +164,6 @@
                 {% endif %}
                 <span class="cart__grandtotal">{{'cart.page.grand_total' | t}}: <span class="jsPrice"><span class="Bold-theme-hook-DO-NOT-DELETE bold_cart_total" style="display:none !important;"></span>{{ cart.total_price | money | strip_html }}</span></span>
   
-  <savedby-container cart-page></savedby-container>
-              ...
                 {% render 'button__submit', text: tran_checkout, name: 'checkout', class: 'button--full-width' %}
             </div>
         </div>
