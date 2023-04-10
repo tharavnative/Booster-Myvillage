@@ -19,6 +19,7 @@
 
     {% assign totalAmount = 0 %}
     {% for item in cart.items %}
+        {%  if item.vendor == "SavedBy" %}{% continue %}{% endif %}
     {% assign product = item.variant %}
     <div class="col-12 cart__item">
         <div class="col-11 col-md-4 cart__info">
