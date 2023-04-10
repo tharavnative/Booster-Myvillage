@@ -116,3 +116,37 @@ table {
 .rte h2, .template-page .rte h2 { color: #3982a0; font-size: 27px; }
 .rte h3, .template-page .rte h2 { color: #73adc2; }
 .rte img { margin-bottom: 15px; }
+
+.blog_prfl .img_left {
+    float: left;
+}
+.cont_right strong{
+  display:block;
+  margin-bottom:10px;
+}
+.cont_right p{
+  
+    font-size: 16px!important;
+    line-height: 24px!important;
+    font-family: 'Montserrat', sans-serif!important;
+    margin: 0!important;
+    margin-bottom: 15px!important;
+    font-weight: 400!important;
+
+}
+.blog_prfl .cont_right {
+    float: left;
+    width: 94%;
+    margin-top: 15px;
+}
+.blog_prfl img {
+    margin: 17px 10px 0px 0px !important;
+}
+.cont_right a{
+      color: #337ab7!important;
+    text-decoration: none!important;
+}
+.cont_right a:hover{
+      color: #23527c!important;
+    text-decoration: underline!important;
+}
