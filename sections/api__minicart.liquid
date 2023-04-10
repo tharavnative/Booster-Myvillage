@@ -9,6 +9,7 @@
     {% endif %}
     
     {% for item in cart.items %}
+      {% if item.vendor == "SavedBy" %}{% continue %}{% endif %}
       <div class="minicart__entry">
         <a class="card__img--container minicart__image"  href="{{ item.url | within: collections.all }}">
           <div class="card__img--ratio">
