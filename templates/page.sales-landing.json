@@ -15,17 +15,14 @@
         "overlayColor": "#000000"
       }
     },
-    "content": {
-      "type": "page",
+    "sales-landing": {
+      "type": "page-sales-landing",
       "settings": {
-        "enableSidebar": true,
-        "layout": "boxed",
-        "enableShortcodes": true
       }
     }
   },
   "order": [
     "banner",
-    "content"
+    "sales-landing"
   ]
 }
