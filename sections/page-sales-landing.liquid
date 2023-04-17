@@ -1,5 +1,4 @@
-{{ 'bootstrap.min.css' | asset_url | stylesheet_tag }}
-{{ 'custom-membership.css' | asset_url | stylesheet_tag }}
+
 {% if section.settings.enable %}
   <div class="shopify-section signup_banner">
     <div class="container-bootstrap">
@@ -1019,3 +1018,5 @@
   ]
 }
 {% endschema %}
+{{ 'bootstrap.min.css' | asset_url | stylesheet_tag }}
+{{ 'custom-membership.css' | asset_url | stylesheet_tag }}
