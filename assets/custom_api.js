@@ -1397,7 +1397,7 @@ function list_my_plan(){
         });
 
 
-        $.get('https://api.iqyouhealth.com/api/v1/completion?user_key=' + window.cus_id + '&api_key=c6701296-5027-4076-b80c-d64a77c2ddc7', {
+        $.get('https://app.iqyouhealth.com/api/completion?user_key=' + window.cus_id + '&api_key=c6701296-5027-4076-b80c-d64a77c2ddc7', {
             dataType: 'jsonp'
         }, function (res) {
 
