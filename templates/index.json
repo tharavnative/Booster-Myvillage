@@ -58,7 +58,7 @@
             "horAlign": "center",
             "vertAlign": "middle",
             "liquid": "{% render 'home-merge-boxes' %}",
-            "customCSS": ""
+            "customCSS": "##scoped{\nbackground:red;\n}"
           }
         }
       },
