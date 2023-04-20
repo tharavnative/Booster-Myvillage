@@ -3412,7 +3412,7 @@ jQuery(function ($) {
       sendRequest('get', url, '', getRecommendationsCallback) ;
     }
   function getRecommendationsCallback(status, data, request){
-    //console.log(data);
+    console.log("getRecommendationsCallback!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!",data);
     listRecommendations(data.allrecs,data.rec_urls);
     listRecommendationFilters(data.allcats);
     getMyPlan();
