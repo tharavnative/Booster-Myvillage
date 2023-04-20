@@ -1499,7 +1499,7 @@ function list_my_plan(){
               };
             $.ajax({
 
-                url: 'https://api.iqyouhealth.com/api/v1/v1/user-data?user_key=' + window.cus_id + '',
+                url: 'https://api.iqyouhealth.com/api/v1/user-data?user_key=' + window.cus_id + '',
                 type: 'GET',
                 crossDomain: true,
                 headers: request,
