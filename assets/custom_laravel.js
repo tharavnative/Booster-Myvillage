@@ -3440,6 +3440,7 @@ jQuery(function ($) {
       $('.laravel-my-plan-list').html(all_list_html);
       clickMyPlan();
       $(".laravel-recommendation-outer").removeClass('loading-blue');
+      $('#api-questionnaire-body').removeClass('loading-blue');
     }
     
     //loadingCompletion();
