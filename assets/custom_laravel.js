@@ -3441,6 +3441,9 @@ jQuery(function ($) {
       clickMyPlan();
       $(".laravel-recommendation-outer").removeClass('loading-blue');
       $('#api-questionnaire-body').removeClass('loading-blue');
+    }else{
+      $(".laravel-recommendation-outer").removeClass('loading-blue');
+      $('#api-questionnaire-body').removeClass('loading-blue');
     }
     
     //loadingCompletion();
