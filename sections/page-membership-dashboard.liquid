@@ -566,7 +566,7 @@
                                                             <p>Be sure to keep your health profile information and details current! We recommend that you periodically update your health questionnaire in order for us to provide you with the most accurate picture of your health and wellness.</p>
                                                         </div> -->
                                                         <div class="lap_right">
-                                                            <a href="javascript:void(0)" data-toggle="modal" data-target="#health_qstns_modal"  class="update_health">Update your Health Questionnaire</a>
+                                                            <a href="javascript:void(0)" data-toggle="modal" data-target="#health_qstns_modal_laravel"  class="update_health">Update your Health Questionnaire</a>
                                                         </div>
                                                     </div>
                                                 </div> 
@@ -882,6 +882,105 @@
         </div>
     </div>
 </div>
+
+
+<div class="modal fade score_sec" id="health_qstns_modal_laravel" role="dialog" style="display: none;">
+    <div class="modal-dialog modal-lg">
+        <div class="modal-content">
+            <div class="modal-header">
+               	<h5>Reminder: Please save your work</h5>
+                <button type="button" class="close" data-dismiss="modal">&times;</button> 
+            </div>
+            <div class="modal-body health_qstns_body">
+              <div class="title-container order_top clearfix">
+                <h3>Health Questions <span class="order_arrow"></span> <span class="api-pagetitle">My Health</span></h3>
+			  </div>
+              <div class="health_top_cont clearfix">
+                  <p>This questionnaire is designed to provide a whole-body assessment of your health. The more we learn about you and your family history, the better we are able to assess your current health status and provide you with personalized recommendations. Please update this questionnaire as often as necessary. </p>
+                </div>
+              <div class="api-navigation-container">
+                
+               	<div class="clearfix api-health_top">
+                    <div class="api-health_box health_box" data-lane="201">
+                        <span class="api-my-health-step my_health_step">0</span>
+                        <h4>My Health</h4>
+                    </div>
+                    <div class="api-health_box health_box"  data-lane="11">
+                        <span class="api-family-history-step family_history_step">0</span>
+                        <h4>Family History</h4>
+                    </div>
+                    <div class="api-health_box health_box"  data-lane="103">
+                        <span class="api-food-diet-step food_diet_step">0</span>
+                        <h4>Food &amp; Diet</h4>
+                    </div>
+                    <div class="api-health_box health_box" data-lane="105">
+                        <span class="api-lifestyle-step lifestyle_step">0</span>
+                        <h4>Lifestyle</h4>
+                    </div>
+                    <div class="api-health_box health_box"  data-lane="rx">
+                        <span class="api-med med"></span>
+                        <h4>My Medications</h4>
+                    </div>
+                    <div class="api-health_box health_box" data-lane="smart">
+                        <span class="api-smart smart"></span>
+                        <h4>Smart Questions</h4>
+                    </div>
+                </div>
+                
+			  </div>
+               <div class="api-questionnaire-instruction"><h2 class="api-instruction"></h2></div>
+              <div id="api-questionnaire-body"></div>
+              <div class="api-button-container">
+              	<button id="api-laravel-save">Save</button>
+                <button id="api-laravel-prev">&lt; Previous</button>
+                <button id="api-laravel-next">Next 	&gt;</button>
+              </div>
+              <div id="api-smart-update-body"></div>
+              <div class="api-button-container">
+              	<button id="api-laravel-update" style="display:none;">Update</button>
+               
+              </div>
+             
+            </div> 
+        </div>
+    </div>
+</div>
+<div class="modal fade score_sec laravel_qstn_modal" id="laravel_qstn_confirm_modal" role="dialog" style="display: none;">
+    <div class="modal-dialog modal-lg">
+        <div class="modal-content">
+            <div class="modal-header">
+                <button type="button" class="closeit" data-dismiss="modal">&times;</button> 
+            </div>
+            <div class="modal-body">
+                <div class="qstn_modal_inner">
+                    <p class="description">You have not answered all the questions in this section</p>
+                      <button class="laravel_goback-finish laravel_button">Go Back and Finish this section</button>
+                      <button class="laravel_proceed-anyway laravel_button">Thats ok, I want to proceed anyway</button>
+
+                </div> 
+            </div> 
+        </div>
+    </div>
+</div>
+<div class="modal fade score_sec laravel_qstn_modal" id="laravel_qstn_confirm_modal_navigation" role="dialog" style="display: none;">
+    <div class="modal-dialog modal-lg">
+        <div class="modal-content">
+            <div class="modal-header">
+                <button type="button" class="closeit" data-dismiss="modal">&times;</button> 
+            </div>
+            <div class="modal-body">
+                <div class="qstn_modal_inner">
+                    <p class="description">You have not answered all the questions in this section</p>
+                      <button class="laravel_goback-finish_navigation laravel_button">Go Back and Finish this section</button>
+                      <button class="laravel_proceed-anyway_navigation laravel_button">Thats ok, I want to proceed anyway</button>
+
+                </div> 
+            </div> 
+        </div>
+    </div>
+</div>
+
+  
 <div class="modal fade score_sec new_recommendation_modal" id="new_recommendation_modal" role="dialog" style="display: none;">
     <div class="modal-dialog modal-lg">
         <div class="modal-content">
