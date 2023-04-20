@@ -1413,7 +1413,7 @@ function list_my_plan(){
                    }).done(function(data, status, xhr) {
                       if (data.completion >= 100 && !data.newuser) {
                           api_user_data();
-                          api_recommend_sec();
+                          //api_recommend_sec();
                           metabolic_risk();
                       } else {}
                    }).fail(function(xhr, status) {
@@ -1489,12 +1489,20 @@ function list_my_plan(){
         });
 
         function api_user_data() {
+          console.log("READY!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!! api_user_data");
             $(".member_clickhere_sec").addClass('loading');
+          var request = {
+                	"Content-Type":"application/json",
+                	"accept": "application/json",
+                	crossDomain: true,
+                	"api-key": "c6701296-5027-4076-b80c-d64a77c2ddc7"
+              };
             $.ajax({
 
-                url: 'https://app.iqyouhealth.com/api/user-data?user_key=' + window.cus_id + '&api_key=c6701296-5027-4076-b80c-d64a77c2ddc7',
+                url: 'https://api.iqyouhealth.com/api/v1/v1/user-data?user_key=' + window.cus_id + '',
                 type: 'GET',
                 crossDomain: true,
+                headers: request,
                 success: function (res) {
                     var healthscore = res.healthscore;
                     var metabolicscore = res.metabolic.score;
@@ -1521,7 +1529,7 @@ function list_my_plan(){
                     $("#toxin_score .your_score_detail h2 span").text(toxinsscore);
                     $("#toxin_score .your_score_detail .complete_qtns").remove();
                     $("#toxin_score .your_score_detail .complete_qtns").text('See Detailed Info on IQYou');
-                    $("#toxin_score .your_score_detail").next('p').html('Based on a scale from 0 (higher risk) to 100 (lower risk), your toxin score is a calculation of your estimated exposure to environmental toxins, as well as your body’s unique ability to detoxify pollutants, chemicals and other toxins. This score factors in all the information you provided, including your answers to the health questionnaire, your lab values, DNA results, as well as data gathered from air and water quality in your area. You can work to improve your toxin score by making the recommended changes to your diet and lifestyle, which can help to reduce your exposure to toxins as well as enhance your detoxification pathways.<br><br><h4>Your biggest toxic risks include:<h4>');
+
                     if (res.dna_reports.has_report) {
                         $('#lap_report .lap_table').html('<div style="background: #eee; padding: 10px;"><span style="color: #222">DNA:</span> <strong>' +
                             res.dna_reports.name + '</strong>&nbsp;&nbsp; <a href="#" class="view-dna-reports">View</a>' +
@@ -1532,24 +1540,24 @@ function list_my_plan(){
                     }
 
                     $(".member_clickhere_sec").removeClass('loading');
+                  
 
                 },
                 error: function (xhr, status, err) {
                     console.log(err);
                 }
             });
-          
           $.ajax({
 
-                url: 'https://app.iqyouhealth.com/api/physiological_causes?user_key=' + window.cus_id + '&api_key=c6701296-5027-4076-b80c-d64a77c2ddc7',
+                url: 'https://api.iqyouhealth.com/api/v1/physiological_causes?user_key=' + window.cus_id + '&api_key=c6701296-5027-4076-b80c-d64a77c2ddc7',
                 type: 'GET',
                 crossDomain: true,
                 success: function (res) {
                   //console.log(res.report);
                   var wrapper = $("#health-report");
-                    //console.log("siufiuiuiufiewfiewiweieweiwviewwievhwiuviiviivhvih",res.recommendations);
+                    //console.log(res.recommendations);
                    //wrapper.html(res.report);
-                  var htm_report = $(res.recommendations);
+                  var htm_report = $(res.report);
                   htm_report.find('h2').remove();
                   htm_report.find('script').remove();
                   htm_report.find('style').remove();
@@ -1561,19 +1569,17 @@ function list_my_plan(){
                   htm_report.find('.pct').remove();
     				
                   $(htm_report).find('li').hide();
-                  $(htm_report).find('li:lt(5)').show();
-                  $(htm_report).find('h3').text('Possible Contributing Factors:');
-                  //console.log("iuciiiufivisfvisvfisvisvisvisviusviusviusvsdvsivui",htm_report);
+                  $(htm_report).find('li:lt(10)').show();
+                  //console.log(htm_report);
                  	$('#health-report').html(htm_report);
                   $('#health-report').find('h2').remove();
                   $('#health-report').find('#explanation').remove();
                   $('#health-report').find('#banner').remove();
-
                   $('.your_score_detail').next('p').text("Your health score is a scientific measurement of your overall health and can serve as a directional indicator on how your health is evolving. It takes into account all of the numerous factors in your life, including your demographics, health conditions, family history, diet and lifestyle habits, lab results, and DNA. The more data you provide, the more accurate your health score will be. Based on a scale of 0-100, a higher score is suggestive of better health. As you make positive health changes and improve your lab values, remember to update your health questionnaire so that your health score can reflect your progress. ");
                   $('<p>Schedule a nutrition consultation for an in-depth look into your health score and the steps you can take to help improve your health</p>').insertAfter('#whycontent').find('ul');
 //                   $(".colorbox-load").each(function(idx) {
 //                          var url = $(this).attr("href");
-//                          url = "https://app.iqyouhealth.com" + url;
+//                          url = "https://staging.api.iqyouhealth.com" + url;
 //                          $(this).attr("href", url);
 //                          $(this).attr('target','_blank');
                         
@@ -1590,8 +1596,6 @@ function list_my_plan(){
                         console.log(err);
                     }
                 });
-          
-          
 
         }
 
