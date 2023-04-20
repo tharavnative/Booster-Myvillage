@@ -315,7 +315,7 @@
             "horAlign": "center",
             "vertAlign": "middle",
             "liquid": "{% render 'block__featured-categories' %}",
-            "customCSS": ""
+            "customCSS": "##scoped{\nwidth:100%;\n}"
           }
         }
       },
