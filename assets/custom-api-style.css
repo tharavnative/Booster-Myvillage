@@ -1,0 +1,516 @@
+.laravel_qstn_modal .closeit{
+background:none;
+border:none;
+font-size:60px;
+
+}
+/*.health_quetionnaire_laravel_container{
+  display:none;
+}*/
+.laravel_qstn_modal .modal-header{
+    text-align:right;
+}
+.qstn_modal_inner p.description {
+    font-size:20px
+}
+
+.qstn_modal_inner button{
+   padding:10px 15px;
+   margin:3px;
+   box-shadow:none;
+   border:1px solid #00577f!important;
+
+}
+.qstn_modal_inner button.laravel_button {
+     background:#00577f;
+     color:#fff;
+  	padding: 10px 30px;
+    border-radius: 5px;
+    text-transform: uppercase!important;
+}
+.qstn_modal_inner button.laravel_button:hover{
+    background:#fff;
+     color:#00577f;
+}
+.laravel_qstn_modal {
+    text-align: center;
+}
+
+
+#health_qstns_modal_laravel  .modal-dialog{
+  -webkit-transform: translate(0,0);
+    -ms-transform: translate(0,0);
+    transform: translate(0,0);
+}
+div#api-questionnaire-body {
+   
+      padding: 10px;
+    min-height: 90px;
+    margin-bottom: 28px;
+}
+#health_qstns_modal_laravel .modal-header h5{
+	text-transform: capitalize;
+    color: #92ad05;
+    font-weight: 700;
+    text-align: center;
+}
+#health_qstns_modal_laravel .modal-dialog{
+    width: 1020px;
+}
+#health_qstns_modal_laravel .order_top h3 {
+    font-weight: 400;
+    text-transform: capitalize;
+}
+button#api-laravel-save,button#api-laravel-next,button#api-laravel-prev,button#api-laravel-update {
+
+    display: inline-block;
+    background: #73adc2;
+    color: #fff;
+    font-size: 15px;
+    font-weight: 400;
+    padding: 13px 24px;
+    border-radius: 24px;
+    border: none;
+    margin: 0 7px;
+    
+}
+.api-page-radio-item input[type=radio] {
+    width: 20px;
+    height: 20px;
+    display: inline-block; 
+    border-radius: 50px; 
+    -webkit-appearance: auto;
+}
+.api-main-page-item {display: grid;grid-template-columns: 2fr 1fr;}
+
+.api-page-radio-main {display: flex;align-items: center;justify-content: flex-end;}
+
+.api-page-radio-item {display: flex;align-items: center;}
+
+.api-page-radio-item label {    font-weight: 400;
+    font-size: 16px;
+    margin: 0;
+    vertical-align: super;
+    margin-left: 10px;
+    letter-spacing: -.55px;
+                            margin-bottom: 0;margin-left: 10px;margin-right: 20px;}
+
+.api-page-radio-item input {margin-top: 0;}
+
+.api-page-title-header h3 {font-size: 18px;
+    line-height: 22px;
+    font-weight: 500;
+    margin-bottom: 0px;
+    text-transform: capitalize;}
+
+.api-main-page-item-header p{
+    font-weight: 400;
+    font-size: 16px!important;
+    line-height: 24px;
+    letter-spacing: -.55px;
+                            
+}
+.api-main-page-item-child h3 {font-size: 15px;font-weight: 700;
+    line-height: 28px;}
+.api-page-select-main {display: grid;grid-template-columns: 2fr 1fr;}
+
+.api-select-label-common label {display: block;}
+
+.api-select-groups {width: 100%;}
+.api-main-page-item-child {
+    grid-column-start: 1;
+    grid-column-end: -1;
+}
+.api-select-label-common label {font-weight: 400;
+    font-size: 16px;
+    margin-bottom: 5px;
+    
+    margin-top: 15px;
+    
+    letter-spacing: -.55px;}
+
+#api-questions-section-103 .api-page-title-header h3,
+#api-questions-section-105 .api-page-title-header h3,
+#api-questions-section-11 .api-page-title-header h3,
+#api-questions-section-smart .api-page-title-header h3
+{font-size: 15px;
+    line-height:28px;
+    font-weight: 700;}
+
+
+.api-button-container {display: flex;justify-content: flex-end;}
+.api-health_top .health_box { display: inline-block; padding: 10px; color: #fff; border-radius: 18px; border: 1px solid #e1e1e1; width: 15%; float: left;  margin: 0 7px; text-align: center;}
+.api-health_top .health_box h4 { font-size: 14px; line-height: 18px; margin-bottom: 0; color: #555555; }
+.api-health_top .health_box span { font-size: 16px; line-height: 20px; color: #555555; padding-left: 25px; font-weight: 600;}
+.api-health_top .active { background: #00577f; }
+.api-health_top .active h4, .api-health_top .active span { color: #fff; }
+.api-health_top .health_box:hover { background: #00577f; }
+.api-health_top .health_box:hover h4, .api-health_top .health_box:hover span { color: #fff; }
+.api-health_top { margin-bottom: 40px; }
+.api-health_top cont p { font-size: 16px; margin-bottom: 20px; }
+.api-health_top span.my_health_step { background: url(https://cdn.shopify.com/s/files/1/0317/4635/9433/files/health_icon1.png?v=1618984125) no-repeat 0px 1px;  }
+.api-health_top span.family_history_step { background: url(https://cdn.shopify.com/s/files/1/0317/4635/9433/files/health_icon2.png?v=1618984126) no-repeat 0px 0px; }
+.api-health_top span.food_diet_step { background: url(https://cdn.shopify.com/s/files/1/0317/4635/9433/files/health_icon3.png?v=1618984126) no-repeat 0px 0px; }
+.api-health_top span.lifestyle_step { background: url(https://cdn.shopify.com/s/files/1/0317/4635/9433/files/health_icon4.png?v=1618984126) no-repeat 0px 0px; }
+.api-health_top span.med { background: url(https://cdn.shopify.com/s/files/1/0317/4635/9433/files/health_icon5.png?v=1618984126) no-repeat 0px 0px; padding-left: 13px;}
+.api-health_top span.smart { background: url(https://cdn.shopify.com/s/files/1/0317/4635/9433/files/health_icon6.png?v=1618984125) no-repeat 0px 0px; padding-left: 13px;}
+
+.ui-front { z-index: 2000;}
+
+.recommendation-head,.top_reommend_sec{
+  display:none;
+}
+/**My Recomendations Style***/
+.laravel-recommendation-head {
+    display: grid;
+    grid-template-columns: auto auto 70px;
+    align-items: flex-end;
+    border-bottom: 1px solid #e9e9e9;
+    position: relative;
+}
+
+.laravel-recommendation-head select#recommendation-filter {
+    width: 60px;
+    outline: none;
+    border: none;
+    font-size: 12px;
+    /* position: absolute; */
+    cursor: pointer;
+    /* right: 0; */
+    /* top: 0; */
+}
+
+.laravel-recommendation-head button {
+    width: 100%;
+    background: #fff;
+    color: #00577f;
+    display: inline-block;
+    border: 1px solid #e9e9e9;
+    padding: 6px 20px;
+    font-size: 15px;
+    line-height: 16px;
+    margin-top: -5px;
+    border-bottom: none;
+    font-weight: 600;
+    border-top-left-radius: 4px;
+    border-top-right-radius: 4px;
+}
+
+button.my-plan-button.recom-com-button-class {
+    display: inline-block;
+    float: left;
+    border: 1px solid #e9e9e9;
+    background: #fff url(https://cdn.shopify.com/s/files/1/0317/4635/9433/files/star_check.jpg?v=1650442777) no-repeat 6px 3px;
+    padding: 6px 20px 6px 37px;
+    font-size: 15px;
+    line-height: 16px;
+    margin-top: -5px;
+    border-bottom: none;
+    font-weight: 600;
+    border-top-left-radius: 4px;
+    border-top-right-radius: 4px;
+}
+.laravel-recommendation-head button.active-tab {
+     background: #00577f;
+    color: #fff;
+}
+
+.laravel-recommendation-outer {
+    margin-top: 39px;
+}
+
+.recommendation-filter-tab-button {
+    display: flex;
+    justify-content: flex-end;
+    position: absolute;
+    right:0;
+    
+   
+}
+
+.laravel-recommendation-header-content {
+    font-size: 15px;
+    line-height: 20px;
+    font-weight: 500;
+    color: #434343;
+    margin-bottom: 10px;
+    font-family: Montserrat;
+    letter-spacing: -.55px;
+    margin-top: 20px;
+}
+
+.laravel-recommendation-list .recommendation-items {
+    display: grid;
+    grid-template-columns: 2fr 2fr 130px;
+    grid-gap: 11px;
+    margin-bottom: 12px;
+}
+
+.recommendation-name {
+    padding: 7px;
+    font-size: 15px;
+    font-weight: 400;
+    letter-spacing: -.55px;
+    font-family: Montserrat;
+}
+
+.recommendation-dosage {
+    font-family: Montserrat;
+    padding: 7px;
+    font-size: 15px;
+    font-weight: 400;
+    letter-spacing: -.55px;
+}
+
+.recomendation-buy-section {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.laravel-recommendation-list button {
+    border: 1px solid #f2f2f2;
+    padding: 5px 10px;
+    color: #00577F;
+    font-size: 14px;
+    font-weight: 500;
+    transition: all 0.5s ease;
+    position: relative;
+    width: 100%;
+    background:
+    white;
+}
+.laravel-recommendation-list button:hover {
+    text-decoration: none;
+    color: #afae63;
+    cursor: pointer;
+}
+
+span.how-to {
+    color: #00577f;
+    display: inline-flex!important;
+    font-weight: 800;
+    border-radius: 50%;
+    width: 20px;
+    font-style: normal;
+    border: 1px solid #85b6cc;
+    height: 20px;
+    justify-content: center;
+    font-size: 12px;
+    margin-left: 6px;
+}
+.modal.in .modal-dialog {
+    -webkit-transform: translate(0,0);
+    -ms-transform: translate(0,0);
+    transform: translate(0,0);
+}
+
+.laravel-my-plan-sub-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0px 12px 0 0;
+    background: #f3f2f2;
+  margin-bottom:25px;
+}
+
+.laravel-nutritional-suplementation-header h2 {
+    margin-bottom: 0;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 40px;
+    color: #434343;
+    text-transform: uppercase;
+}
+
+.laravel-add-new-recommendation {
+    color: #00577F;
+    font-weight: 600;
+    cursor: pointer;
+}
+
+.laravel-add-new-recommendation span {
+    font-weight: 700;
+    display: inline-block;
+    background: #fff;
+    border: 1px solid #ddd;
+    border-radius: 50px;
+    width: 24px;
+    height: 24px;
+    display: inline-flex;
+    justify-content: center;
+    font-size: 16px;
+    line-height: 0;
+    align-items: center;
+}
+
+.laravel-nutritional-supplementation-item-name > a {
+    font-weight: 700;
+    font-size: 16px;
+    display: block;
+}
+
+.laravel-nutritional-supplementation-timing-outer {
+    grid-column-start: 1;
+    grid-column-end: -1;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+
+.laravel-nutritional-supplementation-item {
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    grid-gap: 14px;
+    border-bottom: 1px solid #ddd;
+    padding-bottom: 25px;
+    margin-bottom: 20px;
+}
+
+.laravel-nutritional-supplementation-buy-button {
+    justify-self: flex-end;
+    align-items: center;
+    display: flex;
+}
+
+.laravel-nutritional-supplementation-product-name {
+    margin-right: 10px;
+    color: #00577F;
+    text-decoration: underline;
+}
+
+.laravel-my-plan-body button {
+    border: 1px solid #f2f2f2;
+    padding: 5px 10px;
+    color: #00577F;
+    font-size: 14px;
+    font-weight: 500;
+    transition: all 0.5s ease;
+    position: relative;
+}
+.laravel-my-plan-body button:hover {
+    background: transparent;
+}
+
+.laravel-item-left-section {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-gap: 10px;
+}
+
+.laravel-item-left-section input[type='text'] {
+    width: 100%;
+    font-weight: 400;
+    padding: 5px 8px;
+}
+
+.laravel-item-left-section label {
+    font-weight: 400;
+    font-size: 14px;
+}
+
+.laravel-nutritional-supplementation-type-outer {
+    display: flex;
+    grid-column-start: 1;
+    grid-column-end: -1;
+}
+
+.laravel-intake-type-outer label {
+    display: flex;
+    margin-right: 10px;
+    margin-left: 10px;
+}
+
+.laravel-intake-type-outer {
+    order: 2;
+    display: flex;
+    align-items: center;
+}
+
+.laravel-update-notes textarea {
+    font-weight: 400;
+    width: 100%;
+}
+
+.laravel-my-plan-header-content {
+    font-size: 15px;
+    line-height: 20px;
+    font-weight: 500;
+    color: #434343;
+    margin-bottom: 10px;
+    font-family: Montserrat;
+    letter-spacing: -.55px;
+    margin-top: 20px;
+}
+@media(max-width:680px){
+    .laravel-item-left-section{
+        grid-template-columns: 1fr;
+    }
+    .laravel-nutritional-supplementation-item{
+         grid-template-columns: 1fr;
+    }
+    .laravel-nutritional-supplementation-type-outer{
+        display:flex;
+        flex-direction:column;
+    }
+    .laravel-intake-type-outer{
+        order: 1;
+    }
+    .laravel-update-dosage {
+          order: 2;
+    }
+    .laravel-intake-type-outer label{
+        margin-left:0;
+        margin-bottom:20px;
+    }
+    .laravel-my-plan-sub-header{
+        flex-direction:
+        column;
+        align-items: flex-start;
+        padding: 5px 8px;
+    }
+    .laravel-nutritional-suplementation-header h2{
+        font-size:15px;
+    }
+    .laravel-add-new-recommendation{
+        font-size:15px;
+    }
+    .laravel-add-new-recommendation span{
+    width: 24px;
+    height: 24px;
+   
+    font-size: 16px;
+    }
+    .laravel-my-plan-header{
+        margin-bottom:20px;
+    }
+    .laravel-recommendation-head{
+        grid-template-columns: 1fr;
+    }
+    .recommendation-filter-tab-button{
+        position:
+        static;
+        justify-content: flex-start;
+    }
+    .laravel-recommendation-head select#recommendation-filter{
+        width:100%;
+    }
+  
+    .laravel-recommendation-list .recommendation-items{
+        grid-template-columns:1fr;
+        border-bottom: 1px solid #ddd;
+        padding-bottom: 20px;
+    }
+    
+}
+
+
+/**End Style***/
+
+@media (min-width: 992px) and (max-width: 1199px){
+  
+#health_qstns_modal_laravel .modal-dialog {
+    width: auto;
+}
+  
+  
+}
