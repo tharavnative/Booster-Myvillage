@@ -3413,9 +3413,12 @@ jQuery(function ($) {
     }
   function getRecommendationsCallback(status, data, request){
     console.log("getRecommendationsCallback!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!",data);
-    listRecommendations(data.allrecs,data.rec_urls);
-    listRecommendationFilters(data.allcats);
-    getMyPlan();
+    if(data){
+      listRecommendations(data.allrecs,data.rec_urls);
+      listRecommendationFilters(data.allcats);
+      getMyPlan();
+    }
+    
     //loadingCompletion();
   }
   function getMyPlan() {
