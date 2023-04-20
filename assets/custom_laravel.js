@@ -3424,7 +3424,7 @@ jQuery(function ($) {
       sendRequest('get', url, '', getMyPlanCallback) ;
     }
   function getMyPlanCallback(status, data, request){
-    console.log("getMyPlanCallback!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!",data);
+    //console.log("getMyPlanCallback!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!",data);
     var all_list_html ='';
     var list = data.list;
     var user_list = data.user_list;
