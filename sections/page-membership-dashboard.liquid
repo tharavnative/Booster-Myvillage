@@ -505,6 +505,37 @@
                                             </li>
                                         </ul>
                                     </div>
+
+                                    <div class="laravel-recommendation-outer loading-blue" style="display:block">
+                                    <div class="laravel-recommendation-head">
+                                      <div class="recommendation-tab-button">
+                                        <button class="recomendation-button recom-com-button-class active-tab"><span class="your-name" id="your-name">{{ customer.first_name }}</span>,Your Custom  Reccomendations</button>
+                                      </div>
+                                      <div class="my-plan-tab-button">
+                                        <button class="my-plan-button recom-com-button-class">My Supplement Plan</button>
+                                      </div>
+                                      <div class="recommendation-filter-tab-button">
+                                          <select name="recommendation-filter" id="recommendation-filter" class="recommendation-filter"></select>
+                                      </div>
+                                    </div>
+                                    <div class="laravel-recommendation-body">
+                                      <div class="laravel-recommendation-header">
+                                          <div class="laravel-recommendation-header-content">Here are your recommendations, as determined by our AI smart tool, based on your health data. Speak to one of our nutrition experts or schedule a consultation for a more detailed action plan.</div>
+                                      </div>
+                                      <div class="laravel-recommendation-list"></div>
+                                    </div>
+                                    <div class="laravel-my-plan-body" style="display:none">
+                                      <div class="laravel-my-plan-header">
+                                        <div class="laravel-my-plan-header-content">Use this area to keep track of your current supplements. If you need help choosing the best fit for you, one of our nutrition experts can help create a customized plan and add direct links below for you to purchase.</div>
+                                        <div class="laravel-my-plan-sub-header">
+                                          <div class="laravel-nutritional-suplementation-header"><h2>NUTRITIONAL SUPPLEMENTATION</h2></div>
+                                          <div class="laravel-add-new-recommendation"><span>+</span>Add a Recommendation</div>
+                                        </div>
+                                      </div>
+                                      <div class="laravel-my-plan-list"></div>
+                                    </div>
+                                  </div>
+  
                                   <div class="recommendation-head"> 
                                    
                                     <div class=my-plan-button-div>
