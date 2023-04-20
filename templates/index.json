@@ -383,64 +383,6 @@
         "verticalAlignment": "middle"
       }
     },
-    "16265528618af17c6c": {
-      "type": "section__cta",
-      "blocks": {
-        "16265528618af17c6c-0": {
-          "type": "title",
-          "settings": {
-            "fullWidth": true,
-            "content": "WELCOME TO OUR FAMILY",
-            "textColor": "rgba(0,0,0,0)",
-            "fontFamily": "title",
-            "fontSize": "medium"
-          }
-        },
-        "16265528618af17c6c-1": {
-          "type": "richText",
-          "settings": {
-            "fullWidth": true,
-            "maxBWidth": 100,
-            "content": "<p>From the moment our daughter Kaavia entered this world, we knew we’d teach her to embrace her skin—its beauty, power, wisdom, and magic. And that means caring for it with love. Inspired by our littlest love—and millions of other babies of color—we set out to build <strong>PROUDLY<\/strong>: Baby care for melanated skin, created for us and by us.<\/p>",
-            "detectLists": true,
-            "textColor": "rgba(0,0,0,0)",
-            "fontFamily": "base",
-            "fontSize": "base"
-          }
-        }
-      },
-      "block_order": [
-        "16265528618af17c6c-0",
-        "16265528618af17c6c-1"
-      ],
-      "settings": {
-        "displayFor": "display--both",
-        "layout": "default",
-        "nomargin": false,
-        "scopedCSS": "",
-        "height": 230,
-        "padding": 30,
-        "lineMargin": 0,
-        "backgroundColor": "#f7f4ff",
-        "backgroundPosition": "middle",
-        "backgroundFilter": "none",
-        "backdropIntensity": 50,
-        "parallax": false,
-        "backgroundPattern": false,
-        "overlayOpacity": 0,
-        "overlayColor": "#000000",
-        "contentColor": "rgba(0,0,0,0)",
-        "horizontalAlignment": "center",
-        "verticalAlignment": "middle",
-        "maxContentWidth": 65,
-        "heading": "",
-        "headingColor": "rgba(0,0,0,0)",
-        "subheading": "",
-        "subheadingColor": "rgba(0,0,0,0)",
-        "subheadingPosition": "above",
-        "headingAlignment": "center"
-      }
-    },
     "16265531878648c50b": {
       "type": "section__testimonials",
       "disabled": true,
@@ -523,7 +465,6 @@
     "1658982451aec4bb5c",
     "3ad19cf4-c83e-46c1-84f8-a6908db5e3b7",
     "b0a52ba3-4627-4259-a52c-dea240527529",
-    "16265528618af17c6c",
     "16265531878648c50b",
     "16795577260e00d58f"
   ]
