@@ -574,6 +574,90 @@
                                         </div>
                                     </div>
                                 </div> 
+  <div class="member_lap_report_sec">
+                                    {% if section.settings.my_lapreport != blank %}
+                                        <a href="javascript:void(0)" class="unlock_click" data-toggle="modal" data-target="#lap_report_new"> {{ section.settings.my_lapreport }}</a>
+                                   {% endif %}
+                                    
+                                    <!-- Modal -->
+                                    <div class="modal fade score_sec" id="lap_report_new" role="dialog">
+                                        <div class="modal-dialog modal-lg">
+                                            <div class="modal-content clearfix">
+                                                <div class="modal-header">
+                                                    <button type="button" class="close" data-dismiss="modal">&times;</button> 
+                                                </div>
+                                                <div class="modal-body">
+                                                    <div class="lap_report_outer">
+                                                        <h3>My Lab & DNA Reports New</h3>
+                                                      <p class="pdf-link">For more information, read <a target="_blank" download="Understanding_Your_DNA_Report.pdf" href="https://cdn.shopify.com/s/files/1/0317/4635/9433/files/Understanding_Your_DNA_Report.pdf?v=1635599559">Understanding Your DNA Report</a></p>
+                                                        <div class="lap_table">
+                                                            <p>You do not have any DNA or lab reports at this time</p>
+                                                            <p>While you only need to do a DNA analysis once, we recommend doing a Wellness Panel annually.</p>
+                                                        </div>
+                                                        <div class="lab_results_new">
+                                                              <h3>Labs</h3>
+                                                              <hr>
+                                                              <p>Your test results allow IQYOU to provide very specific and accurate health feedback and
+                                                              recommendations. You can send test results from your doctor to be input to your profile to <a href="mailto:results@DHALab.com">results@DHALab.com</a>, or you can order home lab tests.
+                                                              We recommend lab panels for you based on your answers to <a href="/profile/my_health">health questions.</a></p>
+                                                          <div id="pretable">
+                                                          	<h3>My Labs</h3>
+                                                            <div id="typetoggle">
+                                                          		<a id="addmorelabs" class="bluecircle colorbox-load" href="/lab_results_popup?init=1&amp;width=600&amp;height=500&amp;iframe=true">Add More Labs</a>
+                                                          		               <div id="allresults" class="allresults graycirclefilled">All Results</div>		
+                                                                         <div id="keyfindings" class="keyfindings bluecirclefilled active">Key Findings</div>
+                                                          				<div style="clear:both;"></div>
+                                                          	</div>
+                                                              <div id="tablelabel" class="hasvalue">Results from any lab tests ordered through IQYOU will also appear here. Or, to upload your own lab results, send them to
+                                                                    <a href="mailto:results@DHALab.com">results@DHALab.com</a>.
+                                                              </div>
+                                                              <div class="labrow active header" id="lab_orders_header">
+                                                              	<div class="title">Labs &amp; Panels</div>
+                                                              	<div class="summary">Review and update your test results</div>
+                                                              	<!--<div class="actions"><a rel="229" class="addtocartnidx">Add More Labs</a></div>		-->
+                                                              	<div style="clear:both;"></div>
+                                                              </div>
+                                                          	
+                                                            <div class="lab_orders">
+                                                              <div class="cbc-section result-item-main">
+                                                                    <div rel="cbc" class="lessdata lessdata-cbc title">CBC</div>
+                                                                    <div rel="cbc" class="moredata moredata-cbc title" style="display:none">CBC</div>
+                                                                    <div rel="cbc" class="lessdata lessdata-cbc" id="lessdata-cbc" >Show more</div>
+                                                            		<div rel="cbc" class="moredata moredata-cbc" id="moredata-cbc" style="display:none">Show less</div>
+                                                                    <div class="values values-cbc values-style" style="display:none"></div>
+                                                                    
+                                                              </div>
+                                                              <div class="allresults-section result-item-main">
+                                                                    <div rel="cbc" class="lessdata lessdata-cbc title">All results</div>
+                                                                    <div rel="cbc" class="moredata moredata-cbc title" style="display:none">All results</div>
+                                                                    <div rel="cbc" class="lessdata lessdata-cbc" id="lessdata-cbc" >Show more</div>
+                                                            		<div rel="cbc" class="moredata moredata-cbc" id="moredata-cbc" style="display:none">Show less</div>
+                                                                  <div class="values values-allresults values-style" style="display:none"></div>
+                                                              </div>
+                                                            </div>
+                                                        </div>
+                                                        <div class="recommended-labs-laravel">
+                                                            <div class="recommended-labs-h3-laravel"><h3>Recommended Labs</h3></div>
+                                                            <div class="recommended-labs-desc-laravel"><p>We've recommended these labs for you. You can choose to enter values you have been provided or you can 
+order the home lab kit right here.</p></div>
+                                                              <div class="labrow active header" id="row-229">
+                                                            	<div class="title">Labs &amp; Panels</div>
+                                                            	<div class="summary">Choose lab or panel to order or enter results</div>
+                                                            	<!--<div class="actions"><a rel="229" class="addtocartnidx">Add More Labs</a></div>		-->
+                                                            	<div style="clear:both;"></div>
+                                                            </div>
+                                                            <div class="values recommended-labs-results-laravel-womens-panel values-style"></div>
+                                                            <div class="values recommended-labs-results-laravel values-style"></div>
+                                                        </div>
+                                                        <div class="lap_right">
+                                                            <a href="/collections/labs-dna" class="update_health">Order Labs &amp; DNA</a>
+                                                        </div>
+                                                    </div>
+                                                </div> 
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div> 
                                 <div class="membership_right">
                                     <h2 class="top_subtitle">{{ section.settings.dashboard_sidebar_title }}</h2>
                                     <div class="sidebar_cont">
