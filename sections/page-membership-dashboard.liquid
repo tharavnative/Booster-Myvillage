@@ -1513,7 +1513,7 @@ order the home lab kit right here.</p></div>
 <input type="hidden" name="customer_email" value="{{ customer.email }}" id="mvg_customer_email">
 <input type="hidden" name="customer_first_name" value="{{ customer.first_name }}" id="mvg_customer_first_name">
 <input type="hidden" name="customer_last_name" value="{{ customer.last_name }}" id="mvg_customer_last_name">
-
+{{ 'custom_api.js' | asset_url | script_tag }}
 {{ 'custom_iqyou.js' | asset_url | script_tag }}
 {{ 'custom_laravel.js' | asset_url | script_tag }}
                                          
