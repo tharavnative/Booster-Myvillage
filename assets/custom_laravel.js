@@ -3439,8 +3439,9 @@ jQuery(function ($) {
       all_list_html = all_list_html + rec_list_html(user_list);
       $('.laravel-my-plan-list').html(all_list_html);
       clickMyPlan();
+      $(".laravel-recommendation-outer").removeClass('loading-blue');
     }
-    $(".laravel-recommendation-outer").removeClass('loading-blue');
+    
     //loadingCompletion();
   }
   $('.api-health_box').click(function(){
