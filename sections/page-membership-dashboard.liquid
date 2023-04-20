@@ -574,38 +574,7 @@
                             </div>
 
                             <div class="col-sm-4">
-                                <div class="member_lap_report_sec">
-                                    {% if section.settings.my_lapreport != blank %}
-                                        <a href="javascript:void(0)" class="unlock_click" data-toggle="modal" data-target="#lap_report"> {{ section.settings.my_lapreport }}</a>
-                                   {% endif %}
-                                    <!-- Modal -->
-                                    <div class="modal fade score_sec" id="lap_report" role="dialog">
-                                        <div class="modal-dialog modal-lg">
-                                            <div class="modal-content clearfix">
-                                                <div class="modal-header">
-                                                    <button type="button" class="close" data-dismiss="modal">&times;</button> 
-                                                </div>
-                                                <div class="modal-body">
-                                                    <div class="lap_report_outer">
-                                                        <h3>My Lab & DNA Reports</h3>
-                                                      <p class="pdf-link">For more information, read <a target="_blank" download="Understanding_Your_DNA_Report.pdf" href="https://cdn.shopify.com/s/files/1/0317/4635/9433/files/Understanding_Your_DNA_Report.pdf?v=1635599559">Understanding Your DNA Report</a></p>
-                                                        <div class="lap_table">
-                                                            <p>You do not have any DNA or lab reports at this time</p>
-                                                            <p>While you only need to do a DNA analysis once, we recommend doing a Wellness Panel annually.</p>
-                                                        </div>
-                                                        <div class="lab_results"></div>
-                                                        <!-- <div class="lap_left">
-                                                            <p>Be sure to keep your health profile information and details current! We recommend that you periodically update your health questionnaire in order for us to provide you with the most accurate picture of your health and wellness.</p>
-                                                        </div> -->
-                                                        <div class="lap_right">
-                                                            <a href="javascript:void(0)" data-toggle="modal" data-target="#health_qstns_modal_laravel"  class="update_health">Update your Health Questionnaire</a>
-                                                        </div>
-                                                    </div>
-                                                </div> 
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div> 
+
   <div class="member_lap_report_sec">
                                     {% if section.settings.my_lapreport != blank %}
                                         <a href="javascript:void(0)" class="unlock_click" data-toggle="modal" data-target="#lap_report_new"> {{ section.settings.my_lapreport }}</a>
