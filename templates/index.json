@@ -89,6 +89,46 @@
         "verticalAlignment": "middle"
       }
     },
+    "995318fc-d46a-4f8a-9ab2-baa13dd424d1": {
+      "type": "section__content",
+      "blocks": {
+        "c41e2ec6-e515-4a2e-a995-737919f69d0c": {
+          "type": "liquidBlock",
+          "settings": {
+            "blockWidth": "col-md-12",
+            "vertPadding": 0,
+            "horPadding": 0,
+            "horAlign": "center",
+            "vertAlign": "middle",
+            "liquid": "{% render 'block__custom-consultatiion-video' %}",
+            "customCSS": ""
+          }
+        }
+      },
+      "block_order": [
+        "c41e2ec6-e515-4a2e-a995-737919f69d0c"
+      ],
+      "settings": {
+        "displayFor": "display--both",
+        "layout": "default",
+        "nomargin": false,
+        "scopedCSS": "##scoped{\nmargin-top:-50px;\n}",
+        "height": 0,
+        "padding": 0,
+        "lineMargin": 12,
+        "backgroundColor": "rgba(0,0,0,0)",
+        "backgroundPosition": "middle",
+        "backgroundFilter": "none",
+        "backdropIntensity": 50,
+        "parallax": false,
+        "backgroundPattern": false,
+        "overlayOpacity": 0,
+        "overlayColor": "#000000",
+        "contentColor": "rgba(0,0,0,0)",
+        "horizontalAlignment": "center",
+        "verticalAlignment": "middle"
+      }
+    },
     "1658982451aec4bb5c": {
       "type": "section__auto-grid",
       "disabled": true,
@@ -347,6 +387,7 @@
   "order": [
     "aa391eea-57f0-4d0f-8515-481fb5425f5d",
     "8c07609b-b928-4b43-a745-4fb94a9f4de8",
+    "995318fc-d46a-4f8a-9ab2-baa13dd424d1",
     "1658982451aec4bb5c",
     "16265528618af17c6c",
     "16265531878648c50b",
