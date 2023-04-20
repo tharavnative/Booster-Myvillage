@@ -1,1 +1,311 @@
-{"sections":{"aa391eea-57f0-4d0f-8515-481fb5425f5d":{"type":"section__slider--adaptive","blocks":{"template--16771356393710__aa391eea-57f0-4d0f-8515-481fb5425f5d-16795772786b6cfda2-0":{"type":"imageSlideAdaptive","settings":{"horizontalAlignment":"center","verticalAlignment":"middle","padding":16,"contentSpacing":12,"backgroundColor":"rgba(0,0,0,0)","backgroundImage":"shopify:\/\/shop_images\/SpringSale2023banner.jpg","backgroundPosition":"middle","overlayOpacity":0,"overlayColor":"#000000","slideURL":"","heading":"","headingColor":"rgba(0,0,0,0)","content":"","contentColor":"rgba(0,0,0,0)","button1Text":"","button1Link":"","button1Style":"primary","button1Type":"default","button2Text":"","button2Link":"","button2Style":"secondary","button2Type":"default"}}},"block_order":["template--16771356393710__aa391eea-57f0-4d0f-8515-481fb5425f5d-16795772786b6cfda2-0"],"settings":{"displayFor":"display--both","layout":"default","nomargin":false,"height":0,"contentColor":"rgba(0,0,0,0)","autoplay":true,"slideSpeed":3,"animation":"none","delayAnimation":false}},"1658982451aec4bb5c":{"type":"section__auto-grid","disabled":true,"blocks":{"91e2efe7-d458-43fb-8c09-1614d991b8be":{"type":"gridImage","settings":{"hide":"show-both","url":"shopify:\/\/products\/gentle-baby-wash","backgroundSize":"cover","overlayOpacity":0,"overlayColor":"#000000","imageText":"<div style=\" font-size: 26px; font-weight: 700; padding: 10px; \">Gentle<br>baby<br>wash<\/div>","textColor":"#ffffff","textFillColor":"rgba(0,0,0,0)","fullwidthText":false,"fontSize":"base","horizontalAlignment":"start","verticalAlignment":"top"}},"f3126a0d-0c06-447b-9cfa-7ec71475516e":{"type":"gridImage","settings":{"hide":"hide-mobile","url":"#","backgroundSize":"cover","overlayOpacity":0,"overlayColor":"#000000","imageText":"<div style=\" font-size: 26px; font-weight: 700; padding: 10px; \">Moisture<br>Layering<br>Bundle<\/div>","textColor":"#ffffff","textFillColor":"rgba(0,0,0,0)","fullwidthText":false,"fontSize":"base","horizontalAlignment":"end","verticalAlignment":"top"}},"1cad6f3c-f8a1-4eec-8329-44dcc4854063":{"type":"gridImage","settings":{"hide":"hide-mobile","url":"#","backgroundSize":"cover","overlayOpacity":30,"overlayColor":"#faad94","imageText":"<div style=\" font-size: 56px; font-weight: 700; padding: 10px; \">Our<br>Story<\/div>","textColor":"#ffffff","textFillColor":"rgba(0,0,0,0)","fullwidthText":false,"fontSize":"base","horizontalAlignment":"start","verticalAlignment":"bottom"}},"e898fbbf-afd6-4f0c-9be5-bf31c0d58781":{"type":"gridImage","settings":{"hide":"show-both","url":"#","backgroundSize":"cover","overlayOpacity":0,"overlayColor":"#000000","imageText":"<div style=\" font-size: 46px; font-weight: 700; padding: 10px; \">Exclusive<br>Offers<\/div>","textColor":"#6951a1","textFillColor":"rgba(0,0,0,0)","fullwidthText":false,"fontSize":"base","horizontalAlignment":"center","verticalAlignment":"middle"}},"057b51a7-7dda-45b2-8c88-6f284e29c077":{"type":"gridImage","settings":{"hide":"hide-mobile","url":"#","backgroundSize":"cover","overlayOpacity":100,"overlayColor":"#85c6c2","imageText":"<div style=\" font-size: 26px; font-weight: 700; padding: 10px; \">Enjoy 10% Off All Value Bundles. No Code Necessary.<\/div>","textColor":"#ffffff","textFillColor":"rgba(0,0,0,0)","fullwidthText":false,"fontSize":"base","horizontalAlignment":"end","verticalAlignment":"middle"}},"5abb8f73-a7a4-4435-880c-030a465b511d":{"type":"gridImage","settings":{"hide":"show-both","url":"#","backgroundSize":"contain","overlayOpacity":0,"overlayColor":"#000000","imageText":"<div style=\" font-size: 26px; font-weight: 700; padding: 10px; \">LAUNCH<br>COLLECTION<\/div>","textColor":"#ffffff","textFillColor":"rgba(0,0,0,0)","fullwidthText":false,"fontSize":"base","horizontalAlignment":"end","verticalAlignment":"top"}}},"block_order":["91e2efe7-d458-43fb-8c09-1614d991b8be","f3126a0d-0c06-447b-9cfa-7ec71475516e","1cad6f3c-f8a1-4eec-8329-44dcc4854063","e898fbbf-afd6-4f0c-9be5-bf31c0d58781","057b51a7-7dda-45b2-8c88-6f284e29c077","5abb8f73-a7a4-4435-880c-030a465b511d"],"settings":{"layout":"stretchContent","nomargin":false,"height":0,"gap":10}},"16265528618af17c6c":{"type":"section__cta","blocks":{"16265528618af17c6c-0":{"type":"title","settings":{"fullWidth":true,"content":"WELCOME TO OUR FAMILY","textColor":"rgba(0,0,0,0)","fontFamily":"title","fontSize":"medium"}},"16265528618af17c6c-1":{"type":"richText","settings":{"fullWidth":true,"maxBWidth":100,"content":"<p>From the moment our daughter Kaavia entered this world, we knew we’d teach her to embrace her skin—its beauty, power, wisdom, and magic. And that means caring for it with love. Inspired by our littlest love—and millions of other babies of color—we set out to build <strong>PROUDLY<\/strong>: Baby care for melanated skin, created for us and by us.<\/p>","detectLists":true,"textColor":"rgba(0,0,0,0)","fontFamily":"base","fontSize":"base"}}},"block_order":["16265528618af17c6c-0","16265528618af17c6c-1"],"settings":{"displayFor":"display--both","layout":"default","nomargin":false,"scopedCSS":"","height":230,"padding":30,"lineMargin":0,"backgroundColor":"#f7f4ff","backgroundPosition":"middle","backgroundFilter":"none","backdropIntensity":50,"parallax":false,"backgroundPattern":false,"overlayOpacity":0,"overlayColor":"#000000","contentColor":"rgba(0,0,0,0)","horizontalAlignment":"center","verticalAlignment":"middle","maxContentWidth":65,"heading":"","headingColor":"rgba(0,0,0,0)","subheading":"","subheadingColor":"rgba(0,0,0,0)","subheadingPosition":"above","headingAlignment":"center"}},"16265531878648c50b":{"type":"section__testimonials","disabled":true,"blocks":{"16265531878648c50b-0":{"type":"testimonial","settings":{"text":"<p>Great product for a fair price.<\/p>","authorName":"John Doe","fakeImageSex":"men"}},"16265531878648c50b-1":{"type":"testimonial","settings":{"text":"<p>Great product for anyone serious about making cash.<\/p>","authorName":"Jane Doe","fakeImageSex":"women"}},"16265531878648c50b-2":{"type":"testimonial","settings":{"text":"<p>I just LOVE the flexiblity Booster provides.<\/p>","authorName":"John Doe","fakeImageSex":"men"}}},"block_order":["16265531878648c50b-0","16265531878648c50b-1","16265531878648c50b-2"],"settings":{"displayFor":"display--both","layout":"default","nomargin":false,"scopedCSS":"","height":0,"padding":40,"backgroundColor":"#f8f8f8","heading":"Testimonials","headingColor":"rgba(0,0,0,0)","subheading":"What others have to say","subheadingColor":"rgba(0,0,0,0)","subheadingPosition":"above","headingAlignment":"center","blockStyle":"author-below","blockBackground":"rgba(0,0,0,0)","blockText":"#000000","testimonialAlign":"left","blockBottomBackground":"#000000","blockBottomText":"#ffffff","useFakeImages":true,"roundedImages":true}},"16795577260e00d58f":{"type":"apps","blocks":{"f4cb9386-8e20-4375-9dc3-13f453a08590":{"type":"shopify:\/\/apps\/judge-me-product-reviews\/blocks\/featured_carousel\/61ccd3b1-a9f2-4160-9fe9-4fec8413e5d8","settings":{"maxwidth":1080}}},"block_order":["f4cb9386-8e20-4375-9dc3-13f453a08590"],"settings":{}}},"order":["aa391eea-57f0-4d0f-8515-481fb5425f5d","1658982451aec4bb5c","16265528618af17c6c","16265531878648c50b","16795577260e00d58f"]}
+{
+  "sections": {
+    "aa391eea-57f0-4d0f-8515-481fb5425f5d": {
+      "type": "section__slider--adaptive",
+      "blocks": {
+        "template--16771356393710__aa391eea-57f0-4d0f-8515-481fb5425f5d-16795772786b6cfda2-0": {
+          "type": "imageSlideAdaptive",
+          "settings": {
+            "horizontalAlignment": "end",
+            "verticalAlignment": "bottom",
+            "padding": 18,
+            "contentSpacing": 26,
+            "backgroundColor": "rgba(0,0,0,0)",
+            "backgroundImage": "shopify:\/\/shop_images\/banner2.jpg",
+            "backgroundPosition": "middle",
+            "overlayOpacity": 0,
+            "overlayColor": "#000000",
+            "slideURL": "shopify:\/\/pages\/shop-by-brands",
+            "heading": "Helping you live your<br> healthiest life",
+            "headingColor": "rgba(0,0,0,0)",
+            "content": "",
+            "contentColor": "rgba(0,0,0,0)",
+            "button1Text": "",
+            "button1Link": "",
+            "button1Style": "primary",
+            "button1Type": "default",
+            "button2Text": "",
+            "button2Link": "",
+            "button2Style": "secondary",
+            "button2Type": "default"
+          }
+        }
+      },
+      "block_order": [
+        "template--16771356393710__aa391eea-57f0-4d0f-8515-481fb5425f5d-16795772786b6cfda2-0"
+      ],
+      "settings": {
+        "displayFor": "display--both",
+        "layout": "default",
+        "nomargin": false,
+        "height": 0,
+        "contentColor": "rgba(0,0,0,0)",
+        "autoplay": true,
+        "slideSpeed": 3,
+        "animation": "none",
+        "delayAnimation": false
+      }
+    },
+    "1658982451aec4bb5c": {
+      "type": "section__auto-grid",
+      "disabled": true,
+      "blocks": {
+        "91e2efe7-d458-43fb-8c09-1614d991b8be": {
+          "type": "gridImage",
+          "settings": {
+            "hide": "show-both",
+            "url": "shopify:\/\/products\/gentle-baby-wash",
+            "backgroundSize": "cover",
+            "overlayOpacity": 0,
+            "overlayColor": "#000000",
+            "imageText": "<div style=\" font-size: 26px; font-weight: 700; padding: 10px; \">Gentle<br>baby<br>wash<\/div>",
+            "textColor": "#ffffff",
+            "textFillColor": "rgba(0,0,0,0)",
+            "fullwidthText": false,
+            "fontSize": "base",
+            "horizontalAlignment": "start",
+            "verticalAlignment": "top"
+          }
+        },
+        "f3126a0d-0c06-447b-9cfa-7ec71475516e": {
+          "type": "gridImage",
+          "settings": {
+            "hide": "hide-mobile",
+            "url": "#",
+            "backgroundSize": "cover",
+            "overlayOpacity": 0,
+            "overlayColor": "#000000",
+            "imageText": "<div style=\" font-size: 26px; font-weight: 700; padding: 10px; \">Moisture<br>Layering<br>Bundle<\/div>",
+            "textColor": "#ffffff",
+            "textFillColor": "rgba(0,0,0,0)",
+            "fullwidthText": false,
+            "fontSize": "base",
+            "horizontalAlignment": "end",
+            "verticalAlignment": "top"
+          }
+        },
+        "1cad6f3c-f8a1-4eec-8329-44dcc4854063": {
+          "type": "gridImage",
+          "settings": {
+            "hide": "hide-mobile",
+            "url": "#",
+            "backgroundSize": "cover",
+            "overlayOpacity": 30,
+            "overlayColor": "#faad94",
+            "imageText": "<div style=\" font-size: 56px; font-weight: 700; padding: 10px; \">Our<br>Story<\/div>",
+            "textColor": "#ffffff",
+            "textFillColor": "rgba(0,0,0,0)",
+            "fullwidthText": false,
+            "fontSize": "base",
+            "horizontalAlignment": "start",
+            "verticalAlignment": "bottom"
+          }
+        },
+        "e898fbbf-afd6-4f0c-9be5-bf31c0d58781": {
+          "type": "gridImage",
+          "settings": {
+            "hide": "show-both",
+            "url": "#",
+            "backgroundSize": "cover",
+            "overlayOpacity": 0,
+            "overlayColor": "#000000",
+            "imageText": "<div style=\" font-size: 46px; font-weight: 700; padding: 10px; \">Exclusive<br>Offers<\/div>",
+            "textColor": "#6951a1",
+            "textFillColor": "rgba(0,0,0,0)",
+            "fullwidthText": false,
+            "fontSize": "base",
+            "horizontalAlignment": "center",
+            "verticalAlignment": "middle"
+          }
+        },
+        "057b51a7-7dda-45b2-8c88-6f284e29c077": {
+          "type": "gridImage",
+          "settings": {
+            "hide": "hide-mobile",
+            "url": "#",
+            "backgroundSize": "cover",
+            "overlayOpacity": 100,
+            "overlayColor": "#85c6c2",
+            "imageText": "<div style=\" font-size: 26px; font-weight: 700; padding: 10px; \">Enjoy 10% Off All Value Bundles. No Code Necessary.<\/div>",
+            "textColor": "#ffffff",
+            "textFillColor": "rgba(0,0,0,0)",
+            "fullwidthText": false,
+            "fontSize": "base",
+            "horizontalAlignment": "end",
+            "verticalAlignment": "middle"
+          }
+        },
+        "5abb8f73-a7a4-4435-880c-030a465b511d": {
+          "type": "gridImage",
+          "settings": {
+            "hide": "show-both",
+            "url": "#",
+            "backgroundSize": "contain",
+            "overlayOpacity": 0,
+            "overlayColor": "#000000",
+            "imageText": "<div style=\" font-size: 26px; font-weight: 700; padding: 10px; \">LAUNCH<br>COLLECTION<\/div>",
+            "textColor": "#ffffff",
+            "textFillColor": "rgba(0,0,0,0)",
+            "fullwidthText": false,
+            "fontSize": "base",
+            "horizontalAlignment": "end",
+            "verticalAlignment": "top"
+          }
+        }
+      },
+      "block_order": [
+        "91e2efe7-d458-43fb-8c09-1614d991b8be",
+        "f3126a0d-0c06-447b-9cfa-7ec71475516e",
+        "1cad6f3c-f8a1-4eec-8329-44dcc4854063",
+        "e898fbbf-afd6-4f0c-9be5-bf31c0d58781",
+        "057b51a7-7dda-45b2-8c88-6f284e29c077",
+        "5abb8f73-a7a4-4435-880c-030a465b511d"
+      ],
+      "settings": {
+        "layout": "stretchContent",
+        "nomargin": false,
+        "height": 0,
+        "gap": 10
+      }
+    },
+    "16265528618af17c6c": {
+      "type": "section__cta",
+      "blocks": {
+        "16265528618af17c6c-0": {
+          "type": "title",
+          "settings": {
+            "fullWidth": true,
+            "content": "WELCOME TO OUR FAMILY",
+            "textColor": "rgba(0,0,0,0)",
+            "fontFamily": "title",
+            "fontSize": "medium"
+          }
+        },
+        "16265528618af17c6c-1": {
+          "type": "richText",
+          "settings": {
+            "fullWidth": true,
+            "maxBWidth": 100,
+            "content": "<p>From the moment our daughter Kaavia entered this world, we knew we’d teach her to embrace her skin—its beauty, power, wisdom, and magic. And that means caring for it with love. Inspired by our littlest love—and millions of other babies of color—we set out to build <strong>PROUDLY<\/strong>: Baby care for melanated skin, created for us and by us.<\/p>",
+            "detectLists": true,
+            "textColor": "rgba(0,0,0,0)",
+            "fontFamily": "base",
+            "fontSize": "base"
+          }
+        }
+      },
+      "block_order": [
+        "16265528618af17c6c-0",
+        "16265528618af17c6c-1"
+      ],
+      "settings": {
+        "displayFor": "display--both",
+        "layout": "default",
+        "nomargin": false,
+        "scopedCSS": "",
+        "height": 230,
+        "padding": 30,
+        "lineMargin": 0,
+        "backgroundColor": "#f7f4ff",
+        "backgroundPosition": "middle",
+        "backgroundFilter": "none",
+        "backdropIntensity": 50,
+        "parallax": false,
+        "backgroundPattern": false,
+        "overlayOpacity": 0,
+        "overlayColor": "#000000",
+        "contentColor": "rgba(0,0,0,0)",
+        "horizontalAlignment": "center",
+        "verticalAlignment": "middle",
+        "maxContentWidth": 65,
+        "heading": "",
+        "headingColor": "rgba(0,0,0,0)",
+        "subheading": "",
+        "subheadingColor": "rgba(0,0,0,0)",
+        "subheadingPosition": "above",
+        "headingAlignment": "center"
+      }
+    },
+    "16265531878648c50b": {
+      "type": "section__testimonials",
+      "disabled": true,
+      "blocks": {
+        "16265531878648c50b-0": {
+          "type": "testimonial",
+          "settings": {
+            "text": "<p>Great product for a fair price.<\/p>",
+            "authorName": "John Doe",
+            "fakeImageSex": "men"
+          }
+        },
+        "16265531878648c50b-1": {
+          "type": "testimonial",
+          "settings": {
+            "text": "<p>Great product for anyone serious about making cash.<\/p>",
+            "authorName": "Jane Doe",
+            "fakeImageSex": "women"
+          }
+        },
+        "16265531878648c50b-2": {
+          "type": "testimonial",
+          "settings": {
+            "text": "<p>I just LOVE the flexiblity Booster provides.<\/p>",
+            "authorName": "John Doe",
+            "fakeImageSex": "men"
+          }
+        }
+      },
+      "block_order": [
+        "16265531878648c50b-0",
+        "16265531878648c50b-1",
+        "16265531878648c50b-2"
+      ],
+      "settings": {
+        "displayFor": "display--both",
+        "layout": "default",
+        "nomargin": false,
+        "scopedCSS": "",
+        "height": 0,
+        "padding": 40,
+        "backgroundColor": "#f8f8f8",
+        "heading": "Testimonials",
+        "headingColor": "rgba(0,0,0,0)",
+        "subheading": "What others have to say",
+        "subheadingColor": "rgba(0,0,0,0)",
+        "subheadingPosition": "above",
+        "headingAlignment": "center",
+        "blockStyle": "author-below",
+        "blockBackground": "rgba(0,0,0,0)",
+        "blockText": "#000000",
+        "testimonialAlign": "left",
+        "blockBottomBackground": "#000000",
+        "blockBottomText": "#ffffff",
+        "useFakeImages": true,
+        "roundedImages": true
+      }
+    },
+    "16795577260e00d58f": {
+      "type": "apps",
+      "blocks": {
+        "f4cb9386-8e20-4375-9dc3-13f453a08590": {
+          "type": "shopify:\/\/apps\/judge-me-product-reviews\/blocks\/featured_carousel\/61ccd3b1-a9f2-4160-9fe9-4fec8413e5d8",
+          "settings": {
+            "maxwidth": 1080
+          }
+        }
+      },
+      "block_order": [
+        "f4cb9386-8e20-4375-9dc3-13f453a08590"
+      ],
+      "settings": {
+      }
+    }
+  },
+  "order": [
+    "aa391eea-57f0-4d0f-8515-481fb5425f5d",
+    "1658982451aec4bb5c",
+    "16265528618af17c6c",
+    "16265531878648c50b",
+    "16795577260e00d58f"
+  ]
+}
