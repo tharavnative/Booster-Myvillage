@@ -151,6 +151,7 @@
      {{ 'bootstrap.min.js' | asset_url | script_tag }}   
     {{ 'unicons.css' | asset_url | stylesheet_tag }}
     {{ 'custom-styles.css' | asset_url | stylesheet_tag }}
+    {{ 'custom-api-style.css' | asset_url | stylesheet_tag }}
     {% unless settings.bodyHTML == blank %}
       {{settings.bodyHTML}}
     {% endunless %}
