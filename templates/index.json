@@ -343,6 +343,46 @@
         "verticalAlignment": "middle"
       }
     },
+    "b0a52ba3-4627-4259-a52c-dea240527529": {
+      "type": "section__content",
+      "blocks": {
+        "da35300b-61ea-4657-bc06-14f9d646398b": {
+          "type": "liquidBlock",
+          "settings": {
+            "blockWidth": "col-md-12",
+            "vertPadding": 0,
+            "horPadding": 0,
+            "horAlign": "center",
+            "vertAlign": "middle",
+            "liquid": "{% render 'block__practioner-brands' %}",
+            "customCSS": "##scoped{\nwidth:100%;\n}"
+          }
+        }
+      },
+      "block_order": [
+        "da35300b-61ea-4657-bc06-14f9d646398b"
+      ],
+      "settings": {
+        "displayFor": "display--both",
+        "layout": "default",
+        "nomargin": false,
+        "scopedCSS": "##scoped { background: #f3f2f2; padding: 60px 0; padding-bottom: 0;}",
+        "height": 0,
+        "padding": 0,
+        "lineMargin": 12,
+        "backgroundColor": "#f3f2f2",
+        "backgroundPosition": "middle",
+        "backgroundFilter": "none",
+        "backdropIntensity": 50,
+        "parallax": false,
+        "backgroundPattern": false,
+        "overlayOpacity": 0,
+        "overlayColor": "#000000",
+        "contentColor": "rgba(0,0,0,0)",
+        "horizontalAlignment": "center",
+        "verticalAlignment": "middle"
+      }
+    },
     "16265528618af17c6c": {
       "type": "section__cta",
       "blocks": {
@@ -482,6 +522,7 @@
     "21876b55-8a79-491b-92be-9c717f04a4ab",
     "1658982451aec4bb5c",
     "3ad19cf4-c83e-46c1-84f8-a6908db5e3b7",
+    "b0a52ba3-4627-4259-a52c-dea240527529",
     "16265528618af17c6c",
     "16265531878648c50b",
     "16795577260e00d58f"
