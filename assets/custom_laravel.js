@@ -3432,12 +3432,14 @@ jQuery(function ($) {
   function getMyPlanCallback(status, data, request){
     //console.log("getMyPlanCallback!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!",data);
     var all_list_html ='';
-    var list = data.list;
-    var user_list = data.user_list;
-    all_list_html = all_list_html + rec_list_html(list);
-    all_list_html = all_list_html + rec_list_html(user_list);
-    $('.laravel-my-plan-list').html(all_list_html);
-    clickMyPlan();
+    if(data){
+      var list = data.list;
+      var user_list = data.user_list;
+      all_list_html = all_list_html + rec_list_html(list);
+      all_list_html = all_list_html + rec_list_html(user_list);
+      $('.laravel-my-plan-list').html(all_list_html);
+      clickMyPlan();
+    }
     $(".laravel-recommendation-outer").removeClass('loading-blue');
     //loadingCompletion();
   }
