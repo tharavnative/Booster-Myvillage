@@ -3418,6 +3418,8 @@ jQuery(function ($) {
       listRecommendations(data.allrecs,data.rec_urls);
       listRecommendationFilters(data.allcats);
       getMyPlan();
+    }else{
+      $(".laravel-recommendation-outer").removeClass('loading-blue');
     }
     
     //loadingCompletion();
