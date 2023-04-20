@@ -58,12 +58,15 @@
             "horAlign": "center",
             "vertAlign": "middle",
             "liquid": "{% render 'home-merge-boxes' %}",
-            "customCSS": "##scoped{\nbackground:red;\n}"
+            "customCSS": ""
           }
         }
       },
       "block_order": [
         "a6c6710c-a37c-4e92-aaf6-70ed0e991399"
+      ],
+      "custom_css": [
+
       ],
       "settings": {
         "displayFor": "display--both",
