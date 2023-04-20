@@ -4257,11 +4257,18 @@ function list_my_plan(){
         });
 
         function metabolic_risk() {
+            var request = {
+                	"Content-Type":"application/json",
+                	"accept": "application/json",
+                	crossDomain: true,
+                	"api-key": "c6701296-5027-4076-b80c-d64a77c2ddc7"
+              };
             $.ajax({
 
-                url: 'https://app.iqyouhealth.com/api/metabolic_risk?user_key=' + window.cus_id + '&api_key=c6701296-5027-4076-b80c-d64a77c2ddc7',
+                url: 'https://api.iqyouhealth.com/api/v1/metabolic_risk?user_key=' + window.cus_id + '&api_key=c6701296-5027-4076-b80c-d64a77c2ddc7',
                 type: 'GET',
                 crossDomain: true,
+                headers: request,
                 success: function (res) {
                     var a, b, c;
                     $.each(res.toxins.detailed, function (i, v) {
