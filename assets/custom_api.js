@@ -657,39 +657,39 @@ jQuery( document ).ready(function($) {
 
         if ($(this).val().length >= 4) {
 
-            $.ajax({
+            // $.ajax({
 
-                url: 'https://app.iqyouhealth.com/api/medications?user_key=' + window.customer_id + '&api_key=c6701296-5027-4076-b80c-d64a77c2ddc7&drugsearch=' + $(this).val(),
-                type: 'GET',
-                crossDomain: true,
-                success: function (res) {
-                    var ht = '';
-                    ht += '<div id="autocomplete"><ul class="autoListing">'
-                    $.each(res.matches, function (i, v) {
-                        var pos = i.indexOf("(") + 1;
-                        var remain = i.slice(pos, -1);
-                        var rem_string = remain.split('-', 1)[0]
-                        ht += '<li data-value=' + rem_string + '>' + v + '</li>';
-                    });
-                    ht += '</ul></div>';
-                    $('.form-item-drugsearch').find('label').html(ht);
+            //     url: 'https://app.iqyouhealth.com/api/medications?user_key=' + window.customer_id + '&api_key=c6701296-5027-4076-b80c-d64a77c2ddc7&drugsearch=' + $(this).val(),
+            //     type: 'GET',
+            //     crossDomain: true,
+            //     success: function (res) {
+            //         var ht = '';
+            //         ht += '<div id="autocomplete"><ul class="autoListing">'
+            //         $.each(res.matches, function (i, v) {
+            //             var pos = i.indexOf("(") + 1;
+            //             var remain = i.slice(pos, -1);
+            //             var rem_string = remain.split('-', 1)[0]
+            //             ht += '<li data-value=' + rem_string + '>' + v + '</li>';
+            //         });
+            //         ht += '</ul></div>';
+            //         $('.form-item-drugsearch').find('label').html(ht);
 
-                    $(document).on('click', '#autocomplete .autoListing li', function () {
-                        $('#autocomplete').css('display', 'none');
-                        $('#edit-drugsearch').val($(this).text());
-                        var li = $(this).attr('data-value');
-                        //$('#questioncontainer-1 .questionrow').css('display','none');
-                        $('#questioncontainer-1 .questionrow').each(function () {
-                            if ($(this).attr('id') == 'table-' + li) {
-                                $(this).css('display', 'block');
-                            }
-                        });
-                    });
-                },
-                error: function (xhr, status, err) {
-                    console.log(err);
-                }
-            });
+            //         $(document).on('click', '#autocomplete .autoListing li', function () {
+            //             $('#autocomplete').css('display', 'none');
+            //             $('#edit-drugsearch').val($(this).text());
+            //             var li = $(this).attr('data-value');
+            //             //$('#questioncontainer-1 .questionrow').css('display','none');
+            //             $('#questioncontainer-1 .questionrow').each(function () {
+            //                 if ($(this).attr('id') == 'table-' + li) {
+            //                     $(this).css('display', 'block');
+            //                 }
+            //             });
+            //         });
+            //     },
+            //     error: function (xhr, status, err) {
+            //         console.log(err);
+            //     }
+            // });
         }
     });
   function remove_from_my_plan(rec_id){
@@ -1397,7 +1397,7 @@ function list_my_plan(){
         });
 
 
-        $.get('https://app.iqyouhealth.com/api/completion?user_key=' + window.cus_id + '&api_key=c6701296-5027-4076-b80c-d64a77c2ddc7', {
+        $.get('https://api.iqyouhealth.com/api/v1/completion?user_key=' + window.cus_id + '&api_key=c6701296-5027-4076-b80c-d64a77c2ddc7', {
             dataType: 'jsonp'
         }, function (res) {
 
