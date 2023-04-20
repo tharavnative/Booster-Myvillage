@@ -89,33 +89,82 @@
         "verticalAlignment": "middle"
       }
     },
-    "995318fc-d46a-4f8a-9ab2-baa13dd424d1": {
-      "type": "section__content",
+    "21876b55-8a79-491b-92be-9c717f04a4ab": {
+      "type": "section__video-text",
       "blocks": {
-        "c41e2ec6-e515-4a2e-a995-737919f69d0c": {
-          "type": "liquidBlock",
+        "4b0085e5-e177-43cc-8bb7-09736ab7e871": {
+          "type": "title",
           "settings": {
-            "blockWidth": "col-md-12",
-            "vertPadding": 0,
-            "horPadding": 0,
-            "horAlign": "center",
-            "vertAlign": "middle",
-            "liquid": "{% render 'block__custom-consultatiion-video' %}",
-            "customCSS": ""
+            "fullWidth": true,
+            "content": "Consultation Services",
+            "textColor": "rgba(0,0,0,0)",
+            "fontFamily": "title",
+            "fontSize": "medium"
+          }
+        },
+        "template--16771356393710__21876b55-8a79-491b-92be-9c717f04a4ab-168199027639a5f0a3-1": {
+          "type": "richText",
+          "settings": {
+            "fullWidth": true,
+            "maxBWidth": 100,
+            "content": "<p>We have a diverse team of experts including licensed nutritionists, nutrition educators, naturopathic doctors, and herbalists.<\/p><p>Our specialized wellness portal allows for easy scheduling and greater communication and support from your health coach.<\/p>",
+            "detectLists": true,
+            "textColor": "rgba(0,0,0,0)",
+            "fontFamily": "base",
+            "fontSize": "base"
+          }
+        },
+        "template--16771356393710__21876b55-8a79-491b-92be-9c717f04a4ab-168199027639a5f0a3-2": {
+          "type": "button",
+          "settings": {
+            "fullWidth": false,
+            "text": "Book a <strong>FREE<\/strong> <br>Consultation!",
+            "url": "https:\/\/myvillagegreen.com\/collections\/lab-tests",
+            "icon": "",
+            "iconPosition": "icon--left",
+            "wideButton": false,
+            "buttonStyle": "primary",
+            "buttonType": "default",
+            "fontSize": "base",
+            "fontFamily": "base",
+            "animation": "none",
+            "animationDuration": 1000,
+            "animationInfinite": true
+          }
+        },
+        "99d1fcf6-95a3-406e-bfe6-010b1db8a159": {
+          "type": "button",
+          "settings": {
+            "fullWidth": false,
+            "text": "Order Lab Testing<br> Online <strong>NOW!<\/strong>",
+            "url": "",
+            "icon": "",
+            "iconPosition": "icon--left",
+            "wideButton": false,
+            "buttonStyle": "primary",
+            "buttonType": "default",
+            "fontSize": "base",
+            "fontFamily": "base",
+            "animation": "none",
+            "animationDuration": 1000,
+            "animationInfinite": true
           }
         }
       },
       "block_order": [
-        "c41e2ec6-e515-4a2e-a995-737919f69d0c"
+        "4b0085e5-e177-43cc-8bb7-09736ab7e871",
+        "template--16771356393710__21876b55-8a79-491b-92be-9c717f04a4ab-168199027639a5f0a3-1",
+        "template--16771356393710__21876b55-8a79-491b-92be-9c717f04a4ab-168199027639a5f0a3-2",
+        "99d1fcf6-95a3-406e-bfe6-010b1db8a159"
       ],
       "settings": {
         "displayFor": "display--both",
         "layout": "default",
         "nomargin": false,
-        "scopedCSS": "##scoped{\nmargin-top:-50px;\n}",
+        "scopedCSS": "",
         "height": 0,
         "padding": 0,
-        "lineMargin": 12,
+        "lineMargin": 25,
         "backgroundColor": "rgba(0,0,0,0)",
         "backgroundPosition": "middle",
         "backgroundFilter": "none",
@@ -125,8 +174,11 @@
         "overlayOpacity": 0,
         "overlayColor": "#000000",
         "contentColor": "rgba(0,0,0,0)",
-        "horizontalAlignment": "center",
-        "verticalAlignment": "middle"
+        "horizontalAlignment": "start",
+        "verticalAlignment": "middle",
+        "imagePosition": "left",
+        "imageWidth": "6",
+        "video": "https:\/\/vimeo.com\/400313282"
       }
     },
     "1658982451aec4bb5c": {
@@ -387,7 +439,7 @@
   "order": [
     "aa391eea-57f0-4d0f-8515-481fb5425f5d",
     "8c07609b-b928-4b43-a745-4fb94a9f4de8",
-    "995318fc-d46a-4f8a-9ab2-baa13dd424d1",
+    "21876b55-8a79-491b-92be-9c717f04a4ab",
     "1658982451aec4bb5c",
     "16265528618af17c6c",
     "16265531878648c50b",
