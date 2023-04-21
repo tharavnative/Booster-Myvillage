@@ -91,6 +91,7 @@
     },
     "1658982451aec4bb5c": {
       "type": "section__auto-grid",
+      "disabled": true,
       "blocks": {
         "91e2efe7-d458-43fb-8c09-1614d991b8be": {
           "type": "gridImage",
@@ -210,8 +211,7 @@
         "5abb8f73-a7a4-4435-880c-030a465b511d"
       ],
       "custom_css": [
-        "div#grid--template--16771356393710__61c507d5-0941-4f72-9404-794f06ba3b55 {display: none;}",
-        "@media only screen and (max-width: 768px) {div#grid--template--16771356393710__61c507d5-0941-4f72-9404-794f06ba3b55 {display: none; }}"
+
       ],
       "settings": {
         "layout": "default",
@@ -222,6 +222,7 @@
     },
     "61c507d5-0941-4f72-9404-794f06ba3b55": {
       "type": "section__auto-grid",
+      "disabled": true,
       "blocks": {
         "e0d83a6d-bb42-480a-af8e-bef2738d5578": {
           "type": "gridImage",
