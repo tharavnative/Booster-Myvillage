@@ -95,7 +95,7 @@
         "91e2efe7-d458-43fb-8c09-1614d991b8be": {
           "type": "gridImage",
           "settings": {
-            "hide": "show-both",
+            "hide": "hide-mobile",
             "url": "shopify:\/\/products\/gentle-baby-wash",
             "backgroundImage": "shopify:\/\/shop_images\/block1b.png",
             "backgroundSize": "cover",
@@ -113,7 +113,7 @@
         "f3126a0d-0c06-447b-9cfa-7ec71475516e": {
           "type": "gridImage",
           "settings": {
-            "hide": "show-both",
+            "hide": "hide-mobile",
             "url": "#",
             "backgroundImage": "shopify:\/\/shop_images\/block2.png",
             "backgroundSize": "cover",
@@ -131,7 +131,7 @@
         "1cad6f3c-f8a1-4eec-8329-44dcc4854063": {
           "type": "gridImage",
           "settings": {
-            "hide": "show-both",
+            "hide": "hide-mobile",
             "url": "#",
             "backgroundImage": "shopify:\/\/shop_images\/block3.png",
             "backgroundSize": "cover",
@@ -149,7 +149,7 @@
         "e898fbbf-afd6-4f0c-9be5-bf31c0d58781": {
           "type": "gridImage",
           "settings": {
-            "hide": "show-both",
+            "hide": "hide-mobile",
             "url": "#",
             "backgroundImage": "shopify:\/\/shop_images\/block4.png",
             "backgroundSize": "cover",
@@ -167,7 +167,7 @@
         "057b51a7-7dda-45b2-8c88-6f284e29c077": {
           "type": "gridImage",
           "settings": {
-            "hide": "show-both",
+            "hide": "hide-mobile",
             "url": "#",
             "backgroundImage": "shopify:\/\/shop_images\/block5b.png",
             "backgroundSize": "cover",
@@ -185,7 +185,7 @@
         "5abb8f73-a7a4-4435-880c-030a465b511d": {
           "type": "gridImage",
           "settings": {
-            "hide": "show-both",
+            "hide": "hide-mobile",
             "url": "#",
             "backgroundImage": "shopify:\/\/shop_images\/block6.png",
             "backgroundSize": "cover",
