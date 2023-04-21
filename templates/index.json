@@ -212,7 +212,7 @@
         "5abb8f73-a7a4-4435-880c-030a465b511d"
       ],
       "settings": {
-        "layout": "stretchContent",
+        "layout": "default",
         "nomargin": false,
         "height": 800,
         "gap": 10
