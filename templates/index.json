@@ -91,14 +91,13 @@
     },
     "1658982451aec4bb5c": {
       "type": "section__auto-grid",
-      "disabled": true,
       "blocks": {
         "91e2efe7-d458-43fb-8c09-1614d991b8be": {
           "type": "gridImage",
           "settings": {
             "hide": "hide-mobile",
             "url": "shopify:\/\/products\/gentle-baby-wash",
-            "backgroundImage": "shopify:\/\/shop_images\/block1b.png",
+            "backgroundImage": "shopify:\/\/shop_images\/block1b_a4098332-04a2-4b3e-b156-3a1c3bf78ded.png",
             "backgroundSize": "cover",
             "overlayOpacity": 0,
             "overlayColor": "#000000",
@@ -120,7 +119,7 @@
             "backgroundSize": "cover",
             "overlayOpacity": 0,
             "overlayColor": "#000000",
-            "imageText": "<div style=\" font-size: 36px; line-height: 40px; font-weight: 400; padding: 20px; \">Digestive<br>Health<\/div>",
+            "imageText": "<div style=\" font-size: 30px; line-height: 32px; font-weight: 400; padding: 20px; letter-spacing: -1px;\">Digestive<br>Health<\/div>",
             "textColor": "#000000",
             "textFillColor": "rgba(0,0,0,0)",
             "fullwidthText": false,
@@ -138,7 +137,7 @@
             "backgroundSize": "cover",
             "overlayOpacity": 0,
             "overlayColor": "#faad94",
-            "imageText": "<div style=\" font-size: 52px; line-height: 58px; font-weight: 900; padding: 20px; letter-spacing: -1px\">BONE<br>HEALTH<\/div>",
+            "imageText": "<div style=\" font-size: 42px; line-height: 44px; font-weight: 900; padding: 20px; letter-spacing: -1px\">BONE<br>HEALTH<\/div>",
             "textColor": "#ffffff",
             "textFillColor": "rgba(0,0,0,0)",
             "fullwidthText": false,
@@ -156,7 +155,7 @@
             "backgroundSize": "cover",
             "overlayOpacity": 0,
             "overlayColor": "#000000",
-            "imageText": "<div style=\" font-size: 30px; line-height: 32px; font-weight: 400; padding: 20px; letter-spacing: -1px;\">Pain<br>Management<\/div>",
+            "imageText": "<div style=\" font-size: 24px; line-height: 26px; font-weight: 400; padding: 15px; letter-spacing: -1px;\">Pain<br>Management<\/div>",
             "textColor": "#000000",
             "textFillColor": "rgba(0,0,0,0)",
             "fullwidthText": false,
