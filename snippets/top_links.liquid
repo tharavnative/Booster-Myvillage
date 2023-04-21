@@ -38,9 +38,26 @@
                   
                 </li>
                 
+                    {% if customer %}
+                <li class="mem_dashbd_pag">
+                  {% for tag in customer.tags %}
+                    
+                  {% if tag=='mvg-membership' %}
+                        {% assign bold_member = true %}
+                         {% break %}
+                  {% endif %}
+                  {% endfor %}
+                  {% if bold_member %}
+                    <a class="mem_dashbtn" href="/pages/membership-dashboard">Humanized+ Member Dashboard</a>
+                  {% else %}
+                     <a class="mem_dashbtn" href="/pages/signup-landing">Become a Humanized+ Member</a>
+                  {% endif %}
+                </li>
+                {% else %}
                      <li class="mem_dashbd_pag">
                         <a class="mem_dashbtn" href="/pages/signup-landing">Become a Humanized+ Member</a>
                     </li> 
+                {% endif %}
                 
                 <!-- 
                 <li>
