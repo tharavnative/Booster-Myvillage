@@ -82,7 +82,7 @@
           "height": 30,
           "fontSize": "font__size--small",
           "colorCombo": "customCombo",
-          "customFillColor": "#FFFFFF",
+          "customFillColor": "#ffffff",
           "customContentColor": "#6951a1"
         }
       },
@@ -417,5 +417,10 @@
         }
       }
     }
+  },
+  "platform_customizations": {
+    "custom_css": [
+      "div#grid--template--16771356393710__61c507d5-0941-4f72-9404-794f06ba3b55 {display: none;}"
+    ]
   }
 }
