@@ -10,6 +10,9 @@ colorCombo
 style="{% if section.settings.colorCombo == 'customCombo' %}background-color: {{section.settings.customFillColor}}; color: {{section.settings.customContentColor}};{% endif %} padding-top: 2px; padding-bottom: 2px;"
 >
   <div class="inherit middle row layout__content">
+
+    {% render 'top_links' %}
+    
   {% if section.blocks.size > 0 %}
   {%- for block in section.blocks -%}
     <div class="{%- unless block.settings.enabledMobile%}hide-mobile{%endunless%} {% unless block.settings.enabled%}hide-desktop{%endunless%} 
