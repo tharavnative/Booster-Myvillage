@@ -2,6 +2,7 @@
   "sections": {
     "aa391eea-57f0-4d0f-8515-481fb5425f5d": {
       "type": "section__slider--adaptive",
+      "disabled": true,
       "blocks": {
         "template--16771356393710__aa391eea-57f0-4d0f-8515-481fb5425f5d-16795772786b6cfda2-0": {
           "type": "imageSlideAdaptive",
@@ -48,6 +49,7 @@
     },
     "8c07609b-b928-4b43-a745-4fb94a9f4de8": {
       "type": "section__content",
+      "disabled": true,
       "blocks": {
         "a6c6710c-a37c-4e92-aaf6-70ed0e991399": {
           "type": "liquidBlock",
@@ -87,6 +89,133 @@
         "contentColor": "rgba(0,0,0,0)",
         "horizontalAlignment": "center",
         "verticalAlignment": "middle"
+      }
+    },
+    "1658982451aec4bb5c": {
+      "type": "section__auto-grid",
+      "blocks": {
+        "91e2efe7-d458-43fb-8c09-1614d991b8be": {
+          "type": "gridImage",
+          "settings": {
+            "hide": "show-both",
+            "url": "shopify:\/\/products\/gentle-baby-wash",
+            "backgroundImage": "shopify:\/\/shop_images\/block1b.png",
+            "backgroundSize": "cover",
+            "overlayOpacity": 0,
+            "overlayColor": "#000000",
+            "imageText": "<div style=\" font-size: 24px; line-height: 26px; font-weight: 700; padding: 0 20px 20px 20px; letter-spacing: -1px;\">JOIN OUR MEMBERSHIP PROGRAM<\/div><div style=\" font-size: 21px; line-height: 24px; font-weight: 400; padding: 0 20px 40px 20px; letter-spacing: -1px;\">Deep Discounts + VIP Support<\/div>",
+            "textColor": "#000000",
+            "textFillColor": "rgba(0,0,0,0)",
+            "fullwidthText": false,
+            "fontSize": "base",
+            "horizontalAlignment": "center",
+            "verticalAlignment": "bottom"
+          }
+        },
+        "f3126a0d-0c06-447b-9cfa-7ec71475516e": {
+          "type": "gridImage",
+          "settings": {
+            "hide": "hide-mobile",
+            "url": "#",
+            "backgroundImage": "shopify:\/\/shop_images\/block2.png",
+            "backgroundSize": "cover",
+            "overlayOpacity": 0,
+            "overlayColor": "#000000",
+            "imageText": "<div style=\" font-size: 36px; line-height: 40px; font-weight: 400; padding: 20px; \">Digestive<br>Health<\/div>",
+            "textColor": "#000000",
+            "textFillColor": "rgba(0,0,0,0)",
+            "fullwidthText": false,
+            "fontSize": "medium",
+            "horizontalAlignment": "end",
+            "verticalAlignment": "top"
+          }
+        },
+        "1cad6f3c-f8a1-4eec-8329-44dcc4854063": {
+          "type": "gridImage",
+          "settings": {
+            "hide": "hide-mobile",
+            "url": "#",
+            "backgroundImage": "shopify:\/\/shop_images\/block3.png",
+            "backgroundSize": "cover",
+            "overlayOpacity": 0,
+            "overlayColor": "#faad94",
+            "imageText": "<div style=\" font-size: 52px; line-height: 58px; font-weight: 900; padding: 20px; letter-spacing: -1px\">BONE<br>HEALTH<\/div>",
+            "textColor": "#ffffff",
+            "textFillColor": "rgba(0,0,0,0)",
+            "fullwidthText": false,
+            "fontSize": "base",
+            "horizontalAlignment": "center",
+            "verticalAlignment": "middle"
+          }
+        },
+        "e898fbbf-afd6-4f0c-9be5-bf31c0d58781": {
+          "type": "gridImage",
+          "settings": {
+            "hide": "show-both",
+            "url": "#",
+            "backgroundImage": "shopify:\/\/shop_images\/block4.png",
+            "backgroundSize": "cover",
+            "overlayOpacity": 0,
+            "overlayColor": "#000000",
+            "imageText": "<div style=\" font-size: 30px; line-height: 32px; font-weight: 400; padding: 20px; letter-spacing: -1px;\">Pain<br>Management<\/div>",
+            "textColor": "#000000",
+            "textFillColor": "rgba(0,0,0,0)",
+            "fullwidthText": false,
+            "fontSize": "base",
+            "horizontalAlignment": "start",
+            "verticalAlignment": "bottom"
+          }
+        },
+        "057b51a7-7dda-45b2-8c88-6f284e29c077": {
+          "type": "gridImage",
+          "settings": {
+            "hide": "hide-mobile",
+            "url": "#",
+            "backgroundImage": "shopify:\/\/shop_images\/block5b.png",
+            "backgroundSize": "cover",
+            "overlayOpacity": 0,
+            "overlayColor": "#85c6c2",
+            "imageText": "<div style=\" font-size: 36px; line-height: 36px; font-weight: 400; padding: 20px; letter-spacing: -1px;\">SINUS<br>SURVIVAL<\/div> <div style=\" font-size: 21px; line-height: 24px; font-weight: 400; padding: 20px; letter-spacing: -1px;\">Sinus Survival was developed to identify and eliminate the root causes of your sinus symptoms and to heal inflammation.<\/div>",
+            "textColor": "#000000",
+            "textFillColor": "rgba(0,0,0,0)",
+            "fullwidthText": false,
+            "fontSize": "base",
+            "horizontalAlignment": "center",
+            "verticalAlignment": "middle"
+          }
+        },
+        "5abb8f73-a7a4-4435-880c-030a465b511d": {
+          "type": "gridImage",
+          "settings": {
+            "hide": "show-both",
+            "url": "#",
+            "backgroundImage": "shopify:\/\/shop_images\/block6.png",
+            "backgroundSize": "contain",
+            "overlayOpacity": 0,
+            "overlayColor": "#000000",
+            "imageText": "<div style=\" font-size: 36px; line-height: 40px; font-weight: 300; padding: 20px; letter-spacing: -1px;\">Helping you<br>live your<br>healthiest life<\/div>",
+            "textColor": "#ffffff",
+            "textFillColor": "rgba(0,0,0,0)",
+            "fullwidthText": false,
+            "fontSize": "base",
+            "horizontalAlignment": "end",
+            "verticalAlignment": "bottom"
+          }
+        }
+      },
+      "block_order": [
+        "91e2efe7-d458-43fb-8c09-1614d991b8be",
+        "f3126a0d-0c06-447b-9cfa-7ec71475516e",
+        "1cad6f3c-f8a1-4eec-8329-44dcc4854063",
+        "e898fbbf-afd6-4f0c-9be5-bf31c0d58781",
+        "057b51a7-7dda-45b2-8c88-6f284e29c077",
+        "5abb8f73-a7a4-4435-880c-030a465b511d"
+      ],
+      "settings": {
+        "layout": "stretchContent",
+        "nomargin": false,
+        "height": 800,
+        "gap": 10
       }
     },
     "21876b55-8a79-491b-92be-9c717f04a4ab": {
@@ -179,128 +308,6 @@
         "imagePosition": "left",
         "imageWidth": "6",
         "video": "https:\/\/vimeo.com\/400313282"
-      }
-    },
-    "1658982451aec4bb5c": {
-      "type": "section__auto-grid",
-      "disabled": true,
-      "blocks": {
-        "91e2efe7-d458-43fb-8c09-1614d991b8be": {
-          "type": "gridImage",
-          "settings": {
-            "hide": "show-both",
-            "url": "shopify:\/\/products\/gentle-baby-wash",
-            "backgroundSize": "cover",
-            "overlayOpacity": 0,
-            "overlayColor": "#000000",
-            "imageText": "<div style=\" font-size: 26px; font-weight: 700; padding: 10px; \">Gentle<br>baby<br>wash<\/div>",
-            "textColor": "#ffffff",
-            "textFillColor": "rgba(0,0,0,0)",
-            "fullwidthText": false,
-            "fontSize": "base",
-            "horizontalAlignment": "start",
-            "verticalAlignment": "top"
-          }
-        },
-        "f3126a0d-0c06-447b-9cfa-7ec71475516e": {
-          "type": "gridImage",
-          "settings": {
-            "hide": "hide-mobile",
-            "url": "#",
-            "backgroundSize": "cover",
-            "overlayOpacity": 0,
-            "overlayColor": "#000000",
-            "imageText": "<div style=\" font-size: 26px; font-weight: 700; padding: 10px; \">Moisture<br>Layering<br>Bundle<\/div>",
-            "textColor": "#ffffff",
-            "textFillColor": "rgba(0,0,0,0)",
-            "fullwidthText": false,
-            "fontSize": "base",
-            "horizontalAlignment": "end",
-            "verticalAlignment": "top"
-          }
-        },
-        "1cad6f3c-f8a1-4eec-8329-44dcc4854063": {
-          "type": "gridImage",
-          "settings": {
-            "hide": "hide-mobile",
-            "url": "#",
-            "backgroundSize": "cover",
-            "overlayOpacity": 30,
-            "overlayColor": "#faad94",
-            "imageText": "<div style=\" font-size: 56px; font-weight: 700; padding: 10px; \">Our<br>Story<\/div>",
-            "textColor": "#ffffff",
-            "textFillColor": "rgba(0,0,0,0)",
-            "fullwidthText": false,
-            "fontSize": "base",
-            "horizontalAlignment": "start",
-            "verticalAlignment": "bottom"
-          }
-        },
-        "e898fbbf-afd6-4f0c-9be5-bf31c0d58781": {
-          "type": "gridImage",
-          "settings": {
-            "hide": "show-both",
-            "url": "#",
-            "backgroundSize": "cover",
-            "overlayOpacity": 0,
-            "overlayColor": "#000000",
-            "imageText": "<div style=\" font-size: 46px; font-weight: 700; padding: 10px; \">Exclusive<br>Offers<\/div>",
-            "textColor": "#6951a1",
-            "textFillColor": "rgba(0,0,0,0)",
-            "fullwidthText": false,
-            "fontSize": "base",
-            "horizontalAlignment": "center",
-            "verticalAlignment": "middle"
-          }
-        },
-        "057b51a7-7dda-45b2-8c88-6f284e29c077": {
-          "type": "gridImage",
-          "settings": {
-            "hide": "hide-mobile",
-            "url": "#",
-            "backgroundSize": "cover",
-            "overlayOpacity": 100,
-            "overlayColor": "#85c6c2",
-            "imageText": "<div style=\" font-size: 26px; font-weight: 700; padding: 10px; \">Enjoy 10% Off All Value Bundles. No Code Necessary.<\/div>",
-            "textColor": "#ffffff",
-            "textFillColor": "rgba(0,0,0,0)",
-            "fullwidthText": false,
-            "fontSize": "base",
-            "horizontalAlignment": "end",
-            "verticalAlignment": "middle"
-          }
-        },
-        "5abb8f73-a7a4-4435-880c-030a465b511d": {
-          "type": "gridImage",
-          "settings": {
-            "hide": "show-both",
-            "url": "#",
-            "backgroundSize": "contain",
-            "overlayOpacity": 0,
-            "overlayColor": "#000000",
-            "imageText": "<div style=\" font-size: 26px; font-weight: 700; padding: 10px; \">LAUNCH<br>COLLECTION<\/div>",
-            "textColor": "#ffffff",
-            "textFillColor": "rgba(0,0,0,0)",
-            "fullwidthText": false,
-            "fontSize": "base",
-            "horizontalAlignment": "end",
-            "verticalAlignment": "top"
-          }
-        }
-      },
-      "block_order": [
-        "91e2efe7-d458-43fb-8c09-1614d991b8be",
-        "f3126a0d-0c06-447b-9cfa-7ec71475516e",
-        "1cad6f3c-f8a1-4eec-8329-44dcc4854063",
-        "e898fbbf-afd6-4f0c-9be5-bf31c0d58781",
-        "057b51a7-7dda-45b2-8c88-6f284e29c077",
-        "5abb8f73-a7a4-4435-880c-030a465b511d"
-      ],
-      "settings": {
-        "layout": "stretchContent",
-        "nomargin": false,
-        "height": 0,
-        "gap": 10
       }
     },
     "3ad19cf4-c83e-46c1-84f8-a6908db5e3b7": {
@@ -461,8 +468,8 @@
   "order": [
     "aa391eea-57f0-4d0f-8515-481fb5425f5d",
     "8c07609b-b928-4b43-a745-4fb94a9f4de8",
-    "21876b55-8a79-491b-92be-9c717f04a4ab",
     "1658982451aec4bb5c",
+    "21876b55-8a79-491b-92be-9c717f04a4ab",
     "3ad19cf4-c83e-46c1-84f8-a6908db5e3b7",
     "b0a52ba3-4627-4259-a52c-dea240527529",
     "16265531878648c50b",
