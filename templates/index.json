@@ -91,6 +91,7 @@
     },
     "1658982451aec4bb5c": {
       "type": "section__auto-grid",
+      "disabled": true,
       "blocks": {
         "91e2efe7-d458-43fb-8c09-1614d991b8be": {
           "type": "gridImage",
