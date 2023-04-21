@@ -14,7 +14,9 @@ html, body {
     color: #000000;
     font-weight: 400;
 }
-
+.page__header{
+  flex-direction: column;
+}
 h1 { font-size: 35px; line-height: 40px; font-family: Montserrat; font-weight: 600; margin-bottom: 12px; color: #00577f;}
 h2 { font-size: 30px; line-height: 35px; font-family: Montserrat; font-weight: 600; margin-bottom: 12px;}
 /******************* Inner *********************/
