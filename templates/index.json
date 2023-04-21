@@ -91,7 +91,6 @@
     },
     "1658982451aec4bb5c": {
       "type": "section__auto-grid",
-      "disabled": true,
       "blocks": {
         "91e2efe7-d458-43fb-8c09-1614d991b8be": {
           "type": "gridImage",
@@ -219,7 +218,6 @@
     },
     "61c507d5-0941-4f72-9404-794f06ba3b55": {
       "type": "section__auto-grid",
-      "disabled": true,
       "blocks": {
         "e0d83a6d-bb42-480a-af8e-bef2738d5578": {
           "type": "gridImage",
