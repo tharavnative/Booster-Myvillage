@@ -54,14 +54,14 @@
                   {% endif %}
                   {% endfor %}
                   {% if bold_member %}
-                    <a class="mem_dashbtn" href="/pages/membership-dashboard">Humanized+ Member Dashboard</a>
+                    <a class="mem_dashbtn bold_member if" href="/pages/membership-dashboard">Humanized+ Member Dashboard</a>
                   {% else %}
-                     <a class="mem_dashbtn" href="/pages/signup-landing">Become a Humanized+ Member</a>
+                     <a class="mem_dashbtn bold_member else" href="/pages/signup-landing">Become a Humanized+ Member</a>
                   {% endif %}
                 </li>
                 {% else %}
                      <li class="mem_dashbd_pag">
-                        <a class="mem_dashbtn" href="/pages/signup-landing">Become a Humanized+ Member</a>
+                        <a class="mem_dashbtn customer else" href="/pages/signup-landing">Become a Humanized+ Member</a>
                     </li> 
                 {% endif %}
                 
