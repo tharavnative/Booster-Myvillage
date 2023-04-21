@@ -115,7 +115,7 @@
         "f3126a0d-0c06-447b-9cfa-7ec71475516e": {
           "type": "gridImage",
           "settings": {
-            "hide": "hide-mobile",
+            "hide": "show-both",
             "url": "#",
             "backgroundImage": "shopify:\/\/shop_images\/block2.png",
             "backgroundSize": "cover",
@@ -133,7 +133,7 @@
         "1cad6f3c-f8a1-4eec-8329-44dcc4854063": {
           "type": "gridImage",
           "settings": {
-            "hide": "hide-mobile",
+            "hide": "show-both",
             "url": "#",
             "backgroundImage": "shopify:\/\/shop_images\/block3.png",
             "backgroundSize": "cover",
@@ -169,7 +169,7 @@
         "057b51a7-7dda-45b2-8c88-6f284e29c077": {
           "type": "gridImage",
           "settings": {
-            "hide": "hide-mobile",
+            "hide": "show-both",
             "url": "#",
             "backgroundImage": "shopify:\/\/shop_images\/block5b.png",
             "backgroundSize": "cover",
