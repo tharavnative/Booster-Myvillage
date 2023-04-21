@@ -75,31 +75,6 @@
     "sections": {
       "top-info-bar": {
         "type": "top-info-bar",
-        "blocks": {
-          "81322984-6dc2-4b84-bf55-05d3baf87a24": {
-            "type": "contact",
-            "settings": {
-              "enabled": true,
-              "enabledMobile": true,
-              "align": "auto",
-              "showPhone": true,
-              "showEmail": false
-            }
-          },
-          "ea7c1653-fbe0-4a55-904f-79a3118183d9": {
-            "type": "linkList",
-            "settings": {
-              "enabled": true,
-              "enabledMobile": true,
-              "align": "auto",
-              "links": ""
-            }
-          }
-        },
-        "block_order": [
-          "81322984-6dc2-4b84-bf55-05d3baf87a24",
-          "ea7c1653-fbe0-4a55-904f-79a3118183d9"
-        ],
         "settings": {
           "enabled": true,
           "enabledMobile": false,
