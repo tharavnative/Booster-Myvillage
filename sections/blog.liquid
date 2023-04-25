@@ -4,7 +4,7 @@
 
 {% paginate blog.articles by 10 %}
 <div class="inherit middle layout__stretchBg bg__middle s__holder row">
-  <div class="row  row__blog">
+  <div class="row center layout__content s__content">
   {% for article in blog.articles %}
     <div class="col-12 blog__listing--horizontal">
       <a href="{{article.url}}" class="blog__listing--ratio">
