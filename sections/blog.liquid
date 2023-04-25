@@ -1,7 +1,22 @@
 <!-- Bold: Memberships (blog) -->
 {% include 'bold_mem_helper' with 'blog' %}
 <!-- end Bold code -->
-
+{{ 'bootstrap.min.css' | asset_url | stylesheet_tag }}
+{{ 'custom-membership.css' | asset_url | stylesheet_tag }}
+<style>
+.col-sm-min, .col-sm, .col-sm-1, .col-sm-2, .col-sm-3, .col-sm-4, .col-sm-5, .col-sm-6, .col-sm-7, .col-sm-8, .col-sm-9, .col-sm-10, .col-sm-11, .col-sm-12, .col-sm-offset-0, .col-sm-offset-1, .col-sm-offset-2, .col-sm-offset-3, .col-sm-offset-4, .col-sm-offset-5, .col-sm-offset-6, .col-sm-offset-7, .col-sm-offset-8, .col-sm-offset-9, .col-sm-offset-10, .col-sm-offset-11, .col-sm-offset-12 {
+    display: block;
+    -webkit-box-flex: 0;
+    -ms-flex: 0 0 auto;
+    flex: 0 0 auto;
+    padding-right: 10px;
+    padding-left: 0px;
+}
+.page__header .row {
+       margin-right: auto;
+    margin-left: auto;
+}
+</style>
 {% paginate blog.articles by 10 %}
 <div class="inherit middle layout__stretchBg bg__middle s__holder row">
   <div class="row center layout__content s__content">
