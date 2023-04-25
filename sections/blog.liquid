@@ -29,7 +29,7 @@
                <li class="item">
                  <h4><a href="{{article.url}}" class="blog__listing--title">{{ article.title }}</a></h4>
                   <p class="blog_author"> 
-                    <span class="article__date testt">Post on {{ article.published_at | time_tag: format: 'month_day_year' }} April 24, 2023</time></span>
+                    <span class="article__date testt">Post on {{ article.published_at | date: "%a, %b %d, %Y" }}</time></span>
                     <span class="article__author">by {{ article.author }}</span>
                    </p>
                  <div class="blog_img_r">
