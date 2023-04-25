@@ -32,9 +32,9 @@
                     <span class="article__date testt">Post on {{ article.published_at | time_tag: format: 'month_day_year' }} April 24, 2023</time></span>
                     <span class="article__author">by {{ article.author }}</span>
                    </p>
-                 <div class="blog_img zi-banner">
+                 <div class="blog_img">
                                     <a href="{{article.url}}" class="overlay">
-                                        <div class="zi-banner-image">
+                                        <div class="">
 
                                           {% unless article.image == nil %}
             {% render 'ratio-image', ratioType: 'vw', dratio: '50', mratio: '100', image: article.image.src, alt: article.image.alt, class: 'blog__listing--image' %}
