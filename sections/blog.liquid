@@ -26,7 +26,7 @@
   {% for article in blog.articles %}
 
 
-               <li class="item">
+               <li class="item" style="list-style: none;">
                  <h4><a href="{{article.url}}" class="blog__listing--title" style="font-weight:700;">{{ article.title }}</a></h4>
                   <p class="blog_author"> 
                     <span class="article__date testt">Post on {{ article.published_at | date: "%a, %b %d, %Y" }}</time></span>
