@@ -36,6 +36,12 @@
                                     <a href="{{article.url}}" class="overlay_r">
                                         
 
+                                      <style>
+                                        img.blog__listing--image_r {
+    width: 300px;
+    float: left;
+}
+                                      </style>
                                           {% unless article.image == nil %}
             {% render 'ratio-image', ratioType: 'vw', dratio: '50', mratio: '100', image: article.image.src, alt: article.image.alt, class: 'blog__listing--image_r' %}
         {% else %}
