@@ -37,10 +37,10 @@
                                         
 
                                           {% unless article.image == nil %}
-            {% render 'ratio-image', ratioType: 'vw', dratio: '50', mratio: '100', image: article.image.src, alt: article.image.alt, class: 'blog__listing--image' %}
+            {% render 'ratio-image', ratioType: 'vw', dratio: '50', mratio: '100', image: article.image.src, alt: article.image.alt, class: 'blog__listing--image_r' %}
         {% else %}
             {% assign imagesrc = 'no-blog-image.png' %}
-            {% render 'ratio-image-asset', ratioType: 'vw', dratio: '50', mratio: '100', image: imagesrc, class: 'blog__listing--image' %}
+            {% render 'ratio-image-asset', ratioType: 'vw', dratio: '50', mratio: '100', image: imagesrc, class: 'blog__listing--image_r' %}
         {% endunless %}
     
                                         
