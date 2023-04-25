@@ -95,32 +95,7 @@
 
 
       
-      <h4>
-      <a href="{{article.url}}" class="blog__listing--ratio">
-        {% unless article.image == nil %}
-            {% render 'ratio-image', ratioType: 'vw', dratio: '50', mratio: '100', image: article.image.src, alt: article.image.alt, class: 'blog__listing--image' %}
-        {% else %}
-            {% assign imagesrc = 'no-blog-image.png' %}
-            {% render 'ratio-image-asset', ratioType: 'vw', dratio: '50', mratio: '100', image: imagesrc, class: 'blog__listing--image' %}
-        {% endunless %}
-      </a>
-      </h4>
-      <div class="blog__listing--info">
-        <div class="blog__listing--tags">
-          {% for tag in article.tags %}
-            <span class="blog__listing--tag">{{tag | upcase}}</span>
-          {% endfor %}
-        </div>
-        <a href="{{article.url}}" class="blog__listing--title">
-          {{ article.title }}
-        </a>
-        <p class="p-reset blog__listing--excerpt">
-          
-          {{ article.content | truncatewords: 50  | strip_html }}...
-        </p>
-        {% render 'button', type: 'primary', url: article.url, text: 'Read more' %}
-      </div>
-    </div>
+     
   {% endfor %}
    </div>
   </div>
