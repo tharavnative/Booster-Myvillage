@@ -24,81 +24,34 @@
       <div class="content-blog">
             <ul class="list-blog blog-list">
   {% for article in blog.articles %}
-    <li class="item">
-
-
-<h4>
-                                <a href="/blogs/post/could-you-have-intestinal-parasites">
-                                    
-                                        Could You Have Intestinal Parasites?
-                                    
-                                </a>
-                            </h4>
-
-                            <p class="blog_author">
-                                
-                                
-
-                                
-                                    <span class="article__date testt">Post on
-						              <time datetime="2023-04-24T17:07:49Z">April 24, 2023</time>
-						            </span>
-                                
-
-                                
-                                    <span class="article__author">by Margo Gladding</span>
-                                
-                            </p>
-                            
-                                
-                                <div class="blog_img zi-banner">
-                                    <a href="{{article.url}}" class="overlay">
-                                        <div class="zi-banner-image">
-                                            {% unless article.image == nil %}
+    <div class="col-12 blog__listing--horizontal">
+      <a href="{{article.url}}" class="blog__listing--ratio">
+        {% unless article.image == nil %}
             {% render 'ratio-image', ratioType: 'vw', dratio: '50', mratio: '100', image: article.image.src, alt: article.image.alt, class: 'blog__listing--image' %}
         {% else %}
             {% assign imagesrc = 'no-blog-image.png' %}
             {% render 'ratio-image-asset', ratioType: 'vw', dratio: '50', mratio: '100', image: imagesrc, class: 'blog__listing--image' %}
         {% endunless %}
-                                        </div>
-                                    </a>
-    
-                                </div>
-                            
-                            
-                            
-                                <!--<div class="des"></div>-->
-                                <div class="des"> {{ article.content | truncatewords: 50  | strip_html }}...
-                                	<p class="button">
-		                                <a href="{{article.url}}" class="blog_morebtn">Read more</a>
-		                            </p>
-                                </div>
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-      
-     
+      </a>
+      <div class="blog__listing--info">
+        <div class="blog__listing--tags">
+          {% for tag in article.tags %}
+            <span class="blog__listing--tag">{{tag | upcase}}</span>
+          {% endfor %}
+        </div>
+        <a href="{{article.url}}" class="blog__listing--title">
+          {{ article.title }}
+        </a>
+        <p class="p-reset blog__listing--excerpt">
+          
+          {{ article.content | truncatewords: 50  | strip_html }}...
+        </p>
+        {% render 'button', type: 'primary', url: article.url, text: 'Read more' %}
+      </div>
+    </div>
   {% endfor %}
    </div>
-  </div>
+  </div>            
   {% render 'pagination', paginate: paginate, type: 'links' %}
               
       </div>
