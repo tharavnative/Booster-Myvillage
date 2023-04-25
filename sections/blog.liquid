@@ -3,8 +3,8 @@
 <!-- end Bold code -->
 
 {% paginate blog.articles by 10 %}
-
-  <div class="row article__max-width row__blog">
+<div class="inherit middle layout__stretchBg bg__middle s__holder row">
+  <div class="row  row__blog">
   {% for article in blog.articles %}
     <div class="col-12 blog__listing--horizontal">
       <a href="{{article.url}}" class="blog__listing--ratio">
@@ -33,7 +33,7 @@
   {% endfor %}
   {% render 'pagination', paginate: paginate, type: 'links' %}
   </div>
-
+</div>
   {% render 'blog_sidebar' %}
 
 {% endpaginate %}
