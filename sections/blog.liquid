@@ -21,8 +21,6 @@
 <div class="inherit middle layout__stretchBg bg__middle s__holder row">
   <div class="row layout__content s__content">
     <div class="col-sm-8">
-      <div class="content-blog">
-            <ul class="list-blog blog-list">
   {% for article in blog.articles %}
     <div class="col-12 blog__listing--horizontal">
       <a href="{{article.url}}" class="blog__listing--ratio">
@@ -50,10 +48,7 @@
       </div>
     </div>
   {% endfor %}
-   </div>
-  </div>            
   {% render 'pagination', paginate: paginate, type: 'links' %}
-              
       </div>
     <div class="col-sm-4" id="sidebar">
         {% render 'blog_sidebar' %}
