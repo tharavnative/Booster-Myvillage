@@ -21,7 +21,43 @@
 <div class="inherit middle layout__stretchBg bg__middle s__holder row">
   <div class="row layout__content s__content">
     <div class="col-sm-8">
+  <div class="content-blog">
+            <ul class="list-blog blog-list">
   {% for article in blog.articles %}
+
+
+               <li class="item">
+                 <h4><a href="{{article.url}}" class="blog__listing--title">{{ article.title }}</a></h4>
+                  <p class="blog_author"> 
+                    <span class="article__date testt">Post on {{ article.published_at | time_tag: format: 'month_day_year' }} April 24, 2023</time></span>
+                    <span class="article__author">by {{ article.author }}</span>
+                   </p>
+                 <div class="blog_img zi-banner">
+                                    <a href="{{article.url}}" class="overlay">
+                                        <div class="zi-banner-image">
+
+                                          {% unless article.image == nil %}
+            {% render 'ratio-image', ratioType: 'vw', dratio: '50', mratio: '100', image: article.image.src, alt: article.image.alt, class: 'blog__listing--image' %}
+        {% else %}
+            {% assign imagesrc = 'no-blog-image.png' %}
+            {% render 'ratio-image-asset', ratioType: 'vw', dratio: '50', mratio: '100', image: imagesrc, class: 'blog__listing--image' %}
+        {% endunless %}
+    
+                                        </div>
+                                    </a>
+                 </div>
+ <div class="des">{{ article.content | truncatewords: 50  | strip_html }}...
+                                	<p class="button">
+		                                <a href="{{ article.url }}"
+		                                   class="blog_morebtn">{{ 'blogs.article.read_more' | t }}</a>
+		                            </p>
+                                </div>
+                 
+
+
+               </li>
+
+              
     <div class="col-12 blog__listing--horizontal">
       <a href="{{article.url}}" class="blog__listing--ratio">
         {% unless article.image == nil %}
@@ -47,7 +83,27 @@
         {% render 'button', type: 'primary', url: article.url, text: 'Read more' %}
       </div>
     </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+              
   {% endfor %}
+   </div>
+</ul>
   {% render 'pagination', paginate: paginate, type: 'links' %}
       </div>
     <div class="col-sm-4" id="sidebar">
