@@ -41,7 +41,8 @@
           {{ article.title }}
         </a>
         <p class="p-reset blog__listing--excerpt">
-          {{article.excerpt | default: article.content | truncate: 280 | strip_html }}
+          
+          {{ article.content | truncatewords: 50  | strip_html }}...
         </p>
         {% render 'button', type: 'primary', url: article.url, text: 'Read more' %}
       </div>
