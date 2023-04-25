@@ -62,14 +62,7 @@
         {% endunless %}
                                         </div>
                                     </a>
-     <a href="{{article.url}}" class="overlay">
-        {% unless article.image == nil %}
-            {% render 'ratio-image', ratioType: 'vw', dratio: '50', mratio: '100', image: article.image.src, alt: article.image.alt, class: 'blog__listing--image' %}
-        {% else %}
-            {% assign imagesrc = 'no-blog-image.png' %}
-            {% render 'ratio-image-asset', ratioType: 'vw', dratio: '50', mratio: '100', image: imagesrc, class: 'blog__listing--image' %}
-        {% endunless %}
-      </a>
+    
                                 </div>
                             
                             
