@@ -1,4 +1,6 @@
 <div class="row max-width unflex contact__form">
+<div class="col-3 unflex layout__content section__page ">{% render 'page-sidebar-nav' %}</div>
+<div class="{% if sidebar %} col-9 {% else %} col-12 {% endif %} unflex layout__content section__page rte">
 {% form 'contact' %} 
     {% if form.posted_successfully? %}
         <style>
@@ -28,6 +30,8 @@
     {% render 'button', type: 'primary', text: btc, url: page.url, class: 'contact__back' %}
     {% endunless %}
 {% endform %}
+</div>
+  
 </div>
 
 {% schema %}
