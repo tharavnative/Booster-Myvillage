@@ -1,19 +1,5 @@
 {
   "sections": {
-    "banner": {
-      "type": "banner--contact",
-      "settings": {
-        "layout": "default",
-        "height": 300,
-        "horizontalAlignment": "center",
-        "verticalAlignment": "middle",
-        "fontSize": "medium",
-        "contentColor": "rgba(0,0,0,0)",
-        "fillColor": "rgba(0,0,0,0)",
-        "overlayOpacity": 0,
-        "overlayColor": "#000000"
-      }
-    },
     "content": {
       "type": "page--content",
       "settings": {
@@ -68,7 +54,6 @@
     }
   },
   "order": [
-    "banner",
     "content",
     "contact"
   ]
