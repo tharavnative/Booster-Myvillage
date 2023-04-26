@@ -16,11 +16,8 @@
       }
     },
     "content": {
-      "type": "page",
+      "type": "page-membership-consultation",
       "settings": {
-        "enableSidebar": true,
-        "layout": "boxed",
-        "enableShortcodes": true
       }
     }
   },
