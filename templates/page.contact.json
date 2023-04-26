@@ -1,74 +1,17 @@
 {
   "sections": {
-    "banner": {
-      "type": "banner--contact",
+    "contact": {
+      "type": "contact",
       "settings": {
-        "layout": "default",
-        "height": 300,
-        "horizontalAlignment": "center",
-        "verticalAlignment": "middle",
-        "fontSize": "medium",
-        "contentColor": "rgba(0,0,0,0)",
-        "fillColor": "rgba(0,0,0,0)",
-        "overlayOpacity": 0,
-        "overlayColor": "#000000"
       }
     },
     "content": {
       "type": "page--content",
       "settings": {
       }
-    },
-    "contact": {
-      "type": "contact",
-      "blocks": {
-        "73906c83-707e-4241-afdc-2d1a40e1ff89": {
-          "type": "contactFormText",
-          "settings": {
-            "required": true,
-            "name": "Your Name",
-            "placeholder": "",
-            "type": "text"
-          }
-        },
-        "948662c2-5834-4753-9e95-611af0c12003": {
-          "type": "contactFormText",
-          "settings": {
-            "required": true,
-            "name": "Your Phone",
-            "placeholder": "",
-            "type": "text"
-          }
-        },
-        "f847ab50-5a6e-4431-9fb7-70bf8b6e6615": {
-          "type": "contactFormEmail",
-          "settings": {
-            "name": "Your Email",
-            "placeholder": ""
-          }
-        },
-        "9204020a-d021-4cdd-85e1-1f476936f400": {
-          "type": "contactFormText",
-          "settings": {
-            "required": true,
-            "name": "Your Comment",
-            "placeholder": "",
-            "type": "text"
-          }
-        }
-      },
-      "block_order": [
-        "73906c83-707e-4241-afdc-2d1a40e1ff89",
-        "948662c2-5834-4753-9e95-611af0c12003",
-        "f847ab50-5a6e-4431-9fb7-70bf8b6e6615",
-        "9204020a-d021-4cdd-85e1-1f476936f400"
-      ],
-      "settings": {
-      }
     }
   },
   "order": [
-    "banner",
     "content",
     "contact"
   ]
