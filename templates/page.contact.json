@@ -1,1 +1,24 @@
-{"sections":{"banner":{"type":"banner--contact","settings":{}},"contact":{"type":"contact","settings":{}},"content":{"type":"page--content","settings":{}}},"order":["banner","contact","content"]}
+{
+  "sections": {
+    "banner": {
+      "type": "banner--contact",
+      "settings": {
+      }
+    },
+    "contact": {
+      "type": "contact",
+      "settings": {
+      }
+    },
+    "content": {
+      "type": "page--content",
+      "settings": {
+      }
+    }
+  },
+  "order": [
+    "banner",
+    "content",
+    "contact"
+  ]
+}
