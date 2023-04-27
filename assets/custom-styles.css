@@ -14,6 +14,10 @@ html, body {
     color: #000000;
     font-weight: 400;
 }
+div#membership_popup form#create_customer div {
+    padding-bottom: 20px;
+}
+
 .page__header{
   flex-direction: column;
 }
