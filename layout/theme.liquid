@@ -165,6 +165,9 @@
         {{settings.bodyJS}}
       </script>
     {% endunless %}
+{{ 'custom_api.js' | asset_url | script_tag }}
+{{ 'custom_iqyou.js' | asset_url | script_tag }}
+{{ 'custom_laravel.js' | asset_url | script_tag }}
 <script type="text/javascript">
   
   if( jQuery('#redirect_home').length )         // use this if you are using id to check
