@@ -1,6 +1,72 @@
 jQuery.noConflict();
 jQuery( document ).ready(function($) {
   window.savedlast = false;
+
+
+
+   $(document).on('keyup keydown paste focusout keypress', '#customFields_mvg-membership input[name=n_60701]', function (e) {
+        $(this).attr('maxlength', 10);
+        if (/\D/g.test(this.value)) {
+            // Filter non-digits from input value.
+            this.value = this.value.replace(/\D/g, '');
+        }
+
+
+    });
+
+    $("#popup_sec .member_btn").on("click", function () {
+       $('#membership_popup').modal('show');
+    
+
+        $("#mvg-membership_membership_container").find("#form_mvg-membership #mvg-membership_register_fields .bold-form-group").addClass("step1");
+        $("#mvg-membership_membership_container").find("#form_mvg-membership #customFields_mvg-membership .bold-form-group").slice(0, 2).addClass("step1");
+        // $("#mvg-membership_membership_container").find("#form_mvg-membership #customFields_mvg-membership .bold-form-group").slice(2).addClass("step2");
+        $("#mvg-membership_membership_container").find("#form_mvg-membership #mvg-membership_membership_button_stripe").hide();
+        //       $("#mvg-membership_membership_container").find("#form_mvg-membership #mvg-membership_membership_button_free").remove();
+
+    });
+
+    $("a.login_btn").click(function () {
+        $(".create-an-account").hide();
+        $(".login-page").show();
+    });
+
+    $("a.create_acc_btn").click(function () {
+        $(".create-an-account").show();
+        $(".login-page").hide();
+    });
+
+
+    $("#membership_popup .next_step_btn").on("click", function () {
+
+        var er = 0;
+        $("#mvg-membership_membership_container").find("#form_mvg-membership .step1").each(function () {
+
+            var v = $(this).find("input").val();
+            if (v == "") {
+                er = 1;
+                $("#mvg-membership_membership_container").find("#form_mvg-membership #mvg-membership_membership_button_stripe").click();
+                return false;
+            }
+
+        });
+
+        if (er == 0) {
+            $("#mvg-membership_membership_container").find("#form_mvg-membership .step1").hide();
+            $("#mvg-membership_membership_container").find("#form_mvg-membership .step2").show();
+            $("#membership_popup .step1").hide();
+            $("#membership_popup .step2").show();
+        }
+    });
+
+    $("#membership_popup .pay_btn").on("click", function () {
+
+        $("#mvg-membership_membership_container").find("#form_mvg-membership #mvg-membership_membership_button_stripe").click();
+
+    });
+
+
+  
   
   $(".health_top .health_box").click(function () {
 
