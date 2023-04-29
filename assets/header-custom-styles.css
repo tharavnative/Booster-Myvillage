@@ -28,8 +28,8 @@ a{
 h1.font__size--big {
     font-weight: 700;
 }
-.blue a{
-    color: #36a4d9;
+.blue {
+    color: #36a4d9!important;
    
 }
 
