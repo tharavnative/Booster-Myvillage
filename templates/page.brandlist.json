@@ -19,6 +19,7 @@
       "type": "page",
       "disabled": true,
       "settings": {
+        "enableSidebar": true,
         "layout": "default",
         "enableShortcodes": false
       }
@@ -59,7 +60,7 @@
         "overlayOpacity": 0,
         "overlayColor": "#000000",
         "contentColor": "rgba(0,0,0,0)",
-        "horizontalAlignment": "center",
+        "horizontalAlignment": "start",
         "verticalAlignment": "middle"
       }
     }
