@@ -36,7 +36,13 @@ h1.font__size--big {
     color: #000!important;
    
 }
-
+.rte ul li, .rte ol li {
+    font-size: 15px;
+    line-height: 22px;
+    font-family: Montserrat;
+    font-weight: 400;
+    margin-bottom: 10px;
+}
 /*Default page*/
 .row.layout__boxed.default-page  .middle-container a, .row.layout__boxed.default-page  .middle-container a span {
     color: #73adc2;
