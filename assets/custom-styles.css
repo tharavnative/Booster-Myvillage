@@ -7,6 +7,9 @@ tr:hover {
 .rte h3 span, .rte h2 span{
     color: #73adc2;
 }
+.rte span{
+  color: #006690;
+}
 .search__container.focused .search__results {
     display: none !important;
 }
