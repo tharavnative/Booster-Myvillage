@@ -50,7 +50,7 @@ input#customer_password {
     background: #8b8a10;
     border: 1px solid #8b8a10;
 }
-a.anchor-sty { display: inline-block; height: inherit; line-height: 23px; padding: 7px 18px; color: #fff; font-size: 16px; font-family: Montserrat;
+a.anchor-sty { display: inline-block; height: inherit; line-height: 23px; padding: 7px 18px; color: #fff!important; font-size: 16px; font-family: Montserrat;
     background: #00577f; border: 1px solid #6e9fb6; width: 300px; text-align: center;  margin-top: 6px; font-weight: 400; } 
 a.anchor-sty:hover{ color:#fff; background: #73adc2;}
 input#customer_email {
