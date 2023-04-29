@@ -1,7 +1,9 @@
 tr:hover {
     background-color: unset;
 }
-
+.rte h3, .rte h2 {
+    color: #73adc2;
+}
 .search__container.focused .search__results {
     display: none !important;
 }
