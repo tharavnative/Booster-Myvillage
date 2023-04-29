@@ -28,7 +28,7 @@ a{
 h1.font__size--big {
     font-weight: 700;
 }
-.blue {
+.blue a{
     color: #36a4d9;
    
 }
