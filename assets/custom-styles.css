@@ -205,3 +205,8 @@ table {
 .grid-item .product-top{
     position: relative;
 }
+#category-landing  .collection-title-wrapper h5 {
+    
+    padding: 0px;
+    margin:0;
+}
