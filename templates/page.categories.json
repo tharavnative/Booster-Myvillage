@@ -31,7 +31,7 @@
             "blockWidth": "col-md-12",
             "vertPadding": 12,
             "horPadding": 4,
-            "horAlign": "center",
+            "horAlign": "start",
             "vertAlign": "middle",
             "liquid": "{% render 'grid-category' %}",
             "customCSS": ""
