@@ -197,3 +197,11 @@ table {
       color: #23527c!important;
     text-decoration: underline!important;
 }
+#category-landing  .collection-title-wrapper { position: absolute; bottom: 0; width: auto; background: #fff; padding: 16px; display: block; left: 0; text-align: left;}
+
+.list_cat .collection-title h5 { font-size: 16px; padding: 0; font-weight: 500; }
+#category-landing .collection-title h5 { font-size: 16px; padding: 0; font-weight: 500; }
+#category-landing  .collection-title h5 a { text-transform: uppercase; }
+.grid-item .product-top{
+    position: relative;
+}
