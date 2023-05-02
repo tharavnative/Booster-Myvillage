@@ -210,3 +210,12 @@ table {
     padding: 0px;
     margin:0;
 }
+ .page-header h4 {
+    text-transform: capitalize;
+    color: #434343;
+    font-weight: 500;
+    border-bottom: 1px solid #ededef;
+    padding-bottom: 24px;
+    margin-bottom: 24px;
+    font-size: 24px;
+}
