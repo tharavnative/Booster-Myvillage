@@ -2,6 +2,7 @@
   "sections": {
     "aa391eea-57f0-4d0f-8515-481fb5425f5d": {
       "type": "section__slider--adaptive",
+      "disabled": true,
       "blocks": {
         "template--16771356393710__aa391eea-57f0-4d0f-8515-481fb5425f5d-16795772786b6cfda2-0": {
           "type": "imageSlideAdaptive",
@@ -48,6 +49,7 @@
     },
     "8c07609b-b928-4b43-a745-4fb94a9f4de8": {
       "type": "section__content",
+      "disabled": true,
       "blocks": {
         "a6c6710c-a37c-4e92-aaf6-70ed0e991399": {
           "type": "liquidBlock",
@@ -91,7 +93,6 @@
     },
     "1658982451aec4bb5c": {
       "type": "section__auto-grid",
-      "disabled": true,
       "blocks": {
         "91e2efe7-d458-43fb-8c09-1614d991b8be": {
           "type": "gridImage",
