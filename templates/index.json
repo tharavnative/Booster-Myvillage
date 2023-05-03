@@ -212,8 +212,8 @@
         "5abb8f73-a7a4-4435-880c-030a465b511d"
       ],
       "custom_css": [
-        ".layout__stretchBg{display:none; }",
-        "@media(min-width:767px){.layout__stretchBg{display:block; }}"
+        "@media (min-width: 767px) {.layout__stretchBg {display: block; }}",
+        ".layout__stretchBg {display: none;}"
       ],
       "settings": {
         "layout": "default",
@@ -224,7 +224,6 @@
     },
     "61c507d5-0941-4f72-9404-794f06ba3b55": {
       "type": "section__auto-grid",
-      "disabled": true,
       "blocks": {
         "e0d83a6d-bb42-480a-af8e-bef2738d5578": {
           "type": "gridImage",
@@ -342,6 +341,10 @@
         "8ce3d5a1-2db0-4558-8d8b-36f7d6ad0d7c",
         "68f17981-7e4d-4115-96f3-0f26a9c963cd",
         "cd992f71-4908-4ed8-9963-2b83a3a0637e"
+      ],
+      "custom_css": [
+        ".layout__stretchBg {display: none;}",
+        "@media (max-width: 767px) {.layout__stretchBg {display: block; }}"
       ],
       "settings": {
         "layout": "default",
