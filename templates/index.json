@@ -213,7 +213,7 @@
       ],
       "custom_css": [
         ".layout__stretchBg {display: none;}",
-        "@media (min-width: 767px) {.layout__stretchBg {display: block; }}"
+        "@media (min-width: 768px) {.layout__stretchBg {display: block; }}"
       ],
       "settings": {
         "layout": "default",
