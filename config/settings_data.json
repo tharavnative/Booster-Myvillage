@@ -53,7 +53,7 @@
     "tagPosition": "top-right",
     "dynamicCheckout": false,
     "cartAction": "minicart",
-    "BPDynTitle": "BabyCare",
+    "BPDynTitle": "",
     "cartTimer": true,
     "countdown": true,
     "recentlyBought": true,
