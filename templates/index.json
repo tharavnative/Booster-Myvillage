@@ -212,8 +212,8 @@
         "5abb8f73-a7a4-4435-880c-030a465b511d"
       ],
       "custom_css": [
-        "@media (min-width: 767px) {.layout__stretchBg {display: block; }}",
-        ".layout__stretchBg {display: none;}"
+        ".layout__stretchBg {display: none;}",
+        "@media (min-width: 767px) {.layout__stretchBg {display: block; }}"
       ],
       "settings": {
         "layout": "default",
