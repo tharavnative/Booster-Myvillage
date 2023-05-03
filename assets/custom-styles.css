@@ -219,3 +219,21 @@ table {
     margin-bottom: 24px;
     font-size: 24px;
 }
+
+.main__navigation > .nav__link__holder > .nav__link {padding:8px 20px;position: relative;text-transform: uppercase;}
+.main__navigation > .nav__link__holder > .nav__link:after{ 
+  position:absolute;
+  content:"";
+  width:1px;
+  height:18px; 
+  top:50%; 
+  right:0;
+  display:block;
+  -webkit-transform: translateY(-50%);
+  -ms-transform: translateY(-50%);
+  transform: translateY(-50%);
+  background: #c7c7c7;
+}
+.page__header--width.header__bottom {
+    border-top: 2px solid #F7F7F7;
+}
