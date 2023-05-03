@@ -221,6 +221,7 @@ table {
 }
 
 .main__navigation > .nav__link__holder > .nav__link {padding:8px 20px;position: relative;text-transform: uppercase;color:#434343;}
+.main__navigation > .nav__link__holder > .nav__link:hover {color:#4fa3c2;}
 .main__navigation > .nav__link__holder > .nav__link:after{ 
   position:absolute;
   content:"";
