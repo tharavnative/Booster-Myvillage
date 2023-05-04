@@ -32,6 +32,9 @@ h1.font__size--big {
     color: #36a4d9!important;
    
 }
+span.card__reviews {
+    display: none;
+}
 .blue a {
     color: #000!important;
    
