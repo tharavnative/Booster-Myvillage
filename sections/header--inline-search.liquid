@@ -12,7 +12,8 @@
 
 <style>
     {% render 'header__common-css', section: section, layout: layout %}
-    
+    .notice_hdr { background: #e1e1e1; padding: 15px; width: 70%; margin: 0 auto; text-align: center;  margin-top: 10px; }
+.notice_hdr p { margin-bottom: 0; color: #637605;}
     @media screen and (min-width: 768px){
         .search__container--inline input {
             {% unless section.settings.searchBg contains 'rgba(0,0,0,0)' %}
@@ -95,6 +96,9 @@
             </div>
         </div>
     </div>
+  <div class="notice_hdr" id="member_notice">
+                <p> <strong>HUMANIZED+ MEMBER FREE SHIPPING on online orders!<br>This offer is for standard shipping available in the continental U.S.</strong></p>
+   </div>
     <div class="page__header--width middle col-12 no-gap header__bottom">
         <nav class="main__navigation main__navigation--{{section.settings.linkPosition}} main__navigation--{{section.settings.hoverStyle}} font__size--{{-section.settings.fontSize}}">
             {% for link in linklists[section.settings.menuLinks].links %}
