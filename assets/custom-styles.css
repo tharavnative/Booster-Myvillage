@@ -19,6 +19,26 @@ tr:hover {
 .search__results.search__results--abs {
     display: none!important;
 }
+
+
+.nav__submenu.nav__submenu--mega.row.fancy-scroll {
+    background: #00577f;
+}
+
+a.nav__megamenu__title {
+    color: #fff;
+}
+a.nav__megamenu__title:hover {
+    color: #fff!important;
+}
+a.nav__megamenu__link:hover {
+    color: #fff!important;
+}
+a.nav__megamenu__link {
+    color: #fff;
+}
+
+
 html, body {
     font-family: Montserrat;
     font-size: 16px;
