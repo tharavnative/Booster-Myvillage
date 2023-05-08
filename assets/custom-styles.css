@@ -37,7 +37,25 @@ a.nav__megamenu__link:hover {
 a.nav__megamenu__link {
     color: #fff;
 }
+.nav__submenu.nav__submenu--regular.fancy-scroll {
+    background: #00577f;
+}
 
+.nav__submenu a.nav__title {
+    color: #fff!important;
+}
+
+span.nav__link__title {
+    color: #fff;
+}
+
+span.nav__link__title:hover {
+    color: #fff!important;
+}
+
+.nav__link:hover span.nav__link__title {
+    color: #fff!important;
+}
 
 html, body {
     font-family: Montserrat;
