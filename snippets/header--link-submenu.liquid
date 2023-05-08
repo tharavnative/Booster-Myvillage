@@ -1,5 +1,5 @@
 {% if section.settings.megamenu %}
-{% assign megamenu = false %}
+{% assign megamenu = true %}
 {% assign check_products = link.links | where: "type", "product_link" %}
 {% assign cp_size = check_products.size %}
 {% assign check_collections = link.links | where: "type", "collection_link" %}
