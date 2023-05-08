@@ -10,7 +10,7 @@
 {% assign check_list = false %}
 {% for sublink in link.links %}
     {% if sublink.links != empty %}
-      {{ sublink  | json }} {{ '==' }}{{ sublink.links}}
+      {{ '==' }}{{ sublink.title }}
         {% assign has_submenu = true %}
         {% assign subsubmenu = subsubmenu | plus: 1 %}
         {% if sublink.type == "collection_link" %}
