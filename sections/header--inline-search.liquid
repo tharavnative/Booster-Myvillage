@@ -105,7 +105,7 @@
                 {% if link.links.size > 0 %}{% capture submenu %}{% render 'header--link-submenu' with link as link %}{% endcapture %}{% else %}{% assign submenu = '' %}{% endif %}
                 <span class="nav__link__holder {% if link.active or link.child_active %}nav__link--active{% endif %} {% if submenu contains 'nav__submenu--regular' %}nav__link__holder--regular{% endif %}">
                     <a class="nav__link nav__link--{{section.settings.hoverStyle}}" href="{{link.url}}">{% render 'header--link-tag' with link.title as text %}</a>
-                    {{submenu}} {{'t'}}
+                    {{submenu}} 
                 </span>
             {% endfor %}
         </nav>
