@@ -1,6 +1,6 @@
 {% if section.settings.megamenu %}
 {% assign megamenu = false %}
-
+{{ '==' }}{{ link.title }}
 {% assign check_products = link.links | where: "type", "product_link" %}
 {% assign cp_size = check_products.size %}
 {% assign check_collections = link.links | where: "type", "collection_link" %}
@@ -10,7 +10,7 @@
 {% assign check_list = false %}
 {% for sublink in link.links %}
     {% if sublink.links != empty %}
-      {{ '==' }}{{ sublink.title }}
+      
         {% assign has_submenu = true %}
         {% assign subsubmenu = subsubmenu | plus: 1 %}
         {% if sublink.type == "collection_link" %}
