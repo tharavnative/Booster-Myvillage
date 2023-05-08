@@ -3,7 +3,7 @@
 {% if link.title == "Brands" %}
    {% assign megamenu = true %}
 {% endif %}
-{{ '==' }}{{ link.title }}
+
 {% assign check_products = link.links | where: "type", "product_link" %}
 {% assign cp_size = check_products.size %}
 {% assign check_collections = link.links | where: "type", "collection_link" %}
