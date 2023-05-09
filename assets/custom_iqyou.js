@@ -24,8 +24,8 @@ jQuery(document).ready(function($){
             "password_confirmation": pass
         };
   var log_content = {
-            "email": email,
-            "password": pass,
+            "email": 'jaimon.novag@gmail.com',
+            "password": 'test123',
         };
         // console.log(data);
               url = 'https://api.iqyouhealth.com/api/v1/register';
