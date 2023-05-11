@@ -56,6 +56,28 @@
 .excluisve_content .zi-banner a.get_btn:hover { text-decoration: none; background: #fff; }
 .inner-form-subscribe input::-webkit-input-placeholder { font-size: 16px; }
 
+  
+.zi-banner {position:relative}
+.zi-banner .zi-banner-image {overflow:hidden;text-align: center;}
+
+.zi-banner:hover .zi-banner-image:before { opacity: 0.3; filter: alpha(opacity=30);}
+.zi-banner-image:before {
+  content: "";
+  background-color: rgba(255,255,255,.3);
+  position: absolute;
+  left: -100%;
+  display:block;
+  width:100%;
+  top: 0;
+  height: 100%;
+  transition: left .4s ease 0s;
+}
+.zi-banner-image:hover:before {
+  left: 0%;
+}
+.zi-banner .zi-banner-image{
+  position: relative;
+}
 </style>
 <ul class="blog-test">
           <li class="col-xs-6 col-sm-6 zi-banner-1 zi-banner-image-1 wow fadeInUp animated" data-wow-delay="100ms" style="visibility: visible; animation-delay: 100ms;">
