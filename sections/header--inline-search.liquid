@@ -96,9 +96,37 @@
             </div>
         </div>
     </div>
-  <div class="notice_hdr" id="member_notice">
+
+  {% assign bold_member = false %}
+   {% if customer %}
+               
+                  {% for tag in customer.tags %}
+                    
+                  {% if tag=='mvg-membership' %}
+                        {% assign bold_member = true %}
+                         {% break %}
+                  {% endif %}
+                  {% endfor %}
+                  {% if bold_member %}
+                    <div class="notice_hdr" id="member_notice">
                 <p> <strong>HUMANIZED+ MEMBER FREE SHIPPING on online orders!<br>This offer is for standard shipping available in the continental U.S.</strong></p>
    </div>
+                  {% else %}
+                     <div class="notice_hdr">
+                <p> <strong>FREE SHIPPING!</strong> On online orders of $49+. <strong>Use code: SHIP49</strong><br>This offer is for standard shipping available in the continental U.S. <br>Cannot be combined with any other offers.</p>
+ </div>
+                  {% endif %}
+              
+                {% else %}
+                    <div class="notice_hdr">
+                <p> <strong>FREE SHIPPING!</strong> On online orders of $49+. <strong>Use code: SHIP49</strong><br>This offer is for standard shipping available in the continental U.S. <br>Cannot be combined with any other offers.</p>
+ </div>
+    {% endif %}
+
+
+
+  
+  
     <div class="page__header--width middle col-12 no-gap header__bottom">
         <nav class="main__navigation main__navigation--{{section.settings.linkPosition}} main__navigation--{{section.settings.hoverStyle}} font__size--{{-section.settings.fontSize}}">
             {% for link in linklists[section.settings.menuLinks].links %}
