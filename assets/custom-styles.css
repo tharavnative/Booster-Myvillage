@@ -10,6 +10,9 @@ tr:hover {
 .rte span{
   color: #006690;
 }
+a.filter__tag span {
+    color: #006990;
+}
 .more_btn { margin-top: 50px; text-align: center; margin-bottom: 100px;}
 .more_btn a { display: inline-block; height: 64px; line-height: 64px; padding: 0 74px; border: 1px solid #dddddd; letter-spacing: 0; font-size: 22px; color: #00577f; font-family: Montserrat; background: url(https://cdn.shopify.com/s/files/1/0317/4635/9433/files/arrow_87d0a0b2-aeda-40ff-a813-38bb71fbd7ab.png?v=1581492094) no-repeat 94% 24px;}
 .more_btn a:hover { text-decoration: none; border: 1px solid #73adc2; }
