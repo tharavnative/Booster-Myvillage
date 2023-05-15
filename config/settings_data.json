@@ -421,6 +421,12 @@
         "disabled": false,
         "settings": {
         }
+      },
+      "1309651709796516356": {
+        "type": "shopify:\/\/apps\/back-in-stock-out-of-stock\/blocks\/app-embed\/903b5cdc-6e3f-4b2d-a8ea-d1ade7f41610",
+        "disabled": false,
+        "settings": {
+        }
       }
     }
   },
