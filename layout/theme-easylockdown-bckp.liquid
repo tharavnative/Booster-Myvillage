@@ -1,7 +1,6 @@
 <!doctype html>
 <html>
   <head>
-{% include 'easylockdown_head' %}
 <!--
 888888b.                              888                88888888888 888                                      
 888  "88b                             888                    888     888                                      
@@ -133,7 +132,7 @@
       {% render 'layout__template--specific' %}
 
       <main role="main">
-        {% comment %}{{ content_for_layout }}{% endcomment %}{% include 'easylockdown_body' %}
+        {{ content_for_layout }}
 
         <div class="wrapper--bottom">
           {% section 'info-badges' %}
