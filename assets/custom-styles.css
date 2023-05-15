@@ -279,3 +279,6 @@ table {
 .page__header--width.header__bottom {
     border-top: 2px solid #F7F7F7;
 }
+a.card__title {
+    min-height: 45px;
+}
