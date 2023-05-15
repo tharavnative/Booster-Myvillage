@@ -282,7 +282,20 @@ table {
 a.card__title {
     min-height: 45px;
 }
-
+.card__tags span {
+    color: #fff;
+    line-height: 18px;
+    height: 18px;
+    font-weight: 500;
+    display: inline-block;
+    text-transform: uppercase;
+    padding: 0 5px;
+    background: #e95144;
+    margin-bottom: 10px;
+    float: right;
+    clear: both;
+    font-size: 11px;
+}
 
 .card__buttons .button {
     background: #fff !important;
