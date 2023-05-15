@@ -12,7 +12,7 @@
           {% if product.price_varies %}
             <span class="tag tag--sale">{{'general.tags.sale' | t}}</span>
           {% else %}
-            <span class="tag tag--sale">{{ product.price | minus: product.compare_at_price_max | times: 100 | divided_by: product.compare_at_price_max }}%  {{'general.tags.sale' | t}}</span>
+            <span class="tag tag--sale"> {{'general.tags.sale' | t}}</span>
           {% endif %}
         {% endif %}
         {% for tag in product.tags %}
