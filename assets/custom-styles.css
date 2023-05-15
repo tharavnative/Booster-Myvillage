@@ -282,3 +282,22 @@ table {
 a.card__title {
     min-height: 45px;
 }
+
+
+.card__buttons .button {
+    background: #fff !important;
+    border: 1px solid #ededed !important;
+    height: 55px;
+    line-height: 55px;
+    padding: 0 20px;
+    color: #006990;
+    font-size: 19px;
+    font-family: 'Montserrat';
+    font-weight: 400;
+    text-transform: capitalize;
+    letter-spacing: 0;
+}
+.card__buttons .button:hover {
+    background: #006990 !important;
+    color: #fff !important;
+}
