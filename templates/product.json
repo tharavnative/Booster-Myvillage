@@ -79,8 +79,18 @@
             "saleType": "none"
           }
         },
-        "4a1b844b-cd16-4d14-99b0-d77be86131ee": {
+        "643c61fc-cd32-46d6-9683-4be568550bc0": {
           "type": "shopify:\/\/apps\/back-in-stock-out-of-stock\/blocks\/bis-inline-button\/903b5cdc-6e3f-4b2d-a8ea-d1ade7f41610",
+          "settings": {
+          }
+        },
+        "2cf0b816-1420-4229-b91c-570d8363e9ae": {
+          "type": "shopify:\/\/apps\/back-in-stock-out-of-stock\/blocks\/bis-inline-form\/903b5cdc-6e3f-4b2d-a8ea-d1ade7f41610",
+          "settings": {
+          }
+        },
+        "fda7e6ae-9578-4d31-bd76-11e2eada25bb": {
+          "type": "shopify:\/\/apps\/back-in-stock-out-of-stock\/blocks\/low-stock-bar\/903b5cdc-6e3f-4b2d-a8ea-d1ade7f41610",
           "settings": {
           }
         },
@@ -146,7 +156,9 @@
         "ppTitle",
         "efaa6b92-d20a-45e3-bbdf-2f2b22f2fd7b",
         "ppPrice",
-        "4a1b844b-cd16-4d14-99b0-d77be86131ee",
+        "643c61fc-cd32-46d6-9683-4be568550bc0",
+        "2cf0b816-1420-4229-b91c-570d8363e9ae",
+        "fda7e6ae-9578-4d31-bd76-11e2eada25bb",
         "ppSwatch",
         "ppStock",
         "ppATC",
