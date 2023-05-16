@@ -53,7 +53,7 @@
     "cardNewPriceWeight": "400",
     "tagPosition": "top-right",
     "tagSoldOut": false,
-    "collectionCardTextColor": "#006990",
+    "collectionCardTextColor": "#000000",
     "dynamicCheckout": false,
     "cartAction": "minicart",
     "BPDynTitle": "",
