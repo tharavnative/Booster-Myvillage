@@ -49,7 +49,7 @@
     "cardPriceColor": "#3982a0",
     "cardOldPriceColor": "rgb(0,0,0)",
     "cardOldPriceWeight": "400",
-    "cardNewPriceColor": "#3982a0",
+    "cardNewPriceColor": "#006990",
     "cardNewPriceWeight": "400",
     "tagPosition": "top-right",
     "tagSoldOut": false,
