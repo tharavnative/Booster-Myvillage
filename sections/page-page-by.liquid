@@ -7,6 +7,11 @@
   <header class="page-header">
       <h5>Health Concern Categories</h5>
   </header>
+      <style>
+        .collection-title span{
+          color:#006990;
+        }
+      </style>
   <div class="row">
   {% for collection in collections %} 
     {%- if collection.metafields.accentuate.health !='true' -%} 
