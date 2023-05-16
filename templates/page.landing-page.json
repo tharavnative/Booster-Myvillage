@@ -16,11 +16,8 @@
       }
     },
     "content": {
-      "type": "page",
+      "type": "page-landing",
       "settings": {
-        "enableSidebar": true,
-        "layout": "boxed",
-        "enableShortcodes": true
       }
     }
   },
