@@ -30,6 +30,7 @@
     "headingFontSize": 70,
     "subHeadingFontSize": 30,
     "primaryButtonStyle": "filled",
+    "primaryButtonCustomFill": "#006990",
     "primaryButtonHover": "darken",
     "primaryButtonCustomBorder": true,
     "headerType": "inline-search",
