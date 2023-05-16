@@ -7,7 +7,7 @@
   <header class="page-header">
       <h5>Health Concern Categories</h5>
   </header>
-     
+  <div class="row">
   {% for collection in collections %} 
     {%- if collection.metafields.accentuate.health !='true' -%} 
         {%- continue -%}
@@ -49,6 +49,7 @@
        </div>
     
       {% endfor %}
+    </div>
       {% comment %}
       <div class="more_btn">
         <a href="https://myvillagegreen.myshopify.com/collections/">More Health Concerns</a>
