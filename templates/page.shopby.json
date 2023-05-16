@@ -15,17 +15,14 @@
         "overlayColor": "#000000"
       }
     },
-    "content": {
-      "type": "page",
+    "shopby": {
+      "type": "page-page-by",
       "settings": {
-        "enableSidebar": true,
-        "layout": "boxed",
-        "enableShortcodes": true
       }
     }
   },
   "order": [
     "banner",
-    "content"
+    "shopby"
   ]
 }
