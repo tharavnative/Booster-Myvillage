@@ -73,11 +73,12 @@
         <header class="page-header">
             <h5>Product Type Categories</h5>
         </header>
+      
   {% for collection in collections %}
     {%- if collection.metafields.accentuate.product_type !='true' -%} 
         {%- continue -%}
     {%- endif -%}
-    
+    <div class="row">
     <div class="grid-item wow fadeIn col-3 {% if settings.list_collection_results_per_row == "2" %}col-sm-6{% elsif settings.list_collection_results_per_row == "3"%}col-sm-3{% elsif settings.list_collection_results_per_row == "3"%}col-sm-3{% else %}col{% endif%}" data-wow-delay="{{delayTime}}ms">
       <div class="background_section">
         <div class="product-top">
@@ -113,6 +114,7 @@
         </div>
        </div>
   {% endfor %}
+    </div>
   {% comment %}
       <div class="more_btn">
         <a href="https://myvillagegreen.myshopify.com/collections/">More Product Types</a>
