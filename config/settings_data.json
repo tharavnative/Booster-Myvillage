@@ -42,7 +42,7 @@
     "cardTextAlign": "center",
     "cardShowBrand": true,
     "cardShowRating": true,
-    "cardNameColor": "rgb(0,0,0)",
+    "cardNameColor": "#006990",
     "cardNameWeight": "700",
     "cardNameLimit": "words",
     "cardNameLimitAmount": 10,
