@@ -12,7 +12,7 @@
     {%- if collection.metafields.accentuate.health !='true' -%} 
         {%- continue -%}
     {%- endif -%}
-    <div class="grid-item wow fadeIn col-xs-12 {% if settings.list_collection_results_per_row == "2" %}col-sm-6{% elsif settings.list_collection_results_per_row == "3"%}col-sm-3{% elsif settings.list_collection_results_per_row == "3"%}col-sm-3{% else %}col{% endif%}" data-wow-delay="{{delayTime}}ms">
+    <div class="grid-item wow fadeIn col-12 {% if settings.list_collection_results_per_row == "2" %}col-sm-6{% elsif settings.list_collection_results_per_row == "3"%}col-sm-3{% elsif settings.list_collection_results_per_row == "3"%}col-sm-3{% else %}col{% endif%}" data-wow-delay="{{delayTime}}ms">
       <div class="background_section">
         <div class="product-top">
             {% comment %}
