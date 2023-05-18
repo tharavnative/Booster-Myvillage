@@ -406,6 +406,34 @@
           "mobileLogoPosition": "left",
           "mobileCart": true
         }
+      },
+      "banner--login": {
+        "type": "banner--login",
+        "settings": {
+          "layout": "default",
+          "height": 300,
+          "horizontalAlignment": "center",
+          "verticalAlignment": "middle",
+          "fontSize": "medium",
+          "contentColor": "rgba(0,0,0,0)",
+          "fillColor": "rgba(0,0,0,0)",
+          "overlayOpacity": 0,
+          "overlayColor": "#000000"
+        }
+      },
+      "banner--account": {
+        "type": "banner--account",
+        "settings": {
+          "layout": "default",
+          "height": 110,
+          "horizontalAlignment": "center",
+          "verticalAlignment": "middle",
+          "fontSize": "medium",
+          "contentColor": "rgba(0,0,0,0)",
+          "fillColor": "rgba(0,0,0,0)",
+          "overlayOpacity": 0,
+          "overlayColor": "#000000"
+        }
       }
     },
     "content_for_index": [
