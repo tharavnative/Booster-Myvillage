@@ -175,7 +175,7 @@
         "autoChange": true,
         "galleryImageFit": "cover",
         "galleryImageGap": 16,
-        "productNavigation": true,
+        "productNavigation": false,
         "productMainImageSize": "full_ratio"
       }
     },
