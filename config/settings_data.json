@@ -54,6 +54,7 @@
     "cardNewPriceColor": "#006990",
     "cardNewPriceWeight": "400",
     "tagPosition": "top-right",
+    "tagSaleColor": "#e95144",
     "tagSoldOut": false,
     "collectionCardTextColor": "#000000",
     "quickBuy": false,
