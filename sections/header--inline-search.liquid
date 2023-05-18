@@ -108,19 +108,34 @@
                   {% endif %}
                   {% endfor %}
                   {% if bold_member %}
-                    <div class="notice_hdr" id="member_notice">
-                <p> <strong>HUMANIZED+ MEMBER FREE SHIPPING on online orders!<br>This offer is for standard shipping available in the continental U.S.</strong></p>
-   </div>
+
+                    {% if section.settings.member_only_notice_check  %}
+             <div class="notice_hdr" id="member_notice">
+                {{ section.settings.member_only_notice }}
+             </div> 
+            {% endif %}
+  
+             
+{% if section.settings.member_only_notice_check  %}
+             <div class="notice_hdr" >
+                {{ section.settings.member_only_notice }}
+             </div> 
+            {% endif %}
+  
                   {% else %}
-                     <div class="notice_hdr">
-                <p> <strong>FREE SHIPPING!</strong> On online orders of $49+. <strong>Use code: SHIP49</strong><br>This offer is for standard shipping available in the continental U.S. <br>Cannot be combined with any other offers.</p>
- </div>
+                    {% if section.settings.notice_check  %}
+             <div class="notice_hdr">
+                {{ section.settings.display_notice }}
+             </div>
+           {% endif %}
                   {% endif %}
               
                 {% else %}
-                    <div class="notice_hdr">
-                <p> <strong>FREE SHIPPING!</strong> On online orders of $49+. <strong>Use code: SHIP49</strong><br>This offer is for standard shipping available in the continental U.S. <br>Cannot be combined with any other offers.</p>
- </div>
+                    {% if section.settings.notice_check  %}
+             <div class="notice_hdr">
+                {{ section.settings.display_notice }}
+             </div>
+           {% endif %}
     {% endif %}
 
 
