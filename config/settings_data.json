@@ -61,7 +61,7 @@
     "BPDynTitle": "",
     "cartTimer": true,
     "countdown": true,
-    "recentlyBought": true,
+    "recentlyBought": false,
     "reviewApp": "booster",
     "freeShippingAmount": "40",
     "messenger": false,
