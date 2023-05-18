@@ -13,6 +13,8 @@
     "sPinterest": "https:\/\/www.pinterest.com\/villagegreen1\/",
     "sTikTok": "https:\/\/www.tiktok.com\/@village_green_apothecary",
     "baseMaxWidth": "1200",
+    "baseBorderRadiusSmall": 5,
+    "baseSectionMargin": 24,
     "breadcrumbs": false,
     "baseText": "rgb(0,0,0)",
     "baseTitle": "#006990",
@@ -215,7 +217,7 @@
             "type": "footerSocial",
             "settings": {
               "width": "3",
-              "horizontalAlignment": "end",
+              "horizontalAlignment": "start",
               "verticalAlignment": "middle",
               "heading": ""
             }
