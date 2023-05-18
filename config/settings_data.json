@@ -56,7 +56,7 @@
     "tagPosition": "top-right",
     "tagSoldOut": false,
     "collectionCardTextColor": "#000000",
-    "quickBuy": true,
+    "quickBuy": false,
     "dynamicCheckout": false,
     "cartAction": "minicart",
     "BPDynTitle": "",
