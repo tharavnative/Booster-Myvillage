@@ -40,7 +40,7 @@
     "cardImageRatio": "100",
     "cardStyle": "none",
     "cardFWButton": true,
-    "cardShowGallery": true,
+    "cardShowGallery": false,
     "cardTextAlign": "center",
     "cardShowBrand": true,
     "cardShowRating": true,
