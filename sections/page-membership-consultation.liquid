@@ -1,5 +1,6 @@
 {% if section.settings.enable %}
-
+{{ 'bootstrap.min.css' | asset_url | stylesheet_tag }}
+{{ 'custom-membership.css' | asset_url | stylesheet_tag }}
 <div class="membership-consultation">
     <div class="container">
         <div class="row">
