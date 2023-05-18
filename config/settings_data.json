@@ -38,6 +38,8 @@
     "baseCardPadding": 20,
     "cardImageFit": "contain",
     "cardImageRatio": "100",
+    "cardImageRatioWidth": "",
+    "cardImageRatioHeight": "",
     "cardStyle": "none",
     "cardFWButton": true,
     "cardShowGallery": false,
