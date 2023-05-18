@@ -64,7 +64,7 @@
     "recentlyBought": true,
     "reviewApp": "booster",
     "freeShippingAmount": "40",
-    "messenger": true,
+    "messenger": false,
     "messengerID": "#",
     "jQuery": true,
     "checkoutWindow": true,
