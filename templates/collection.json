@@ -5,11 +5,11 @@
       "type": "banner--collection",
       "settings": {
         "layout": "default",
-        "height": 160,
+        "height": 200,
         "horizontalAlignment": "center",
         "verticalAlignment": "middle",
         "showTitle": true,
-        "showNumber": true,
+        "showNumber": false,
         "fontSize": "big",
         "showDescription": false,
         "truncateReadMore": true,
