@@ -427,7 +427,7 @@
         "nomargin": false,
         "scopedCSS": "##scoped .button{\nmargin-right:20px;\n}\n##scoped .tximage__txt{\n    padding: 8px 35px;\n\n}\n##scoped  h2 {\n    font-family: Montserrat;\n    text-transform: capitalize;\n    font-size: 35px;\n    line-height: 48px;\n    font-weight: 300;\n    margin-bottom: 15px;\n    color: #16181e;\n}",
         "height": 0,
-        "padding": 0,
+        "padding": 10,
         "lineMargin": 25,
         "backgroundColor": "rgba(0,0,0,0)",
         "backgroundPosition": "middle",
