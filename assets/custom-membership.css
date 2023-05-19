@@ -1,12 +1,14 @@
+
 @font-face {
     font-family: 'susies_handregular';
-    src: url('Susies-Hand.ttf.eot');
-    src: url('Susies-Hand.ttf.eot?#iefix') format('embedded-opentype'),
-         url('Susies-Hand.ttf.woff') format('woff'),
-         url('Susies-Hand.ttf.svg#susies_handregular') format('svg');
+    src: url('SusiesHand.eot');
+    src: url('SusiesHand.eot?#iefix') format('embedded-opentype'),
+        url('SusiesHand.woff2') format('woff2'),
+        url('SusiesHand.woff') format('woff'),
+        url('SusiesHand.ttf') format('truetype');
     font-weight: normal;
     font-style: normal;
-
+    font-display: swap;
 }
 #egg_review_container{
   display:none;
