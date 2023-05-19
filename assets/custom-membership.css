@@ -1,10 +1,9 @@
 @font-face {
     font-family: 'susies_handregular';
-    src: url('susie-webfont.eot');
-    src: url('susie-webfont.eot?#iefix') format('embedded-opentype'),
-         url('susie-webfont.woff2') format('woff2'),
-         url('susie-webfont.woff') format('woff'),
-         url('susie-webfont.svg#susies_handregular') format('svg');
+    src: url('Susies-Hand.ttf.eot');
+    src: url('Susies-Hand.ttf.eot?#iefix') format('embedded-opentype'),
+         url('Susies-Hand.ttf.woff') format('woff'),
+         url('Susies-Hand.ttf.svg#susies_handregular') format('svg');
     font-weight: normal;
     font-style: normal;
 
