@@ -86,7 +86,7 @@
 data-original-text="{%- if product.price == 0 and settings.freeShipping  %}{{settings.freeShippingText}}{% else %}{{ 'general.buttons.add_to_cart' | t  }}{% endif -%}"
 data-buy-button="{{product.id}}"
 onclick="BoosterTheme.ELEMENTS.stickyBuy(this, event)"
-class="button button--primary button--{{-settings['primaryButtonStyle']}}  button--primary__{{-settings['primaryButtonStyle']}} sticky--atc__button te"
+class="button button--primary button--{{-settings['primaryButtonStyle']}}  button--primary__{{-settings['primaryButtonStyle']}} sticky--atc__button"
 >
 <span data-button-text>
 {%- if product.price == 0 and settings.freeShipping  %}
