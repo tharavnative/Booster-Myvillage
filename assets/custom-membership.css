@@ -1,14 +1,3 @@
-@font-face {
-    font-family: 'susies_handregular';
-    src: url('SusiesHand.eot');
-    src: url('SusiesHand.eot?#iefix') format('embedded-opentype'),
-        url('SusiesHand.woff2') format('woff2'),
-        url('SusiesHand.woff') format('woff'),
-        url('SusiesHand.ttf') format('truetype');
-    font-weight: normal;
-    font-style: normal;
-    font-display: swap;
-}
 #egg_review_container{
   display:none;
 }
@@ -336,8 +325,8 @@ html { padding-bottom: 20px !important; }
 .template-collection .page-header { position: relative; }
 .template-collection .page-header h1 { position: absolute; bottom: 60px; font-family: Montserrat; font-size: 70px; font-weight: 700; color: #fff; margin: 0; left: 50px; letter-spacing: 0;}
 .template-collection .page-header h3 { position: absolute; bottom: 60px; font-family: Montserrat; font-size: 70px; font-weight: 700; color: #fff; margin: 0; left: 50px; letter-spacing: 0;}
-.template-collection .page-header h3 span { font-size: 86px; text-transform: capitalize; font-weight: 500; font-family: 'susies_handregular'; position: relative; left: -140px; bottom: -20px;color: #00577f;}
-.template-collection .page-header h1 span { font-size: 86px; text-transform: capitalize; font-weight: 500; font-family: 'susies_handregular'; position: relative; left: -140px; bottom: -20px;color: #00577f;}
+.template-collection .page-header h3 span { font-size: 86px; text-transform: capitalize; font-weight: 500; font-family: 'Font-1684502011308'; position: relative; left: -140px; bottom: -20px;color: #00577f;}
+.template-collection .page-header h1 span { font-size: 86px; text-transform: capitalize; font-weight: 500; font-family: 'Font-1684502011308'; position: relative; left: -140px; bottom: -20px;color: #00577f;}
 
 .product-list .short-description { line-height: 24px; font-size: 16px; font-family: Montserrat; margin-bottom: 25px; font-weight: 400; }
 .product-list .product-title { font-weight: 700; font-size: 18px; font-family: Montserrat; }
@@ -396,7 +385,7 @@ color: #000000;
 }
 .template-collection .page-header h1 span
 {
-font-family: 'susies_handregular';
+font-family: 'Font-1684502011308';
 color: #00577f;
 text-transform: capitalize;
 font-weight: 500;
@@ -552,9 +541,9 @@ font-weight: 500;
 
 .page-header.pharmacy { position:relative; }
 .page-header.pharmacy h3 { position: absolute; bottom: 45px; font-family: Montserrat; font-size: 70px; font-weight: 700; color: #006990; margin: 0; left: 50px; letter-spacing: 0; }
-/* .page-header.pharmacy h3 span { font-size: 86px; text-transform: capitalize; font-weight: 500; font-family: 'susies_handregular'; position: relative; left: -160px; bottom: -40px; color: #00577f; }
+/* .page-header.pharmacy h3 span { font-size: 86px; text-transform: capitalize; font-weight: 500; font-family: 'Font-1684502011308'; position: relative; left: -160px; bottom: -40px; color: #00577f; }
  */
-.page-header.pharmacy h3 span { font-size: 86px; text-transform: capitalize; font-weight: 500; font-family: 'susies_handregular'; position: relative; left: -140px; bottom: -20px; color: #00577f; }
+.page-header.pharmacy h3 span { font-size: 86px; text-transform: capitalize; font-weight: 500; font-family: 'Font-1684502011308'; position: relative; left: -140px; bottom: -20px; color: #00577f; }
 .second-section img { width:85%; float:right; }
 .second-section { margin-top:60px; margin-bottom:35px; }
 .upload-pdf { display:block; width:100%; padding:30px 0px 40px 0; border:solid 1px #ccc; text-align:center; margin-bottom: 30px;}
@@ -3109,7 +3098,7 @@ img#head-image {
     font-size: 60px;
     text-transform: capitalize;
     font-weight: 600;
-    font-family: susies_handregular;
+    font-family: Font-1684502011308;
     right: -43px;
     position: absolute;
     bottom: -38px;
