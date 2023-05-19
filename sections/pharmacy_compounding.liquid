@@ -22,7 +22,8 @@
 .upload-pdf a:hover { text-decoration: none !important; color: #00577f;}    
 .upload-pdf a.first { margin-right:65px; }
 </style>
-<div class="row layout__boxed default-page template-page">
+<div class="container-bootstrap">
+<div class="row">
   	<div class="col-12"> 
         
       <div id="shopify-section-collection-header" class="shopify-section">
@@ -35,8 +36,9 @@
      </div>
   </div>
 </div>   
-
-<div class="row layout__boxed default-page template-page">       
+</div>
+<div class="container-bootstrap">
+<div class="row">       
         <div class="col-8 col-sm-8 wrap">
           {{page.content}}
           <div class="upload-pdf">
@@ -49,7 +51,7 @@
          <img src="{{ section.settings.left-image-banner | img_url: 'large'}}">
         </div>    
       </div>    
-
+ </div>  
 
 
 {% schema %}
