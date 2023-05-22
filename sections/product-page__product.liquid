@@ -268,7 +268,7 @@ Rendering according to the view (default, marketplace)
     {% assign firstTab = true %}
     {% for block in section.blocks %}
       {% if block.type == '@app' %}
-        <div class="col-12 {{section.settings.layout}} unflex no-gap ttt">
+        <div class="col-12 {{section.settings.layout}} unflex no-gap">
           {% render block %}
         </div>
         {% continue %}
