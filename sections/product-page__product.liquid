@@ -210,10 +210,140 @@ Rendering according to the view (default, marketplace)
 
         {% continue %}
       {% endif %}
-{% if block.type == 'productPagePrice' %}
- {{ 'ttt' }}
+      {% if block.type == 'productPagePrice' %}
+ <div class="product-info">
+          
+          {% if product.metafields.ns-size.size != 0 %}
+          <span class="custom">
+            {{ product.metafields.ns-size.size }}
+            
+          {% assign handle = product.metafields.ns-form.form %} {% case handle %}
+          {% when 'AM' %} AMPULES
+          {% when 'AS' %} ATHLETIC SOCKS
+          {% when 'AW' %} ATHLETIC WEAR
+          {% when 'BC' %} BRACE
+          {% when 'BD' %} BANDAGE
+          {% when 'BG' %} BAG
+          {% when 'BK' %} BOOK
+          {% when 'BL' %} BALM
+          {% when 'BR' %} BAR
+          {% when 'BT' %} BOTTLE
+          {% when 'CA' %} CALENDAR
+          {% when 'CD' %} CANDLE
+          {% when 'CL' %} CAPLETS
+          {% when 'CN' %} CONDITIONER
+          {% when 'CP' %} CAPSULES
+          {% when 'CR' %} CREAM
+          {% when 'CT' %} COATED TABLETS
+          {% when 'DF' %} DENTAL FLOSS
+          {% when 'EC' %} ENTERIC COATED
+          {% when 'EP' %} EYE PENCIL
+          {% when 'FD' %} FOOD
+          {% when 'GL' %} GEL
+          {% when 'GM' %} GUM
+          {% when 'IB' %} INCENSE BURNER
+          {% when 'IN' %} INCENSE
+          {% when 'IS' %} INCENSE SACHET
+          {% when 'JW' %} JEWELRY
+          {% when 'KT' %} KIT
+          {% when 'LB' %} LIP BALM
+          {% when 'LG' %} LIP GLOSS
+          {% when 'LL' %} LOOSELEAF
+          {% when 'LP' %} LIP PENCIL
+          {% when 'LQ' %} LIQUID
+          {% when 'LS' %} LIPSTICK
+          {% when 'LT' %} LOTION
+          {% when 'LZ' %} LOZENGE
+          {% when 'MB' %} MAKE-UP BRUSH
+          {% when 'MJ' %} MAG JEWELRY
+          {% when 'ND' %} NEEDLES
+          {% when 'NP' %} NAIL POLISH
+          {% when 'OI' %} OINTMENT
+          {% when 'OL' %} OIL
+          {% when 'PD' %} PAD
+          {% when 'PK' %} PACKETS
+          {% when 'PL' %} PELLETS
+          {% when 'PT' %} PATCH
+          {% when 'PW' %} POWDER
+          {% when 'RO' %} ROLL-ON
+          {% when 'SB' %} SOAPBAR
+          {% when 'SC' %} SACHET
+          {% when 'SE' %} SERUM
+          {% when 'SG' %} SOFTGELS
+          {% when 'SH' %} SHAMPOO
+          {% when 'SL' %} SALT
+          {% when 'SP' %} SPRAY
+          {% when 'SR' %} SYRUP
+          {% when 'ST' %} STICK
+          {% when 'SU' %} SUPPOSITORY
+          {% when 'SV' %} SALVE
+          {% when 'SY' %} SYRINGE
+          {% when 'TB' %} TABLET
+          {% when 'TP' %} TOOTH PASTE
+          {% when 'TR' %} TOOTH BRUSH
+          {% when 'TU' %} TUTORIAL
+          {% when 'VC' %} VEG CAPSULES
+          {% when 'VL' %} VIAL
+          {% when 'VG' %} VEG SOFTGELS
+          {% when 'VT' %} VEG TABLETS
+          {% when 'WF' %} WAFER
+		  {% endcase %}
+          </span> <br> <br>
+          {% endif %}
+          
+          {% if section.settings.display_sku %}
+          {% assign current_variant = product.selected_or_first_available_variant %}
+          {% if current_variant.sku == blank    %}
+          {% else %}
+          {% if settings.enable_multilang %}
+          <label class="lang1">{{ section.settings.text_sku | split: '|' | first }}</label>
+          <label class="lang2">{{ section.settings.text_sku | split: '|' | last }}</label>
+          {% else %}
+          <label>{{ section.settings.text_sku | split: '|' | first }}</label>
+          {% endif %}
+          <span class="variant-sku">{{ current_variant.sku }}</span>
+          {% endif %}
+          {% endif %}
+          {% if section.settings.display_availability %}
+          <p class="product-inventory">
+            {% if section.settings.text_availability != blank %}
+            {% if settings.enable_multilang %}
+            <label class="lang1">{{ section.settings.text_availability | split: '|' | first }}</label>
+            <label class="lang2">{{ section.settings.text_availability | split: '|' | last }}</label>
+            {% else %}
+            <label>{{ section.settings.text_availability | split: '|' | first }}</label>
+            {% endif %}
+            {% endif %}
+            <span>
+              {% if product.selected_or_first_available_variant.inventory_management %}
+              {% assign first_inventory = product.selected_or_first_available_variant.inventory_quantity %}
+              {% if first_inventory > 0 %}
+              {{first_inventory}} {{ 'products.product.in_stock' | t }}
+              {% else %}
+              {{ 'products.product.out_of_stock' | t }}
+              {% endif %}
+              {% else %}
+              {{ 'products.product.many_in_stock' | t }}
+              {% endif %}
+            </span>
+          </p>
+          {% endif %}
+          {%if section.settings.display_product_type %}
+          <p class="product-type">
+            {% if section.settings.display_product_type != blank %}
+            {% if settings.enable_multilang %}
+            <label class="lang1">{{ section.settings.text_product_type | split: '|' | first }}</label>
+            <label class="lang2">{{ section.settings.text_product_type | split: '|' | last }}</label>
+            {% else %}
+            <label>{{ section.settings.text_product_type | split: '|' | first }}</label>
+            {% endif %}
+            {% endif %}  
+            <span>{{ product.type }}</span>
+          </p>
+          {% endif %}
+        </div>
          
-        {% endif %}
+      {% endif %}
       
       {% if block.type == 'productPageTab' %}
         {% if block.settings.showInline and firstTab %}
