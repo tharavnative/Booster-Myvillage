@@ -18,6 +18,8 @@
     "content": {
       "type": "page-nutrition-counseling",
       "settings": {
+        "main-image-banner": "shopify:\/\/shop_images\/nutrition_banner.jpg",
+        "left-image-banner": "shopify:\/\/shop_images\/right_6f25dd0e-e92a-4b82-9f6b-0edb2e94c532.jpg"
       }
     }
   },
