@@ -206,14 +206,14 @@ Rendering according to the view (default, marketplace)
       {% if block.type == '@app' %}
         <div class="col-12 {{section.settings.layout}} unflex no-gap">
           {% render block %}
-        {{ block | json }}
-
-          
         </div>
 
         {% continue %}
       {% endif %}
-
+{% if block.type == 'productPagePrice' %}
+ {{ 'ttt' }}
+         
+        {% endif %}
       
       {% if block.type == 'productPageTab' %}
         {% if block.settings.showInline and firstTab %}
@@ -279,6 +279,8 @@ Rendering according to the view (default, marketplace)
         </div>
         {% continue %}
       {% endif %}
+       
+         
       {% if block.type == 'productPageTab' %}
         {% if block.settings.showInline and firstTab %}
           {% assign firstTab = false %}
