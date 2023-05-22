@@ -1,7 +1,74 @@
+{{ 'bootstrap.min.css' | asset_url | stylesheet_tag }}
+{{ 'custom-membership.css' | asset_url | stylesheet_tag }}
+<style>
+.col-sm-min, .col-sm, .col-sm-1, .col-sm-2, .col-sm-3, .col-sm-4, .col-sm-5, .col-sm-6, .col-sm-7, .col-sm-8, .col-sm-9, .col-sm-10, .col-sm-11, .col-sm-12, .col-sm-offset-0, .col-sm-offset-1, .col-sm-offset-2, .col-sm-offset-3, .col-sm-offset-4, .col-sm-offset-5, .col-sm-offset-6, .col-sm-offset-7, .col-sm-offset-8, .col-sm-offset-9, .col-sm-offset-10, .col-sm-offset-11, .col-sm-offset-12 {
+    display: block;
+    -webkit-box-flex: 0;
+    -ms-flex: 0 0 auto;
+    flex: 0 0 auto;
+    padding-right: 10px;
+    padding-left: 0px;
+}
+.page__header .row {
+       margin-right: auto;
+    margin-left: auto;
+}
+</style>
+<div class="container-bootstrap">
+<div class="row wrap">
+  	<div class="col-xs-12"> 
+        {% comment %}
+      <header class="page-header">
+        {% if settings.enable_multilang %}
+        <h2 class="lang1">{{ page.title | split: '|' | first }}</h2>
+        <h2 class="lang2">{{ page.title | split: '|' | last }}</h2>
+        {% else %}
+        <h2>{{ page.title | split: '|' | first }}</h2>
+        {% endif %}
+      </header>
+      {% endcomment %}
+      {% comment %}
+        Regular page content goes here.
+      {% endcomment %}
+      <div id="shopify-section-collection-header" class="shopify-section nutrition_pag">
+        <header class="page-header pharmacy">
+          <div class="img_cart">
+            <img src="{{ section.settings.main-image-banner | img_url: 'master'}}" alt="Nutrition banner image">
+          </div>
+          <h3> {{ page.title}}</h3>
+    	</header>
+     </div> 
+    </div>
+</div>
+</div>
+<div class="container-bootstrap">
+<div class="row second-section">       
+  <div class="col-sm-7">
+    {{page.content}} 
+  </div>
+  <div class="col-sm-5">
+    <img src="{{ section.settings.left-image-banner | img_url: 'large'}}">
+  </div>    
+</div>   
+</div>
+
+  
+
 {% schema %}
   {
-    "name": "Section name",
-    "settings": []
+    "name": "Nutrition Counseling Page",
+    "settings": [
+	{
+        "type": "image_picker",
+        "id": "main-image-banner",
+        "label": "Upload a banner image"
+      },
+      {
+        "type": "image_picker",
+        "id": "left-image-banner",
+        "label": "Upload a new image"
+      }
+	]
   }
 {% endschema %}
 
