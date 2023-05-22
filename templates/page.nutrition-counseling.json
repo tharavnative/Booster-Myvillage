@@ -19,7 +19,20 @@
       "type": "page-nutrition-counseling",
       "settings": {
         "main-image-banner": "shopify:\/\/shop_images\/nutrition_banner.jpg",
-        "left-image-banner": "shopify:\/\/shop_images\/right_6f25dd0e-e92a-4b82-9f6b-0edb2e94c532.jpg"
+        "left-image-banner": "shopify:\/\/shop_images\/right_6f25dd0e-e92a-4b82-9f6b-0edb2e94c532.jpg",
+        "text-box1": "What should I expect?",
+        "text-box2": "What areas of health are included?",
+        "right-text": "<ul>\n<li style=\"text-align: left;\">Supplement Review<\/li>\n<li style=\"text-align: left;\">Custom Compounding<\/li>\n<li style=\"text-align: left;\">Personal Wellness Plans & Support<\/li>\n<li style=\"text-align: left;\">Drug\/Nutrient Interactions & Depletions<\/li>\n<li style=\"text-align: left;\">Lab Results Interpretation<\/li>\n<li>Sleep Support<\/li>\n<\/ul>\n<ul class=\"right_ul\">\n<li style=\"text-align: left;\">Pain Management<\/li>\n<li style=\"text-align: left;\">Digestive Health<\/li>\n<li style=\"text-align: left;\">Food Allergies & Sensitivities<\/li>\n<li style=\"text-align: left;\">Cardiovascular health<\/li>\n<li style=\"text-align: left;\">Hormone Balance<\/li>\n<li>Stress<\/li>\n<\/ul>",
+        "left-side-text": "<p>During your visit, your personal wellness coach will work with you to create an individual health plan that encourages and supports your goals for improved health and well-being. We can help you with recommendations for nutritional supplements, diet and lifestyle changes, and suggestions for lab tests that may provide further insights into your health.<\/p>",
+        "text-box3": "How do I get started?",
+        "justify-text": "<p>Through our HIPAA compliant web portal, you will be able to select a practitioner, look up available times and schedules, select an appropriate consultation package and fill out the necessary paperwork. Shortly after booking your first appointment, you will receive a welcome email containing a link to set your account password and begin completing intake forms.<\/p>\n<a href=\"https:\/\/myvillagegreen.myshopify.com\/pages\/practitioners\" class=\"book_appo\">Book an appointment<\/a>",
+        "expert_left_img": "shopify:\/\/shop_images\/consult-bnr-2.jpg",
+        "expert_title": "Experts you can trust",
+        "expert_right_cont": "<h3>Professional Guidance<\/h3>\n<p>Your wellness coach will work with you to create an individual health plan. <\/p>\n\n<h3>Reliable Advice<\/h3>\n<p>We offer accurate, evidence-based nutritional advice.<\/p>\n<h3>Experienced Consultants<\/h3>\n<p>Our practitioners includes naturopathic doctors, certified nutritionists, holistic health counselors and clinical herbalists.<\/p>\n<a href=\"https:\/\/myvillagegreen.myshopify.com\/pages\/practitioners\" class=\"meet\">Meet Our Team<\/a>",
+        "interest_sec_top": "",
+        "interest_sec_left": "<h2>I'm interested, but not really sure this is for me...<\/h2>\n<h5>We invite you to schedule a <span>FREE<\/span> 15-minute discovery consultation.<\/h5>\n<p>That way we can chat about your health concerns and discuss how a personalized nutrition plan can help you achieve your health goals. This consultation is also designed to help decide if working together is a good fit and help you plan steps.<\/p>",
+        "interest_sec_right": "",
+        "interest_sec_bottom": ""
       }
     }
   },
