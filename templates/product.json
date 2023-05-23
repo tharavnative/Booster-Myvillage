@@ -176,6 +176,11 @@
         "galleryImageFit": "cover",
         "galleryImageGap": 16,
         "productNavigation": false,
+        "display_vendor": true,
+        "display_sku": true,
+        "text_sku": "SKU",
+        "display_availability": false,
+        "text_availability": "Availability",
         "productMainImageSize": "full_ratio"
       }
     },
