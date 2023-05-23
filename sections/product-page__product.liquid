@@ -312,12 +312,10 @@ Rendering according to the view (default, marketplace)
           {% assign current_variant = product.selected_or_first_available_variant %}
           {% if current_variant.sku == blank    %}
           {% else %}
-          {% if settings.enable_multilang %}
-          <label class="lang1">{{ section.settings.text_sku | split: '|' | first }}</label>
-          <label class="lang2">{{ section.settings.text_sku | split: '|' | last }}</label>
-          {% else %}
-          <label>{{ section.settings.text_sku | split: '|' | first }}</label>
-          {% endif %}
+          
+          
+          <label>SKU</label>
+         
           <span class="variant-sku">{{ current_variant.sku }}</span>
           {% endif %}
           {% endif %}
