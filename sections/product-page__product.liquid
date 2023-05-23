@@ -210,7 +210,17 @@ Rendering according to the view (default, marketplace)
 
         {% continue %}
       {% endif %}
+      {% if block.type == 'productPageTitle' %}
+       <div class="product-tag">
+          <a class="card__brand" href="{{ product.vendor | url_for_vendor }}">{{product.vendor}}</a>
+       </div>
+
+      {% endif %}
       {% if block.type == 'productPagePrice' %}
+
+
+
+        
  <div class="product-info">
           
           {% if product.metafields.ns-size.size != 0 %}
