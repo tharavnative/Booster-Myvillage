@@ -54,10 +54,10 @@
 </div>
 <div class="container-bootstrap">
 <div class="row second-section">       
-  <div class="col-sm-7">
+  <div class="col-xs-12 col-sm-7">
     {{page.content}} 
   </div>
-  <div class="col-sm-5">
+  <div class="col-xs-12 col-sm-5">
     <img src="{{ section.settings.left-image-banner | img_url: 'large'}}">
   </div>    
 </div>   
@@ -66,11 +66,11 @@
      <div class="third-section">
       <div class="container-bootstrap">
         <div class="row"> 
-          <div class="col-xs-5">
+          <div class="col-xs-12 col-sm-5">
             <h2>{{ section.settings.text-box1 }}</h2>
             {{ section.settings.left-side-text }} 
           </div>
-          <div class="col-xs-7">
+          <div class="col-xs-12 col-sm-7">
             <div class=" third_right_cont">
             <h2>{{ section.settings.text-box2 }}</h2>
             {{ section.settings.right-text }} 
@@ -98,12 +98,12 @@
  <div class="third-section expert_sec">
    <div class="container-bootstrap">
      <div class="row"> 
-       <div class="col-xs-6">
+       <div class="col-xs-12 col-sm-6">
          <div class="expert_left_img">
          <img src="{{ section.settings.expert_left_img | img_url: 'large'}}">
          </div>
        </div>
-       <div class="col-xs-6">
+       <div class="col-xs-12 col-sm-6">
          <div class="third_right_cont">
            <h2>{{ section.settings.expert_title }}</h2>
            {{ section.settings.expert_right_cont }} 
@@ -116,13 +116,13 @@
 <div class="third-section interest_sec">
    <div class="container-bootstrap">
      <div class="row">
-       <div class="col-sm-12">
+       <div class="col-xs-12">
        	{{ section.settings.interest_sec_top }}
        </div>
      </div>
      
      <div class="row interest_sec_bottom">
-       <div class="col-sm-12">
+       <div class="col-xs-12">
        	<!-- Practice Better Booking Widget: start -->
 <style>.better-inline-booking-widget{position:relative;overflow:hidden}.better-inline-booking-widget iframe{position:absolute;top:0;left:0;width:100%;height:100%}</style>
 <div class="better-inline-booking-widget" data-url="https://my.practicebetter.io" data-booking-page="60b4e0312a832606c04f7100" data-hash="608b0c932a8326079004eea6" data-theme="1b788b" style="width:100%;max-width:550px;height:350px;" data-scrollbar-visible="false"></div>
