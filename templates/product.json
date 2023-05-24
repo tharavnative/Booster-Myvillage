@@ -131,7 +131,7 @@
           "type": "productPageTab",
           "settings": {
             "showInline": false,
-            "heading": "Supplement",
+            "heading": "Supplement Facts",
             "content": "metafield",
             "metafieldNS": "ns-sf",
             "metafieldKey": "supplement_facts",
