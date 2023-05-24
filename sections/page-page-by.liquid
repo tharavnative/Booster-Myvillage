@@ -17,7 +17,7 @@
 .shopby_page.list_cat .page-header h5 { letter-spacing: 0px; text-transform: capitalize; font-size: 20px; font-weight: 600; color: #61add0; margin-top: 50px;}
 
       </style>
-{{ shop.url }}
+
   <div class="row">
   {% for collection in collections %} 
     {%- if collection.metafields.accentuate.health !='true' -%} 
@@ -44,7 +44,7 @@
         <div class="collection-title-wrapper">
           <div class="collection-title">
             <h5 class="h5">
-              <a href="{{ shop.url }}{{ '/' }}{{ collection.handle }}" title="{{ collection.title }}">
+              <a href="{{ collection.url }}" title="{{ collection.title }}">
                   {{ collection.title }}
               </a>
             </h5>
