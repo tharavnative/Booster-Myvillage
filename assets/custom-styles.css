@@ -316,3 +316,8 @@ a.card__title {
     background: #006990 !important;
     color: #fff !important;
 }
+@media(max-width:767px){
+    span.nav__link__title {
+    color: #000;
+}
+}
