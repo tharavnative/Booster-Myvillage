@@ -22,14 +22,14 @@
         "enable": true,
         "signup_banner": "shopify:\/\/shop_images\/membership-consultation-bg.jpg",
         "member_popup_title": "Schedule a Consultations",
-        "member_popup_content": "test",
+        "member_popup_content": "<div class=\"better-inline-booking-widget\" data-url=\"https:\/\/my.practicebetter.io\" data-package=\"6365e47c022189a814bfff3e\" data-hash=\"608b0c932a8326079004eea6\" data-theme=\"1b788b\" data-theme-accent=\"91b000\" style=\"width:100%;max-width:550px;height:800px;\" data-scrollbar-visible=\"false\"><\/div>\n<script type=\"text\/javascript\" src=\"https:\/\/cdn.practicebetter.io\/assets\/js\/booking.widget.js\"><\/script>",
         "member_title": "Let us help you optimize your health.",
         "member_content": "<p>Whether you want to address a specific health concern or are looking to improve your overall health, our knowledgeable nutrition professionals are here for you. By taking a comprehensive, personalized approach to your health, our nutritionists and naturopathic doctors are available to work one-on-one to help you achieve your goals.<\/p>\n\n<p>As a Humanized+ member, you receive significant savings on nutrition consultations. This includes a variety of members-only nutrition counseling packages. We know that making lasting diet and lifestyle changes takes time. Ongoing support, accountability, and encouragement can make a big difference. <\/p>",
         "table-side-image": "shopify:\/\/shop_images\/consul_img.png",
         "member_table_title": "When you schedule a consultation with a Humanized+ nutritionist, you’ll receive:",
         "member_table_content": "<ul>\n<li>A thorough evaluation of your health history including the many factors that impact your health, such as diet, lifestyle, stress, sleep environment, genetics, etc.<\/li>\n<li>Help identifying the underlying root cause(s) of your symptoms.<\/li>\n<li>Recommendations for specialty lab testing to better understand your unique needs.<\/li>\n<li>In-depth analysis and interpretation of your lab results.<\/li>\n<li>A tailored meal plan that optimizes your health.<\/li>\n<li>A review of your current medication\/supplement lists and check for drug\/nutrient interactions and depletions.<\/li>\n<li>A personalized nutrition plan and clear roadmap to help you feel your best.<\/li>\n<li>An accountability partner that provides you with ongoing support, guidance, and encouragement to help you make healthy changes .<\/li>\n<\/ul>\n<p>All appointments are available by phone or online\/video chat.<\/p>",
-        "member_initial_consultation": "",
-        "member_follow_up": "",
+        "member_initial_consultation": "<div class=\"better-inline-booking-widget\" data-url=\"https:\/\/my.practicebetter.io\" data-booking-page=\"6206be44398033024026c44f\" data-hash=\"608b0c932a8326079004eea6\" data-theme=\"1b788b\" style=\"width:100%;max-width:550px;height:800px;\" data-scrollbar-visible=\"false\"><\/div>\n<script type=\"text\/javascript\" src=\"https:\/\/my.practicebetter.io\/assets\/js\/booking.widget.js\"><\/script>",
+        "member_follow_up": "<div class=\"better-inline-booking-widget\" data-url=\"https:\/\/my.practicebetter.io\" data-booking-page=\"6206be44398033024026c44f\" data-hash=\"608b0c932a8326079004eea6\" data-theme=\"1b788b\" style=\"width:100%;max-width:550px;height:800px;\" data-scrollbar-visible=\"false\"><\/div>\n<script type=\"text\/javascript\" src=\"https:\/\/my.practicebetter.io\/assets\/js\/booking.widget.js\"><\/script>",
         "humanized_member_title": "Humanized+ Nutrition Consultations",
         "humanized_member_content": "<p>75-minute comprehensive initial consultation - $157<\/p>\n<p>45-minute follow-up consultation - $90<\/p>",
         "extra_save_title": "Extra Savings on Humanized+ Nutrition Consultation Packages",
@@ -40,9 +40,9 @@
         "extra_month_content2": "<p><b>Includes:<\/b><\/p>\n<p>One 75-minute comprehensive initial consultation<\/p>\n<p>Five 40-minute follow-up consultations<\/p>",
         "extra_month_title3": "<h4>12-Month Nutrition Consultation Package - $1,145  <span>($510 savings)<\/span>\n<\/h4>",
         "extra_month_content3": "<p><b>Includes:<\/b><\/p>\n<p>One 75-minute comprehensive initial consultation<\/p>\n<p>Eleven 40-minute follow-up consultations<\/p>",
-        "three_month_content": "",
-        "six_month_content": "",
-        "twelve_month_content": ""
+        "three_month_content": "<div class=\"better-inline-booking-widget\" data-url=\"https:\/\/my.practicebetter.io\" data-package=\"6365e3d3022189a814bffb07\" data-hash=\"608b0c932a8326079004eea6\" data-theme=\"1b788b\" data-theme-accent=\"91b000\" style=\"width:100%;max-width:550px;height:800px;\" data-scrollbar-visible=\"false\"><\/div>\n<script type=\"text\/javascript\" src=\"https:\/\/cdn.practicebetter.io\/assets\/js\/booking.widget.js\"><\/script>",
+        "six_month_content": "<div class=\"better-inline-booking-widget\" data-url=\"https:\/\/my.practicebetter.io\" data-package=\"6365e47c022189a814bfff3e\" data-hash=\"608b0c932a8326079004eea6\" data-theme=\"1b788b\" data-theme-accent=\"91b000\" style=\"width:100%;max-width:550px;height:800px;\" data-scrollbar-visible=\"false\"><\/div>\n<script type=\"text\/javascript\" src=\"https:\/\/cdn.practicebetter.io\/assets\/js\/booking.widget.js\"><\/script>",
+        "twelve_month_content": "<div class=\"better-inline-booking-widget\" data-url=\"https:\/\/my.practicebetter.io\" data-package=\"6365e525022189a814c004cb\" data-hash=\"608b0c932a8326079004eea6\" data-theme=\"1b788b\" data-theme-accent=\"91b000\" style=\"width:100%;max-width:550px;height:800px;\" data-scrollbar-visible=\"false\"><\/div>\n<script type=\"text\/javascript\" src=\"https:\/\/cdn.practicebetter.io\/assets\/js\/booking.widget.js\"><\/script>"
       }
     }
   },
