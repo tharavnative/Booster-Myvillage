@@ -5,16 +5,13 @@
 {% assign desktop = section.settings.cardDesktop %}
 {% endif %}
 <header class="page-header">
-  {% if section.settings.display_image_cat %}
+  
     <div class="img_cart">
-      {% if section.settings.img_cat != blank %}
-      <img src="{{ section.settings.img_cat | img_url :"master"}}" alt="{{ collection.title | split: '|' | first }}" />
-      {% else %}
-        {% capture current %}{% cycle 2%}{% endcapture %}
-        {{ 'lifestyle-' | append: current | placeholder_svg_tag: 'placeholder-svg' }}
-        {% endif %}
+    
+      <img src="https://cdn.shopify.com/s/files/1/0319/0960/9603/files/product-bnr-1.jpg?v=1613734529" alt="{{ collection.title | split: '|' | first }}" />
+      
     </div>
-  {% endif %}
+ 
 
  	{% if settings.enable_multilang %}
  
