@@ -282,7 +282,7 @@ table {
     border-top: 2px solid #F7F7F7;
 }
 a.card__title {
-    min-height: 45px;
+    min-height: 70px;
 }
 .card__tags span {
     color: #fff;
