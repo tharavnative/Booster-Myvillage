@@ -3,6 +3,7 @@
   "sections": {
     "banner": {
       "type": "banner--collection",
+      "disabled": true,
       "settings": {
         "layout": "default",
         "height": 200,
