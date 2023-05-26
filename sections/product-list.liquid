@@ -4,7 +4,8 @@
 {% else %}
 {% assign desktop = section.settings.cardDesktop %}
 {% endif %}
-{{ 'test' }}
+  <div class="tet">{{ 'test' }}
+  </div>
 {% paginate collection.products by section.settings.cardsPerPage %}
   {% for product in collection.products %}
     {% unless product.tags contains 'featured' %}
