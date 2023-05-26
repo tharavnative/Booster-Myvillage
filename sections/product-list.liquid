@@ -4,6 +4,26 @@
 {% else %}
 {% assign desktop = section.settings.cardDesktop %}
 {% endif %}
+<header class="page-header">
+  {% if section.settings.display_image_cat %}
+    <div class="img_cart">
+      {% if section.settings.img_cat != blank %}
+      <img src="{{ section.settings.img_cat | img_url :"master"}}" alt="{{ collection.title | split: '|' | first }}" />
+      {% else %}
+        {% capture current %}{% cycle 2%}{% endcapture %}
+        {{ 'lifestyle-' | append: current | placeholder_svg_tag: 'placeholder-svg' }}
+        {% endif %}
+    </div>
+  {% endif %}
+
+ 	{% if settings.enable_multilang %}
+ 
+      <h1> {{ collection.title }}  </h1>
+    {% else %}
+    	<h1>{{ collection.title | split: '|' | first }}</h1>
+    {% endif %} 
+      
+</header>
   <div class="tet" style="width:100%;">{% render 'collection-description'  %}
   </div>
 {% paginate collection.products by section.settings.cardsPerPage %}
