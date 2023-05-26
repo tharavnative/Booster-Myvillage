@@ -4,7 +4,7 @@
 {% else %}
 {% assign desktop = section.settings.cardDesktop %}
 {% endif %}
-  <div class="tet">{{ 'test' }}
+  <div class="tet" style"width:100%;">{% render collection.description  %}
   </div>
 {% paginate collection.products by section.settings.cardsPerPage %}
   {% for product in collection.products %}
