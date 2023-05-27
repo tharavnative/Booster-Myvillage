@@ -259,7 +259,139 @@ pintrk('page');
     {% render 'ordersify-bis-custom' %}
 
     <script src="//cdn.codeblackbelt.com/js/modules/frequently-bought-together/main.min.js?shop=myvillagegreen.myshopify.com" defer></script>
-    {% render 'layout__custom-code--body' %}
+   <!-- spurit_sri-added -->
+{% render 'spurit_sri-theme-snippet' %}
+<!-- /spurit_sri-added -->
+
+ <!-- Accessibilities -->
+ <script data-account="T76UOLihTx" src="https://cdn.userway.org/widget.js"></script>
+  {% include 'gtmtrackingbody' %}
+
+<script type="text/javascript">
+(function(w,d){
+  w.HelpCrunch=function(){w.HelpCrunch.q.push(arguments)};w.HelpCrunch.q=[];
+  function r(){var s=document.createElement('script');s.async=1;s.type='text/javascript';s.src='https://widget.helpcrunch.com/';(d.body||d.head).appendChild(s);}
+  if(w.attachEvent){w.attachEvent('onload',r)}else{w.addEventListener('load',r,false)}
+})(window, document)
+</script>
+ <script type="text/javascript">
+  
+  if( jQuery('#redirect_home').length )         // use this if you are using id to check
+{
+   
+   /*window.location.href='/pages/signup-landing'*/
+//console.log(window.location);
+  //window.location.href='https://myvillagegreen.com';
+
+  if(window.location.pathname=="/pages/thirty-minute-consultation"){
+     window.location.href='https://myvillagegreen.com/account/login?redir=pages/thirty-minute-consultation';
+  }
+  else{
+    window.location.href='https://myvillagegreen.com';
+  }
+}
+  HelpCrunch('init', 'myvillagegreen', {
+    applicationId: 1,
+    applicationSecret: 'qkRiZfe7mr93mcGxSegFv911NpDF4DBxhOvHBJw4tYnRAb+RLfO6dxokMBhsDNG/+FJFB4ePRqFrZ+NCTSj+ZA=='
+  });
+
+  HelpCrunch('showChatWidget');
+  jQuery("form.blog_search").on("submit",function(){
+  		
+    jQuery("<input />").attr("type", "hidden")
+          .attr("name", "q")
+          .attr("value", $(this).find("input[name=s]").val())
+          .appendTo("form.blog_search");
+      return true;
+  });
+ jQuery("a[href^='https://blog.myvillagegreen.com']").each(function(){
+  	
+    var href_val = $(this).attr("href");
+    
+    jQuery(this).attr("href",href_val.replace("https://blog.myvillagegreen.com", "https://myvillagegreen.com/blogs/post"));
+    
+  
+  });
+	jQuery(function(){
+
+	 jQuery(".site-nav.gf-menu").find("li:first").show();
+
+
+	});
+</script>
+
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "Store",
+  "name": "Village Green Apothecary",
+  "image": "https://lh4.googleusercontent.com/-rYXENsr44FM/AAAAAAAAAAI/AAAAAAAAAAA/YOZ4iWY8Kak/s44-p-k-no-ns-nd/photo.jpg",
+  "@id": "",
+  "url": "https://myvillagegreen.com/",
+  "telephone": "(301) 530-0800",
+  "address": {
+    "@type": "PostalAddress",
+    "streetAddress": "5415 W Cedar Ln",
+    "addressLocality": "Bethesda",
+    "addressRegion": "MD",
+    "postalCode": "20814",
+    "addressCountry": "US"
+  },
+  "openingHoursSpecification": [{
+    "@type": "OpeningHoursSpecification",
+    "dayOfWeek": [
+      "Tuesday",
+      "Monday",
+      "Wednesday",
+      "Thursday",
+      "Friday"
+    ],
+    "opens": "08:30",
+    "closes": "18:00"
+  },{
+    "@type": "OpeningHoursSpecification",
+    "dayOfWeek": "Saturday",
+    "opens": "08:30",
+    "closes": "17:00"
+  }] 
+}
+</script>
+ {% include 'alireviews_core' %}
+  {% if template contains 'customers/account' or template contains 'membership-dashboard' %}  
+  <script src="https://app.accentuate.io/dist/proxy.js"></script>; 
+  <script> Accentuate(jQuery("#metafields_form")); </script> 
+  {% endif %}  
+  <script>
+    (function() {
+      var REDIRECT_PATH_SIGNUP = '/pages/signup-landing';
+      var REDIRECT_PATH = '/';
+      var selector = '#create_customer, form[action$="/account"][method="post"]',
+          $form = document.querySelectorAll(selector)[0];
+
+      if ($form) {
+        $redirect = document.createElement('input');
+        $redirect.setAttribute('name', 'return_to');
+        $redirect.setAttribute('type', 'hidden');
+        if (window.location.pathname=="/pages/signup-landing"){
+           $redirect.value = REDIRECT_PATH_SIGNUP;
+        }
+        else{
+          $redirect.value = REDIRECT_PATH;
+        }
+       
+        
+        
+        $form.appendChild($redirect);
+      }
+    })();
+  </script>
+  {% include 'mw_GP_objects' %}  <script type="text/javascript" charset="utf-8">
+  var shappify_customer_tags = {{ customer.tags | json }}
+  </script>
+{% render 'aio_loyalty_snippet' %}   
+{{ '//cdn.shopify.com/s/files/1/0194/1736/6592/t/1/assets/booster-page-speed-optimizer.js?23' | script_tag }}        
+        
+        {% render 'layout__custom-code--body' %}
   <!--
 888888b.                              888                88888888888 888                                      
 888  "88b                             888                    888     888                                      
