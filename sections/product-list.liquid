@@ -57,7 +57,7 @@ font-weight: 500;
     {% endif %} 
       
 </header>
-  <div class="tet" style="width:100%;">{% render 'collection-description'  %}
+  <div class="tet" style="width:100%;margin-bottom:30px;">{% render 'collection-description'  %}
   </div>
 {% paginate collection.products by section.settings.cardsPerPage %}
   {% for product in collection.products %}
