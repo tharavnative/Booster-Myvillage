@@ -383,7 +383,7 @@
           "settings": {
             "fullWidth": false,
             "text": "Book a <strong>FREE<\/strong> <br>Consultation!",
-            "url": "https:\/\/myvillagegreen.com\/collections\/lab-tests",
+            "url": "\/pages\/consultation",
             "icon": "",
             "iconPosition": "icon--left",
             "wideButton": false,
@@ -401,7 +401,7 @@
           "settings": {
             "fullWidth": false,
             "text": "Order Lab Testing<br> Online <strong>NOW!<\/strong>",
-            "url": "",
+            "url": "\/collections\/lab-tests",
             "icon": "",
             "iconPosition": "icon--left",
             "wideButton": false,
