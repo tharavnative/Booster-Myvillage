@@ -364,6 +364,85 @@ Rendering according to the view (default, marketplace)
           {% if product.vendor == 'LAB TEST' %}
                {% assign lab_test = true %}
           {% endif %}
+         {% if lab_test == true %}
+            <h3>Patient & Practitioner Information</h3>
+            <p>Please fill out the information below to add to cart.</p>
+            <div class="repeater">
+              	<div data-repeater-list="properties">
+                  <div data-repeater-item class="repeater_item">
+                      <p class="line-item-property__field">
+                        <label for="patient-fname">Patient First Name <span>*</span></label> <br>
+                        <input class="patient_info" type="text" name="properties[FirstName]" onchange="check_filled()" required>
+                      </p>
+                      <p class="line-item-property__field">
+                        <label for="patient-lname">Patient Last Name <span>*</span></label> <br>
+                        <input class="patient_info" type="text" name="properties[LastName]" onchange="check_filled()" required>
+                      </p>
+                      <p class="line-item-property__field">
+                        <label for="patient-dob">Patient Birth Date(MM/DD/YYYY) <span>*</span></label> <br>
+                        <input class="patient_info datepicker" type="text" name="properties[DateOfBirth]" maxlength="10" onchange="check_filled()" required>
+                      </p>
+                      <p class="line-item-property__field">
+                        <label for="patient-gender">Patient Gender <span>*</span></label> <br>
+                        <label><input onchange="check_filled()" type="radio" name="properties[Gender]" value="Male" required> Male </label><br>
+                        <label><input onchange="check_filled()" type="radio" name="properties[Gender]" value="Female" required> Female </label>
+                      </p>
+                     <p><a href="javascript:;" data-repeater-delete class="btn btn-danger mt-repeater-delete">
+                       <i class="fa fa-close"></i> Delete</a></p>
+                    <hr>
+             	 </div>
+              </div>
+              
+              <a href="javascript:;" data-repeater-create class="btn btn-success">
+                                                <i class="fa fa-plus"></i> Add More</a>
+            </div>
+            {{ 'bootstrap-datepicker3.min.css' | asset_url | stylesheet_tag }}
+            {{ 'bootstrap-datepicker.min.js'  | asset_url | script_tag }}
+
+            <script>
+              $(document).ready( function() {
+                $(function() {
+                  $(".datepicker").datepicker( {
+                    dateFormat: 'mm/dd/yyyy',
+                    autoclose:true
+                  } );
+
+                  
+                });
+              });
+
+              function check_filled()
+              {
+                var f = 0;
+                $(".patient_info").each(function(){
+
+                      if($(this).val()=="")
+                      {
+                        f=1;
+                      }
+
+                      console.log($(this).val());
+                  });
+
+                if($('form input[type="radio"]:checked').length <= 0)
+                {
+                  f= 1;
+                }
+
+                if(f==0)
+                {
+                  $("#product-add-to-cart").prop("disabled",false);
+                }
+                else
+                {
+                  $("#product-add-to-cart").prop("disabled",true);
+                }
+
+
+              }
+            </script>
+
+            {% endif %}
 
 
     
