@@ -8,6 +8,49 @@
    .product-info { margin-bottom: 15px;clear:both;width:100%; }
  .product-info span{text-transform: capitalize;;}
  .product-info p { margin-bottom: 0;width:100%; }
+ 
+body.template--product .repeater input[type="text"] { width: 100%; }
+body.template--product .repeater input[type=radio] { -webkit-appearance: button; }
+body.template--product .repeater p { clear: both; }
+body.template--product  .mt-repeater-delete { float: none !important; background: #b80e0e !important; border-color: #b80e0e !important; min-width: 220px !important;}
+body.template--product .repeater input[type="text"]{
+    padding: 9px 10px;
+    line-height: 1.35;
+    height: auto;
+    border: 1px solid #cbcbcb;
+    background: #fff;
+}
+.line-item-property__field span { color: #ff0000; }
+body.template--product .repeater p {
+    font-size: 16px;
+    line-height: 24px;
+    font-family: Montserrat;
+    margin-bottom: 15px;
+    font-weight: 700;
+}
+body.template--product .shopify-product-form .btn {
+    font-size: 20px;
+    text-transform: capitalize;
+    font-weight: 300;
+    line-height: 25px;
+    letter-spacing: 0.05em;
+    padding: 15px;
+    color: #fff;
+}
+body.template--product .shopify-product-form .mt-repeater-delete {
+  
+    background: #b80e0e !important;
+    border-color: #b80e0e !important;
+    min-width: 220px !important;
+}
+
+a.btn.btn-success {}
+
+body.template--product .shopify-product-form .btn{
+        background: #00577f;
+    color: #fff;
+    border-color: #00577f;
+}
 </style>
 
 <script type="application/ld+json">
@@ -359,6 +402,10 @@ Rendering according to the view (default, marketplace)
         </div>
 
       {% endif %}
+  {% if block.type == 'stockLeft' %}
+{{ 'test' }}
+
+  {% endif %}
        {% if block.type == 'productPagePrice' %}
           {% assign lab_test = false %}
           {% if product.vendor == 'LAB TEST' %}
