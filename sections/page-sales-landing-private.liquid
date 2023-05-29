@@ -1,6 +1,31 @@
+
+
+{{ 'bootstrap.min.css' | asset_url | stylesheet_tag }}
+{{ 'custom-membership.css' | asset_url | stylesheet_tag }}
+
+<style>
+.col-sm-min, .col-sm, .col-sm-1, .col-sm-2, .col-sm-3, .col-sm-4, .col-sm-5, .col-sm-6, .col-sm-7, .col-sm-8, .col-sm-9, .col-sm-10, .col-sm-11, .col-sm-12, .col-sm-offset-0, .col-sm-offset-1, .col-sm-offset-2, .col-sm-offset-3, .col-sm-offset-4, .col-sm-offset-5, .col-sm-offset-6, .col-sm-offset-7, .col-sm-offset-8, .col-sm-offset-9, .col-sm-offset-10, .col-sm-offset-11, .col-sm-offset-12 {
+    display: block;
+    -webkit-box-flex: 0;
+    -ms-flex: 0 0 auto;
+    flex: 0 0 auto;
+    padding-right: 10px;
+    padding-left: 0px;
+}
+.page__header .row {
+       margin-right: auto;
+    margin-left: auto;
+}
+    .col-sm-6{
+    flex-basis: 50%;
+  max-width: 100%; 
+}
+</style>
+
+
 {% if section.settings.enable %}
   <div class="shopify-section signup_banner">
-    <div class="container">
+    <div class="container-bootstrap">
       <div class="row">
         <div class="col-sm-6">
           <div class="signup_banner_cont">
@@ -16,7 +41,7 @@
     </div>
   </div>
   <div id="sign_two_blk">
-    <div class="container">
+    <div class="container-bootstrap">
       <div class="row">
         <div class="col-sm-12 are-you">
           {{ section.settings.are_you_sec }}
@@ -450,7 +475,7 @@
     </div>
   </div>
   <div id="sign_three_blk_top">
-    <div class="container">
+    <div class="container-bootstrap">
       <div class="row">
         <div class="col-sm-12">
           <h2 class="membership-title">Telenutrition at your fingertips</h2>
@@ -492,7 +517,7 @@
   </div>
 
   <div id="sign_three_blk">
-    <div class="container">
+    <div class="container-bootstrap">
       <div class="row">
         <div class="col-sm-12">
           <h2 class="membership-title upper">{{ section.settings.benefit_title }}</h2>
@@ -587,7 +612,7 @@
     </div>
   </div>
   <div id="sign_why_top">
-    <div class="container">
+    <div class="container-bootstrap">
       <div class="row">
         <div class="col-sm-12">
           <div class="image-align">
@@ -598,7 +623,7 @@
     </div>
   </div>
   <div id="sign_why">
-    <div class="container">
+    <div class="container-bootstrap">
       <div class="row">
         <div class="col-sm-12">
           <div class="sign_why_sec clearfix">
@@ -638,7 +663,7 @@
   </div>
 
   <div class="your_health" id="humani_sec">
-    <div class="container">
+    <div class="container-bootstrap">
       <div class="row">
         <div class="col-sm-12">
           <div class="title_sec your_top">
