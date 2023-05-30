@@ -100,14 +100,6 @@
             "noMargin": false
           }
         },
-        "ppStock": {
-          "type": "productPageStock",
-          "settings": {
-            "noMargin": true,
-            "stockLeft": "10",
-            "reduce": 20
-          }
-        },
         "ppATC": {
           "type": "productPageATC",
           "settings": {
@@ -160,7 +152,6 @@
         "2cf0b816-1420-4229-b91c-570d8363e9ae",
         "fda7e6ae-9578-4d31-bd76-11e2eada25bb",
         "ppSwatch",
-        "ppStock",
         "ppATC",
         "7604ce43-bc1c-454c-8780-b1821b4f86a0",
         "b2ddb55b-83a5-485f-a11f-033a10d37725",
