@@ -316,6 +316,10 @@ a.card__title {
     background: #006990 !important;
     color: #fff !important;
 }
+.list_cat .collection-title h5, #category-landing .collection-title h5 {
+    margin-top: 0;
+    margin-bottom: 15px;
+}
 @media(max-width:767px){
     span.nav__link__title {
     color: #000;
