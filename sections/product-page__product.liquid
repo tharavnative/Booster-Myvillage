@@ -489,6 +489,12 @@ Rendering according to the view (default, marketplace)
               }
             </script>
 
+    {% if  product.available %} 
+<input type="submit" name="add" {% if content_for_header contains '.mageworx.com\/groupedproducts\/source.js?' and product.tags contains 'mw_grouped_product' %}disabled="disabled"{% endif %} class="btn" {% if settings.enable_multilang %}data-translate="products.product.add_to_cart"{%endif%} id="product-add-to-cart" value="{{ 'products.product.add_to_cart' | t }}">
+            {% else %} 
+            <input type="submit" name="add" {% if content_for_header contains '.mageworx.com\/groupedproducts\/source.js?' and product.tags contains 'mw_grouped_product' %}disabled="disabled"{% endif %} class="btn" {% if settings.enable_multilang %}data-translate="products.product.unavailable"{%endif%} id="product-add-to-cart" disabled value="{{ 'products.product.unavailable' | t }}">          
+            {% endif %} <br></br><br></br>
+           <div class=product-form_item" style "flex-basis: 100%;" id="ods-bis"></div>
             {% endif %}
 
   {% endif %}
