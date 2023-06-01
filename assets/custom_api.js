@@ -1,7 +1,120 @@
 jQuery.noConflict();
 jQuery( document ).ready(function($) {
   window.savedlast = false;
+ $("#schedule_popup_now").removeClass('loading');
 
+  MutationObserver = window.MutationObserver || window.WebKitMutationObserver;
+        var observer = new MutationObserver(function (mutations) {
+            mutations.forEach(function (mutation) {
+
+console.log('Mutation------',$(".bta-product-widget"));
+
+  setTimeout(function () {  
+console.log('Running');
+    $("#call_back_btn button").click(function () {
+
+     console.log('Find Outside------',$(".bta-product-widget"));
+        setTimeout(function () {
+
+          $('#schedule_inner').modal('hide');
+
+          
+            var targetNode = $(".bta-product-widget")[0];
+            //$('#schedule_inner .modal-body').empty();
+            $(".bta-product-widget .bta-widget-modal").removeClass('bta-widget-modal');
+            $(".bta-product-widget  iframe").removeAttr("title");
+            $(".bta-product-widget  iframe").tooltip().tooltip("disable");
+
+            $('#schedule_call_btn .modal-body').append($(".bta-product-widget"));
+
+
+
+            $('#schedule_call_btn').modal('show');
+             console.log('Find------',$(".bta-product-widget"));
+            }, 500);
+
+        
+
+
+    });
+
+}, 500);
+
+              
+            });
+        });
+
+        // Notify me of style changes
+        var observerConfig = {
+             childList: true
+        };
+
+var targetNode = $("div[data-id='60284']")[0];
+if(typeof targetNode  === "undefined"){
+  console.log('Mutation if 60284--');
+}
+else{
+observer.observe(targetNode, observerConfig);
+console.log('Mutation Else 60284--');
+ 
+  }
+
+var observer2 = new MutationObserver(function (mutations) {
+            mutations.forEach(function (mutation) {
+
+console.log('Mutation------',$(".bta-product-widget"));
+
+  setTimeout(function () {  
+console.log('Running third',mutation);
+    if (mutation.type === 'childList') {
+
+ console.log('Online Css.....',$('.bta-widget-show-button').css('display'));
+                 if ($('.bta-widget-show-button').css('display') == 'block') {
+                       setTimeout(function () { 
+                        jQuery("#thirty-holder button").trigger('click');
+                          var targetNode2 = $(".bta-product-widget")[0];
+                        
+            $(".bta-product-widget .bta-widget-modal").removeClass('bta-widget-modal');
+            $(".bta-product-widget  iframe").removeAttr("title");
+            $(".bta-product-widget  iframe").tooltip().tooltip("disable");
+
+            $('#bta-product-holder').append($(".bta-product-widget"));
+           $('#bta-product-holder').removeClass('loading-blue');
+                         console.log('Online Cclicked.....');
+                         }, 500);
+
+                     }
+                 }
+ 
+    
+    
+
+}, 500);
+
+              
+            });
+        });
+
+        // Notify me of style changes
+        var observerConfig2 = {
+            childList: true, 
+          subtree: true,
+            attributes: true
+             
+        };
+
+
+  var targetNode2 = $("div[data-id='76187']")[0];
+if(typeof targetNode2  === "undefined"){
+
+console.log('Mutation If 76187--');
+}
+  else{
+observer2.observe(targetNode2, observerConfig2);
+console.log('Mutation Else 76187--');
+   
+ 
+  }
 
 
    $(document).on('keyup keydown paste focusout keypress', '#customFields_mvg-membership input[name=n_60701]', function (e) {
