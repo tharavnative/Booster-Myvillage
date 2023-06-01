@@ -199,6 +199,7 @@
           },
           "63b21902-98ae-4e86-b746-45541a85da14": {
             "type": "blockNewsletter",
+            "disabled": true,
             "settings": {
               "width": "9",
               "horizontalAlignment": "start",
