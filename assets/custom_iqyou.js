@@ -16,7 +16,7 @@ jQuery(document).ready(function($){
             "password": pass,
             "iqyou_welcome_email": false
         };
-  console.log('Original data !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!',data);
+  //console.log('Original data !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!',data);
    var content = {
             "first_name": fname,
             "last_name": lname,
@@ -29,57 +29,57 @@ jQuery(document).ready(function($){
             "password": 'test123',
         };
         // console.log(data);
-              url = 'https://api.iqyouhealth.com/api/v1/register';
-              var request = {
-                    "Content-Type":"application/json",
-                    "accept": "application/json",
-                    crossDomain: true,
-                    "api-key": "c6701296-5027-4076-b80c-d64a77c2ddc7"
-                };
-                $.ajax({
-                    type: 'post',
-                    url: url,
-                   data: JSON.stringify( content ),
-                      dataType: "json",
-                      contentType: "application/json",
-                      headers: request
-                 }).done(function(data, status, xhr) {
+              // url = 'https://api.iqyouhealth.com/api/v1/register';
+              // var request = {
+              //       "Content-Type":"application/json",
+              //       "accept": "application/json",
+              //       crossDomain: true,
+              //       "api-key": "c6701296-5027-4076-b80c-d64a77c2ddc7"
+              //   };
+              //   $.ajax({
+              //       type: 'post',
+              //       url: url,
+              //      data: JSON.stringify( content ),
+              //         dataType: "json",
+              //         contentType: "application/json",
+              //         headers: request
+              //    }).done(function(data, status, xhr) {
                     
                     
-                 }).fail(function(xhr, status) {
+              //    }).fail(function(xhr, status) {
       
                  
                   
                       
-                         url = 'https://api.iqyouhealth.com/api/v1/login';
-                          var request = {
-                                "Content-Type":"application/json",
-                                "accept": "application/json",
-                                crossDomain: true,
-                                "api-key": "c6701296-5027-4076-b80c-d64a77c2ddc7"
-                            };
-                            $.ajax({
-                                type: 'post',
-                                url: url,
-                               data: JSON.stringify( log_content ),
-                                  dataType: "json",
-                                  contentType: "application/json",
-                                  headers: request
-                             }).done(function(data, status, xhr) {
-                                if (data.error == 'false') {
-                                  console.log("successss Login !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!");
-                                    console.log(data.data.saluId);
-                                } else {
-                                  console.log(data);
-                                  console.log("error Login !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!");
-                                }
-                             }).fail(function(xhr, status) {
+              //            url = 'https://api.iqyouhealth.com/api/v1/login';
+              //             var request = {
+              //                   "Content-Type":"application/json",
+              //                   "accept": "application/json",
+              //                   crossDomain: true,
+              //                   "api-key": "c6701296-5027-4076-b80c-d64a77c2ddc7"
+              //               };
+              //               $.ajax({
+              //                   type: 'post',
+              //                   url: url,
+              //                  data: JSON.stringify( log_content ),
+              //                     dataType: "json",
+              //                     contentType: "application/json",
+              //                     headers: request
+              //                }).done(function(data, status, xhr) {
+              //                   if (data.error == 'false') {
+              //                     console.log("successss Login !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!");
+              //                       console.log(data.data.saluId);
+              //                   } else {
+              //                     console.log(data);
+              //                     console.log("error Login !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!");
+              //                   }
+              //                }).fail(function(xhr, status) {
                   
                               
                               
-                             });
+              //                });
                    
-                 });
+              //    });
 
 
   
