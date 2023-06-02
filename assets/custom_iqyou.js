@@ -112,7 +112,11 @@ jQuery(document).ready(function($){
                                   contentType: "application/json",
                                   headers: request
                              }).done(function(data, status, xhr) {
+                              var saluId = data[0][0].salu_id
+                              console.log("successss Login !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!");
+                                    console.log("salu !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!",saluId);
                                 if (data.error == 'false') {
+                                  
                                   console.log("successss Login !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!");
                                     console.log(data.data.saluId);
                                 } else {
