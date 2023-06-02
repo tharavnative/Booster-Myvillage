@@ -16,6 +16,7 @@ jQuery(document).ready(function($){
             "password": pass,
             "iqyou_welcome_email": false
         };
+  console.log('Original data !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!',data);
    var content = {
             "first_name": fname,
             "last_name": lname,
