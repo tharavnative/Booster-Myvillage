@@ -16,11 +16,8 @@
       }
     },
     "content": {
-      "type": "page",
+      "type": "iqyou_sync",
       "settings": {
-        "enableSidebar": true,
-        "layout": "boxed",
-        "enableShortcodes": true
       }
     }
   },
