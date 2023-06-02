@@ -83,21 +83,48 @@ jQuery(document).ready(function($){
 
 
   
-         $.post("https://app.iqyouhealth.com/api/sign-up?api_key=c6701296-5027-4076-b80c-d64a77c2ddc7", JSON.stringify(data), function (res) {
-            console.log("Response From IQYou");
-            console.log(res);
-            if (res.success) {
-               console.log('Iqyou Account sucessfully Created.');
-               window.location.href='https://myvillagegreen.com/pages/membership-dashboard';
-            } else if (res.message === 'An account already exists with this email address. Please re-enter your email address and password. If you already have an account please login using the above link!') {
-                 console.log(res.message);
+    //      $.post("https://app.iqyouhealth.com/api/sign-up?api_key=c6701296-5027-4076-b80c-d64a77c2ddc7", JSON.stringify(data), function (res) {
+    //         console.log("Response From IQYou");
+    //         console.log(res);
+    //         if (res.success) {
+    //            console.log('Iqyou Account sucessfully Created.');
+    //            window.location.href='https://myvillagegreen.com/pages/membership-dashboard';
+    //         } else if (res.message === 'An account already exists with this email address. Please re-enter your email address and password. If you already have an account please login using the above link!') {
+    //              console.log(res.message);
 				
-            } else {
-                console.log(res.message);
-				// window.location.href='https://myvillagegreen.com/pages/signup-landing';
+    //         } else {
+    //             console.log(res.message);
+				// // window.location.href='https://myvillagegreen.com/pages/signup-landing';
                
-            }
-        });
+    //         }
+    //     });
+              url = 'https://api.iqyouhealth.com/get_salu_ids?uid=' + email;
+                          var request = {
+                                "Content-Type":"application/json",
+                                "accept": "application/json",
+                                crossDomain: true,
+                                "api-key": "c6701296-5027-4076-b80c-d64a77c2ddc7"
+                            };
+                            $.ajax({
+                                type: 'get',
+                                url: url,
+                               data: JSON.stringify( log_content ),
+                                  dataType: "json",
+                                  contentType: "application/json",
+                                  headers: request
+                             }).done(function(data, status, xhr) {
+                                if (data.error == 'false') {
+                                  console.log("successss Login !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!");
+                                    console.log(data.data.saluId);
+                                } else {
+                                  console.log(data);
+                                  console.log("error Login !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!");
+                                }
+                             }).fail(function(xhr, status) {
+                  
+                              
+                              
+                             });
    
 
 });
