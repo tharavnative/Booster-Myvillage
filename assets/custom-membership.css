@@ -728,7 +728,7 @@ h1#inner-content span {
 
 .action-btn a { margin: 0 10px; }
 .notice_hdr { background: #e1e1e1; padding: 15px; width: 70%; margin: 0 auto; text-align: center;  margin-top: 10px; }
-.notice_hdr p { margin-bottom: 0; color: #637605;}
+.notice_hdr p { margin-bottom: 0; color: #637605!important;}
 
 /************************ Banner New Sale ********************/
 
