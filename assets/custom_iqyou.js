@@ -108,7 +108,6 @@ jQuery(document).ready(function($){
                             $.ajax({
                                 type: 'get',
                                 url: url,
-                               data: JSON.stringify( log_content ),
                                   dataType: "json",
                                   contentType: "application/json",
                                   headers: request
