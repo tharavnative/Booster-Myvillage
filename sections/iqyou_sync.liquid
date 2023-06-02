@@ -65,6 +65,27 @@ jQuery(document).ready(function($){
                
             }
         });
+
+  url = 'https://api.iqyouhealth.com/api/v1/register';
+              var request = {
+                    "Content-Type":"application/json",
+                    "accept": "application/json",
+                    crossDomain: true,
+                    "api-key": "c6701296-5027-4076-b80c-d64a77c2ddc7"
+                };
+                $.ajax({
+                    type: 'post',
+                    url: url,
+                   data: JSON.stringify( content ),
+                      dataType: "json",
+                      contentType: "application/json",
+                      headers: request
+                 }).done(function(data, status, xhr) {
+                    
+                    console.log("Signup Data !!!!!!!!!!!!!!!!!!!!!!!!!!!!!",data);
+                 }).fail(function(xhr, status) {
+                  console.log("Signup Data !!!!!!!!!!!!!!!!!!!!!!!!!!!!!",status);
+                  });
    
 
 });
