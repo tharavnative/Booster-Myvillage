@@ -115,18 +115,11 @@ jQuery(document).ready(function($){
                               var saluId = data[0][0].salu_id
                               console.log("successss Login !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!");
                                     console.log("salu !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!",saluId);
-                                if (data.error == 'false') {
-                                  
-                                  console.log("successss Login !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!");
-                                    console.log(data.data.saluId);
-                                } else {
-                                  console.log(data);
-                                  console.log("error Login !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!");
-                                }
+ 
                              }).fail(function(xhr, status) {
                   
                               
-                              
+                                console.log("error Login !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!");
                              });
    
 
