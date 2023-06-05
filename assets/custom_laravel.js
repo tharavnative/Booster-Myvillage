@@ -3172,6 +3172,7 @@ jQuery(function ($) {
          var rec_id = $(this).attr('rec-id');
          if($('#how-to-' + rec_id).text() === ''){
              $('#why_cont').addClass('empty-text');
+           $('#why_cont').text('');
          }else{
            $('#why_cont').text($('#how-to-' + rec_id).text());
          }
