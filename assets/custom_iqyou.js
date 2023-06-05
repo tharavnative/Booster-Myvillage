@@ -120,7 +120,7 @@ jQuery(document).ready(function($){
                              }).fail(function(xhr, status) {
                   
                               
-                                console.log("error Login !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!");
+                                console.log("error Login !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!",xhr);
                              });
    
 
