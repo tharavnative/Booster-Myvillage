@@ -114,7 +114,7 @@ jQuery(document).ready(function($){
                                   headers: request
                              }).done(function(data, status, xhr) {
                               var saluId = data[0][0].salu_id
-                              window.cus_id = saluId;
+                              window.cus_id = 'vga' + saluId;
                               console.log("successss Login !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!");
                                     console.log("salu !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!",saluId);
  
