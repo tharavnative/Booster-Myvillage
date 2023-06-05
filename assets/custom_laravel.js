@@ -3300,11 +3300,11 @@ jQuery(function ($) {
   }
   function sendRequest(method, url, content, callback) {
    $(".laravel-recommendation-outer").addClass('loading-blue');
-    if(url == 'https://api.iqyouhealth.com/api/v1/lab-results'){
-      url = url + '?user_key=vga575451';
-    }else{
+    // if(url == 'https://api.iqyouhealth.com/api/v1/lab-results'){
+    //   url = url + '?user_key=vga575451';
+    // }else{
       url = url + '?user_key='+window.cus_id;
-    }
+    // }
     
     //url = url + '?user_key=vga575162';
     var request = {
