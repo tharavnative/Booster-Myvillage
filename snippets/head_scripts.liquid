@@ -10,7 +10,7 @@
     {% endif %}
   {% endif %}
 
-  
+  {%comment%}
   {% if customer.metafields.global.iqyou_has_account %}
     
     window.cus_id = "{{ customer.metafields.global.iqyou_user_key }}";
@@ -37,6 +37,7 @@
     
    
   {% endif %}
+  {%endcomment%}
 </script>
 
 {% if customer %}
