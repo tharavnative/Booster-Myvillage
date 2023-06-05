@@ -656,7 +656,8 @@ Rendering according to the view (default, marketplace)
 
 {% assign tabs = section.blocks | where: 'type', 'productPageTab' %}
 {% if tabs.size > 0 %}
-  <div class="test col-12 {{section.settings.layout}} unflex tab__container tab__container--product">
+ <div class="row s__content layout__content"> 
+  <div class="test col-8 col-md-6 {{section.settings.layout}} unflex tab__container tab__container--product">
     <div class="tab__holder">
       {% for tab in tabs %}
         {% if tab.settings.showInline %}
@@ -672,10 +673,14 @@ Rendering according to the view (default, marketplace)
       {% render 'get-block', block: tab, section: section, first: forloop.first, product: product %}
     {% endfor %}
   </div>
-{% endif %}
-<div class="lab_sidebar">
+  <div class="col-4 col-md-6">
+       <div class="lab_sidebar">
 
-</div>
+      </div>
+    </div> 
+</div>  
+{% endif %}
+
 {% comment %}
 marketplace view - failover title (.hide-mobile)
 marketplace view - failover price (.hide-mobile)
