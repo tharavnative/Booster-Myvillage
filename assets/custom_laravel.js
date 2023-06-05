@@ -3175,9 +3175,10 @@ jQuery(function ($) {
            $('#why_cont').text('');
          }else{
            $('#why_cont').text($('#how-to-' + rec_id).text());
+           $('#top_why_content').modal('show');
          }
          
-         $('#top_why_content').modal('show');
+         
          });
       });
     
