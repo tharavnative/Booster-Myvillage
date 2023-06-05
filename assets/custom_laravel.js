@@ -2833,7 +2833,10 @@ jQuery(function ($) {
       // console.log("dosage",val.dose_amount);
       if(val.dose_amount !== '' && val.dose_amount !== 'none found'){ var dose_amount = parseFloat(val.dose_amount).toFixed(2);}else{var dose_amount = '';}
       recom_body_html = recom_body_html + '<div class="recommendation-items ' + val.category.replace(/ /g,"_") + '" rec-id="' + val.recommendation_id + '">';
-      recom_body_html = recom_body_html + '<div class="recommendation-name">' + val.label + '<span class="how-to" rec-id="' + val.recommendation_id + '">?</span><label style="display:none" id="how-to-' + val.recommendation_id + '">' + val.how + '</label></div>';
+      if(val.how != ''){
+              recom_body_html = recom_body_html + '<div class="recommendation-name">' + val.label + '<span class="how-to" rec-id="' + val.recommendation_id + '">?</span><label style="display:none" id="how-to-' + val.recommendation_id + '">' + val.how + '</label></div>';
+
+      }
       recom_body_html = recom_body_html + '<div class="recommendation-dosage">' + dose_amount + ' ' + val.dose_units + ' ' + val.dose_interval + '</div>';
       recom_body_html = recom_body_html + getRecommendationUrl(val.label,rec_urls,val.recommendation_id);
       recom_body_html = recom_body_html + '</div>';
