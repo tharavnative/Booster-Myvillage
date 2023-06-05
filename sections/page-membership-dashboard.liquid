@@ -228,55 +228,55 @@
                                                                    
                                                                   <div class="grid">
                                                                     <div class="grid-item one-half small--one-whole">
-                                                                      <label for="address_first_name_new" {% if settings.enable_multilang %}data-translate="customer.addresses.first_name"{% endif %}>{{ 'customer.addresses.first_name' | t }}</label>
+                                                                      <label for="address_first_name_new" {% if settings.enable_multilang %}data-translate="customer.addresses.first_name"{% endif %}>First Name</label>
                                                                       <input type="text" id="address_first_name_new" class="address_form" name="address[first_name]" value="{{form.first_name}}" autocapitalize="words">
                                                                     </div>
                                                                     
                                                                     <div class="grid-item one-half small--one-whole">
-                                                                      <label for="address_last_name_new" {% if settings.enable_multilang %}data-translate="customer.addresses.last_name"{% endif %}>{{ 'customer.addresses.last_name' | t }}</label>
+                                                                      <label for="address_last_name_new" {% if settings.enable_multilang %}data-translate="customer.addresses.last_name"{% endif %}>Last Name</label>
                                                                       <input type="text" id="address_last_name_new" class="address_form" name="address[last_name]" value="{{form.last_name}}" autocapitalize="words">
                                                                     </div>
                                                                   </div>
                                                                   
-                                                                  <label for="address_company_new" {% if settings.enable_multilang %}data-translate="customer.addresses.company"{% endif %}>{{ 'customer.addresses.company' | t }}</label>
+                                                                  <label for="address_company_new" {% if settings.enable_multilang %}data-translate="customer.addresses.company"{% endif %}>Company</label>
                                                                   <input type="text" id="address_company_new" class="address_form" name="address[company]" value="{{form.company}}" autocapitalize="words">
                                                                   
-                                                                  <label for="address_address1_new" {% if settings.enable_multilang %}data-translate="customer.addresses.address1"{% endif %}>{{ 'customer.addresses.address1' | t }}</label>
+                                                                  <label for="address_address1_new" {% if settings.enable_multilang %}data-translate="customer.addresses.address1"{% endif %}>Address1</label>
                                                                   <input type="text" id="address_address1_new" class="address_form" name="address[address1]" value="{{form.address1}}" autocapitalize="words">
 
-                                                                  <label for="address_address2_new" {% if settings.enable_multilang %}data-translate="customer.addresses.address2"{% endif %}>{{ 'customer.addresses.address2' | t }}</label>
+                                                                  <label for="address_address2_new" {% if settings.enable_multilang %}data-translate="customer.addresses.address2"{% endif %}>Address2</label>
                                                                   <input type="text" id="address_address2_new" class="address_form" name="address[address2]" value="{{form.address2}}" autocapitalize="words">
                                                                   
-                                                                  <label for="address_city_new" {% if settings.enable_multilang %}data-translate="customer.addresses.city"{% endif %}>{{ 'customer.addresses.city' | t }}</label>
+                                                                  <label for="address_city_new" {% if settings.enable_multilang %}data-translate="customer.addresses.city"{% endif %}>City</label>
                                                                   <input type="text" id="address_city_new" class="address_form" name="address[city]" value="{{form.city}}" autocapitalize="words">
 
-                                                                  <label for="address_country_new" {% if settings.enable_multilang %}data-translate="customer.addresses.country"{% endif %}>{{ 'customer.addresses.country' | t }}</label>
+                                                                  <label for="address_country_new" {% if settings.enable_multilang %}data-translate="customer.addresses.country"{% endif %}>Country</label>
                                                                   <select id="address_country_new" name="address[country]" data-default="{{form.country}}">{{ country_option_tags }}</select>
 
                                                                   <div id="address_province_container-bootstrap_new" style="display:none">
-                                                                    <label for="address_province_new" {% if settings.enable_multilang %}data-translate="customer.addresses.province"{% endif %}>{{ 'customer.addresses.province' | t }}</label>
+                                                                    <label for="address_province_new" {% if settings.enable_multilang %}data-translate="customer.addresses.province"{% endif %}>Province</label>
                                                                     <select id="address_province_new" class="address_form" name="address[province]" data-default="{{form.province}}"></select>
                                                                   </div>
                                                                   
                                                                   <div class="grid">
                                                                     <div class="grid-item one-half small--one-whole">
-                                                                      <label for="address_zip_new" {% if settings.enable_multilang %}data-translate="customer.addresses.zip"{% endif %}>{{ 'customer.addresses.zip' | t }}</label>
+                                                                      <label for="address_zip_new" {% if settings.enable_multilang %}data-translate="customer.addresses.zip"{% endif %}>Postal/Zip Code</label>
                                                                       <input type="text" id="address_zip_new" class="address_form" name="address[zip]" value="{{form.zip}}" autocapitalize="characters">
                                                                     </div>
                                                                     
                                                                     <div class="grid-item one-half small--one-whole">
-                                                                      <label for="address_phone_new" {% if settings.enable_multilang %}data-translate="customer.addresses.phone"{% endif %}>{{ 'customer.addresses.phone' | t }}</label>
+                                                                      <label for="address_phone_new" {% if settings.enable_multilang %}data-translate="customer.addresses.phone"{% endif %}>Phone</label>
                                                                       <input type="tel" id="address_phone_new" class="address_form" name="address[phone]" value="{{form.phone}}" placeholder="555-555-1234">
                                                                     </div>
                                                                   </div>
                                                                   
                                                                   <p>
                                                                     {{ form.set_as_default_checkbox }}
-                                                                    <label for="address_default_address_new" class="inline" {% if settings.enable_multilang %}data-translate="customer.addresses.set_default"{% endif %}>{{ 'customer.addresses.set_default' | t }}</label>
+                                                                    <label for="address_default_address_new" class="inline" {% if settings.enable_multilang %}data-translate="customer.addresses.set_default"{% endif %}>Set as default address</label>
                                                                   </p>
                                                                   
-                                                                  <input type="submit" class="btn"  {% if settings.enable_multilang %}data-translate="customer.addresses.add"{% endif %} value="{{ 'customer.addresses.add' | t }}">
-                                                                  &nbsp; &nbsp;<a href="#" onclick="Shopify.CustomerAddress.toggleNewForm(); return false;" {% if settings.enable_multilang %}data-translate="customer.addresses.cancel"{% endif %}>{{ 'customer.addresses.cancel' | t }}</a>
+                                                                  <input type="submit" class="btn"  {% if settings.enable_multilang %}data-translate="customer.addresses.add"{% endif %} value="Add Address">
+                                                                  &nbsp; &nbsp;<a href="#" onclick="Shopify.CustomerAddress.toggleNewForm(); return false;" {% if settings.enable_multilang %}data-translate="customer.addresses.cancel"{% endif %}>Cancel</a>
 
                                                                   {% endform %}
                                                                   <hr>
