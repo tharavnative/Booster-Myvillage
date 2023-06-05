@@ -688,7 +688,7 @@ Rendering according to the view (default, marketplace)
       {% render 'get-block', block: tab, section: section, first: forloop.first, product: product %}
     {% endfor %}
   </div>
-  <div class="{% if is_lab_tests %} col-12 col-md-4 {% else %}col-12{% endif%}">
+  <div class="{% if is_lab_tests %} col-12 col-md-4 {% else %}col-12{% endif%}" style="align-items: flex-start;">
       <div class="lab_sidebar">
 			<div class="product-view-block-right">
 				<h2>Types of Lab Tests</h2>

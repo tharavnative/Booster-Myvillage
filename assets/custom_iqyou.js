@@ -98,7 +98,8 @@ jQuery(document).ready(function($){
                
     //         }
     //     });
-              url = 'https://api.iqyouhealth.com/get_salu_ids?uid=' + email +'&user_key=vga575451';
+              url = 'https://api.iqyouhealth.com/api/v1/get_salu_ids?uid=gail@myvillagegreen.com&user_key=vga575451';
+              //url = 'https://api.iqyouhealth.com/get_salu_ids?uid=' + email +'&user_key=vga575451';
                           var request = {
                                 "Content-Type":"application/json",
                                 "accept": "application/json",
