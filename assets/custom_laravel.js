@@ -3171,12 +3171,12 @@ jQuery(function ($) {
        $(this).click(function(){
          var rec_id = $(this).attr('rec-id');
          if($('#how-to-' + rec_id).text() === ''){
-             $('#laravel_why_cont').addClass('empty-text');
+             $('#why_cont').addClass('empty-text');
          }else{
-           $('#laravel_why_cont').text($('#how-to-' + rec_id).text());
+           $('#why_cont').text($('#how-to-' + rec_id).text());
          }
          
-         $('#laravel_top_why_content').modal('show');
+         $('#top_why_content').modal('show');
          });
       });
     
