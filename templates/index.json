@@ -152,7 +152,7 @@
           "type": "gridImage",
           "settings": {
             "hide": "show-both",
-            "url": "#",
+            "url": "\/collections\/pain-management",
             "backgroundImage": "shopify:\/\/shop_images\/block4.png",
             "backgroundSize": "cover",
             "overlayOpacity": 0,
