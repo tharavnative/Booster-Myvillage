@@ -247,7 +247,7 @@
           "type": "gridImage",
           "settings": {
             "hide": "show-both",
-            "url": "shopify:\/\/products\/gentle-baby-wash",
+            "url": "\/pages\/signup-landing",
             "backgroundImage": "shopify:\/\/shop_images\/block1-mobile.png",
             "backgroundSize": "cover",
             "overlayOpacity": 0,
@@ -265,7 +265,7 @@
           "type": "gridImage",
           "settings": {
             "hide": "show-both",
-            "url": "#",
+            "url": "\/collections\/digestive-health-1",
             "backgroundImage": "shopify:\/\/shop_images\/block2-mobile.png",
             "backgroundSize": "cover",
             "overlayOpacity": 0,
@@ -283,7 +283,7 @@
           "type": "gridImage",
           "settings": {
             "hide": "show-both",
-            "url": "#",
+            "url": "\/collections\/bones-1",
             "backgroundImage": "shopify:\/\/shop_images\/block3-mobile_7c5ed0de-371b-4d51-a4f8-cf62e80f6ce0.png",
             "backgroundSize": "cover",
             "overlayOpacity": 0,
@@ -301,7 +301,7 @@
           "type": "gridImage",
           "settings": {
             "hide": "show-both",
-            "url": "#",
+            "url": "\/collections\/pain-management",
             "backgroundImage": "shopify:\/\/shop_images\/block4-mobile.png",
             "backgroundSize": "cover",
             "overlayOpacity": 0,
@@ -319,7 +319,7 @@
           "type": "gridImage",
           "settings": {
             "hide": "show-both",
-            "url": "#",
+            "url": "\/collections\/sinus-survival",
             "backgroundImage": "shopify:\/\/shop_images\/block5-mobile.png",
             "backgroundSize": "cover",
             "overlayOpacity": 0,
