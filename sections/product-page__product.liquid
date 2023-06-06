@@ -159,7 +159,10 @@ label[for="productSelect"] {margin-bottom: 10px;}
 
 #colorcode {};
 </style>
-
+ {% assign lab_test = false %}
+            {% if product.vendor == 'LAB TEST' %}
+               {% assign lab_test = true %}
+            {% endif %}
 <div class="sticky--mobile hide-desktop sticky--closed hide">
 <div class="sticky--container">
 <div style="text-align: right">
@@ -205,7 +208,7 @@ class="button button--primary button--{{-settings['primaryButtonStyle']}} hide b
 {%- comment -%}
 Product row container
 {%- endcomment -%}
-<div data-product-holder class="row product__row {{section.settings.layout}} product__row--{{-section.settings.view}}">
+<div data-product-holder class=" {% if lab_test %} labtest {%endif%} row product__row {{section.settings.layout}} product__row--{{-section.settings.view}}">
 {%- comment -%}
 Default gallery with thumbnails (always rendered - used for mobile, featured products, modals in case another gallery type is selected) 
 {%- endcomment -%}
@@ -438,11 +441,9 @@ Rendering according to the view (default, marketplace)
         </div>
 
       {% endif %}
+     
   {% if block.type == 'productPageATC' %}
-{% assign lab_test = false %}
-            {% if product.vendor == 'LAB TEST' %}
-               {% assign lab_test = true %}
-            {% endif %}
+
 
             {% if lab_test == true %}
             <h3>Patient & Practitioner Information</h3>
