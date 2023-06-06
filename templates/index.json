@@ -94,24 +94,6 @@
     "1658982451aec4bb5c": {
       "type": "section__auto-grid",
       "blocks": {
-        "91e2efe7-d458-43fb-8c09-1614d991b8be": {
-          "type": "gridImage",
-          "settings": {
-            "hide": "show-both",
-            "url": "\/pages\/signup-landing",
-            "backgroundImage": "shopify:\/\/shop_images\/block1b_a4098332-04a2-4b3e-b156-3a1c3bf78ded.png",
-            "backgroundSize": "cover",
-            "overlayOpacity": 0,
-            "overlayColor": "#000000",
-            "imageText": "<div style=\" font-size: 24px; line-height: 26px; font-weight: 700; padding: 0 20px 20px 20px; letter-spacing: -1px;\">JOIN OUR MEMBERSHIP PROGRAM<\/div><div style=\" font-size: 21px; line-height: 24px; font-weight: 400; padding: 0 20px 40px 20px; letter-spacing: -1px;\">Deep Discounts + VIP Support<\/div>",
-            "textColor": "#000000",
-            "textFillColor": "rgba(0,0,0,0)",
-            "fullwidthText": false,
-            "fontSize": "base",
-            "horizontalAlignment": "center",
-            "verticalAlignment": "bottom"
-          }
-        },
         "f3126a0d-0c06-447b-9cfa-7ec71475516e": {
           "type": "gridImage",
           "settings": {
@@ -128,6 +110,24 @@
             "fontSize": "medium",
             "horizontalAlignment": "end",
             "verticalAlignment": "top"
+          }
+        },
+        "91e2efe7-d458-43fb-8c09-1614d991b8be": {
+          "type": "gridImage",
+          "settings": {
+            "hide": "show-both",
+            "url": "\/pages\/signup-landing",
+            "backgroundImage": "shopify:\/\/shop_images\/block1b_a4098332-04a2-4b3e-b156-3a1c3bf78ded.png",
+            "backgroundSize": "cover",
+            "overlayOpacity": 0,
+            "overlayColor": "#000000",
+            "imageText": "<div style=\" font-size: 24px; line-height: 26px; font-weight: 700; padding: 0 20px 20px 20px; letter-spacing: -1px;\">JOIN OUR MEMBERSHIP PROGRAM<\/div><div style=\" font-size: 21px; line-height: 24px; font-weight: 400; padding: 0 20px 40px 20px; letter-spacing: -1px;\">Deep Discounts + VIP Support<\/div>",
+            "textColor": "#000000",
+            "textFillColor": "rgba(0,0,0,0)",
+            "fullwidthText": false,
+            "fontSize": "base",
+            "horizontalAlignment": "center",
+            "verticalAlignment": "bottom"
           }
         },
         "1cad6f3c-f8a1-4eec-8329-44dcc4854063": {
@@ -204,8 +204,8 @@
         }
       },
       "block_order": [
-        "91e2efe7-d458-43fb-8c09-1614d991b8be",
         "f3126a0d-0c06-447b-9cfa-7ec71475516e",
+        "91e2efe7-d458-43fb-8c09-1614d991b8be",
         "1cad6f3c-f8a1-4eec-8329-44dcc4854063",
         "e898fbbf-afd6-4f0c-9be5-bf31c0d58781",
         "057b51a7-7dda-45b2-8c88-6f284e29c077",
