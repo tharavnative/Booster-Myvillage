@@ -2837,7 +2837,7 @@ jQuery(function ($) {
               recom_body_html = recom_body_html + '<div class="recommendation-name">' + val.label + '<span class="how-to" rec-id="' + val.recommendation_id + '">?</span><label style="display:none" id="how-to-' + val.recommendation_id + '">' + val.how + '</label></div>';
 
       }else{
-              recom_body_html = recom_body_html + '<div class="recommendation-name">' + val.label + '<span class="how-to" rec-id="' + val.recommendation_id + '"></span><label style="display:none" id="how-to-' + val.recommendation_id + '">' + val.how + '</label></div>';
+              recom_body_html = recom_body_html + '<div class="recommendation-name">' + val.label + '<span class="how-to hide-me" rec-id="' + val.recommendation_id + '">?</span><label style="display:none" id="how-to-' + val.recommendation_id + '">' + val.how + '</label></div>';
       }
       recom_body_html = recom_body_html + '<div class="recommendation-dosage">' + dose_amount + ' ' + val.dose_units + ' ' + val.dose_interval + '</div>';
       recom_body_html = recom_body_html + getRecommendationUrl(val.label,rec_urls,val.recommendation_id);
