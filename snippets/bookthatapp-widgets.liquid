@@ -14,11 +14,6 @@ update. Contact support@zetya.com if you need assistance with BookThatApp.
       if (productMetafields !== '') {
         productConfig = JSON.parse(productMetafields);
       }
-    {%- elsif product.metafields.bookthatapp.config_json -%}
-      productMetafields = '{{ product.metafields.bookthatapp.config_json | json }}';
-      if (productMetafields !== '') {
-        productConfig = JSON.parse(productMetafields);
-      }
     {%- else -%}
       productMetafields = '{{ product.metafields.bookthatapp.config }}'; {%- comment -%} legacy metafields {%- endcomment -%}
       if (productMetafields !== '') {
@@ -31,11 +26,6 @@ update. Contact support@zetya.com if you need assistance with BookThatApp.
 
       {%- if item.product.metafields.bookthatapp.json_config -%}
         itemProductMetafields = '{{ item.product.metafields.bookthatapp.json_config }}';
-        if (itemProductMetafields !== '') {
-          config = JSON.parse(itemProductMetafields);
-        }
-      {%- elsif item.product.metafields.bookthatapp.config_json -%}
-        itemProductMetafields = '{{ item.product.metafields.bookthatapp.config_json | json }}';
         if (itemProductMetafields !== '') {
           config = JSON.parse(itemProductMetafields);
         }
