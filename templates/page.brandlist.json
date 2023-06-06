@@ -7,7 +7,7 @@
         "height": 300,
         "horizontalAlignment": "left",
         "verticalAlignment": "middle",
-        "fontSize": "medium",
+        "fontSize": "big",
         "contentColor": "#FFFFFF",
         "fillColor": "rgba(0,0,0,0)",
         "defaultBackgroundImage": "shopify:\/\/shop_images\/block6.png",
