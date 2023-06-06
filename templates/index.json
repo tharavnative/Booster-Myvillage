@@ -243,24 +243,6 @@
             "verticalAlignment": "bottom"
           }
         },
-        "e0d83a6d-bb42-480a-af8e-bef2738d5578": {
-          "type": "gridImage",
-          "settings": {
-            "hide": "show-both",
-            "url": "\/pages\/signup-landing",
-            "backgroundImage": "shopify:\/\/shop_images\/block1-mobile.png",
-            "backgroundSize": "cover",
-            "overlayOpacity": 0,
-            "overlayColor": "#000000",
-            "imageText": "",
-            "textColor": "#000000",
-            "textFillColor": "rgba(0,0,0,0)",
-            "fullwidthText": false,
-            "fontSize": "base",
-            "horizontalAlignment": "center",
-            "verticalAlignment": "bottom"
-          }
-        },
         "fb260101-0e38-47e3-b237-61d91795b596": {
           "type": "gridImage",
           "settings": {
@@ -332,15 +314,33 @@
             "horizontalAlignment": "center",
             "verticalAlignment": "middle"
           }
+        },
+        "e0d83a6d-bb42-480a-af8e-bef2738d5578": {
+          "type": "gridImage",
+          "settings": {
+            "hide": "show-both",
+            "url": "\/pages\/signup-landing",
+            "backgroundImage": "shopify:\/\/shop_images\/block1-mobile.png",
+            "backgroundSize": "cover",
+            "overlayOpacity": 0,
+            "overlayColor": "#000000",
+            "imageText": "",
+            "textColor": "#000000",
+            "textFillColor": "rgba(0,0,0,0)",
+            "fullwidthText": false,
+            "fontSize": "base",
+            "horizontalAlignment": "center",
+            "verticalAlignment": "bottom"
+          }
         }
       },
       "block_order": [
         "cd992f71-4908-4ed8-9963-2b83a3a0637e",
-        "e0d83a6d-bb42-480a-af8e-bef2738d5578",
         "fb260101-0e38-47e3-b237-61d91795b596",
         "debc4346-6e87-4584-8b77-6174e1c678c9",
         "8ce3d5a1-2db0-4558-8d8b-36f7d6ad0d7c",
-        "68f17981-7e4d-4115-96f3-0f26a9c963cd"
+        "68f17981-7e4d-4115-96f3-0f26a9c963cd",
+        "e0d83a6d-bb42-480a-af8e-bef2738d5578"
       ],
       "custom_css": [
         ".layout__stretchBg {display: none;}",
