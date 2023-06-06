@@ -113,7 +113,8 @@ h2 { font-size: 30px; line-height: 35px; font-family: Montserrat; font-weight: 6
    text-transform:uppercase;
    border-bottom: none;
    position: absolute;
-   bottom: 60px;
+   top: 50%;
+  transform: translateY(-50%);
    font-family: Montserrat;
    font-size: 70px;
    font-weight: 700;
@@ -121,6 +122,25 @@ h2 { font-size: 30px; line-height: 35px; font-family: Montserrat; font-weight: 6
    margin: 0;
    left: 50px;
    letter-spacing: 0;
+  bottom: auto;
+}
+@media(max-width:767px){
+  .template-collection .page-header h1 {
+        line-height: 45px;
+    text-transform: uppercase;
+    border-bottom: none;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    font-family: Montserrat;
+    font-size: 40px;
+    font-weight: 700;
+    color: #fff;
+    margin: 0;
+    left: 50px;
+    letter-spacing: 0;
+    bottom: auto;
+}
 }
 .template-collection .page-header h1 span
 {
