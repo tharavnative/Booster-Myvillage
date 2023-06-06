@@ -283,8 +283,8 @@
           "type": "gridImage",
           "settings": {
             "hide": "show-both",
-            "url": "\/collections\/pain-management",
-            "backgroundImage": "shopify:\/\/shop_images\/block4-mobile.png",
+            "url": "https:\/\/myvillagegreen.com\/collections\/immune-health",
+            "backgroundImage": "shopify:\/\/shop_images\/immune.jpg",
             "backgroundSize": "cover",
             "overlayOpacity": 0,
             "overlayColor": "#000000",
