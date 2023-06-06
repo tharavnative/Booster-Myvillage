@@ -2879,22 +2879,22 @@ jQuery(function ($) {
         }
         
         if(intake_time.indexOf("AM") !== -1){ 
-          intake_time_radio = intake_time_radio + '<label>AM<input type="checkbox" class="laravel-intake-time-class my-plan-cb my-plan-cb" id="laravel-am" name="laravel-intake-time-' + recom.id + '[]" value="AM" dataid="' + recom.id + '" checked></label>';
+          intake_time_radio = intake_time_radio + '<label>AM<input type="checkbox" class="laravel-intake-time-class" id="laravel-am" name="laravel-intake-time-' + recom.id + '[]" value="AM" dataid="' + recom.id + '" checked></label>';
     
         }else{
-          intake_time_radio = intake_time_radio + '<label>AM<input type="checkbox" class="laravel-intake-time-class my-plan-cb" id="laravel-am" name="laravel-intake-time-' + recom.id + '[]" value="AM" dataid="' + recom.id + '"></label>';
+          intake_time_radio = intake_time_radio + '<label>AM<input type="checkbox" class="laravel-intake-time-class" id="laravel-am" name="laravel-intake-time-' + recom.id + '[]" value="AM" dataid="' + recom.id + '"></label>';
         }
         if(intake_time.indexOf("Mid") !== -1){ 
-          intake_time_radio = intake_time_radio + '<label>Mid-Day<input type="checkbox" class="laravel-intake-time-class my-plan-cb" id="laravel-midday" name="laravel-intake-time-' + recom.id + '[]" value="Mid" dataid="' + recom.id + '" checked></label>';
+          intake_time_radio = intake_time_radio + '<label>Mid-Day<input type="checkbox" class="laravel-intake-time-class" id="laravel-midday" name="laravel-intake-time-' + recom.id + '[]" value="Mid" dataid="' + recom.id + '" checked></label>';
     
         }else{
-          intake_time_radio = intake_time_radio + '<label>Mid-Day<input type="checkbox" class="laravel-intake-time-class my-plan-cb" id="laravel-midday" name="laravel-intake-time-' + recom.id + '[]" value="Mid" dataid="' + recom.id + '"></label>';
+          intake_time_radio = intake_time_radio + '<label>Mid-Day<input type="checkbox" class="laravel-intake-time-class" id="laravel-midday" name="laravel-intake-time-' + recom.id + '[]" value="Mid" dataid="' + recom.id + '"></label>';
         }
         if(intake_time.indexOf("PM") !== -1){ 
-          intake_time_radio = intake_time_radio + '<label>PM<input type="checkbox" class="laravel-intake-time-class my-plan-cb" id="laravel-pm" name="laravel-intake-time-' + recom.id + '[]" value="PM" dataid="' + recom.id + '" checked></label>';
+          intake_time_radio = intake_time_radio + '<label>PM<input type="checkbox" class="laravel-intake-time-class" id="laravel-pm" name="laravel-intake-time-' + recom.id + '[]" value="PM" dataid="' + recom.id + '" checked></label>';
     
         }else{
-          intake_time_radio = intake_time_radio + '<label>PM<input type="checkbox" class="laravel-intake-time-class my-plan-cb" id="laravel-pm" name="laravel-intake-time-' + recom.id + '[]" value="PM" dataid="' + recom.id + '"></label>';
+          intake_time_radio = intake_time_radio + '<label>PM<input type="checkbox" class="laravel-intake-time-class" id="laravel-pm" name="laravel-intake-time-' + recom.id + '[]" value="PM" dataid="' + recom.id + '"></label>';
         }
     
         var intake_type_radio = '';
@@ -2935,12 +2935,12 @@ jQuery(function ($) {
               }
               if(intake_time.indexOf("AM") !== -1){ 
                 intake_am_dosage_html = intake_am_dosage_html + '<div class="laravel-intake-dosage-time-outer">';
-                intake_am_dosage_html = intake_am_dosage_html + '<div class="laravel-intake-time-div"><label><input type="checkbox" class="laravel-intake-time-class my-plan-cb" id="laravel-am" name="laravel-intake-time-' + recom.id + '[]" value="AM" dataid="' + recom.id + '" checked>AM</label></div>';
+                intake_am_dosage_html = intake_am_dosage_html + '<div class="laravel-intake-time-div"><label><input type="checkbox" class="laravel-intake-time-class" id="laravel-am" name="laravel-intake-time-' + recom.id + '[]" value="AM" dataid="' + recom.id + '" checked>AM</label></div>';
                 intake_am_dosage_html = intake_am_dosage_html + '<div class="laravel-intake-dosage-div"><label><input type="text" class="laravel-am-dosage-input" id="laravel-am-dosage-input-' + recom.id +'" name="laravel-am-dosage-input-' + recom.id +'" value="' + dosage_item[1] + '"></label></div>';
                 intake_am_dosage_html = intake_am_dosage_html + '</div>';
               }else{
                 intake_am_dosage_html = intake_am_dosage_html + '<div class="laravel-intake-dosage-time-outer">';
-                intake_am_dosage_html = intake_am_dosage_html + '<div class="laravel-intake-time-div"><label><input type="checkbox" class="laravel-intake-time-class my-plan-cb" id="laravel-am" name="laravel-intake-time-' + recom.id + '[]" value="AM" dataid="' + recom.id + '">AM</label></div>';
+                intake_am_dosage_html = intake_am_dosage_html + '<div class="laravel-intake-time-div"><label><input type="checkbox" class="laravel-intake-time-class" id="laravel-am" name="laravel-intake-time-' + recom.id + '[]" value="AM" dataid="' + recom.id + '">AM</label></div>';
                 intake_am_dosage_html = intake_am_dosage_html + '<div class="laravel-intake-dosage-div"><label class="laravel-hide-m"><input type="text" class="laravel-am-dosage-input" id="laravel-am-dosage-input-' + recom.id +'" name="laravel-am-dosage-input-' + recom.id +'" value="" readonly></label></div>';
                 intake_am_dosage_html = intake_am_dosage_html + '</div>';
     
@@ -2955,12 +2955,12 @@ jQuery(function ($) {
               }
               if(intake_time.indexOf("Mid") !== -1){ 
                 intake_mid_dosage_html = intake_mid_dosage_html + '<div class="laravel-intake-dosage-time-outer">';
-                intake_mid_dosage_html = intake_mid_dosage_html + '<div class="laravel-intake-time-div"><label><input type="checkbox" class="laravel-intake-time-class my-plan-cb" id="laravel-midday" name="laravel-intake-time-' + recom.id + '[]" value="Mid" dataid="' + recom.id + '" checked>Mid-Day</label></div>';
+                intake_mid_dosage_html = intake_mid_dosage_html + '<div class="laravel-intake-time-div"><label><input type="checkbox" class="laravel-intake-time-class" id="laravel-midday" name="laravel-intake-time-' + recom.id + '[]" value="Mid" dataid="' + recom.id + '" checked>Mid-Day</label></div>';
                 intake_mid_dosage_html = intake_mid_dosage_html + '<div class="laravel-intake-dosage-div"><label><input type="text" class="laravel-md-dosage-input" id="laravel-md-dosage-input-' + recom.id +'" name="laravel-md-dosage-input-' + recom.id +'" value="' + dosage_item[1] + '"></label></div>';
                 intake_mid_dosage_html = intake_mid_dosage_html + '</div>';
               }else{
                 intake_mid_dosage_html = intake_mid_dosage_html + '<div class="laravel-intake-dosage-time-outer">';
-                intake_mid_dosage_html = intake_mid_dosage_html + '<div class="laravel-intake-time-div"><label><input type="checkbox" class="laravel-intake-time-class my-plan-cb" id="laravel-midday" name="laravel-intake-time-' + recom.id + '[]" value="Mid" dataid="' + recom.id + '">Mid-Day</label></div>';
+                intake_mid_dosage_html = intake_mid_dosage_html + '<div class="laravel-intake-time-div"><label><input type="checkbox" class="laravel-intake-time-class" id="laravel-midday" name="laravel-intake-time-' + recom.id + '[]" value="Mid" dataid="' + recom.id + '">Mid-Day</label></div>';
                 intake_mid_dosage_html = intake_mid_dosage_html + '<div class="laravel-intake-dosage-div"><label class="laravel-hide-m"><input type="text" class="laravel-md-dosage-input" id="laravel-md-dosage-input-' + recom.id +'" name="laravel-md-dosage-input-' + recom.id +'" value="" readonly></label></div>';
                 intake_mid_dosage_html = intake_mid_dosage_html + '</div>';
     
@@ -2975,12 +2975,12 @@ jQuery(function ($) {
               }
               if(intake_time.indexOf("PM") !== -1){ 
                 intake_pm_dosage_html = intake_pm_dosage_html + '<div class="laravel-intake-dosage-time-outer">';
-                intake_pm_dosage_html = intake_pm_dosage_html + '<div class="laravel-intake-time-div"><label><input type="checkbox" class="laravel-intake-time-class my-plan-cb" id="laravel-pm" name="laravel-intake-time-' + recom.id + '[]" value="PM" dataid="' + recom.id + '" checked>PM</label></div>';
+                intake_pm_dosage_html = intake_pm_dosage_html + '<div class="laravel-intake-time-div"><label><input type="checkbox" class="laravel-intake-time-class" id="laravel-pm" name="laravel-intake-time-' + recom.id + '[]" value="PM" dataid="' + recom.id + '" checked>PM</label></div>';
                 intake_pm_dosage_html = intake_pm_dosage_html + '<div class="laravel-intake-dosage-div"><label><input type="text" class="laravel-pm-dosage-input" id="laravel-pm-dosage-input-' + recom.id +'" name="laravel-pm-dosage-input-' + recom.id +'" value="' + dosage_item[1] + '"></label></div>';
                 intake_pm_dosage_html = intake_pm_dosage_html + '</div>';
               }else{
                 intake_pm_dosage_html = intake_pm_dosage_html + '<div class="laravel-intake-dosage-time-outer">';
-                intake_pm_dosage_html = intake_pm_dosage_html + '<div class="laravel-intake-time-div"><label><input type="checkbox" class="laravel-intake-time-class my-plan-cb" id="laravel-pm" name="laravel-intake-time-' + recom.id + '[]" value="PM" dataid="' + recom.id + '">PM</label></div>';
+                intake_pm_dosage_html = intake_pm_dosage_html + '<div class="laravel-intake-time-div"><label><input type="checkbox" class="laravel-intake-time-class" id="laravel-pm" name="laravel-intake-time-' + recom.id + '[]" value="PM" dataid="' + recom.id + '">PM</label></div>';
                 intake_pm_dosage_html = intake_pm_dosage_html + '<div class="laravel-intake-dosage-div"><label class="laravel-hide-m"><input type="text" class="laravel-pm-dosage-input" id="laravel-pm-dosage-input-' + recom.id +'" name="laravel-pm-dosage-input-' + recom.id +'" value="" readonly></label></div>';
                 intake_pm_dosage_html = intake_pm_dosage_html + '</div>';
     
@@ -2994,39 +2994,39 @@ jQuery(function ($) {
           if(intake_time.indexOf("AM") !== -1){ 
     
             intake_am_dosage_html = intake_am_dosage_html + '<div class="laravel-intake-dosage-time-outer">';
-            intake_am_dosage_html = intake_am_dosage_html + '<div class="laravel-intake-time-div"><label><input type="checkbox" class="laravel-intake-time-class my-plan-cb" id="laravel-am" name="laravel-intake-time-' + recom.id + '[]" value="AM" dataid="' + recom.id + '" checked>AM</label></div>';
+            intake_am_dosage_html = intake_am_dosage_html + '<div class="laravel-intake-time-div"><label><input type="checkbox" class="laravel-intake-time-class" id="laravel-am" name="laravel-intake-time-' + recom.id + '[]" value="AM" dataid="' + recom.id + '" checked>AM</label></div>';
             intake_am_dosage_html = intake_am_dosage_html + '<div class="laravel-intake-dosage-div"><label><input type="text" class="laravel-am-dosage-input" id="laravel-am-dosage-input-' + recom.id +'" name="laravel-am-dosage-input-' + recom.id +'" value=""></label></div>';
             intake_am_dosage_html = intake_am_dosage_html + '</div>';
           }else{
     
             intake_am_dosage_html = intake_am_dosage_html + '<div class="laravel-intake-dosage-time-outer">';
-            intake_am_dosage_html = intake_am_dosage_html + '<div class="laravel-intake-time-div"><label><input type="checkbox" class="laravel-intake-time-class my-plan-cb" id="laravel-am" name="laravel-intake-time-' + recom.id + '[]" value="AM" dataid="' + recom.id + '"></label></div>';
+            intake_am_dosage_html = intake_am_dosage_html + '<div class="laravel-intake-time-div"><label><input type="checkbox" class="laravel-intake-time-class" id="laravel-am" name="laravel-intake-time-' + recom.id + '[]" value="AM" dataid="' + recom.id + '"></label></div>';
             intake_am_dosage_html = intake_am_dosage_html + '<div class="laravel-intake-dosage-div"><label class="laravel-hide-m"><input type="text" class="laravel-am-dosage-input" id="laravel-am-dosage-input-' + recom.id +'" name="laravel-am-dosage-input-' + recom.id +'" value="" readonly>AM</label></div>';
             intake_am_dosage_html = intake_am_dosage_html + '</div>';
           }
           if(intake_time.indexOf("Mid") !== -1){ 
     
             intake_mid_dosage_html = intake_mid_dosage_html + '<div class="laravel-intake-dosage-time-outer">';
-            intake_mid_dosage_html = intake_mid_dosage_html + '<div class="laravel-intake-time-div"><label><input type="checkbox" class="laravel-intake-time-class my-plan-cb" id="laravel-midday" name="laravel-intake-time-' + recom.id + '[]" value="Mid" dataid="' + recom.id + '" checked>Mid-Day</label></div>';
+            intake_mid_dosage_html = intake_mid_dosage_html + '<div class="laravel-intake-time-div"><label><input type="checkbox" class="laravel-intake-time-class" id="laravel-midday" name="laravel-intake-time-' + recom.id + '[]" value="Mid" dataid="' + recom.id + '" checked>Mid-Day</label></div>';
             intake_mid_dosage_html = intake_mid_dosage_html + '<div class="laravel-intake-dosage-div"><label><input type="text" class="laravel-md-dosage-input" id="laravel-md-dosage-input-' + recom.id +'" name="laravel-md-dosage-input-' + recom.id +'" value=""></label></div>';
             intake_mid_dosage_html = intake_mid_dosage_html + '</div>';
           }else{
     
             intake_mid_dosage_html = intake_mid_dosage_html + '<div class="laravel-intake-dosage-time-outer">';
-            intake_mid_dosage_html = intake_mid_dosage_html + '<div class="laravel-intake-time-div"><label><input type="checkbox" class="laravel-intake-time-class my-plan-cb" id="laravel-midday" name="laravel-intake-time-' + recom.id + '[]" value="Mid" dataid="' + recom.id + '">Mid-Day</label></div>';
+            intake_mid_dosage_html = intake_mid_dosage_html + '<div class="laravel-intake-time-div"><label><input type="checkbox" class="laravel-intake-time-class" id="laravel-midday" name="laravel-intake-time-' + recom.id + '[]" value="Mid" dataid="' + recom.id + '">Mid-Day</label></div>';
             intake_mid_dosage_html = intake_mid_dosage_html + '<div class="laravel-intake-dosage-div"><label class="laravel-hide-m"><input type="text" class="laravel-md-dosage-input" id="laravel-md-dosage-input-' + recom.id +'" name="laravel-md-dosage-input-' + recom.id +'" value="" readonly></label></div>';
             intake_mid_dosage_html = intake_mid_dosage_html + '</div>';
           }
           if(intake_time.indexOf("PM") !== -1){ 
     
             intake_pm_dosage_html = intake_pm_dosage_html + '<div class="laravel-intake-dosage-time-outer">';
-            intake_pm_dosage_html = intake_pm_dosage_html + '<div class="laravel-intake-time-div"><label><input type="checkbox" class="laravel-intake-time-class my-plan-cb" id="laravel-pm" name="laravel-intake-time-' + recom.id + '[]" value="PM" dataid="' + recom.id + '" checked>PM</label></div>';
+            intake_pm_dosage_html = intake_pm_dosage_html + '<div class="laravel-intake-time-div"><label><input type="checkbox" class="laravel-intake-time-class" id="laravel-pm" name="laravel-intake-time-' + recom.id + '[]" value="PM" dataid="' + recom.id + '" checked>PM</label></div>';
             intake_pm_dosage_html = intake_pm_dosage_html + '<div class="laravel-intake-dosage-div"><label><input type="text" class="laravel-pm-dosage-input" id="laravel-pm-dosage-input-' + recom.id +'" name="laravel-pm-dosage-input-' + recom.id +'" value=""></label></div>';
             intake_pm_dosage_html = intake_pm_dosage_html + '</div>';
           }else{
     
             intake_pm_dosage_html = intake_pm_dosage_html + '<div class="laravel-intake-dosage-time-outer">';
-            intake_pm_dosage_html = intake_pm_dosage_html + '<div class="laravel-intake-time-div"><label><input type="checkbox" class="laravel-intake-time-class my-plan-cb" id="laravel-pm" name="laravel-intake-time-' + recom.id + '[]" value="PM" dataid="' + recom.id + '">PM</label></div>';
+            intake_pm_dosage_html = intake_pm_dosage_html + '<div class="laravel-intake-time-div"><label><input type="checkbox" class="laravel-intake-time-class" id="laravel-pm" name="laravel-intake-time-' + recom.id + '[]" value="PM" dataid="' + recom.id + '">PM</label></div>';
             intake_pm_dosage_html = intake_pm_dosage_html + '<div class="laravel-intake-dosage-div"><label class="laravel-hide-m"><input type="text" class="laravel-pm-dosage-input" id="laravel-pm-dosage-input-' + recom.id +'" name="laravel-pm-dosage-input-' + recom.id +'" value="" readonly></label></div>';
             intake_pm_dosage_html = intake_pm_dosage_html + '</div>';
           }
@@ -3036,13 +3036,13 @@ jQuery(function ($) {
                if(intake_time.indexOf("AM") !== -1){ 
     
                  intake_am_dosage_html = intake_am_dosage_html + '<div class="laravel-intake-dosage-time-outer">';
-                 intake_am_dosage_html = intake_am_dosage_html + '<div class="laravel-intake-time-div"><label><input type="checkbox" class="laravel-intake-time-class my-plan-cb" id="laravel-am" name="laravel-intake-time-' + recom.id + '[]" value="AM" dataid="' + recom.id + '" checked>AM</label></div>';
+                 intake_am_dosage_html = intake_am_dosage_html + '<div class="laravel-intake-time-div"><label><input type="checkbox" class="laravel-intake-time-class" id="laravel-am" name="laravel-intake-time-' + recom.id + '[]" value="AM" dataid="' + recom.id + '" checked>AM</label></div>';
                  intake_am_dosage_html = intake_am_dosage_html + '<div class="laravel-intake-dosage-div"><label><input type="text" class="laravel-am-dosage-input" id="laravel-am-dosage-input-' + recom.id +'" name="laravel-am-dosage-input-' + recom.id +'" value=""></label></div>';
                  intake_am_dosage_html = intake_am_dosage_html + '</div>';
                }else{
     
                  intake_am_dosage_html = intake_am_dosage_html + '<div class="laravel-intake-dosage-time-outer">';
-                 intake_am_dosage_html = intake_am_dosage_html + '<div class="laravel-intake-time-div"><label><input type="checkbox" class="laravel-intake-time-class my-plan-cb" id="laravel-am" name="laravel-intake-time-' + recom.id + '[]" value="AM" dataid="' + recom.id + '"></label>AM</div>';
+                 intake_am_dosage_html = intake_am_dosage_html + '<div class="laravel-intake-time-div"><label><input type="checkbox" class="laravel-intake-time-class" id="laravel-am" name="laravel-intake-time-' + recom.id + '[]" value="AM" dataid="' + recom.id + '"></label>AM</div>';
                  intake_am_dosage_html = intake_am_dosage_html + '<div class="laravel-intake-dosage-div"><label class="laravel-hide-m"><input type="text" class="laravel-am-dosage-input" id="laravel-am-dosage-input-' + recom.id +'" name="laravel-am-dosage-input-' + recom.id +'" value="" readonly></label></div>';
                  intake_am_dosage_html = intake_am_dosage_html + '</div>';
                }
@@ -3051,13 +3051,13 @@ jQuery(function ($) {
               if(intake_time.indexOf("Mid") !== -1){ 
     
                 intake_mid_dosage_html = intake_mid_dosage_html + '<div class="laravel-intake-dosage-time-outer">';
-                intake_mid_dosage_html = intake_mid_dosage_html + '<div class="laravel-intake-time-div"><label><input type="checkbox" class="laravel-intake-time-class my-plan-cb" id="laravel-midday" name="laravel-intake-time-' + recom.id + '[]" value="Mid" dataid="' + recom.id + '" checked>Mid-Day</label></div>';
+                intake_mid_dosage_html = intake_mid_dosage_html + '<div class="laravel-intake-time-div"><label><input type="checkbox" class="laravel-intake-time-class" id="laravel-midday" name="laravel-intake-time-' + recom.id + '[]" value="Mid" dataid="' + recom.id + '" checked>Mid-Day</label></div>';
                 intake_mid_dosage_html = intake_mid_dosage_html + '<div class="laravel-intake-dosage-div"><label><input type="text" class="laravel-md-dosage-input" id="laravel-md-dosage-input-' + recom.id +'" name="laravel-md-dosage-input-' + recom.id +'" value=""></label></div>';
                 intake_mid_dosage_html = intake_mid_dosage_html + '</div>';
               }else{
     
                 intake_mid_dosage_html = intake_mid_dosage_html + '<div class="laravel-intake-dosage-time-outer">';
-                intake_mid_dosage_html = intake_mid_dosage_html + '<div class="laravel-intake-time-div"><label><input type="checkbox" class="laravel-intake-time-class my-plan-cb" id="laravel-midday" name="laravel-intake-time-' + recom.id + '[]" value="Mid" dataid="' + recom.id + '">Mid-Day</label></div>';
+                intake_mid_dosage_html = intake_mid_dosage_html + '<div class="laravel-intake-time-div"><label><input type="checkbox" class="laravel-intake-time-class" id="laravel-midday" name="laravel-intake-time-' + recom.id + '[]" value="Mid" dataid="' + recom.id + '">Mid-Day</label></div>';
                 intake_mid_dosage_html = intake_mid_dosage_html + '<div class="laravel-intake-dosage-div"><label class="laravel-hide-m"><input type="text" class="laravel-md-dosage-input" id="laravel-md-dosage-input-' + recom.id +'" name="laravel-md-dosage-input-' + recom.id +'" value="" readonly></label></div>';
                 intake_mid_dosage_html = intake_mid_dosage_html + '</div>';
               } 
@@ -3066,13 +3066,13 @@ jQuery(function ($) {
               if(intake_time.indexOf("PM") !== -1){ 
     
                 intake_pm_dosage_html = intake_pm_dosage_html + '<div class="laravel-intake-dosage-time-outer">';
-                intake_pm_dosage_html = intake_pm_dosage_html + '<div class="laravel-intake-time-div"><label><input type="checkbox" class="laravel-intake-time-class my-plan-cb" id="laravel-pm" name="laravel-intake-time-' + recom.id + '[]" value="PM" dataid="' + recom.id + '" checked>Pm</label></div>';
+                intake_pm_dosage_html = intake_pm_dosage_html + '<div class="laravel-intake-time-div"><label><input type="checkbox" class="laravel-intake-time-class" id="laravel-pm" name="laravel-intake-time-' + recom.id + '[]" value="PM" dataid="' + recom.id + '" checked>Pm</label></div>';
                 intake_pm_dosage_html = intake_pm_dosage_html + '<div class="laravel-intake-dosage-div"><label><input type="text" class="laravel-pm-dosage-input" id="laravel-pm-dosage-input-' + recom.id +'" name="laravel-pm-dosage-input-' + recom.id +'" value=""></label></div>';
                 intake_pm_dosage_html = intake_pm_dosage_html + '</div>';
               }else{
     
                 intake_pm_dosage_html = intake_pm_dosage_html + '<div class="laravel-intake-dosage-time-outer">';
-                intake_pm_dosage_html = intake_pm_dosage_html + '<div class="laravel-intake-time-div"><label><input type="checkbox" class="laravel-intake-time-class my-plan-cb" id="laravel-pm" name="laravel-intake-time-' + recom.id + '[]" value="PM" dataid="' + recom.id + '">PM</label></div>';
+                intake_pm_dosage_html = intake_pm_dosage_html + '<div class="laravel-intake-time-div"><label><input type="checkbox" class="laravel-intake-time-class" id="laravel-pm" name="laravel-intake-time-' + recom.id + '[]" value="PM" dataid="' + recom.id + '">PM</label></div>';
                 intake_pm_dosage_html = intake_pm_dosage_html + '<div class="laravel-intake-dosage-div"><label class="laravel-hide-m"><input type="text" class="laravel-pm-dosage-input" id="laravel-pm-dosage-input-' + recom.id +'" name="laravel-pm-dosage-input-' + recom.id +'" value="" readonly></label></div>';
                 intake_pm_dosage_html = intake_pm_dosage_html + '</div>';
               }
@@ -3144,7 +3144,7 @@ jQuery(function ($) {
           updateMyPlan(rec_id);
         });
       });
-    $('.laravel-intake-type-class,.laravel-intake-time-class my-plan-cb').each(function(){
+    $('.laravel-intake-type-class,.laravel-intake-time-class').each(function(){
       $(this).click(function() {                              
           
          var rec_id = $(this).attr('dataid');
