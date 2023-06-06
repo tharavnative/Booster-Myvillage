@@ -170,7 +170,7 @@
           "type": "gridImage",
           "settings": {
             "hide": "show-both",
-            "url": "#",
+            "url": "\/collections\/sinus-survival",
             "backgroundImage": "shopify:\/\/shop_images\/block5b.png",
             "backgroundSize": "cover",
             "overlayOpacity": 0,
