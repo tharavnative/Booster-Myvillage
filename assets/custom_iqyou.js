@@ -153,6 +153,7 @@ function api_user_data() {
                                                 	headers: request
                                                }).done(function(data, status, xhr) {
                                                   if (data.completion >= 100 && !data.newuser) {
+                                                    console.log("Calling !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!! api_user_data");
                                                       api_user_data();
                                                       //api_recommend_sec();
                                                       metabolic_risk();
@@ -160,7 +161,7 @@ function api_user_data() {
                                                }).fail(function(xhr, status) {
                             
                                                });  
-                            api_user_data();
+                            
                              }).fail(function(xhr, status) {
                   
                              });
