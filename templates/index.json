@@ -116,7 +116,7 @@
           "type": "gridImage",
           "settings": {
             "hide": "show-both",
-            "url": "#",
+            "url": "\/collections\/digestive-health-1",
             "backgroundImage": "shopify:\/\/shop_images\/block2.png",
             "backgroundSize": "cover",
             "overlayOpacity": 0,
