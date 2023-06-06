@@ -3,7 +3,7 @@
     "banner": {
       "type": "banner--page",
       "settings": {
-        "layout": "default",
+        "layout": "boxed",
         "height": 300,
         "horizontalAlignment": "left",
         "verticalAlignment": "middle",
