@@ -98,7 +98,7 @@
           "type": "gridImage",
           "settings": {
             "hide": "show-both",
-            "url": "shopify:\/\/products\/gentle-baby-wash",
+            "url": "\/pages\/signup-landing",
             "backgroundImage": "shopify:\/\/shop_images\/block1b_a4098332-04a2-4b3e-b156-3a1c3bf78ded.png",
             "backgroundSize": "cover",
             "overlayOpacity": 0,
