@@ -117,7 +117,7 @@ jQuery(document).ready(function($){
                               window.cus_id = 'vga' + saluId;
                               console.log("successss Login !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!");
                                     console.log("salu !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!",saluId);
- 
+                             api_user_data();
                              }).fail(function(xhr, status) {
                   
                               
