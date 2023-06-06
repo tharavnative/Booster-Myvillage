@@ -325,3 +325,9 @@ a.card__title {
     color: #000;
 }
 }
+@media(max-width:1024px){
+.col-md-3.card--holder {
+    flex-basis: 33.333%;
+    max-width: 33.33%;
+}
+}
