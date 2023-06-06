@@ -134,7 +134,7 @@
           "type": "gridImage",
           "settings": {
             "hide": "show-both",
-            "url": "#",
+            "url": "\/collections\/bones-1",
             "backgroundImage": "shopify:\/\/shop_images\/block3.png",
             "backgroundSize": "cover",
             "overlayOpacity": 0,
