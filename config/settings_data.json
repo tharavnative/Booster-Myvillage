@@ -37,6 +37,7 @@
     "primaryButtonCustomBorder": true,
     "headerType": "inline-search",
     "cardDesktop": "3",
+    "cardMobile": "12",
     "baseCardPadding": 20,
     "cardImageFit": "contain",
     "cardImageRatio": "100",
