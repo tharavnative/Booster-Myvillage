@@ -2819,10 +2819,12 @@ jQuery(function ($) {
             else {}
             if(btn_text === 'Buy Now' || btn_text === 'Shop Now'){
               var check_box = '<div class="add-to-my-plan-section"><input type="checkbox" id="laravel-my-plan-cb-' + rec_id + '" name="laravel-my-plan-cb" class="laravel-my-plan-cb my-plan-cb" value="' + rec_id + '" rec-id="' + rec_id + '" in-my-plan="0" rec-name="' + rec_name + '" rec-url="' + l + '"></div>';
+              return '<div class="recomendation-buy-section"><a href="' + l + '" target="_blank"><button class="buy-button">' + btn_text + '</button></a>' + check_box + '</div>'
             }else{
               var check_box = '';
+              return '<div class="recomendation-buy-section"><a href="' + action + '" target="_blank"><button class="buy-button">' + btn_text + '</button></a>' + check_box + '</div>'
             }
-            return '<div class="recomendation-buy-section"><a href="' + l + '" target="_blank"><button class="buy-button">' + btn_text + '</button></a>' + check_box + '</div>'
+            
     
   }
 
