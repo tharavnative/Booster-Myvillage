@@ -66,9 +66,17 @@
   {% endunless %}
   {% endcomment %}
   <div class="col-12 unflex article__content">
-    <article class="article__max-width ">
-      {{article.content}}
-    </article>
+  <div class="row s__content middle layout__content">
+    <div class="col-12 col-md-8">
+        {{article.content}}
+    </div>
+    <div class="col-12 col-md-4">
+
+    </div>
+  </div>
+   
+
+    
   </div>
   {% comment %}
   <div class="col-12 article__max-width article__tags">
