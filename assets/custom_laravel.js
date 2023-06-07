@@ -3193,6 +3193,7 @@ jQuery(function ($) {
       event.preventDefault(); // Prevent default click behavior
   
       var attributeValue = $(this).attr('data-attribute');
+       console.log("attributeValue!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!",attributeValue);
       $('.laravel_learn_more_recommendation_modal').find('description').text(attributeValue);
       $('#laravel_learn_more_recommendation_modal').modal('show');
     });
