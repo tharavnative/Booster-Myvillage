@@ -72,7 +72,16 @@
   </div>
   {% endcomment %}
 </div>
-
+<div class="col-12 article__max-width article__tags">
+ <ul>
+    <li>
+      <a href="{{ blog.previous_article }}">Previous post</a>
+    </li>
+    <li>
+      <a href="{{ blog.next_article }}">Next post</a>
+    </li>
+  </ul>
+</div>
 {% if blog.comments_enabled? %}
     <div class="article__max-width">
     <h2>{{ number_of_comments }} comments</h2>
