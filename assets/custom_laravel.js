@@ -4,14 +4,7 @@ jQuery(function ($) {
 //$('#laravel_qstn_confirm_modal').modal('show');
 //$('#membership_popup').modal('hide');
 //$("#no_iqyou_account").modal({'show':true});
-  function openPopup() {
-    // Get the attribute value
-    var attributeValue = event.target.getAttribute('data-attribute');
-    $('.laravel_learn_more_recommendation_modal .description').text(attributeValue);
-    $('#laravel_learn_more_recommendation').modal('show');
-    // Open the popup window
-   
-  }
+
   function clickLabResults(){
     $('#allresults').click(function() {
       $('.values-allresults').show();
@@ -3196,6 +3189,17 @@ jQuery(function ($) {
          
          });
       });
+     $('.learn-more').click(function(event) {
+      event.preventDefault(); // Prevent default click behavior
+  
+      var attributeValue = $(this).attr('data-attribute');
+  
+      // Set the data attribute content in the modal
+      $('.laravel_learn_more_recommendation_modal .description').text(attributeValue);
+  
+      // Show the modal
+      $('#laravel_learn_more_recommendation').modal('show');
+    });
     
   }
   function addToMyPlan() {     
