@@ -55,6 +55,7 @@
     <div class="unflex article__meta">{{ article.author }} on {{ date }}</div>
     {% unless article.excerpt == blank %}<div class="article__excerpt">{{article.excerpt}}</div>{% endunless %}
   </div>
+   {% comment %}
   {% unless article.image == nil %}
     <div class="col-12">
       <div class="unflex article__max-width--image">
@@ -63,6 +64,7 @@
       </div>
     </div>
   {% endunless %}
+  {% endcomment %}
   <div class="col-12 unflex article__content">
     <article class="article__max-width ">
       {{article.content}}
