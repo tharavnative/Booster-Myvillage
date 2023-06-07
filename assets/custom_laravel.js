@@ -2822,7 +2822,7 @@ jQuery(function ($) {
               return '<div class="recomendation-buy-section"><a href="' + l + '" target="_blank"><button class="buy-button">' + btn_text + '</button></a>' + check_box + '</div>'
             }else{
               var check_box = '';
-              return '<div class="recomendation-buy-section"><a href="' + l + '" data-attribute="' + action + '"><button class="buy-button learn-more">' + btn_text + '</button></a>' + check_box + '</div>'
+              return '<div class="recomendation-buy-section"><a href="' + l + '" data-attribute="' + action + '" class="learn-more"><button class="buy-button">' + btn_text + '</button></a>' + check_box + '</div>'
               //return '<div class="recomendation-buy-section"><a href="#" onclick="openPopup()" data-attribute="' + action + ''"><button class="buy-button">' + btn_text + '</button></a>' + check_box + '</div>'
             }
             
