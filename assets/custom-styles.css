@@ -23,9 +23,7 @@ a.filter__tag span {
     display: none!important;
 }
 
-span#your-name {
-    color: #fff;
-}
+
 .nav__submenu.nav__submenu--mega.row.fancy-scroll {
     background: #00577f;
 }
