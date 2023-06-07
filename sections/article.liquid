@@ -32,7 +32,14 @@
   }
 }
 </script>
-
+<style>
+  .action-btn {
+    display: block;
+    width: 100%;
+}
+.action-btn  { clear: both; padding-bottom: 40px;}
+.action-btn .right { float:right; }
+</style>
 {% assign number_of_comments = article.comments_count %}
 {% if comment and comment.created_at %}
   {% assign number_of_comments = article.comments_count %}
