@@ -177,6 +177,7 @@
     },
     "1661487737e8d46d13": {
       "type": "section__content",
+      "disabled": true,
       "blocks": {
         "71c07e1d-fbc8-43b2-84ec-f4960f8a0136": {
           "type": "html",
