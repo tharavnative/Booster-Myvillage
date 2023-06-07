@@ -4,7 +4,13 @@ jQuery(function ($) {
 //$('#laravel_qstn_confirm_modal').modal('show');
 //$('#membership_popup').modal('hide');
 //$("#no_iqyou_account").modal({'show':true});
-
+  function openPopup() {
+    // Get the attribute value
+    var attributeValue = event.target.getAttribute('data-attribute');
+  
+    // Open the popup window
+    window.open('popup.html?attribute=' + attributeValue, 'Popup', 'width=400,height=300');
+  }
   function clickLabResults(){
     $('#allresults').click(function() {
       $('.values-allresults').show();
