@@ -452,20 +452,20 @@ Rendering according to the view (default, marketplace)
               	<div data-repeater-list="properties">
                   <div data-repeater-item class="repeater_item">
                       <p class="line-item-property__field">
-                        <label for="patient-fname">Patient First Name <span>*</span></label> <br>
+                        <label for="patient-fname">Patient First Name <span>*</span></label> <br/>
                         <input class="patient_info" type="text" name="properties[FirstName]" onchange="check_filled()" required>
                       </p>
                       <p class="line-item-property__field">
-                        <label for="patient-lname">Patient Last Name <span>*</span></label> <br>
+                        <label for="patient-lname">Patient Last Name <span>*</span></label> <br/>
                         <input class="patient_info" type="text" name="properties[LastName]" onchange="check_filled()" required>
                       </p>
                       <p class="line-item-property__field">
-                        <label for="patient-dob">Patient Birth Date(MM/DD/YYYY) <span>*</span></label> <br>
+                        <label for="patient-dob">Patient Birth Date(MM/DD/YYYY) <span>*</span></label> <br/>
                         <input class="patient_info datepicker" type="text" name="properties[DateOfBirth]" maxlength="10" onchange="check_filled()" required>
                       </p>
                       <p class="line-item-property__field">
-                        <label for="patient-gender">Patient Gender <span>*</span></label> <br>
-                        <label><input onchange="check_filled()" type="radio" name="properties[Gender]" value="Male" required> Male </label><br>
+                        <label for="patient-gender">Patient Gender <span>*</span></label> <br/>
+                        <label><input onchange="check_filled()" type="radio" name="properties[Gender]" value="Male" required> Male </label><br/>
                         <label><input onchange="check_filled()" type="radio" name="properties[Gender]" value="Female" required> Female </label>
                       </p>
                      <p><a href="javascript:;" data-repeater-delete class="btn btn-danger mt-repeater-delete">
@@ -546,7 +546,7 @@ Rendering according to the view (default, marketplace)
 <input type="submit" name="add" {% if content_for_header contains '.mageworx.com\/groupedproducts\/source.js?' and product.tags contains 'mw_grouped_product' %}disabled="disabled"{% endif %} class="btn" {% if settings.enable_multilang %}data-translate="products.product.add_to_cart"{%endif%} id="product-add-to-cart" value="Add to cart">
             {% else %} 
             <input type="submit" name="add" {% if content_for_header contains '.mageworx.com\/groupedproducts\/source.js?' and product.tags contains 'mw_grouped_product' %}disabled="disabled"{% endif %} class="btn" {% if settings.enable_multilang %}data-translate="products.product.unavailable"{%endif%} id="product-add-to-cart" disabled value="Add to cart">          
-            {% endif %} <br></br><br></br>
+            {% endif %} <br><br>
            <div class="product-form_item" style="flex-basis: 100%;" id="ods-bis"></div>
             {% endif %}
 
