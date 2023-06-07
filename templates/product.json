@@ -186,7 +186,7 @@
             "horPadding": 0,
             "horAlign": "center",
             "vertAlign": "top",
-            "html": "<div class='=\"upsell\"'><\/div>",
+            "html": "<div id=\"cbb-frequently-bought-box\"><\/div>",
             "customCSS": ""
           }
         }
