@@ -7,9 +7,10 @@ jQuery(function ($) {
   function openPopup() {
     // Get the attribute value
     var attributeValue = event.target.getAttribute('data-attribute');
-  
+    $('.laravel_learn_more_recommendation_modal .description').text(attributeValue);
+    $('#laravel_learn_more_recommendation').modal('show');
     // Open the popup window
-    window.open('popup.html?attribute=' + attributeValue, 'Popup', 'width=400,height=300');
+   
   }
   function clickLabResults(){
     $('#allresults').click(function() {
