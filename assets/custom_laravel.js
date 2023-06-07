@@ -3198,7 +3198,7 @@ jQuery(function ($) {
       $('.laravel_learn_more_recommendation_modal .description').text(attributeValue);
   
       // Show the modal
-      $('#laravel_learn_more_recommendation').modal('show');
+      $('#laravel_learn_more_recommendation_modal').modal('show');
     });
     
   }
