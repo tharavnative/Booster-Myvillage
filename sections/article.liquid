@@ -49,7 +49,7 @@
   <div class="col-12 breadcrumbs--default">
   {% render 'breadcrumbs' %}
   </div>
-  <div class="inherit middle layout__stretchBg bg__middle s__holder row article__content">
+  <div class="inherit  layout__stretchBg bg__middle s__holder row article__content">
   <div class="col-12 unflex row s__content  layout__content">
     <h1 class="article__title h-reset">{{ article.title }}</h1>
     {% capture date %}<time datetime="{{ article.published_at | date: '%Y-%m-%d' }}">{{ article.published_at | date: '%m/%d/%Y' }}</time>{% endcapture %}
@@ -67,8 +67,8 @@
     </div>
   {% endunless %}
   {% endcomment %}
-  <div class="inherit  layout__stretchBg bg__middle s__holder row article__content">
-  <div class="row s__content middle layout__content">
+  <div class="inherit  layout__stretchBg  s__holder row article__content">
+  <div class="row s__content  layout__content">
     <div class="col-12 col-md-8" style="display:block;">
         {{article.content}}
     </div>
