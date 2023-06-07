@@ -156,7 +156,7 @@ function api_user_data() {
                                                     console.log("Calling !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!! api_user_data");
                                                       api_user_data();
                                                       //api_recommend_sec();
-                                                      metabolic_risk();
+                                                      //metabolic_risk();
                                                   } else {}
                                                }).fail(function(xhr, status) {
                             
