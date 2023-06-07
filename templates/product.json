@@ -187,7 +187,7 @@
             "horAlign": "center",
             "vertAlign": "top",
             "html": "<div id=\"cbb-frequently-bought-box\"><\/div>",
-            "customCSS": ""
+            "customCSS": "##scoped{\nwidth:100%;\n}"
           }
         }
       },
