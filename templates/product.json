@@ -198,7 +198,7 @@
         "displayFor": "display--both",
         "layout": "default",
         "nomargin": false,
-        "scopedCSS": "",
+        "scopedCSS": "##scoped{\nwidth:100%;\n}",
         "height": 0,
         "padding": 0,
         "lineMargin": 12,
