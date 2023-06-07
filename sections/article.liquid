@@ -61,6 +61,7 @@
       {{article.content}}
     </article>
   </div>
+  {% comment %}
   <div class="col-12 article__max-width article__tags">
   {% unless article.tags.size == 0 %}
     <span>{{'general.tags.tags' | t}}: </span>
@@ -69,6 +70,7 @@
     {% endfor %}
   {% endunless %}
   </div>
+  {% endcomment %}
 </div>
 
 {% if blog.comments_enabled? %}
