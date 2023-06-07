@@ -49,7 +49,7 @@
   <div class="col-12 breadcrumbs--default">
   {% render 'breadcrumbs' %}
   </div>
-  <div class="col-12 article__max-width unflex">
+  <div class="col-12 unflex">
     <h1 class="article__title h-reset">{{ article.title }}</h1>
     {% capture date %}<time datetime="{{ article.published_at | date: '%Y-%m-%d' }}">{{ article.published_at | date: '%m/%d/%Y' }}</time>{% endcapture %}
     <div class="unflex article__meta">{{ article.author }} on {{ date }}</div>
