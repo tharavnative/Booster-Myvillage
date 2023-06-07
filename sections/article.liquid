@@ -49,11 +49,13 @@
   <div class="col-12 breadcrumbs--default">
   {% render 'breadcrumbs' %}
   </div>
-  <div class="col-12 unflex">
+  <div class="inherit middle layout__stretchBg bg__middle s__holder row article__content">
+  <div class="col-12 unflex row s__content  layout__content">
     <h1 class="article__title h-reset">{{ article.title }}</h1>
     {% capture date %}<time datetime="{{ article.published_at | date: '%Y-%m-%d' }}">{{ article.published_at | date: '%m/%d/%Y' }}</time>{% endcapture %}
     <div class="unflex article__meta">{{ article.author }} on {{ date }}</div>
     {% unless article.excerpt == blank %}<div class="article__excerpt">{{article.excerpt}}</div>{% endunless %}
+  </div>
   </div>
    {% comment %}
   {% unless article.image == nil %}
