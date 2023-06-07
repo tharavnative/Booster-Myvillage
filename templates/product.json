@@ -177,7 +177,6 @@
     },
     "1661487737e8d46d13": {
       "type": "section__content",
-      "disabled": true,
       "blocks": {
         "71c07e1d-fbc8-43b2-84ec-f4960f8a0136": {
           "type": "html",
@@ -187,7 +186,7 @@
             "horPadding": 0,
             "horAlign": "center",
             "vertAlign": "top",
-            "html": "<div id=\"upsell\"><\/div>",
+            "html": "<div class='=\"upsell\"'><\/div>",
             "customCSS": ""
           }
         }
