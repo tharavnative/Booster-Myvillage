@@ -16,7 +16,7 @@
       }
     },
     "shopby": {
-      "type": "page-page-by",
+      "type": "shopby",
       "settings": {
       }
     }
