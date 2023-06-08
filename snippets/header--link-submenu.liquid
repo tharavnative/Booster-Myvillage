@@ -58,7 +58,28 @@
                                       {% endfor %}
                 </div>
             {% endif %}
-        </span>   {% assign bold_member = false %}
+        </span>
+    {% endfor %}
+</div>
+{% else %}
+{% assign csize = 12 | divided_by: link.links.size | at_least: 3 %}
+<div class="nav__submenu nav__submenu--mega row fancy-scroll">
+{% for sub_link in link.links %}
+    {% if sub_link.links != empty %}
+        {% assign plist = sub_link.links | where: 'type', 'product_link' %}
+        {% if plist.size == sub_link.links.size %}
+            <span class="nav__link__holder--mega col-md-{{csize}}">
+                <div class="header__plist">
+                    <a href="{{sub_link.url}}" class="nav__megamenu__title">{{sub_link.title}}</a>
+                    {% for deeplink in sub_link.links %}
+                        {% assign prdt = deeplink.object %}
+                        <div class="header__plist--item">
+                            <a href="{{prdt.url}}"><img height="{{prdt.featured_image.height}}" width="{{prdt.featured_image.width}}" src="{{prdt.featured_image | img_url: '80x'}}" class="header__plist--image"></a>
+                            <div class="header__plist--info">
+                                <a href="{{prdt.url}}" class="header__plist--name">{{prdt.title}}</a>
+                                <span class="header__plist--price">{{prdt.price | money | strip_html}}</span>
+                            </div>
+                        </div>   {% assign bold_member = false %}
  			{% if customer %}
                
         		{% for tag in customer.tags %}
@@ -114,27 +135,6 @@
       				 </li>
             	 {% endif %}
           {% endif %}
-    {% endfor %}
-</div>
-{% else %}
-{% assign csize = 12 | divided_by: link.links.size | at_least: 3 %}
-<div class="nav__submenu nav__submenu--mega row fancy-scroll">
-{% for sub_link in link.links %}
-    {% if sub_link.links != empty %}
-        {% assign plist = sub_link.links | where: 'type', 'product_link' %}
-        {% if plist.size == sub_link.links.size %}
-            <span class="nav__link__holder--mega col-md-{{csize}}">
-                <div class="header__plist">
-                    <a href="{{sub_link.url}}" class="nav__megamenu__title">{{sub_link.title}}</a>
-                    {% for deeplink in sub_link.links %}
-                        {% assign prdt = deeplink.object %}
-                        <div class="header__plist--item">
-                            <a href="{{prdt.url}}"><img height="{{prdt.featured_image.height}}" width="{{prdt.featured_image.width}}" src="{{prdt.featured_image | img_url: '80x'}}" class="header__plist--image"></a>
-                            <div class="header__plist--info">
-                                <a href="{{prdt.url}}" class="header__plist--name">{{prdt.title}}</a>
-                                <span class="header__plist--price">{{prdt.price | money | strip_html}}</span>
-                            </div>
-                        </div>
                     {% endfor %}
                 </div>
             </span>                
