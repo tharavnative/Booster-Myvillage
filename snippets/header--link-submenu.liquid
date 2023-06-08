@@ -79,7 +79,9 @@
                                 <a href="{{prdt.url}}" class="header__plist--name">{{prdt.title}}</a>
                                 <span class="header__plist--price">{{prdt.price | money | strip_html}}</span>
                             </div>
-                        </div>   {% assign bold_member = false %}
+                        </div>
+                    {% endfor %}
+                </div>   {% assign bold_member = false %}
  			{% if customer %}
                
         		{% for tag in customer.tags %}
@@ -135,8 +137,6 @@
       				 </li>
             	 {% endif %}
           {% endif %}
-                    {% endfor %}
-                </div>
             </span>                
         {% else %}
             <span class="nav__link__holder--mega col-md-{{csize}}">
