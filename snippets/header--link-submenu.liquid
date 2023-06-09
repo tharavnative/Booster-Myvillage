@@ -112,10 +112,7 @@
       
         <a
           href="{{ slink.url }}"
-          {% if slink.active %}
-            class="current nav__megamenu__link show-menu"
-          {% endif %}
-        >
+           class="{% if slink.active %}current show-menu nav__megamenu__link{% else %} nav__megamenu__link {% endif %}">
           {{ slink.title }}
         </a>
       
@@ -124,10 +121,7 @@
       
         <a
           href="{{ slink.url }}"
-          {% if slink.active %}
-            class="current nav__megamenu__link"
-          {% endif %}
-        >
+           class="{% if slink.active %}current nav__megamenu__link{% else %} nav__megamenu__link {% endif %}">
           {{ slink.title }}
         </a>
       
@@ -139,10 +133,7 @@
       
         <a
           href="{{ slink.url }}"
-          {% if slink.active %}
-            class="current nav__megamenu__link"
-          {% endif %}
-        >
+          class="{% if slink.active %}current nav__megamenu__link{% else %} nav__megamenu__link {% endif %}">
           {{ slink.title }}
         </a>
      
@@ -155,10 +146,7 @@
     
       <a
         href="{{ slink.url }}"
-        {% if slink.active %}
-          class="current nav__megamenu__link"
-        {% endif %}
-      >
+        class="{% if slink.active %}current nav__megamenu__link{% else %} nav__megamenu__link {% endif %}">
         {{ slink.title }}
       </a>
     
