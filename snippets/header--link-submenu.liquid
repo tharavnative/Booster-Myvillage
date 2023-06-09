@@ -98,8 +98,9 @@
                 <div class="nav__megamenu__menu">
                     <a href="{{sub_link.url}}" class="nav__megamenu__title">{{sub_link.title}}</a>
                     {% for slink in sub_link.links %}
+                      {% comment %}
                         <a href="{{slink.url}}" class="tt nav__megamenu__link">{{slink.title}}</a>
-
+                      {% endcomment %}
 
 
 
