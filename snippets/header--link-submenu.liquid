@@ -84,11 +84,94 @@
                 </div>
             </span>                
         {% else %}
+          {% assign bold_member = false %}
+          {% if customer %}
+            {% for tag in customer.tags %}
+            {% if tag == 'mvg-membership' or tag == 'Restricted Users' %}
+                {% assign bold_member = true %}
+                {% break %}
+              {% endif %}
+            {% endfor %}
+           {% endif %}
+          
             <span class="nav__link__holder--mega col-md-{{csize}}">
                 <div class="nav__megamenu__menu">
                     <a href="{{sub_link.url}}" class="nav__megamenu__title">{{sub_link.title}}</a>
                     {% for slink in sub_link.links %}
                         <a href="{{slink.url}}" class="tt nav__megamenu__link">{{slink.title}}</a>
+
+
+
+
+                  {% assign bold_member = false %}
+{% if customer %}
+ 
+  {% if bold_member %}
+    {% if slink.title == 'Designs for Health*' %}
+      <li class="show-menu">
+        <a
+          href="{{ slink.url }}"
+          {% if slink.active %}
+            class="current"
+          {% endif %}
+        >
+          {{ slink.title }}
+        </a>
+      </li>
+
+    {% else %}
+      <li>
+        <a
+          href="{{ slink.url }}"
+          {% if slink.active %}
+            class="current"
+          {% endif %}
+        >
+          {{ slink.title }}
+        </a>
+      </li>
+    {% endif %}
+
+  {% else %}
+    {% if slink.title == 'Designs for Health*' %}
+    {% else %}
+      <li>
+        <a
+          href="{{ slink.url }}"
+          {% if slink.active %}
+            class="current"
+          {% endif %}
+        >
+          {{ slink.title }}
+        </a>
+      </li>
+    {% endif %}
+  {% endif %}
+
+{% else %}
+  {% if slink.title == 'Designs for Health*' %}
+  {% else %}
+    <li>
+      <a
+        href="{{ slink.url }}"
+        {% if slink.active %}
+          class="current"
+        {% endif %}
+      >
+        {{ slink.title }}
+      </a>
+    </li>
+  {% endif %}
+{% endif %}
+
+                  
+
+                  
+
+
+
+
+                  
                     {% endfor %}
                 </div>
             </span>
