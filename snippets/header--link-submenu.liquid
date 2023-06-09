@@ -109,19 +109,19 @@
  
   {% if bold_member %}
     {% if slink.title == 'Designs for Health*' %}
-      <div class="show-menu">
+      
         <a
           href="{{ slink.url }}"
           {% if slink.active %}
-            class="current nav__megamenu__link"
+            class="current nav__megamenu__link show-menu"
           {% endif %}
         >
           {{ slink.title }}
         </a>
-      </div>
+      
 
     {% else %}
-      <div>
+      
         <a
           href="{{ slink.url }}"
           {% if slink.active %}
@@ -130,13 +130,13 @@
         >
           {{ slink.title }}
         </a>
-      </div>
+      
     {% endif %}
 
   {% else %}
     {% if slink.title == 'Designs for Health*' %}
     {% else %}
-      <div>
+      
         <a
           href="{{ slink.url }}"
           {% if slink.active %}
@@ -145,14 +145,14 @@
         >
           {{ slink.title }}
         </a>
-      </div>
+     
     {% endif %}
   {% endif %}
 
 {% else %}
   {% if slink.title == 'Designs for Health*' %}
   {% else %}
-    <div>
+    
       <a
         href="{{ slink.url }}"
         {% if slink.active %}
@@ -161,7 +161,7 @@
       >
         {{ slink.title }}
       </a>
-    </div>
+    
   {% endif %}
 {% endif %}
 
