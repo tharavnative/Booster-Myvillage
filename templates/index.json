@@ -189,11 +189,11 @@
           "settings": {
             "hide": "show-both",
             "url": "https:\/\/myvillagegreen.com\/pages\/shop-by-brands",
-            "backgroundImage": "shopify:\/\/shop_images\/block6.png",
+            "backgroundImage": "shopify:\/\/shop_images\/Semi-AnnualSale2023banner_158538b4-437d-45e9-9386-e1724df825b4.jpg",
             "backgroundSize": "cover",
             "overlayOpacity": 0,
             "overlayColor": "#000000",
-            "imageText": "<div style=\" font-size: 36px; line-height: 40px; font-weight: 300; padding: 20px; letter-spacing: -1px;\">Helping you<br>live your<br>healthiest life<\/div>",
+            "imageText": "",
             "textColor": "#ffffff",
             "textFillColor": "rgba(0,0,0,0)",
             "fullwidthText": false,
