@@ -99,7 +99,7 @@
                     <a href="{{sub_link.url}}" class="nav__megamenu__title">{{sub_link.title}}</a>
                     {% for slink in sub_link.links %}
                       {% comment %}
-                        <a href="{{slink.url}}" class="tt nav__megamenu__link">{{slink.title}}</a>
+                        <a href="{{slink.url}}" class="nav__megamenu__link">{{slink.title}}</a>
                       {% endcomment %}
 
 
@@ -109,59 +109,59 @@
  
   {% if bold_member %}
     {% if slink.title == 'Designs for Health*' %}
-      <li class="show-menu">
+      <div class="show-menu">
         <a
           href="{{ slink.url }}"
           {% if slink.active %}
-            class="current"
+            class="current nav__megamenu__link"
           {% endif %}
         >
           {{ slink.title }}
         </a>
-      </li>
+      </div>
 
     {% else %}
-      <li>
+      <div>
         <a
           href="{{ slink.url }}"
           {% if slink.active %}
-            class="current"
+            class="current nav__megamenu__link"
           {% endif %}
         >
           {{ slink.title }}
         </a>
-      </li>
+      </div>
     {% endif %}
 
   {% else %}
     {% if slink.title == 'Designs for Health*' %}
     {% else %}
-      <li>
+      <div>
         <a
           href="{{ slink.url }}"
           {% if slink.active %}
-            class="current"
+            class="current nav__megamenu__link"
           {% endif %}
         >
           {{ slink.title }}
         </a>
-      </li>
+      </div>
     {% endif %}
   {% endif %}
 
 {% else %}
   {% if slink.title == 'Designs for Health*' %}
   {% else %}
-    <li>
+    <div>
       <a
         href="{{ slink.url }}"
         {% if slink.active %}
-          class="current"
+          class="current nav__megamenu__link"
         {% endif %}
       >
         {{ slink.title }}
       </a>
-    </li>
+    </div>
   {% endif %}
 {% endif %}
 
