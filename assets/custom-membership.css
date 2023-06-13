@@ -169,7 +169,7 @@ html { padding-bottom: 20px !important; }
 .newslt { padding: 0 90px; }
 .newslt h6 { font-family: Montserrat; text-transform: capitalize; font-size: 40px; line-height: 48px; font-weight: 300; font-family: Montserrat;margin-bottom: 30px; }
 .sub-tit { font-size: 18px; line-height: 25px; font-family: Montserrat;  font-weight: 400;}
-.shopify-section h2 { font-family: Montserrat; font-size: 28px; line-height: 36px; font-weight: 500; margin-bottom: 15px; color: #006690;}
+.shopify-section h2 { font-family: Montserrat; text-transform: capitalize; font-size: 28px; line-height: 36px; font-weight: 500; margin-bottom: 15px; color: #006690;}
 .shopify-section .middle-container h2 { font-family: Montserrat; text-transform: capitalize; font-size: 27px; line-height: 30px; font-weight: 300; margin-bottom: 15px; color: #16181e;}
 .shopify-section h3 { font-family: Montserrat; font-size: 20px; line-height: 22px; font-weight: 400; margin-bottom: 15px; color: #73adc2;}
 .shopify-section p { font-size: 16px; line-height: 24px; font-family: Montserrat; margin-bottom: 15px; font-weight: 400;}
