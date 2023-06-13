@@ -626,42 +626,8 @@
       </div>
     </div>
   </div>
-<style>
-.health_plan_new {
-    border-top-right-radius: 25px!important;
-    border-top-left-radius: 25px!important;
-    padding-top: 0!important;
-    padding-left: 0!important;
-    padding-right: 0!important;
-}
-@media (max-width: 767px){
-#humani_sec .health_plan {
-    width: 100%;
-    margin: 0 auto;
-    margin-bottom: 40px;
-}
-}
-.health_plan_new::before {
-    display: none;
-}
-  .health_box_plan {
-  
-    grid-template-columns: 1fr 2fr!important;
-    grid-gap: 12px;
-    justify-content: center;
-}
-  .health_cont {
-    padding: 15px;
-    text-align: left;
-}
-  @media (max-width: 767px){
-#humani_sec .health_box_plan {
-    grid-template-columns: 1fr!important;
-}
- }
-</style>
-  <div class="your_health" id="humani_sec">
-    <div class="container-bootstrap">
+ <div class="your_health" id="humani_sec">
+    <div class="container">
       <div class="row">
         <div class="col-sm-12">
           <div class="title_sec your_top">
@@ -669,12 +635,6 @@
           </div>
         </div>
       </div>
-       <div class="row">
- <div class="col-sm-12">
-   <p>With an AI-driven interactive dashboard, you now have a hub for testing, tracking, and transforming your health. Learn how to optimize your health and help guard against health risks with your customized diet, lifestyle, and nutrient recommendations. Gain insights into your total body health, metabolic health, and toxin risk and track your progress as you make healthy changes. Shop our extensive selection of high-quality supplements, schedule nutrition consultations, get personalized support, and much more!</p>
-</div>
-   
-        </div> 
       <div class="row">
         <div class="col-sm-6">
           <div class="heakth_left_img">
@@ -692,36 +652,14 @@
               </div>
             </div>
           </div>
-          
-        </div>
-        <div class="col-sm-6">
-          <div class="health_cont">
-            {{ section.settings.sign_humani_content }}
-            {{ section.settings.sign_humani_right_cont }}
-          </div>
-        </div>
-      </div>
-
-      <div class="row">
-        <div class="health_btm">
+          <div class="health_btm">
             <div class="health_box_plan">
               
-               <div class="health_plan health_plan_new annually">
-                  <img src="https://cdn.shopify.com/s/files/1/0319/0960/9603/files/Gold_humanized.png?v=1686568561">    
-                 <div class="health_cont">
-                <h2>Membership benefits include:</h2>
-                
-           <ul>
-<li>Free shipping (no minimum).</li>
-<li>Members-only discount prices on supplements and labs.</li>
-<li>Access to AI smart tool health questionnaire for customized supplement recommendations.</li>
-<li>Ask a Nutritionist email -send your questions to our nutrition experts.</li>
-<li>Early access to podcasts (before they are released). </li>
-</ul>
-          </div>
+               <div class="health_plan annually">
+                <h2>Annual</h2>
                 <div class="h_price">
                   <sup>$</sup>
-                  <span>17.95</span>
+                  <span>29.95</span>
                   <sub>/month*</sub>
                 </div>
                 <!--
@@ -734,25 +672,10 @@
                     >Join Now</a
                   >
                 </div>
-               
+                <div class="h_total">*$359.40 billed annually</div>
               </div>
-              <div class="health_plan health_plan_new monthly">
-                <img src="https://cdn.shopify.com/s/files/1/0319/0960/9603/files/platinum.png?v=1686568562">  
-                <div class="health_cont">
-                <h2>Membership benefits include:</h2>
-                
-                           <ul>
-<li>Free shipping (no minimum).</li>
-<li>Members - only discount prices on supplements and labs.</li>
-<li>Access to a comprehensive AI smart tool health questionnaire that Includes An Assessment Of Your Body Systems, Family History, Diet And Lifestyle Habits And Creates customized supplement recommendations</li>
-<li>Lab Assessment overview phone call with a licensed nutritionist.</li>
-<li>Access to Virtual Live Q&A sessions and recordings. </li>
-<li>Ask a Nutritionist email -send your questions to our nutrition experts. </li>
-<li>Access to Humanized+ hotline to get personalized guidance and support from our nutrition advisors.</li>
-<li>Unlimited 15-minute nutrition calls with licensed nutritionists or ND.</li> 
-<li>Discounts on Nutrition Consultation Packages with licensed nutritionists or ND.</li>                              
-</ul>
-                </div>
+              <div class="health_plan monthly">
+                <h2>Monthly</h2>
                 <div class="h_price">
                   <sup>$</sup>
                   <span>37.95</span>
@@ -768,15 +691,18 @@
                     >Join Now</a
                   >
                 </div>
-                
+                <div class="h_total">*$37.95 billed monthly</div>
               </div>
             </div>
           </div>
-
+        </div>
+        <div class="col-sm-6">
+          <div class="health_cont">
+            {{ section.settings.sign_humani_content }}
+            {{ section.settings.sign_humani_right_cont }}
+          </div>
+        </div>
       </div>
-
-
-      
     </div>
   </div>
 {% endif %}
