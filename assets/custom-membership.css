@@ -449,7 +449,7 @@ font-weight: 500;
 .rte a, .rte a span, .middle-container a { color: #73adc2; text-decoration: none !important; font-weight: 600;}
 .rte a span:hover, .rte a:hover, .middle-container a:hover {     color: #00577f; }
 #contact_form .page-header  { clear: both; }
-#orders, #policies, #pricing, #products, #shipping { padding-top: 56px; margin-top: -56px; }
+#orders, #policies, #pricing, #products, #shipping { padding-top: 5px; margin-top: -56px; }
 .contactus-page { padding-bottom: 40px; }
 .shopify-section .contactus-page .middle-container h2 { color: #00577f; font-weight: 600; }
 .blogr_prfl { border-bottom: 1px solid #addff0; padding-bottom: 5px; margin-bottom: 20px; }
