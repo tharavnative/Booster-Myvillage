@@ -68,7 +68,7 @@
     "cartAction": "minicart",
     "BPDynTitle": "",
     "cartTimer": true,
-    "countdown": true,
+    "countdown": false,
     "recentlyBought": false,
     "reviewApp": "booster",
     "freeShippingAmount": "40",
