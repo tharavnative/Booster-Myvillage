@@ -169,7 +169,7 @@ html { padding-bottom: 20px !important; }
 .newslt { padding: 0 90px; }
 .newslt h6 { font-family: Montserrat; text-transform: capitalize; font-size: 40px; line-height: 48px; font-weight: 300; font-family: Montserrat;margin-bottom: 30px; }
 .sub-tit { font-size: 18px; line-height: 25px; font-family: Montserrat;  font-weight: 400;}
-.shopify-section h2 { font-family: Montserrat; text-transform: capitalize; font-size: 32px; line-height: 36px; font-weight: 450; margin-bottom: 15px; color: #006690;}
+.shopify-section h2 { font-family: Montserrat; text-transform: capitalize; font-size: 28px; line-height: 36px; font-weight: 500; margin-bottom: 15px; color: #006690;}
 .shopify-section .middle-container h2 { font-family: Montserrat; text-transform: capitalize; font-size: 27px; line-height: 30px; font-weight: 300; margin-bottom: 15px; color: #16181e;}
 .shopify-section h3 { font-family: Montserrat; font-size: 20px; line-height: 22px; font-weight: 400; margin-bottom: 15px; color: #73adc2;}
 .shopify-section p { font-size: 16px; line-height: 24px; font-family: Montserrat; margin-bottom: 15px; font-weight: 400;}
@@ -449,7 +449,7 @@ font-weight: 500;
 .rte a, .rte a span, .middle-container a { color: #73adc2; text-decoration: none !important; font-weight: 600;}
 .rte a span:hover, .rte a:hover, .middle-container a:hover {     color: #00577f; }
 #contact_form .page-header  { clear: both; }
-#orders, #policies, #pricing, #products, #shipping { padding-top: 5px; margin-top: -56px; }
+#orders, #policies, #pricing, #products, #shipping { padding-top: 56px; margin-top: -56px; }
 .contactus-page { padding-bottom: 40px; }
 .shopify-section .contactus-page .middle-container h2 { color: #00577f; font-weight: 600; }
 .blogr_prfl { border-bottom: 1px solid #addff0; padding-bottom: 5px; margin-bottom: 20px; }
