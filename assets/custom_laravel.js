@@ -4071,8 +4071,8 @@ temp_data+='<div class="ordinal-value-outer"><input type="text" name="ordinal-va
                                                   if (data.completion >= 100 && !data.newuser) {
                                                     console.log("Calling !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!! api_user_data");
                                                       api_user_data();
-                                                      // lab_result();
-                                                      // getRecommendations();
+                                                      lab_result();
+                                                      getRecommendations();
                                                       //api_recommend_sec();
                                                       //metabolic_risk();
                                                   } else {}
