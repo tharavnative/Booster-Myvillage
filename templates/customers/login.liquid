@@ -1,4 +1,7 @@
 <!-- /templates/customers/login.liquid -->
+{% capture redir  %}{%- render 'querystring', param: "redir" -%}{% endcapture %}
+{%assign value = redir| url_decode%}
+
 {% section 'banner--login' %}
 <div class="customer__form">
 {% form 'customer_login' %} {{ form.errors | default_errors }}
@@ -7,7 +10,11 @@
 
 <label for="customer_email">{{'customer_area.forms.email' | t }}</label>
 <input type="email" name="customer[email]" />
-<input type="hidden" name="return_to" value="/pages/membership-dashboard">
+ {% if value == "pages/thirty-minute-consultation" %}
+        <input type="hidden" name="return_to" value="/pages/thirty-minute-consultation">
+    {% else %}
+       <input type="hidden" name="return_to" value="/pages/membership-dashboard">
+    {% endif %}
 <label for="customer_password">{{'customer_area.forms.password' | t }}</label>
 <input type="password" name="customer[password]" />
 
