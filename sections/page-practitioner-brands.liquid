@@ -3,7 +3,15 @@
 <!-- end Bold code -->
 
 {% assign sidebar = true %}
-
+ {% assign bold_member = false %}
+          {% if customer %}
+            {% for tag in customer.tags %}
+            {% if tag == 'mvg-membership' or tag == 'Restricted Users' %}
+                {% assign bold_member = true %}
+                {% break %}
+              {% endif %}
+            {% endfor %}
+           {% endif %}
 
 
 {% capture layoutConfig %}{% render 'common-layout' with section as section %}{% endcapture %}
@@ -22,7 +30,14 @@
       href="https://myvillagegreen.com/pages/restricted-brands-form/">(require log-in to see products)</a>:</strong></p>
 <div class="Section1">
   <p><a href="https://myvillagegreen.myshopify.com/collections/4-life">4 Life</a> <br /><a
-      href="https://myvillagegreen.myshopify.com/collections/vendors?q=APEX%20ENERGETICS"> Apex Energetics</a> <br /><a
+      href="https://myvillagegreen.myshopify.com/collections/vendors?q=APEX%20ENERGETICS"> Apex Energetics</a> <br />
+
+   
+ 
+  {% if bold_member %}
+    <a href="https://myvillagegreen.myshopify.com/collections/vendors?q=DESIGNS%20FOR%20HEALTH">Designs for Health</a>
+    {% endif %}
+    <a
       href="https://myvillagegreen.myshopify.com/collections/douglas-labs"> Douglas Labs</a> <a
       href="https://myvillagegreen.myshopify.com/collections/vendors?q=MILLER%20PHARMACEUTICA"> <br /> </a><a
       href="https://myvillagegreen.myshopify.com/collections/metagenics">Metagenics<br /></a> <a
