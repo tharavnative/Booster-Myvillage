@@ -697,7 +697,7 @@
       ],
       "settings": {
         "displayFor": "display--both",
-        "layout": "boxed",
+        "layout": "default",
         "nomargin": false,
         "scopedCSS": "",
         "height": 360,
