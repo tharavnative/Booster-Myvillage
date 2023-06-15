@@ -88,7 +88,9 @@ order.total_price
     <div class="col-12 col-md-4 unflex d_addy">
       <h2 class="h-reset p-reset--all">{{'customer_area.account.default_addy' | t}}</h2>
       <!-- Bold: Memberships (manage memberships) -->
+      {% comment %}
 <p><a href="/apps/memberships/accountDetails/?id={{customer.id}}&h={{bold_memberships_hash}}">Manage Memberships</a></p>
+{% endcomment %}
 <!-- end Bold code -->
       {% if daddy %}
         <p>{{ customer.default_address.address1 }} {% if customer.default_address.address2 != "" %}({{ customer.default_address.address2 }}){% endif %}</p>
