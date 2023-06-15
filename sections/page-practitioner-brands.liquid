@@ -1,4 +1,21 @@
-<h2>Practitioner Brands</h2>
+<!-- Bold: Memberships (page) -->
+{% include 'bold_mem_helper' with 'page' %}
+<!-- end Bold code -->
+
+{% assign sidebar = true %}
+
+
+
+{% capture layoutConfig %}{% render 'common-layout' with section as section %}{% endcapture %}
+
+<div class="row layout__{{-layoutConfig}} default-page template-page">
+   {% if sidebar %}
+      <div class="col-md-3 col-12 unflex layout__content section__page ">{% render 'page-sidebar-nav' %}</div>
+
+   {% endif %}
+    <div class="{% if sidebar %} col-md-9 col-12 {% else %} col-12 {% endif %} unflex layout__content section__page rte">
+      
+        <h2>Practitioner Brands</h2>
 <p>Practitioner brands are respected by physicians and healthcare practitioners because of the clinical research that
   has been conducted, and the quality, purity, and effectiveness of the ingredients.</p>
 <p><strong>Practitioner brands with restricted access and internet pricing <a
@@ -58,12 +75,50 @@
     get back with you to confirm your request.</span></p>
 <p>Already have access to Restricted Practitioner Brands? <span style="text-decoration: underline;"><a
       href="/pages/shop-by">Browse our catalog</a></span>. (You must login first.)</p>
+      
+    </div>
+</div>
+
 {% schema %}
-  {
-    "name": "Section name",
-    "settings": []
-  }
+{
+  "name": {
+    "en": "Page layout"
+  },
+  "settings": [
+    {
+      "type": "header",
+      "content": "Layout"
+    },
+    {
+      "type": "checkbox",
+      "id": "enableSidebar",
+      "label": "Enable Sidebar",
+      "info": "Untick to disable Sidebar.",
+      "default": true
+    },
+    {
+      "type": "select",
+      "id": "layout",
+      "label": "Section layout",
+      "options": [
+        {"value": "default", "label": "Global default"},
+        {"value": "boxed", "label": "Boxed"},
+        {"value": "stretchBg", "label": "Full width background"},
+        {"value": "stretchContent", "label": "Full width"}
+      ],
+      "default": "default"
+    },
+    {
+      "type": "checkbox",
+      "id": "enableShortcodes",
+      "label": "Enable sections (BETA)",
+      "info": "Parses page's content for sections using BoosterRender. More information will be provided soon.",
+      "default": false
+    }
+  ]
+}
 {% endschema %}
+
 
 {% stylesheet %}
 {% endstylesheet %}
