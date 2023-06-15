@@ -8,7 +8,7 @@
 
 {% capture layoutConfig %}{% render 'common-layout' with section as section %}{% endcapture %}
 
-<div class="row layout__{{-layoutConfig}} default-page template-page">
+<div class="inherit row banner layout__boxed lazyloaded">
    {% if sidebar %}
       <div class="col-md-3 col-12 unflex layout__content section__page ">{% render 'page-sidebar-nav' %}</div>
 
