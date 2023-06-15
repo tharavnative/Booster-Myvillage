@@ -16,11 +16,8 @@
       }
     },
     "content": {
-      "type": "page",
+      "type": "page-practitioner-brands",
       "settings": {
-        "enableSidebar": true,
-        "layout": "boxed",
-        "enableShortcodes": true
       }
     }
   },
