@@ -566,7 +566,7 @@ button--filled button--primary__filled
   </form>
 
     <script>
-//BoosterTheme.cart.removeFromCart(this, '44149578629358')
+//BoosterTheme.cart.removeFromCart(this, '44149578629358');
       //BoosterTheme.cart.addToCartJSON(event, {items: [{id: 44149578629358, quantity: 1}]});
 
       function serviceCheckbox()
@@ -576,10 +576,12 @@ button--filled button--primary__filled
   element.classList.toggle("clicked");
          if(element.classList.contains('clicked')){
            console.log('clicked');
+           BoosterTheme.cart.addToCartJSON(event, {items: [{id: 44149578629358, quantity: 1}]});
          }
 
          else{
            console.log('not clicked');
+           BoosterTheme.cart.removeFromCart(this, '44149578629358');
          }
       }
 
