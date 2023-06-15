@@ -24,7 +24,7 @@
 {% stylesheet %}
 {% endstylesheet %}
 
-{% javascript %}
+<script>
 
 jQuery(document).ready(function($){
 
@@ -38,10 +38,11 @@ jQuery(document).ready(function($){
 			fname=email;
 		}
         var data = {
-            "fname": fname,
-            "lname": lname,
+            "first_name": fname,
+            "last_name": lname,
             "email": email,
             "password": pass,
+            "password_confirmation": pass,
             "iqyou_welcome_email": false
         };
         // console.log(data);
@@ -71,18 +72,20 @@ jQuery(document).ready(function($){
                 $.ajax({
                     type: 'post',
                     url: url,
-                   data: JSON.stringify( content ),
+                   data: JSON.stringify( data ),
                       dataType: "json",
                       contentType: "application/json",
                       headers: request
                  }).done(function(data, status, xhr) {
                     
                     console.log("Signup Data !!!!!!!!!!!!!!!!!!!!!!!!!!!!!",data);
+                  window.location.href='/pages/membership-dashboard';
                  }).fail(function(xhr, status) {
                   console.log("Signup Data !!!!!!!!!!!!!!!!!!!!!!!!!!!!!",status);
+                  window.location.href='/';
                   });
    
 
 });
 
-{% endjavascript %}
+</script>
