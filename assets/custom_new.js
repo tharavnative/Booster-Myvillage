@@ -18,6 +18,16 @@ jQuery(document).ready(function($) {
     $('.health_plan.health_plan_new.annually .buy_btn').trigger('click');
     sessionStorage.removeItem('openGold');
   }
+
+    if (window.location.pathname === '/pages/sales-landing-private' && sessionStorage.getItem('openPlatinum')) {
+    console.log("openPlatinum!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!");
+    $('.health_plan.health_plan_new.monthly .buy_btn').trigger('click');
+    sessionStorage.removeItem('openPlatinum');
+  }else if (window.location.pathname === '/pages/sales-landing-private' && sessionStorage.getItem('openGold')) {
+    $('.health_plan.health_plan_new.annually .buy_btn').trigger('click');
+    sessionStorage.removeItem('openGold');
+  }
+  
   // $(window).load(function ()  {
   //         if($('#create_customer').find('.note.form-error').length){
   //           console.log("Test Length");
