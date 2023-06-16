@@ -169,9 +169,8 @@ html { padding-bottom: 20px !important; }
 .newslt { padding: 0 90px; }
 .newslt h6 { font-family: Montserrat; text-transform: capitalize; font-size: 40px; line-height: 48px; font-weight: 300; font-family: Montserrat;margin-bottom: 30px; }
 .sub-tit { font-size: 18px; line-height: 25px; font-family: Montserrat;  font-weight: 400;}
-.shopify-section h2 { font-family: Montserrat;  font-size: 28px; line-height: 36px; font-weight: 500; margin-bottom: 15px; color: #006690;}
-.shopify-section .middle-container h2 { font-family: Montserrat;  font-size: 27px; line-height: 30px; font-weight: 300; margin-bottom: 15px; color: #16181e;}
-.shopify-section h3 { font-family: Montserrat; font-size: 20px; line-height: 22px; font-weight: 400; margin-bottom: 15px; color: #73adc2;}
+.shopify-section h2 { font-family: Montserrat; text-transform: capitalize; font-size: 35px; line-height: 48px; font-weight: 300; margin-bottom: 15px; color: #16181e;}
+.shopify-section .middle-container h2 { font-family: Montserrat; text-transform: capitalize; font-size: 27px; line-height: 30px; font-weight: 300; margin-bottom: 15px; color: #16181e;}
 .shopify-section p { font-size: 16px; line-height: 24px; font-family: Montserrat; margin-bottom: 15px; font-weight: 400;}
 .template-page .rte ul li, .rte ol li { font-size: 15px; line-height: 22px; font-family: Montserrat; font-weight: 400; margin-bottom: 10px;}
 .newslt .inner-form-subscribe { margin-top: 20px; }
@@ -2203,31 +2202,31 @@ margin-bottom: 25px;
 
 /*Popup styles */
 
-#membership_popup .page-header h4, #membership_popup .page-header h1 {  padding-bottom: 0; margin-bottom: 15px; border: none; }
-#membership_popup h6 { font-size: 16px;
+.membership_popup .page-header h4, .membership_popup .page-header h1 {  padding-bottom: 0; margin-bottom: 15px; border: none; }
+.membership_popup h6 { font-size: 16px;
     line-height: 24px;
     text-transform: initial;
     font-weight: 400;
     margin-bottom: 5px; }
-#membership_popup .create-an-account p, #membership_popup .login-page p { font-size: 15px;
+.membership_popup .create-an-account p, .membership_popup .login-page p { font-size: 15px;
     line-height: 24px;
     text-transform: initial;
     font-weight: 400;  }
 .action-btn .last a { color: #00577f; margin: 0;}
 
-div#membership_popup form#customer_login {text-align: left;display: grid;grid-template-columns: 1fr 2fr;}
+div.membership_popup form#customer_login {text-align: left;display: grid;grid-template-columns: 1fr 2fr;}
 
-div#membership_popup #customer_login header.page-header {
+div.membership_popup #customer_login header.page-header {
     grid-column-start: 1;
     grid-column-end: 3;
 }
 
-div#membership_popup #customer_login .action-btn {
+div.membership_popup #customer_login .action-btn {
     grid-column-start: 2;
     grid-column-end: 3;
 }
 
-div#membership_popup .modal-dialog {
+div.membership_popup .modal-dialog {
     padding-top: 0px;
      
 }
@@ -2236,37 +2235,37 @@ div#membership_popup .modal-dialog {
     text-align: left;
 }
 
-div#membership_popup form#create_customer {
+div.membership_popup form#create_customer {
     text-align: left;
     margin-top: 30px;
     
 }
 
-div#membership_popup div#first_name {
+div.membership_popup div#first_name {
     text-align: left;
     display: grid;
     grid-template-columns: 1fr 2fr;
 }
 
-div#membership_popup div#last_name {
+div.membership_popup div#last_name {
     text-align: left;
     display: grid;
     grid-template-columns: 1fr 2fr;
 }
 
-div#membership_popup div#email {
+div.membership_popup div#email {
     text-align: left;
     display: grid;
     grid-template-columns: 1fr 2fr;
 }
 
-div#membership_popup div#create_password {
+div.membership_popup div#create_password {
     text-align: left;
     display: grid;
     grid-template-columns: 1fr 2fr;
 }
 
-div#membership_popup #create_customer .action-btn {
+div.membership_popup #create_customer .action-btn {
     /* display: flex; */
     /* text-align: right; */
     text-align: left;
@@ -2276,7 +2275,7 @@ div#membership_popup #create_customer .action-btn {
         '. but';
 }
 
-div#membership_popup #create_customer .action-btn p {
+div.membership_popup #create_customer .action-btn p {
     grid-area: but;
 }
 div#rectable {
@@ -2530,7 +2529,7 @@ div#rectable {
 #sign_three_blk .score_sec .modal-content { padding: 40px 50px; }
 #sign_three_blk .modal-content p { font-size: 18px;   }
 .notice { background: #00577f; padding: 20px;  color: #fff; text-align: center; }
-#membership_popup .modal-header h2 { font-size: 28px; }
+.membership_popup .modal-header h2 { font-size: 28px; }
 .form-item-drugsearch {
     height: auto;
     width: 70% !important;
