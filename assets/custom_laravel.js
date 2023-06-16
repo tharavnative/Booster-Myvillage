@@ -623,7 +623,7 @@ jQuery(function ($) {
   }
   function listRecommendationFilters(recommendationOptions) {
     var obj = recommendationOptions;
-    var recom_options_html='<option value="">All</option>';
+    var recom_options_html='<option value="all">All</option>';
     $.each(obj, function(k, v) {
         recom_options_html = recom_options_html +'<option value="' + v + '">' + v + '</option>';
     });
@@ -631,7 +631,13 @@ jQuery(function ($) {
       $('#recommendation-filter').on('change', function() {
         $('.recommendation-items').hide();
         var cat  = $(this).val().replace(/ /g,"_");
-        $('.recommendation-items.' + cat).show();
+        console.log("Cat!!!!!!!!!!!!!!!!!!!!!",cat);
+        if(cat == 'all'){
+          $('.recommendation-items').show();
+        }else{
+          $('.recommendation-items.' + cat).show();
+        }
+        
       });
   }
 
@@ -3804,15 +3810,22 @@ temp_data+='<div class="ordinal-value-outer"><input type="text" name="ordinal-va
     }
     // data+=" " + 'ordinal_value' + ": " + value2+' ';
       data+='<div rel="' + res_id + '" class="lessdata lessdata-' + res_id + '" id="lessdata-' + res_id + '" >Show more</div><div rel="' + res_id + '" class="moredata moredata-' + res_id + '" id="moredata-' + res_id + '" style="display:none">Show less</div>';
-      var public_desc_obj = JSON.parse(JSON.stringify(public_desc));
-      //console.log(public_desc_obj);
-      var public_desc = public_desc_obj.split('value":"');
+      // var public_desc_obj = JSON.parse(JSON.stringify(public_desc));
+      //   if (data.und && data.und.length > 0) {
+      //       var public_desc = data.und[0].value;
+      //       console.log(public_desc);
+      //     } else {
+      //       var public_desc = '';
+      //       console.log('No value found.');
+      //     }
+     
+      // var public_desc = public_desc_obj.split('value":"');
 
-      if(public_desc[1] ){
-        public_desc = public_desc[1].split('","');
-      }else{
-        public_desc = '';
-      }
+      // if(public_desc[1] ){
+      //   public_desc = public_desc[1].split('","');
+      // }else{
+      //   public_desc = '';
+      // }
       var inner_main='';
       
       if(typeof(nodeinputs) != "undefined"){
@@ -3915,8 +3928,8 @@ temp_data+='<div class="ordinal-value-outer"><input type="text" name="ordinal-va
     }
 
   $( document ).ready(function() {
+    if (window.location.pathname === '/pages/membership-dashboard') {
     function api_user_data() {
-    console.log("READY!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!! api_user_data");
       $(".member_clickhere_sec").addClass('loading');
     var request = {
               "Content-Type":"application/json",
@@ -4075,7 +4088,10 @@ temp_data+='<div class="ordinal-value-outer"><input type="text" name="ordinal-va
                                                       getRecommendations();
                                                       //api_recommend_sec();
                                                       //metabolic_risk();
-                                                  } else {}
+                                                  } else {
+                                                    lab_result();
+                                                      getRecommendations();
+                                                  }
                                                }).fail(function(xhr, status) {
                             
                                                });  
@@ -4120,5 +4136,8 @@ temp_data+='<div class="ordinal-value-outer"><input type="text" name="ordinal-va
     $('.laravel_cancel_remove_recom').click(function() {
       $('#laravel_remove_recommendation_confirm_modal').modal('hide');                         	
       });
+  
+  
+    }
   });
 });
