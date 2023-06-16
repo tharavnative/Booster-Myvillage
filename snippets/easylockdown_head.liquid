@@ -5,7 +5,7 @@
 {% assign easylockdownNow = 'now' | date:'%s' | times: 1 %}{% assign easylockdownNowWeekDay = easylockdownNow | date:'%u' %}{% assign easylockdownNowMonthDay = easylockdownNow | date:'%d' %}{% assign easylockdownNowHM = easylockdownNow | date:'%H%M' | times: 1 %}{% if customer %}{% assign easylockdownPlacedOrder = customer.orders.first.created_at | date:'%s' %}{% assign easylockdownOldestPlacedOrder = customer.orders.last.created_at | date:'%s' %}{% assign easylockdownDateDifference = easylockdownNow | minus: easylockdownPlacedOrder %}{% endif %}
 {% for t in customer.tags %}
 {% assign tag = t | downcase %}
-{% if tag == 'mvg-membership' %}{% assign elcTag1 = true %}{% endif %}
+{% if tag == 'mvg-membership' or tag == 'mvg-platinum'  or tag == 'mvg-membership-gold' %}{% assign elcTag1 = true %}{% endif %}
 {% if tag == 'blocked' %}{% assign elcTag2 = true %}{% endif %}
 {% if tag == 'restricted users' %}{% assign elcTag3 = true %}{% endif %}
 {% endfor %}
