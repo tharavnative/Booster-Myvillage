@@ -381,7 +381,7 @@ input[type="checkbox"], input[type="radio"] {
                                                                     {{ address.first_name | capitalize }} {{address.last_name | capitalize }}
                                                                     {% if address == customer.default_address %}
                                                                       <span {% if settings.enable_multilang %}data-translate="customer.addresses.default"{% endif %}>
-                                                                      ({{ 'customer.addresses.default' | t }})
+                                                                      ({{ 'Default_Address' }})
                                                                       </span>
                                                                     {% endif %}
                                                                     </h5>
@@ -396,8 +396,8 @@ input[type="checkbox"], input[type="radio"] {
                                                                       {{ address.phone }}
                                                                     </p>
                                                                     <p class="button">
-                                                                      {{ 'customer.addresses.edit'  | edit_customer_address_link: address.id }}
-                                                                      {{ 'customer.addresses.delete'  | delete_customer_address_link: address.id }}
+                                                                      {{ 'Edit'  | edit_customer_address_link: address.id }}
+                                                                      {{ 'Delete'  | delete_customer_address_link: address.id }}
                                                                     </p>
                                                                    </div>
                                                                    <div id="edit_addrs_outer"> 
