@@ -3711,6 +3711,145 @@ label.hide-m input {
 }
 
 
+/***************************Lab DNA Reports ***************************/
+
+.values-style .result-item {
+    background-color: #00577f!important;
+    color: white;
+    padding:5px 5px;
+}
+
+.values.values-style {
+    display: grid;
+    grid-gap: 10px;
+}
+
+.result-item .title {
+    float: left;
+}
+
+.result-item .lessdata {
+    float: left;
+    padding: 0px 10px 0px 0px;
+}
+
+.result-item .moredata {
+    float: left;
+    
+    padding: 0px 10px 0px 0px ;
+}
+
+.result-item .ordinal-value-outer {
+     float: right;
+}
+
+.result-item .unit-value-outer {
+    float: right;
+      padding: 0px 10px 0px 10px;
+}
+
+.result-item .result-colour-outer {
+    float: right;
+}
+
+.result-item .values {
+    float: right;
+}
+
+
+.result-colour-outer span{
+        font-size: 11px;
+        font-weight: bold;
+        padding: 5px;
+        line-height: 16px;
+        border-radius: 30.5px;
+        border: none;
+        text-decoration: none;
+        width: 53px;
+        margin-right: 0;
+        display: inline-block;
+        position: relative;
+        padding: 10px;
+        margin-left: 13px;
+}
+
+span.green {
+    background-color: #7ed321;
+}
+span.red {
+    background-color: #d26667;
+}
+.result-item .title {
+    font-size: 16px;
+    font-weight: 400;
+}
+.ordinal-value-outer input {
+    width: 60px;
+    border: 1px solid #bfbfbf;
+    border-radius: 11px;
+    line-height: 22px;
+    padding: 0px 9px;
+    text-align: right;
+    background-color: white;
+    float: left;
+    display: inline-block;
+    margin-right: 7px;
+    color: #000;
+}
+
+.lab_orders {}
+
+.cbc-section.result-item-main {
+    padding-top: 0px;
+}
+
+.cbc-section.result-item-main .lessdata-cbc,
+.cbc-section.result-item-main .moredata-cbc  {
+    color: #1696d9;
+    cursor: pointer;
+    padding: 10px 5px;
+}
+body#sales-landing-page #shopify-section-navigation,body#sales-landing-private #shopify-section-navigation{
+  margin-bottom: 30px;
+}
+
+.lessdata-cbc {
+    display: inline-block;
+    font-size: 15px;
+}
+
+.moredata-cbc {
+    display: inline-block;
+    font-size: 15px;
+}
+
+.allresults-section .lessdata-cbc {
+    margin-top: 5px;
+}
+
+.allresults-section .moredata-cbc {
+    margin-top: 5px;
+}
+
+.values.values-allresults {}
+
+#lap_report_new .modal-dialog {
+    width: 55%;
+}
+.recommended-labs-results-laravel {
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+@media (max-width: 767px){
+#lap_report_new .modal-dialog {
+   width:auto;
+}
+}
+
+.result-item .unit-value-outer span {
+    color: #fff;
+}
+
 /********************** Member-consultations *************************/
 
 
