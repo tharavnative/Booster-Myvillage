@@ -44,7 +44,7 @@
                 <li class="mem_dashbd_pag">
                   {% for tag in customer.tags %}
                     
-                  {% if tag=='mvg-membership' %}
+                  {% if tag=='mvg-membership' or tag == 'mvg-platinum'  or tag == 'mvg-membership-gold' %}
                         {% assign bold_member = true %}
                          {% break %}
                   {% endif %}
