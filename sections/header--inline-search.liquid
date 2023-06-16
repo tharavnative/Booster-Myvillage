@@ -103,7 +103,7 @@
 {% if customer %}
         {% assign bold_member = false %}
         {% for tag in customer.tags %} 
-          {% if tag=='mvg-membership' %}
+          {% if tag=='mvg-membership' or tag == 'mvg-platinum'  or tag == 'mvg-membership-gold' %}
             {% assign bold_member = true %}
             {% break %}
           {% endif %}
