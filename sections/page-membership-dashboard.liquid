@@ -381,7 +381,7 @@ input[type="checkbox"], input[type="radio"] {
                                                                     {{ address.first_name | capitalize }} {{address.last_name | capitalize }}
                                                                     {% if address == customer.default_address %}
                                                                       <span {% if settings.enable_multilang %}data-translate="customer.addresses.default"{% endif %}>
-                                                                      ({{ 'Default_Address' }})
+                                                                      ({{ 'Default Address' }})
                                                                       </span>
                                                                     {% endif %}
                                                                     </h5>
