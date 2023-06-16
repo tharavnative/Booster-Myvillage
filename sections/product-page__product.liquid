@@ -558,10 +558,7 @@ Rendering according to the view (default, marketplace)
 <form method="post" action="/cart/add" id="product_form_8060051620078" accept-charset="UTF-8" class="shopify-product-form" enctype="multipart/form-data"><input type="hidden" name="form_type" value="product"><input type="hidden" name="utf8" value="✓">
     <input name="id" type="hidden" value="44149578629358">
 
-  <button data-buy-button="" data-original-text="&#10003;" id="serviceadd" class="button button--addToCart button--primary 
-
-button--filled button--primary__filled
- " type="button" onclick="serviceCheckbox();">
+  <button data-buy-button="" data-original-text="&#10003;" id="serviceadd" class="button button--addToCart service-button" type="button" onclick="serviceCheckbox();">
 
 <span data-button-text="">&nbsp;</span> 
 </button>
@@ -584,6 +581,7 @@ button--filled button--primary__filled
          else{
            console.log('not clicked');
            BoosterTheme.cart.removeFromCart(this, '44149578629358');
+           cartPage.removeItem(this, '44149578629358:7f5713af558fd410b90fb9029b24ee5d');
          }
       }
 
