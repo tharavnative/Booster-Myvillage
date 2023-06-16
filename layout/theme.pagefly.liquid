@@ -126,7 +126,7 @@ pintrk('page');
  			{% if customer %}
                
         		{% for tag in customer.tags %}
-           		 {% if tag == 'mvg-membership' or tag == 'Restricted Users'%}
+           		 {% if tag == 'mvg-membership' or tag == 'Restricted Users' or tag == 'mvg-platinum'  or tag == 'mvg-membership-gold'%}
                		 {% assign bold_member = true %}
                		 {% break %}
             	 {% endif %}
