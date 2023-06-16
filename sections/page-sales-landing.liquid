@@ -56,7 +56,7 @@
                                             This form must use 'customer_login'
                                             {% endcomment %}
                                             {% form 'customer_login' %}
-                                            <input type="hidden" name="checkout_url" value="/pages/signup-landing">
+                                            <input type="hidden" name="return_to" value="/pages/signup-landing">
                                             <header class="page-header">
                                                 <h1 {% if settings.enable_multilang %}
                                                     data-translate="customer.login.title" {% endif %}>
@@ -214,7 +214,7 @@
                                             This form must use 'create_customer'
                                             {% endcomment %}
                                             {% form 'create_customer' %}
-                                            <input type="hidden" name="checkout_url" value="/pages/signup-landing">
+                                            <input type="hidden" name="return_to" value="/pages/signup-landing">
                                             {% include 'form-errors-custom' %}
                                             <div id="first_name">
                                                 <label for="first_name"><span {% if settings.enable_multilang %}
@@ -348,7 +348,7 @@
                                             This form must use 'customer_login'
                                             {% endcomment %}
                                             {% form 'customer_login' %}
-                                            <input type="hidden" name="checkout_url" value="/pages/signup-landing">
+                                            <input type="hidden" name="return_to" value="/pages/signup-landing">
                                             <header class="page-header">
                                                 <h1 {% if settings.enable_multilang %}
                                                     data-translate="customer.login.title" {% endif %}>
@@ -506,7 +506,7 @@
                                             This form must use 'create_customer'
                                             {% endcomment %}
                                             {% form 'create_customer' %}
-                                            <input type="hidden" name="checkout_url" value="/pages/signup-landing">
+                                            <input type="hidden" name="return_to" value="/pages/signup-landing">
                                             {% include 'form-errors-custom' %}
                                             <div id="first_name">
                                                 <label for="first_name"><span {% if settings.enable_multilang %}
@@ -640,7 +640,7 @@
                                             This form must use 'customer_login'
                                             {% endcomment %}
                                             {% form 'customer_login' %}
-                                            <input type="hidden" name="checkout_url" value="/pages/signup-landing">
+                                            <input type="hidden" name="return_to" value="/pages/signup-landing">
                                             <header class="page-header">
                                                 <h1 {% if settings.enable_multilang %}
                                                     data-translate="customer.login.title" {% endif %}>
@@ -798,7 +798,7 @@
                                             This form must use 'create_customer'
                                             {% endcomment %}
                                             {% form 'create_customer' %}
-                                            <input type="hidden" name="checkout_url" value="/pages/signup-landing">
+                                            <input type="hidden" name="return_to" value="/pages/signup-landing">
                                             {% include 'form-errors-custom' %}
                                             <div id="first_name">
                                                 <label for="first_name"><span {% if settings.enable_multilang %}
@@ -1082,8 +1082,7 @@
                 </ul>
                 <h3>First 100 members receive a FREE 30-minute introductory consultation!</h3>
                 <div class="button-align">
-                    <a href="javascript:void(0)" class="member_btn sale-button" data-toggle="modal"
-                        data-target="#membership_popup">Start your 30-day FREE trial!</a>
+                    <a href="javascript:void(0)" class="member_btn sale-button go-to-membership">Get your membership now !</a>
                 </div>
             </div>
         </div>
@@ -1177,7 +1176,7 @@
 
         <div class="row">
             <div class="health_btm">
-                <div class="health_box_plan">
+                <div id="health_box_plan" class="health_box_plan">
 
                     <div class="health_plan health_plan_new annually">
                         <img
@@ -1204,13 +1203,13 @@
                   	<span>50% off</span>
                   </div>
                 -->
-                        <div class="buy_bow" style="display:none;">
-                            <a href="javascript:void(0)" class="buy_btn" data-toggle="modal"
+                        <div class="buy_bow">
+                            <a href="javascript:void(0)" class="buy_btn gold_buy_btn" data-toggle="modal"
                                 data-target="#membership_popup_gold">Join Now</a>
                         </div>
 
                     </div>
-                    <div class="health_plan health_plan_new monthly">
+                    <div class="health_plan health_plan_new monthly ">
                         <img src="https://cdn.shopify.com/s/files/1/0319/0960/9603/files/platinum.png?v=1686568562">
                         <div class="health_cont">
                             <h2>Membership benefits include:</h2>
@@ -1240,8 +1239,8 @@
                   	<span>33% off</span>
                   </div>
                 -->
-                        <div class="buy_bow" style="display:none;">
-                            <a href="javascript:void(0)" class="buy_btn" data-toggle="modal"
+                        <div class="buy_bow">
+                            <a href="javascript:void(0)" class="buy_btn platinum_buy_btn" data-toggle="modal"
                                 data-target="#membership_popup_platinum">Join Now</a>
                         </div>
 
@@ -1625,11 +1624,7 @@ setTimeout(changeBackground, 4000);
         margin-right: auto;
         margin-left: auto;
     }
-  @media (max-width: 767px){
-.row {
-   display:block;
-}
-}
 </style>
 {{ 'bootstrap.min.css' | asset_url | stylesheet_tag }}
 {{ 'custom-membership.css' | asset_url | stylesheet_tag }}
+
