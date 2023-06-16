@@ -3,6 +3,19 @@
 {{ 'bootstrap.min.css' | asset_url | stylesheet_tag }}
 {{ 'custom-membership.css' | asset_url | stylesheet_tag }}
 <style>
+#tablelabel{
+display:inline-block;
+}
+.member_details {
+    display: flex;
+  text-align: left;
+}
+.member_details h3 {
+
+    margin-top: 0;
+   
+}
+
 .col-sm-min, .col-sm, .col-sm-1, .col-sm-2, .col-sm-3, .col-sm-4, .col-sm-5, .col-sm-6, .col-sm-7, .col-sm-8, .col-sm-9, .col-sm-10, .col-sm-11, .col-sm-12, .col-sm-offset-0, .col-sm-offset-1, .col-sm-offset-2, .col-sm-offset-3, .col-sm-offset-4, .col-sm-offset-5, .col-sm-offset-6, .col-sm-offset-7, .col-sm-offset-8, .col-sm-offset-9, .col-sm-offset-10, .col-sm-offset-11, .col-sm-offset-12 {
     display: block;
     -webkit-box-flex: 0;
@@ -30,16 +43,6 @@ input[type="checkbox"], input[type="radio"] {
     box-sizing: border-box;
     padding: 6px;
     margin: 4px 4px 0;
-}
-    @media (max-width: 767px){
-.container-bootstrap .row {
-   display:block;
-}
-
-.my-plan-tab-button {
-    margin-left: 0;
-}
-
 }
 .grid-arrange textarea,select, input{ -webkit-appearance: none;-webkit-border-radius:0px;-webkit-appearance: none;}
 .grid-arrange textarea,
@@ -169,7 +172,23 @@ input[type="checkbox"], input[type="radio"] {
                                                 {% else %}
                                                     <img src="https://cdn.shopify.com/s/files/1/0317/4635/9433/files/prfl.svg?v=1622117575">
                                                 {% endif %}
-                                                <h3>{{ customer.first_name }} {{ customer.last_name }}</h3>
+                                                <h3>{{ customer.first_name }} {{ customer.last_name }}<br>
+                                          {% for tag in customer.tags %}
+                                                 		 {% if  tag == 'mvg-platinum' %}
+                                                           <span class="member-type-custom">Platinum Member</span>
+                                                           {% break %}
+                                                         {% elsif tag == 'mvg-membership-gold'%}
+                                                           <span class="member-type-custom">Gold member</span>
+                                                           {% break %}
+                                                         {% elsif tag == 'mvg-membership'%}
+                                                           <span class="member-type-custom">MVG Member</span>
+                                                           {% break %}
+                                                     		{% else %}
+                                                           <span class="member-type-custom">Restricted Member</span>
+                                                   		 {% break %}
+                                                	 {% endif %}
+                                         {% endfor %}
+                                              </h3>
                                             {% endif %}
                                         </div>  
                                     </a>
@@ -199,7 +218,7 @@ input[type="checkbox"], input[type="radio"] {
                                                           <input type="submit" value="Update"/> 
                                                         </form>
                                                         <h5>Membership: <span>Monthly</span></h5>
-                                                        <span class="note"><a href="/apps/memberships/accountDetails/?id={{customer.id}}&h={{bold_memberships_hash}}">Manage Memberships</a></span>
+                                                       
                                                     </div> 
                                                     <a href="javascript:void(0)" class="order_btn" data-toggle="modal" data-target="#order_history">Order History</a> 
                                                     <!-- Modal -->
@@ -362,7 +381,7 @@ input[type="checkbox"], input[type="radio"] {
                                                                     {{ address.first_name | capitalize }} {{address.last_name | capitalize }}
                                                                     {% if address == customer.default_address %}
                                                                       <span {% if settings.enable_multilang %}data-translate="customer.addresses.default"{% endif %}>
-                                                                      ({{ 'Address default' }})
+                                                                      ({{ 'customer.addresses.default' | t }})
                                                                       </span>
                                                                     {% endif %}
                                                                     </h5>
@@ -377,8 +396,8 @@ input[type="checkbox"], input[type="radio"] {
                                                                       {{ address.phone }}
                                                                     </p>
                                                                     <p class="button">
-                                                                      {{ 'Edit Address'  | edit_customer_address_link: address.id }}
-                                                                      {{ 'Delete Address'  | delete_customer_address_link: address.id }}
+                                                                      {{ 'customer.addresses.edit'  | edit_customer_address_link: address.id }}
+                                                                      {{ 'customer.addresses.delete'  | delete_customer_address_link: address.id }}
                                                                     </p>
                                                                    </div>
                                                                    <div id="edit_addrs_outer"> 
@@ -559,7 +578,22 @@ input[type="checkbox"], input[type="radio"] {
                                                                 <button type="button" class="close" data-dismiss="modal">&times;</button> 
                                                             </div>
                                                             <div class="modal-body guidance_cont">
-                                                                {{ section.settings.box4_layout_popup }}  
+                                                              {% assign platinum_member = false %}
+                                                             {% for tag in customer.tags %}
+                                                           		 {% if tag == 'mvg-platinum'%}
+                                                                        
+                                                                   {% assign platinum_member = true %}
+                                                                    {% break %}
+                                                            	 {% endif %}
+                                                             {% endfor %}
+                                                              {% if platinum_member %}
+                                                                {{ section.settings.box4_layout_popup }} 
+                                                              {% else %}
+                                                                <h3>Nutritionist Guidance &amp; Support</h3> 
+<p>Working with a nutritionist can give you greater insights into your health, nutrition, and lifestyle habits. It can also help you understand your lab work in ways that can best support you in reaching your health goals and addressing specific health concerns. As a Humanized+ member, you will receive special pricing on all nutrition consultation services. </p> 
+
+                                                                <div class="membership-message">To access this feature, please <a class="platinum-popup-link">upgrade to a Platinum mebrship</a></div>
+                                                                {% endif %}
                                                             </div> 
                                                         </div>
                                                     </div>
@@ -663,9 +697,8 @@ input[type="checkbox"], input[type="radio"] {
                                                         <div class="lab_results_new">
                                                               <h3>Labs</h3>
                                                               <hr>
-                                                              <p>Your test results allow IQYOU to provide very specific and accurate health feedback and
-                                                              recommendations. You can send test results from your doctor to be input to your profile to <a href="mailto:results@DHALab.com">results@DHALab.com</a>, or you can order home lab tests.
-                                                              We recommend lab panels for you based on your answers to <a href="/profile/my_health">health questions.</a></p>
+                                                              <p>Your test results allow us to provide very specific and accurate health feedback and recommendations. You can upload your own test results from your doctor by sending your results to  <a href="mailto:results@DHALab.com">results@DHALab.com.</a>
+                                                              
                                                           <div id="pretable">
                                                           	<h3>My Labs</h3>
                                                             <div id="typetoggle">
@@ -674,7 +707,7 @@ input[type="checkbox"], input[type="radio"] {
                                                                          <div id="keyfindings" class="keyfindings bluecirclefilled active">Key Findings</div>
                                                           				<div style="clear:both;"></div>
                                                           	</div>
-                                                              <div id="tablelabel" class="hasvalue">Results from any lab tests ordered through IQYOU will also appear here. Or, to upload your own lab results, send them to
+                                                              <div id="tablelabel" class="hasvalue">Your results from any lab tests ordered through Humanized+ will also appear here. Or, to upload your own lab results, send them to
                                                                     <a href="mailto:results@DHALab.com">results@DHALab.com</a>.
                                                               </div>
                                                               <div class="labrow active header" id="lab_orders_header">
@@ -704,8 +737,7 @@ input[type="checkbox"], input[type="radio"] {
                                                         </div>
                                                         <div class="recommended-labs-laravel">
                                                             <div class="recommended-labs-h3-laravel"><h3>Recommended Labs</h3></div>
-                                                            <div class="recommended-labs-desc-laravel"><p>We've recommended these labs for you. You can choose to enter values you have been provided or you can 
-order the home lab kit right here.</p></div>
+                                                            <div class="recommended-labs-desc-laravel"><p>We've recommended these labs for you. </p></div>
                                                               <div class="labrow active header" id="row-229">
                                                             	<div class="title">Labs &amp; Panels</div>
                                                             	<div class="summary">Choose lab or panel to order or enter results</div>
@@ -728,59 +760,67 @@ order the home lab kit right here.</p></div>
                                     <h2 class="top_subtitle">{{ section.settings.dashboard_sidebar_title }}</h2>
                                     <div class="sidebar_cont">
                                         <ul>
-                                            <li class="clearfix">
-                                                <a href="tel:240-335-7365">
-                                                    <div class="icon_img">
-                                                        <img src="{{ section.settings.call_icon | img_url: 'master' }}" /> 
-                                                    </div>
-                                                    <div class="icon_content">
-                                                        {{ section.settings.sidebar_call }}
-                                                    </div>
-                                                </a>
-                                            </li>
+                                          
+                                                     		<li class="clearfix">
+                                                                  <a href="tel:240-335-7365">
+                                                                      <div class="icon_img">
+                                                                          <img src="{{ section.settings.call_icon | img_url: 'master' }}" /> 
+                                                                      </div>
+                                                                      <div class="icon_content">
+                                                                          {{ section.settings.sidebar_call }}
+                                                                      </div>
+                                                                  </a>
+                                                              </li>
+                                                     		 
+                                           
+                                                       		 <li class="loading" id="schedule_popup_now">
+                                                                        <div class="clearfix">
+                                                                        <a href="javascript:void(0)" data-toggle="modal" data-target="#schedule_inner">
+                                                                        <div class="icon_img">
+                                                                            <img src="{{ section.settings.schedule_icon | img_url: 'master' }}" /> 
+                                                                        </div>
+                                                                        <div class="icon_content">
+                                                                            {{ section.settings.sidebar_schedule }}
+                                                                        </div>
+                                                                        </a>
+                                                                        
+                                                                        <div class="modal fade score_sec" id="schedule_inner" role="dialog" style="display: none;">
+                                                                            <div class="modal-dialog modal-lg">
+                                                                                <div class="modal-content">
+                                                                                    <div class="modal-header">
+                                                                                        <button type="button" class="close" data-dismiss="modal">&times;</button> 
+                                                                                    </div>
+                                                                                    <div class="modal-body guidance_cont">
+                                                                                        <h3>We'll Call You - Schedule A Quick 10 Minute Call</h3>
+                                                                                        <p>Schedule a time that is convenient for you, and a nutrition expert will call to answer your question.</p>
+                        <!--                                                                 <button id="schedule_btn_in">Schedule a call back now!</button> -->
+                                                               {% if platinum_member %}
+                                                                <div class="bta-product-button-widget-container" data-mode="button" data-id="60284" id="call_back_btn" >
+                        </div>
+                                                              {% else %} <div class="membership-message">To access this feature, please <a class="platinum-popup-link">upgrade to a Platinum mebrship</a></div>
+                                                                {% endif %}
+                                                                                    </div> 
+                                                                                </div>
+                                                                            </div>
+                                                                        </div>
+                                                                        <div class="modal fade score_sec" id="schedule_call_btn" role="dialog" style="display: none;">
+                                                                            <div class="modal-dialog modal-lg">
+                                                                                <div class="modal-content">
+                                                                                    <div class="modal-header">
+                                                                                        <button type="button" class="close" data-dismiss="modal">&times;</button> 
+                                                                                    </div>
+                                                                                    <div class="modal-body guidance_cont">
+                        
+                                                                                    </div> 
+                                                                                </div>
+                                                                            </div>
+                                                                        </div>
+                                                                      </div>
+                                                                        
+                                                                    </li> 
+                                                       		 
 
-                                            <li class="loading" id="schedule_popup_now">
-                                                <div class="clearfix">
-                                                <a href="javascript:void(0)" data-toggle="modal" data-target="#schedule_inner">
-                                                <div class="icon_img">
-                                                    <img src="{{ section.settings.schedule_icon | img_url: 'master' }}" /> 
-                                                </div>
-                                                <div class="icon_content">
-                                                    {{ section.settings.sidebar_schedule }}
-                                                </div>
-                                                </a>
-                                                
-                                                <div class="modal fade score_sec" id="schedule_inner" role="dialog" style="display: none;">
-                                                    <div class="modal-dialog modal-lg">
-                                                        <div class="modal-content">
-                                                            <div class="modal-header">
-                                                                <button type="button" class="close" data-dismiss="modal">&times;</button> 
-                                                            </div>
-                                                            <div class="modal-body guidance_cont">
-                                                                <h3>We'll Call You - Schedule A Quick 10 Minute Call</h3>
-                                                                <p>Schedule a time that is convenient for you, and a nutrition expert will call to answer your question.</p>
-<!--                                                                 <button id="schedule_btn_in">Schedule a call back now!</button> -->
-  <div class="bta-product-button-widget-container" data-mode="button" data-id="60284" id="call_back_btn" >
-</div>
-                                                            </div> 
-                                                        </div>
-                                                    </div>
-                                                </div>
-                                                <div class="modal fade score_sec" id="schedule_call_btn" role="dialog" style="display: none;">
-                                                    <div class="modal-dialog modal-lg">
-                                                        <div class="modal-content">
-                                                            <div class="modal-header">
-                                                                <button type="button" class="close" data-dismiss="modal">&times;</button> 
-                                                            </div>
-                                                            <div class="modal-body guidance_cont">
-
-                                                            </div> 
-                                                        </div>
-                                                    </div>
-                                                </div>
-                                              </div>
-                                                
-                                            </li> 
+                                            
                                             
                                             <li class="clearfix">
                                                 <a href="javascript:void(0)" data-toggle="modal" data-target="#ask_expert">
@@ -839,7 +879,12 @@ order the home lab kit right here.</p></div>
                                                                 <button type="button" class="close" data-dismiss="modal">&times;</button> 
                                                             </div>
                                                             <div class="modal-body guidance_cont"> 
-                                                                {{ section.settings.consultation_content }} 
+                                                                <h3>Nutritionist Guidance &amp; Support</h3> 
+<p>Working with a nutritionist can give you greater insights into your health, nutrition, and lifestyle habits. It can also help you understand your lab work in ways that can best support you in reaching your health goals and addressing specific health concerns. As a Humanized+ member, you will receive special pricing on all nutrition consultation services. </p> 
+                                                              {% if platinum_member %}
+                                                                <a href="/pages/member-consultations" class="book_now">Book a consultation now!</a>
+                                                              {% else %} <div class="membership-message">To access this feature, please <a class="platinum-popup-link">upgrade to a Platinum mebrship</a></div>
+                                                                {% endif %}
                                                             </div> 
                                                         </div>
                                                     </div>
