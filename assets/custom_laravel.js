@@ -3116,9 +3116,14 @@ jQuery(function ($) {
           console.log("Product Name -------------------->>>>>>>>>>>>>>>>>>>>>>>>>>>",recom.product_name);
           console.log("Buy url -------------------->>>>>>>>>>>>>>>>>>>>>>>>>>>",recom.url);
           if(recom.recommendation_id != null && recom.recommendation_id !== 'null' && recom.recommendation_id !== '' && recom.recommendation_id !== '0' && recom.recommendation_id !== 0){
-
-            var old_href = $('a[rel="' + recom.recommendation_id + '"]').attr('href');
-            var buy_button_display = '<div class="laravel-nutritional-supplementation-buy-button"><div class="laravel-nutritional-supplementation-product-name"></div><div class="laravel-my-plan-buy"><div class="laravel-my-plan-buy"><a href="' + old_href + '"><button class="laravel-my-plan-buy-button">Shop Now</button></a></div></div></div>';
+              if(recom.url !== '' && && recom.url !== 'null' && && recom.url !== null){
+                
+                var buy_button_display = '<div class="laravel-nutritional-supplementation-buy-button"><div class="laravel-nutritional-supplementation-product-name"></div><div class="laravel-my-plan-buy"><div class="laravel-my-plan-buy"><a href="' + recom.url + '"><button class="laravel-my-plan-buy-button">Shop Now</button></a></div></div></div>';
+              }else{
+                var old_href = $('a[rel="' + recom.recommendation_id + '"]').attr('href');
+                var buy_button_display = '<div class="laravel-nutritional-supplementation-buy-button"><div class="laravel-nutritional-supplementation-product-name"></div><div class="laravel-my-plan-buy"><div class="laravel-my-plan-buy"><a href="' + old_href + '"><button class="laravel-my-plan-buy-button">Shop Now</button></a></div></div></div>';
+              }
+            
           }else{
             
             var buy_button_display = '<div class="laravel-nutritional-supplementation-buy-button"><div class="laravel-nutritional-supplementation-product-name"></div><div class="laravel-my-plan-buy"><div class="laravel-my-plan-buy"></div></div></div>';
