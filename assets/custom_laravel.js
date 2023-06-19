@@ -3267,6 +3267,7 @@ jQuery(function ($) {
       data.is_selected_my_plan = false;   
       data.rec_name = rec_name;
       data.rec_url = rec_url;
+    console.log(data);
       sendRequest('post', 'https://api.iqyouhealth.com/api/v1/my-plan', data, getMyPlan);
         
   }
