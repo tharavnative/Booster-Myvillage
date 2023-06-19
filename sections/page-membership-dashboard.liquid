@@ -92,13 +92,13 @@ input[type="checkbox"], input[type="radio"] {
                     <div class="dashboard_inner">
                         <div id='kca-embed'></div>
 
-                        <div class="row"> 
+                        <div class="row center"> 
                             <div class="col-lg-3"> 
                                 <div class="member_name_left"> 
                                     <img src="{{ section.settings.member_img | img_url: 'master' }}" />  
                                 </div> 
                             </div> 
-                            <div class="col-lg-5"> 
+                            <div class="col-lg-6"> 
                                 <div class="member_clickhere_sec">
                                     {% if section.settings.health_score_btn != blank %}
                                         <a href="javascript:void(0)" class="unlock_click" data-toggle="modal" data-target="#health_score">
@@ -160,7 +160,7 @@ input[type="checkbox"], input[type="radio"] {
                                    {% endif %}
                                 </div> 
                             </div>
-                            <div class="col-lg-4"> 
+                            <div class="col-lg-3"> 
                                 <div class="member_account_right">
                                     <a href="javascript:void(0)" class="unlock_click" data-toggle="modal" data-target="#myaccount"> 
                                         <div class="member_details">
@@ -537,7 +537,7 @@ input[type="checkbox"], input[type="radio"] {
                         </div>
                     </div>
                     <div class="member_main"> 
-                        <div class="row center">
+                        <div class="row">
                             <div class="col-lg-8">
                                 <div class="membership_left">
                                     <div class="dashboard_left_top">
