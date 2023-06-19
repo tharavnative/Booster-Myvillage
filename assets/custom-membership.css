@@ -1499,7 +1499,7 @@ a.complete_qtns:hover { background: #979500; text-decoration: none; }
 .profile_sec h5 { margin-bottom: 10px; }
 .profile_sec a.manag { text-decoration: none; color: #00577F; } 
 .order_btn { border: 1px solid #f2f2f2; color: #00577F;  text-transform: uppercase; font-size: 23px; line-height: 33px; padding: 8px 52px; display: block;  width: 51%; margin: 0 auto; margin-top: 20px; text-align: center;} 
-.order_btn:hover { text-decoration: none; background: #00577F; color: #fff;}
+.order_btn:hover { text-decoration: none; background: #00577F; color: #fff!important;}
 .adrs_sec { width: auto; margin-top: 40px; }
 .addrs_title { border-bottom: 1px solid #f1f1f1; padding-bottom: 8px; margin-bottom: 25px; }
 .addrs_add, .addrs_remv { float: right; }
