@@ -4085,6 +4085,11 @@ body#sales-landing-page #shopify-section-navigation,body#sales-landing-private #
 
 }
 
+@media (max-width: 768px) {
+.container-bootstrap .row{
+  display:block;
+}
+}
 @media (min-width: 768px) and (max-width: 991px) {
 
     .my-plan-button-div { right: unset; }
