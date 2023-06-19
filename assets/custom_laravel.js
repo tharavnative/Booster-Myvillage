@@ -3266,7 +3266,7 @@ jQuery(function ($) {
       data.id = rec_id;	                                  
       data.is_selected_my_plan = false;   
       data.rec_name = rec_name;
-      data.rec_url = rec_url;
+      data.custom_url = rec_url;
     console.log(data);
       sendRequest('post', 'https://api.iqyouhealth.com/api/v1/my-plan', data, getMyPlan);
         
@@ -3327,7 +3327,7 @@ jQuery(function ($) {
           data.intake_time = intake_time;  
           data.intake_type = intake_type; 
           data.rec_name = rec_name;
-          data.rec_url = rec_url;
+          data.custom_url = rec_url;
           sendRequest('post', 'https://api.iqyouhealth.com/api/v1/my-plan', data, getMyPlan);
   }
   function sendRequest(method, url, content, callback) {
