@@ -57,7 +57,7 @@ observer.observe(targetNode, observerConfig);
 console.log('Mutation Else 60284--');
  
   }
-*/
+
 var observer2 = new MutationObserver(function (mutations) {
             mutations.forEach(function (mutation) {
 
@@ -120,6 +120,7 @@ jQuery( window ).load(function() {
 });
 
 
+*/
 
 //   setTimeout(function () {  
 // console.log('Running');
