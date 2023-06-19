@@ -3114,7 +3114,7 @@ jQuery(function ($) {
         }else{
           
           if(recom.recommendation_id != null && recom.recommendation_id !== 'null' && recom.recommendation_id !== '' && recom.recommendation_id !== '0' && recom.recommendation_id !== 0){
-
+console.log('a[rel="' + recom.recommendation_id + '"]');
             var old_href = $('a[rel="' + recom.recommendation_id + '"]').attr('href');
             var buy_button_display = '<div class="laravel-nutritional-supplementation-buy-button"><div class="laravel-nutritional-supplementation-product-name"></div><div class="laravel-my-plan-buy"><div class="laravel-my-plan-buy"><a href="' + old_href + '"><button class="laravel-my-plan-buy-button">Shop Now</button></a></div></div></div>';
           }else{
