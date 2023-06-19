@@ -229,7 +229,34 @@ input[type="checkbox"], input[type="radio"] {
                                                           <input type="file" name="metafield[accentuate.profile_image]" accept="image/png, image/jpeg" id="profile_image_upload" onchange="loadFile(event)"/>  
                                                           <input type="submit" value="Update"/> 
                                                         </form>
-                                                        <h5>Membership: <span>Monthly</span></h5>
+                                                          {% assign platinum_member = false %}
+                                                             {% for tag in customer.tags %}
+                                                           		 {% if tag == 'mvg-platinum'%}
+                                                                        
+                                                                   {% assign platinum_member = true %}
+                                                                    {% break %}
+                                                            	 {% endif %}
+                                                             {% endfor %}
+                                                              {% if platinum_member %}
+                                                                  <h5>Membership: <span class="member-type-custom">Platinum Member</span></h5>
+                                                              {% else %}
+                                                                  
+                                                                      {% for tag in customer.tags %}
+                                                                             		 
+                                                                                     
+                                                                                     {% if tag == 'mvg-membership-gold'%}
+                                                                                       <h5>Membership: <span class="member-type-custom">Gold member</span></h5>
+                                                                                       {% break %}
+                                                                                     {% elsif tag == 'mvg-membership'%}
+                                                                                       <h5>Membership: <span class="member-type-custom">MVG Member</span>></h5>
+                                                                                       {% break %}
+                                                                                 		{% else %}
+                                                                                       <h5>Membership: <span class="member-type-custom">Restricted Member</span></h5>
+                                                                               		 {% break %}
+                                                                            	 {% endif %}
+                                                                     {% endfor %}
+                                                                {% endif %}
+                                                         <span class="note"><a href="/apps/memberships/accountDetails/?id={{customer.id}}&h={{bold_memberships_hash}}">Manage Memberships</a></span>
                                                        
                                                     </div> 
                                                     <a href="javascript:void(0)" class="order_btn" data-toggle="modal" data-target="#order_history">Order History</a> 
