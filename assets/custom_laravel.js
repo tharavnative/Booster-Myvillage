@@ -2923,7 +2923,7 @@ jQuery(function ($) {
         }else{
           intake_type_radio = intake_type_radio + '<label><input type="checkbox" class="laravel-intake-type-class" id="laravel-without_food" name="laravel-intake-type-' + recom.id + '[]" value="without_food" dataid="' + recom.id + '">Without Food</label>';
         }
-        console.log("Buy url !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!",recom.url);
+        
         var my_plan_buy_button = '<div class="laravel-my-plan-buy"><a href="' + recom.url + '"><button class="laravel-my-plan-buy-button">Buy Now</button></a></div>';
         var intake_dosage_html = '<div class="laravel-dosage-items">';
         var intake_am_dosage_html = '';
@@ -3113,7 +3113,7 @@ jQuery(function ($) {
         if(recom.url !== '' && recom.product_name !== '' && recom.url !== 'null' && recom.product_name !== 'null' && recom.url !== null && recom.product_name !== null){
           var buy_button_display = '<div class="laravel-nutritional-supplementation-buy-button"><div class="laravel-nutritional-supplementation-product-name"><a href="' + recom.url + '">' + product_name + '</a></div>' + my_plan_buy_button + '</div>';
         }else{
-          
+          console.log("Buy url -------------------->>>>>>>>>>>>>>>>>>>>>>>>>>>",recom.url);
           if(recom.recommendation_id != null && recom.recommendation_id !== 'null' && recom.recommendation_id !== '' && recom.recommendation_id !== '0' && recom.recommendation_id !== 0){
 
             var old_href = $('a[rel="' + recom.recommendation_id + '"]').attr('href');
