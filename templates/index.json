@@ -641,6 +641,7 @@
     },
     "ae474166-b4b4-4acd-a4a1-071d52042f17": {
       "type": "section__content",
+      "disabled": true,
       "blocks": {
         "f3e5fa6c-f4fa-4158-a10f-011850a7ff9c": {
           "type": "title",
