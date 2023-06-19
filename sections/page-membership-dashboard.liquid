@@ -173,21 +173,33 @@ input[type="checkbox"], input[type="radio"] {
                                                     <img src="https://cdn.shopify.com/s/files/1/0317/4635/9433/files/prfl.svg?v=1622117575">
                                                 {% endif %}
                                                 <h3>{{ customer.first_name }} {{ customer.last_name }}<br>
-                                          {% for tag in customer.tags %}
-                                                 		 {% if  tag == 'mvg-platinum' %}
-                                                           <span class="member-type-custom">Platinum Member</span>
-                                                           {% break %}
-                                                         {% elsif tag == 'mvg-membership-gold'%}
-                                                           <span class="member-type-custom">Gold member</span>
-                                                           {% break %}
-                                                         {% elsif tag == 'mvg-membership'%}
-                                                           <span class="member-type-custom">MVG Member</span>
-                                                           {% break %}
-                                                     		{% else %}
-                                                           <span class="member-type-custom">Restricted Member</span>
-                                                   		 {% break %}
-                                                	 {% endif %}
-                                         {% endfor %}
+                                                    {% assign platinum_member = false %}
+                                                             {% for tag in customer.tags %}
+                                                           		 {% if tag == 'mvg-platinum'%}
+                                                                        
+                                                                   {% assign platinum_member = true %}
+                                                                    {% break %}
+                                                            	 {% endif %}
+                                                             {% endfor %}
+                                                              {% if platinum_member %}
+                                                                  <span class="member-type-custom">Platinum Member</span>
+                                                              {% else %}
+                                                                  
+                                                                      {% for tag in customer.tags %}
+                                                                             		 
+                                                                                     
+                                                                                     {% if tag == 'mvg-membership-gold'%}
+                                                                                       <span class="member-type-custom">Gold member</span>
+                                                                                       {% break %}
+                                                                                     {% elsif tag == 'mvg-membership'%}
+                                                                                       <span class="member-type-custom">MVG Member</span>
+                                                                                       {% break %}
+                                                                                 		{% else %}
+                                                                                       <span class="member-type-custom">Restricted Member</span>
+                                                                               		 {% break %}
+                                                                            	 {% endif %}
+                                                                     {% endfor %}
+                                                                {% endif %}
                                               </h3>
                                             {% endif %}
                                         </div>  
