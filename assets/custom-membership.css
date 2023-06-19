@@ -4089,6 +4089,12 @@ body#sales-landing-page #shopify-section-navigation,body#sales-landing-private #
 .container-bootstrap .row{
   display:block;
 }
+ .laravel-recommendation-head button{
+    margin-top:0;
+  }
+  .my-plan-tab-button {
+     margin-left: 0px; 
+}
 }
 @media (min-width: 768px) and (max-width: 991px) {
 
