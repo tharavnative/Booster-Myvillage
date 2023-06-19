@@ -1,7 +1,7 @@
 jQuery.noConflict();
 jQuery(function ($) {
     $("#schedule_popup_now").removeClass('loading');
-
+/*
   MutationObserver = window.MutationObserver || window.WebKitMutationObserver;
         var observer = new MutationObserver(function (mutations) {
             mutations.forEach(function (mutation) {
@@ -57,7 +57,7 @@ observer.observe(targetNode, observerConfig);
 console.log('Mutation Else 60284--');
  
   }
-
+*/
 var observer2 = new MutationObserver(function (mutations) {
             mutations.forEach(function (mutation) {
 
