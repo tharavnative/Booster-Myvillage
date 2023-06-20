@@ -1382,7 +1382,7 @@ h1#mvg-membership_name { display: none; }
 .member_clickhere_sec a.unlock_click {  background: url(https://cdn.shopify.com/s/files/1/0317/4635/9433/files/unlock_icon_f86404b3-5c01-4018-b61a-90fcfa5986db.png?v=1618640664) no-repeat 50px 10px; background-color: #f6f6f6;padding: 10px 7px; display: inline-block; font-size: 12px; line-height: 13px; color: #434343; font-weight: 500; text-transform: inherit; margin: 0 4px; width: 130px; text-align: center; padding-top: 35px;}
 .member_clickhere_sec a.unlock_click span { font-size: 14px; line-height: 24px; font-weight: 800; color: #00577F; text-transform: uppercase; display: block;}
 .member_clickhere_sec a.unlock_click:hover { text-decoration: none; background-color: #ccc; }
-.member_details { display: block; vertical-align: middle; text-align: right; padding-top: 16px; padding-right: 40px; float: right;}
+.member_details { display: block; vertical-align: middle; text-align: right; padding-top: 16px; padding-right: 0px; float: right;}
 .member_lap_report_sec a.unlock_click { display: inline-block; height: 72px; color: #fff; padding: 25px 60px 20px 20px; font-size: 20px; line-height: 24px; background: url(https://cdn.shopify.com/s/files/1/0317/4635/9433/files/right_arrow.png?v=1621506822) no-repeat 96% 23px; font-weight: 500;text-align: center;  border-radius: 4px; background-color: #005880; width: 100%; text-transform: uppercase;}
 .member_lap_report_sec a.unlock_click:hover { text-decoration: none; background-color: #2e7596; }
 .member_lap_report_sec { padding-top: 30px; float: none;}
