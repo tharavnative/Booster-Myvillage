@@ -3977,7 +3977,10 @@ body#sales-landing-page #shopify-section-navigation,body#sales-landing-private #
 
 }
 @media (min-width: 992px) and (max-width: 1199px) {
-
+h2.top_subtitle {
+    font-size: 19px;
+    line-height: 24px;
+}
     .my-plan-button-div {  right: unset; }
     .box_layout ul { grid-template-columns: 1fr 1fr; grid-gap: 10px; }
     .no-access { width: 90%; }
