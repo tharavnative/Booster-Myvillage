@@ -256,9 +256,36 @@ input[type="checkbox"], input[type="radio"] {
                                                                             	 {% endif %}
                                                                      {% endfor %}
                                                                 {% endif %}
-                                                         <span class="note"><a href="/apps/memberships/accountDetails/?id={{customer.id}}&h={{bold_memberships_hash}}">Manage Memberships</a></span>
-                                                       
-                                                    </div> 
+  
+
+  
+                                                         <span class="note">
+                                                           <a href="javascript:void(0)"  data-toggle="modal" data-target="#manage_member">Manage Memberships</a> 
+{% comment %}
+<a href="/apps/memberships/accountDetails/?id={{customer.id}}&h={{bold_memberships_hash}}">Manage Memberships</a>
+  {% endcomment %}                                     
+  </span>
+                                                    </div>
+                                                  <!-- Modal -->
+                                                    <div class="modal fade score_sec" id="manage_member" role="dialog">
+                                                        <div class="modal-dialog modal-lg">
+                                                            <div class="modal-content clearfix">
+                                                                <div class="modal-header">
+                                                                    <button type="button" class="close" data-dismiss="modal">&times;</button> 
+                                                                </div>
+                                                                <div class="modal-body">
+                                                                    <div class="order_top clearfix">
+                                                                        <h3>My Account <span class="order_arrow"></span> <span>Order History</span></h3>
+                                                                        <h6><a href="javascript:void(0)" class="close" data-dismiss="modal" data-target="#order_history"><span class="back_order"></span> Back to My Account</a></h6>
+                                                                    </div>
+                                                                    <h2>ORDER HISTORY</h2>
+                                                                    <iframe src ="/apps/memberships/accountDetails/?id={{customer.id}}&h={{bold_memberships_hash}}"></iframe>
+                                                                </div> 
+                                                            </div>
+                                                        </div>
+                                                    </div>
+
+                                                  
                                                     <a href="javascript:void(0)" class="order_btn" data-toggle="modal" data-target="#order_history">Order History</a> 
                                                     <!-- Modal -->
                                                     <div class="modal fade score_sec" id="order_history" role="dialog">
