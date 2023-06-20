@@ -485,7 +485,7 @@ Rendering according to the view (default, marketplace)
             {{ 'bootstrap-datepicker.min.js'  | asset_url | script_tag }}
 
             <script>
-              $(document).ready( function() {
+              jQuery(document).ready( function($) {
                 $(function() {
                   $(".datepicker").datepicker( {
                     dateFormat: 'mm/dd/yyyy',
