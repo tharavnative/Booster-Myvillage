@@ -155,15 +155,15 @@ jQuery( window ).load(function() {
       
 
   
-    $(window).load(function ()  {
-          if($('#create_customer').find('.note.form-error').length){
-            console.log("Test Length");
-           $('#membership_popup').modal('show');
+  //   $(window).load(function ()  {
+  //         if($('#create_customer').find('.note.form-error').length){
+  //           console.log("Test Length");
+  //          $('#membership_popup').modal('show');
             
 
-          }
+  //         }
 
-  });
+  // });
   
     // $("#schedule_btn_in").click(function () {
 
