@@ -155,15 +155,24 @@ jQuery( window ).load(function() {
       
 
   
-  //   $(window).load(function ()  {
-  //         if($('#create_customer').find('.note.form-error').length){
-  //           console.log("Test Length");
-  //          $('#membership_popup').modal('show');
+    $(window).load(function ()  {
+
+      var length_check = $('#create_customer').find('.note.form-error');
+      if(typeof length_check  === "undefined"){
+        console.log('Mutation if 60284--');
+      }
+      else
+      {
+        if($('#create_customer').find('.note.form-error').length){
+            console.log("Test Length");
+           $('#membership_popup').modal('show');
             
 
-  //         }
+          }
+      }
+          
 
-  // });
+  });
   
     // $("#schedule_btn_in").click(function () {
 
