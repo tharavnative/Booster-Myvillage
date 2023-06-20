@@ -1515,7 +1515,8 @@ a.complete_qtns:hover { background: #979500; text-decoration: none; }
 .membr_adrs .button a { display: inline-block; padding: 11px 18px; border: 1px solid #f7f7f7; color: #00577F; font-size: 14px; line-height: 19px; font-weight: 400;}
 .membr_adrs .button a:hover { background: #00577F; color: #fff; }
 .member_name_left a:hover { text-decoration: none; }
-#myaccount .modal-dialog { width: 765px; }
+#myaccount .modal-dialog {     max-width: 1024px;
+    width: 100% }
 
 .order_top h3 { font-size: 30px; line-height: 38px; display: inline-block; margin-bottom: 0; float: left; border:none; padding-bottom: 0; margin-bottom: 0;}
 .order_arrow { background: url(https://cdn.shopify.com/s/files/1/0317/4635/9433/files/order_arrow.png?v=1618918857) no-repeat 0px 0px; display: inline-block; width: 10px; height: 16px; }
