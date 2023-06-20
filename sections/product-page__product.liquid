@@ -553,6 +553,49 @@ Rendering according to the view (default, marketplace)
             {% endif %} <br><br>
            <div class="product-form_item" style="flex-basis: 100%;" id="ods-bis"></div>
             {% endif %}
+
+
+  {% endif %}
+       
+
+    
+      {% if block.type == 'productPageTab' %}
+        {% if block.settings.showInline and firstTab %}
+          {% assign firstTab = false %}
+          {% assign tabs = section.blocks | where: 'type', 'productPageTab' %}
+          {% if tabs.size > 0 %}
+            <div class="col-12 {{section.settings.layout}} unflex tab__container tab__container--product no-gap">
+              <div class="tab__holder">
+                {% assign first = true %}
+                {% for tab in tabs %}
+                  {% if tab.settings.showInline %}
+                    <span class="tab--product {% if first %}tab--active{% endif -%}" onclick="BoosterTheme.ELEMENTS.toggleTab(this, 'tab--{{-tab.id}}')">{{tab.settings.heading}}</span>
+                    {% assign first = false %}
+                  {% endif %}
+                {% endfor %}
+              </div>
+              {% assign first = true %}
+              {% for tab in tabs %}
+                {% if tab.settings.showInline %}
+                  {% render 'get-block', block: tab, section: section, first: first, product: product %}
+                  {% assign first = false %}
+                {% endif %}
+              {% endfor %}
+            </div>
+          {% endif %}
+        {% else %}
+          {% continue %}
+        {% endif %}
+      {% endif %}
+      {% render 'get-block', block: block, product: product, form: form %}
+    {% else %}
+      {% render 'block__product-page--title', product: product, noMargin: true %}
+      {% render 'block__product-page--price', product: product %}
+      {% render 'block__product-page--swatch' with product as product %}
+      {% render 'block__product-page--atc', product: product, form: form %}
+    {% endfor %}
+  {% endform %}
+  {% comment %} END PRODUCT FORM {% endcomment %}
   
  {% if lab_test == true %}
   
@@ -612,47 +655,7 @@ button.service-button {
     </script>
     {% endif %}
 
-  {% endif %}
-       
-
     
-      {% if block.type == 'productPageTab' %}
-        {% if block.settings.showInline and firstTab %}
-          {% assign firstTab = false %}
-          {% assign tabs = section.blocks | where: 'type', 'productPageTab' %}
-          {% if tabs.size > 0 %}
-            <div class="col-12 {{section.settings.layout}} unflex tab__container tab__container--product no-gap">
-              <div class="tab__holder">
-                {% assign first = true %}
-                {% for tab in tabs %}
-                  {% if tab.settings.showInline %}
-                    <span class="tab--product {% if first %}tab--active{% endif -%}" onclick="BoosterTheme.ELEMENTS.toggleTab(this, 'tab--{{-tab.id}}')">{{tab.settings.heading}}</span>
-                    {% assign first = false %}
-                  {% endif %}
-                {% endfor %}
-              </div>
-              {% assign first = true %}
-              {% for tab in tabs %}
-                {% if tab.settings.showInline %}
-                  {% render 'get-block', block: tab, section: section, first: first, product: product %}
-                  {% assign first = false %}
-                {% endif %}
-              {% endfor %}
-            </div>
-          {% endif %}
-        {% else %}
-          {% continue %}
-        {% endif %}
-      {% endif %}
-      {% render 'get-block', block: block, product: product, form: form %}
-    {% else %}
-      {% render 'block__product-page--title', product: product, noMargin: true %}
-      {% render 'block__product-page--price', product: product %}
-      {% render 'block__product-page--swatch' with product as product %}
-      {% render 'block__product-page--atc', product: product, form: form %}
-    {% endfor %}
-  {% endform %}
-  {% comment %} END PRODUCT FORM {% endcomment %}
   </div>
 {% else %}
   <div class="col-12 {{size}} unflex product__page--info">
