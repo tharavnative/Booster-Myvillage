@@ -4110,7 +4110,6 @@ h2.top_subtitle {
     .menu-block div { color: #00577f !important; }
     .header-panel-top, .header-mobile { background: #73adc2 !important; }
     .header-mobile .customer-area a { color: #fff !important; }
-    .shopify-section h2 { font-size: 30px; line-height: 44px; }
     .right_banner_cont a.book_btn { padding: 3px 10px; font-size: 15px; width: 158px; }
     #shopify-section-1580884300310 .widget-new-product .products-grid .grid-item { width: 100%; }
     .featured_cat .grid-item h3 { font-size: 15px; }
@@ -4619,7 +4618,7 @@ h2.top_subtitle {
     .header-bottom .top-header { top: calc(-35px + 50%); }
     .home-slideshow .top_message { line-height: 18px; display: inline-block; height: inherit; padding: 5px; position: static;}
     .home-slideshow .slide-heading { line-height: 36px;  font-size: 24px !important; margin: 0; font-weight: 400;}
-    .shopify-section h2 { font-size: 25px; line-height: 35px;}
+    .shopify-section h2 { font-size: 18px; line-height: 25px;}
     .right_banner_cont a.ordr_btn { margin-left: 0; }
     .featured_cat .grid-item ul li { width: 50%; padding: 0 9px;  min-height: 190px; margin-bottom: 20px; }
     .featured_cat .grid-item h3 { font-size: 14px; }
