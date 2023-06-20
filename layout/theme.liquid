@@ -230,6 +230,10 @@ pintrk('page');
         {{settings.bodyJS}}
       </script>
     {% endunless %}
+{{ 'jquery.history.js' | asset_url | script_tag }}
+{{ 'jquery.repeater.js' | asset_url | script_tag }}        
+
+    
 {{ 'custom_api.js' | asset_url | script_tag }}
 {{ 'custom_iqyou.js' | asset_url | script_tag }}
 {{ 'custom_laravel.js' | asset_url | script_tag }}
@@ -320,7 +324,54 @@ pintrk('page');
 
 	});
 </script>
+<script>
+  jQuery(document).ready(function($) {
+    //jQuery('#mvg-membership_membership_container #mvg-membership_membership_button_free').remove();
+     
+    $repeater = jQuery('.repeater');
+    $repeater.repeater({
+      show: function () {
 
+        $(this).slideDown();
+        $('.datepicker').datepicker({
+          format: 'mm/dd/yyyy',
+          autoclose: !0
+        });
+      },
+      hide: function (remove) {
+        if(confirm('Are you sure you want to remove this item?')) {
+          jQuery(this).slideUp(remove);
+          check_filled();
+        }
+      },
+      isFirstItemUndeletable: true
+    });
+  /*  
+   var body = jQuery('body');
+    var doc = jQuery(document);
+    
+    var showLeftPush = $('#showLeftPush');
+    var nav = jQuery('#cbp-spmenu-s1');
+    
+    showLeftPush.on('click', function(e) {
+      e.stopPropagation();
+    
+      body.toggleClass('cbp-spmenu-push-toright');
+      nav.toggleClass('cbp-spmenu-open');
+      showLeftPush.toggleClass('active');
+    });
+    
+    jQuery('.gf-menu-device-wrapper .close-menu').on('click', function() {
+    	showLeftPush.trigger('click');
+    });
+    
+    doc.on('click', function(e) {
+      if (!jQuery(e.target).closest('#cbp-spmenu-s1').length && showLeftPush.hasClass('active')) {
+        showLeftPush.trigger('click');
+      }        
+    });*/
+  });
+</script>
 <script type="application/ld+json">
 {
   "@context": "https://schema.org",
