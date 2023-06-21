@@ -3917,10 +3917,16 @@ temp_data+='<div class="ordinal-value-outer"><input type="text" name="ordinal-va
       
   }
    
-    $('.recommended-labs-results-laravel-womens-panel').html(data);
+    if(data == ''){
+     $('.lap_table').find('.no-result').show();
+     $('.lab_results_new').hide();
+   }else{
+     $('.recommended-labs-results-laravel-womens-panel').html(data);
+      clickLabResults();
+   }
 
     
-    clickLabResults();
+    
 
   }
 
