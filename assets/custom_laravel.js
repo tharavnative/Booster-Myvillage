@@ -3560,7 +3560,13 @@ jQuery(function ($) {
 
   function lab_result_callback(status,arr,summery)
   {
-
+      if(arr == ''){
+          console.log("Empty lap results");
+          $('.lap_table').find('.no-result').show();
+          return;
+        }else{
+          $('.lab_results_new').show();
+        }
     // var arr = JSON.parse(arr);
     var data='';
     for (var key in arr['inputordinalvalues']){
