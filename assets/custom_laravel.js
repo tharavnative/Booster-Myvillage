@@ -3560,7 +3560,7 @@ jQuery(function ($) {
 
   function lab_result_callback(status,arr,summery)
   {
-      if(arr == ''){
+     if (!arr || typeof arr.inputordinalvalues === 'undefined') {
           console.log("Empty lap results");
           $('.lap_table').find('.no-result').show();
           return;
