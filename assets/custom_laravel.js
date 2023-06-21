@@ -4013,7 +4013,7 @@ temp_data+='<div class="ordinal-value-outer"><input type="text" name="ordinal-va
     }
 function dna_result()
     {
-      var url1= 'https://staging.api.iqyouhealth.com/api/v1/dna-results';
+      var url1= 'https://api.iqyouhealth.com/api/v1/dna-results';
       sendRequest('get', url1,'', dna_result_callback); 
     }
   $( document ).ready(function() {
