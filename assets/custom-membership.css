@@ -3716,12 +3716,22 @@ label.hide-m input {
 
 
 /***************************Lab DNA Reports ***************************/
+.lap_report_outer .values p {
+    color: #fff;
+}
 
-.values-style .result-item {
+.values-style > .result-item {
+    background-color: #00577f!important;
+    color: white;
+    padding: 5px 5px;
+}
+
+
+/* .values-style .result-item {
     background-color: #00577f!important;
     color: white;
     padding:5px 5px;
-}
+} */
 
 .values.values-style {
     display: grid;
@@ -3755,10 +3765,15 @@ label.hide-m input {
 .result-item .result-colour-outer {
     float: right;
 }
-
 .result-item .values {
-    float: right;
+   
+    display: grid;
+    width: 100%;
 }
+
+/* .result-item .values {
+    float: right;
+} */
 
 
 .result-colour-outer span{
@@ -6243,5 +6258,94 @@ body#humanized-your-health-personalized .row.bottom-member a{
   }
 body#humanized-your-health-personalized .shopify-section .sales-head-intro {
     text-align:center;
+}
+}
+
+/*Lab dna part*/
+.lab_results_new .lap_right{
+  float: none; 
+  width: 100%;
+}
+
+.dna-filter-wrapper {
+    display: flex;
+    justify-content: space-between;
+  margin-bottom: 20px;
+    margin-top: 20px;
+}
+
+.dna-report-title {
+    color: #006990;
+    font-size: 20px;
+}
+
+.dna-item {
+    background-color: #00577f!important;
+    color: white;
+    padding: 5px 5px;
+}
+
+.dna-report-body {
+    display: grid;
+    grid-row-gap: 10px;
+}
+
+.dna-name {
+    display: grid;
+    grid-template-columns: 1fr 1fr 2fr;
+}
+
+span.symbol {
+    justify-self: flex-end;
+    font-size: 11px;
+    font-weight: bold;
+    padding: 5px;
+    line-height: 16px;
+    border-radius: 30.5px;
+    border: none;
+    text-decoration: none;
+    /* width: 53px; */
+    margin-right: 0;
+    display: inline-block;
+    position: relative;
+    padding: 10px;
+    margin-left: 13px;
+    background-color: #d26667;
+}
+
+.dna-name .name {
+    color: #fff;
+    font-weight: 800;
+}
+
+.dna-name .sub-name { color: #fff;
+    font-weight: 400;}
+
+.desc-full p {
+    color: #fff;
+    font-size: 16px;
+    line-height: 24px;
+}
+
+
+.desc-full a {
+    color: #92ad05;
+}
+
+.desc-short p {
+    color: #fff;
+}
+
+a.show-more {
+    color: #fff;
+}
+
+a.show-more:hover {
+    color: #92ad05;
+}
+@media(max-width:767px){
+  .dna-name {
+    display: grid;
+    grid-template-columns: 1fr;
 }
 }
