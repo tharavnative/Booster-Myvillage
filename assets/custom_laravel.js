@@ -2923,7 +2923,6 @@ jQuery(function ($) {
         }else{
           intake_type_radio = intake_type_radio + '<label><input type="checkbox" class="laravel-intake-type-class" id="laravel-without_food" name="laravel-intake-type-' + recom.id + '[]" value="without_food" dataid="' + recom.id + '">Without Food</label>';
         }
-        
         var my_plan_buy_button = '<div class="laravel-my-plan-buy"><a href="' + recom.url + '"><button class="laravel-my-plan-buy-button">Buy Now</button></a></div>';
         var intake_dosage_html = '<div class="laravel-dosage-items">';
         var intake_am_dosage_html = '';
@@ -3265,7 +3264,6 @@ jQuery(function ($) {
       data.is_selected_my_plan = false;   
       data.rec_name = rec_name;
       data.custom_url = rec_url;
-    console.log(data);
       sendRequest('post', 'https://api.iqyouhealth.com/api/v1/my-plan', data, getMyPlan);
         
   }
@@ -3330,11 +3328,9 @@ jQuery(function ($) {
   }
   function sendRequest(method, url, content, callback) {
    $(".laravel-recommendation-outer").addClass('loading-blue');
-    // if(url == 'https://api.iqyouhealth.com/api/v1/lab-results'){
-    //   url = url + '?user_key=vga575451';
-    // }else{
+ 
       url = url + '?user_key='+window.cus_id;
-    // }
+
     
     //url = url + '?user_key=vga575162';
     var request = {
@@ -3557,16 +3553,89 @@ jQuery(function ($) {
      //getHealthQuestions();
     //getFamilyHistory();
 	});
+  function dna_result_callback(status,arr,summery)
+  {
+   
+    $('.dna-report-title').text(arr['dna_reports'])
+    var selectOptions = '<option value="all">All Results</option>';
+    var categories = arr['categories'];
+    var dnaResult = arr['table'];
+    if(!categories.length && !dnaResult.length){
+      $('.dna-report-wrapper').hide();
+      return;
+    }else{
+      $('.lap_table').find('.no-result').hide();
+    }
+    for (var i = 0; i < categories.length; i++) {
+      if(categories[i] != ''){
+        selectOptions += '<option value="' + categories[i] + '">' + categories[i] + '</option>';
+      }
+      
+    }
+    
+    $('#dna-select').html(selectOptions);
+    
+    var dnaHtml = '';
+    for (let i = 0; i < dnaResult.length; i++) {
+       
 
+      dnaHtml = dnaHtml + '<div class="dna-item ' + dnaResult[i][3]['data'] + '">';
+      var dnaNameRow = '<div class="dna-name"><span class="name">' + dnaResult[i][1]['data'] + '</span><span class="sub-name">' + dnaResult[i][2]['data']  + '</span><span class="symbol">' + dnaResult[i][6]['data'] + '</span></div>';
+      var descRow = '<div class="desc-short">' + dnaResult[i][5]['data']  + '</div><div class="desc-full" style="display:none">' + dnaResult[i][5]['data'] + '<a class="show-less">Show less...</a></div>';      dnaHtml = dnaHtml + '<div class="name-row">' + dnaNameRow +'</div><div class="name-row">' + descRow +'</div></div>';
+    }
+ 
+    $('.dna-report-body').html(dnaHtml);
+      $(".desc-short").each(function() {
+        var $descShort = $(this);
+        var $firstParagraph = $descShort.find("p:first");
+      
+        // Remove all tags except for the first paragraph
+        $descShort.children().not($firstParagraph).remove();
+      $descShort.contents().filter(function() {
+          return this !== $firstParagraph[0];
+        }).remove();
+        // Append "show more" link
+        var showMoreLink = '<a href="#" class="show-more">Show more...</a>';
+        $firstParagraph.after(showMoreLink);
+      
+        // Click event for "show more" link
+        $descShort.find('.show-more').click(function(e) {
+          e.preventDefault();
+          $descShort.hide(); // Hide the clicked element (desc-short)
+          $('.desc-full').hide();
+          $descShort.next(".desc-full").show(); // Show the next sibling element with class desc-full
+        });
+      
+        // Click event for "show less" link
+        $descShort.next(".desc-full").find('.show-less').click(function(e) {
+          e.preventDefault();
+          $descShort.show(); // Show the sibling element (desc-short)
+          $descShort.next(".desc-full").hide(); // Hide the full description element
+        });
+      });
+
+    $('#dna-select').change(function() {
+        var selectedValue = $(this).val();
+      
+        if (selectedValue === 'all') {
+          $('.dna-item').show();
+        } else {
+          $('.dna-item').hide();
+          $('.dna-item.' + selectedValue).show();
+        }
+      });
+
+  }
   function lab_result_callback(status,arr,summery)
   {
-     if (!arr || typeof arr.inputordinalvalues === 'undefined') {
-          console.log("Empty lap results");
-          $('.lap_table').find('.no-result').show();
-          return;
-        }else{
-          $('.lab_results_new').show();
-        }
+    if (!arr || typeof arr.inputordinalvalues === 'undefined') {
+
+      console.log("Empty lap results");
+      $('.lap_table').find('.no-result').show();
+      return;
+    }else{
+      $('.lab_results_new').show();
+    }
     // var arr = JSON.parse(arr);
     var data='';
     for (var key in arr['inputordinalvalues']){
@@ -3920,15 +3989,13 @@ temp_data+='<div class="ordinal-value-outer"><input type="text" name="ordinal-va
       
       
   }
-   
-    if(data == ''){
-     $('.lap_table').find('.no-result').show();
-     $('.lab_results_new').hide();
-   }else{
-     $('.recommended-labs-results-laravel-womens-panel').html(data);
-      clickLabResults();
-   }
 
+
+     $('.recommended-labs-results-laravel-womens-panel').html(data);
+     clickLabResults();
+  
+    
+      
     
     
 
@@ -3944,7 +4011,11 @@ temp_data+='<div class="ordinal-value-outer"><input type="text" name="ordinal-va
       var url1= 'https://api.iqyouhealth.com/api/v1/lab-results';
       sendRequest('get', url1,'', lab_result_callback); 
     }
-
+function dna_result()
+    {
+      var url1= 'https://staging.api.iqyouhealth.com/api/v1/dna-results';
+      sendRequest('get', url1,'', dna_result_callback); 
+    }
   $( document ).ready(function() {
     if (window.location.pathname === '/pages/membership-dashboard') {
     function api_user_data() {
@@ -4102,13 +4173,17 @@ temp_data+='<div class="ordinal-value-outer"><input type="text" name="ordinal-va
                                                   if (data.completion >= 100 && !data.newuser) {
                                                     console.log("Calling !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!! api_user_data");
                                                       api_user_data();
-                                                      lab_result();
+                                                      
                                                       getRecommendations();
+                                                      lab_result();
+                                                      dna_result();
                                                       //api_recommend_sec();
                                                       //metabolic_risk();
                                                   } else {
-                                                    lab_result();
+                                                   
                                                       getRecommendations();
+                                                      dna_result();
+                                                      lab_result();
                                                   }
                                                }).fail(function(xhr, status) {
                             
