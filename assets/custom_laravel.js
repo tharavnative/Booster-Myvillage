@@ -3113,8 +3113,6 @@ jQuery(function ($) {
         if(recom.url !== '' && recom.product_name !== '' && recom.url !== 'null' && recom.product_name !== 'null' && recom.url !== null && recom.product_name !== null){
           var buy_button_display = '<div class="laravel-nutritional-supplementation-buy-button"><div class="laravel-nutritional-supplementation-product-name"><a href="' + recom.url + '">' + product_name + '</a></div>' + my_plan_buy_button + '</div>';
         }else{
-          console.log("Product Name -------------------->>>>>>>>>>>>>>>>>>>>>>>>>>>",recom.product_name);
-          console.log("Buy url -------------------->>>>>>>>>>>>>>>>>>>>>>>>>>>",recom.url);
           if(recom.recommendation_id != null && recom.recommendation_id !== 'null' && recom.recommendation_id !== '' && recom.recommendation_id !== '0' && recom.recommendation_id !== 0){
               if(recom.url !== '' && recom.url !== 'null' && recom.url !== null){
                 
