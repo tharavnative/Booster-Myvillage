@@ -147,6 +147,23 @@
 </header>
 
 <header class="page__header page__header--mobile hide-desktop {% if template == "index" and section.settings.transparent %}page__header--transparent{% endif %}">
+  <style>
+
+    .header-search.header-mobile-butt ul li a.mem_dashbtn {
+    display: block;
+    width: 100%;
+}
+
+.header-search.header-mobile-butt ul li  {
+    display: block;
+    width: 100%;
+}
+
+.header-mobile-butt.header-search {
+    display: block;
+}
+
+  </style>
   <div class="header-mobile-butt header-search">
     <ul>
         {% if customer %}
