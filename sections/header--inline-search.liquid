@@ -147,6 +147,28 @@
 </header>
 
 <header class="page__header page__header--mobile hide-desktop {% if template == "index" and section.settings.transparent %}page__header--transparent{% endif %}">
+  <div class="header-mobile-butt">
+        {% if customer %}
+                <li class="mem_dashbd_pag">
+                  {% for tag in customer.tags %}
+                    
+                  {% if tag=='mvg-membership' or tag == 'mvg-platinum'  or tag == 'mvg-membership-gold' %}
+                        {% assign bold_member = true %}
+                         {% break %}
+                  {% endif %}
+                  {% endfor %}
+                  {% if bold_member %}
+                    <a class="mem_dashbtn bold_member if" href="/pages/membership-dashboard">Humanized+ Member Dashboard</a>
+                  {% else %}
+                     <a class="mem_dashbtn bold_member else" href="/pages/signup-landing">Become a Humanized+ Member</a>
+                  {% endif %}
+                </li>
+                {% else %}
+                     <li class="mem_dashbd_pag">
+                        <a class="mem_dashbtn customer else" href="/pages/signup-landing">Become a Humanized+ Member</a>
+                    </li> 
+                {% endif %}
+  </div>
     <div class="page__header--width">
         <label class="mobile-submenu-label" for="open-mobile-nav">
             <i class="uil uil-bars"></i>
