@@ -81,7 +81,7 @@ jQuery(document).ready(function($){
                     console.log("Signup Data !!!!!!!!!!!!!!!!!!!!!!!!!!!!!",data);
                   window.location.href='/pages/membership-dashboard';
                  }).fail(function(data,xhr, status) {
-                  console.log("Signup Data !!!!!!!!!!!!!!!!!!!!!!!!!!!!!",data.responseJSON);
+                  console.log("Signup Data !!!!!!!!!!!!!!!!!!!!!!!!!!!!!",data.responseJSON.errors);
                   
                   //window.location.href='/';
                   });
