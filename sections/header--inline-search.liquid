@@ -147,7 +147,8 @@
 </header>
 
 <header class="page__header page__header--mobile hide-desktop {% if template == "index" and section.settings.transparent %}page__header--transparent{% endif %}">
-  <div class="header-mobile-butt">
+  <div class="header-mobile-butt header-search">
+    <ul>
         {% if customer %}
                 <li class="mem_dashbd_pag">
                   {% for tag in customer.tags %}
@@ -168,6 +169,7 @@
                         <a class="mem_dashbtn customer else" href="/pages/signup-landing">Become a Humanized+ Member</a>
                     </li> 
                 {% endif %}
+                </ul>
   </div>
     <div class="page__header--width">
         <label class="mobile-submenu-label" for="open-mobile-nav">
