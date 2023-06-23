@@ -154,7 +154,7 @@ jQuery( window ).load(function() {
 // }, 1500);
       
 
-  
+ /* 
     $(window).load(function ()  {
 
       var length_check = $('#create_customer').find('.note.form-error');
@@ -172,7 +172,7 @@ jQuery( window ).load(function() {
       }
           
 
-  });
+  });*/
   
     // $("#schedule_btn_in").click(function () {
 
