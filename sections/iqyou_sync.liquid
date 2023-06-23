@@ -81,8 +81,12 @@ jQuery(document).ready(function($){
                     console.log("Signup Data !!!!!!!!!!!!!!!!!!!!!!!!!!!!!",data);
                   window.location.href='/pages/membership-dashboard';
                  }).fail(function(data,xhr, status) {
-                  console.log("Signup Data !!!!!!!!!!!!!!!!!!!!!!!!!!!!!",data.responseJSON.errors);
-                  
+                 if(data.responseJSON.errors.email[0] == 'The email has already been taken.'){
+                 window.location.href='/pages/membership-dashboard';
+                 }else{
+                 
+                  console.log("Signup Data !!!!!!!!!!!!!!!!!!!!!!!!!!!!!",data.responseJSON.errors.email[0]);
+                  }
                   //window.location.href='/';
                   });
    
