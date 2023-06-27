@@ -5,9 +5,11 @@
 {% assign easylockdownNow = 'now' | date:'%s' | times: 1 %}{% assign easylockdownNowWeekDay = easylockdownNow | date:'%u' %}{% assign easylockdownNowMonthDay = easylockdownNow | date:'%d' %}{% assign easylockdownNowHM = easylockdownNow | date:'%H%M' | times: 1 %}{% if customer %}{% assign easylockdownPlacedOrder = customer.orders.first.created_at | date:'%s' %}{% assign easylockdownOldestPlacedOrder = customer.orders.last.created_at | date:'%s' %}{% assign easylockdownDateDifference = easylockdownNow | minus: easylockdownPlacedOrder %}{% endif %}
 {% for t in customer.tags %}
 {% assign tag = t | downcase %}
-{% if tag == 'mvg-membership' or tag == 'mvg-platinum'  or tag == 'mvg-membership-gold' %}{% assign elcTag1 = true %}{% endif %}
-{% if tag == 'blocked' %}{% assign elcTag2 = true %}{% endif %}
-{% if tag == 'restricted users' %}{% assign elcTag3 = true %}{% endif %}
+{% if tag == 'mvg-membership' %}{% assign elcTag1 = true %}{% endif %}
+{% if tag == 'mvg-membership-gold' %}{% assign elcTag2 = true %}{% endif %}
+{% if tag == 'mvg-platinum' %}{% assign elcTag3 = true %}{% endif %}
+{% if tag == 'blocked' %}{% assign elcTag4 = true %}{% endif %}
+{% if tag == 'restricted users' %}{% assign elcTag5 = true %}{% endif %}
 {% endfor %}
 {% for t in product.tags %}
 {% assign tag = t | downcase %}
@@ -31,7 +33,7 @@
 {% capture easylockdownPage404Message %}<p>Sorry, we couldn't find this page.</p>{% endcapture %}
 {% capture easylockdownRedirectURL %}login{% endcapture %}
 {% else %}
-{% unless elcTag1 %}{% assign easylockdownON = true %}{% endunless %}
+{% unless elcTag1 or elcTag2 or elcTag3 %}{% assign easylockdownON = true %}{% endunless %}
 {% if easylockdownON %}
 {% assign easylockdownON = true %}
 {% capture easylockdownPage404Title %}Page not found{% endcapture %}
@@ -47,7 +49,7 @@
 {% assign easylockdownLockedContent = true %}
 {% if easylockdownLockedContent %}
 {% if customer %}
-{% assign easylockdownON = true %}{% unless elcTag2 %}{% assign easylockdownON = false %}{% endunless %}
+{% assign easylockdownON = true %}{% unless elcTag4 %}{% assign easylockdownON = false %}{% endunless %}
 {% if easylockdownON %}
 {% assign easylockdownON = true %}
 {% capture easylockdownPage404Title %}Page not found{% endcapture %}
@@ -72,7 +74,7 @@
 {% capture easylockdownPage404Message %}<p>Sorry, we couldn't find this page.</p>{% endcapture %}
 {% capture easylockdownRedirectURL %}https://myvillagegreen.com/pages/practitioner-brands{% endcapture %}
 {% else %}
-{% unless elcTag3 %}{% assign easylockdownON = true %}{% endunless %}
+{% unless elcTag5 %}{% assign easylockdownON = true %}{% endunless %}
 {% if easylockdownON %}
 {% assign easylockdownON = true %}
 {% capture easylockdownPage404Title %}Page not found{% endcapture %}
