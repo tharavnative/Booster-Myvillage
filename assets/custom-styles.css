@@ -1,3 +1,6 @@
+#thirty-holder .bta-widget-show-button{
+  display: none !important;
+}
 tr:hover {
     background-color: unset;
 }
