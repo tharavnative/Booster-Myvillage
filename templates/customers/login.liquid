@@ -1,7 +1,7 @@
 <!-- /templates/customers/login.liquid -->
 {% capture redir  %}{%- render 'querystring', param: "redir" -%}{% endcapture %}
 {%assign value = redir| url_decode%}
-{{ redir }}
+
 {% section 'banner--login' %}
 <div class="customer__form">
 {% form 'customer_login' %} {{ form.errors | default_errors }}
