@@ -1,1 +1,33 @@
-{"wrapper":"div.row","sections":{"breadcrumbs":{"type":"breadcrumbs","settings":{}},"content":{"type":"cart-page","settings":{}}},"order":["breadcrumbs","content"]}
+{
+  "wrapper": "div.row",
+  "sections": {
+    "breadcrumbs": {
+      "type": "breadcrumbs",
+      "settings": {
+      }
+    },
+    "content": {
+      "type": "cart-page",
+      "blocks": {
+        "3e926d66-e02e-4369-8ad5-5d48ad68c277": {
+          "type": "cartField",
+          "settings": {
+            "required": false,
+            "label": "Additional fields"
+          }
+        }
+      },
+      "block_order": [
+        "3e926d66-e02e-4369-8ad5-5d48ad68c277"
+      ],
+      "settings": {
+        "discount": "money",
+        "featured": ""
+      }
+    }
+  },
+  "order": [
+    "breadcrumbs",
+    "content"
+  ]
+}
