@@ -63,7 +63,7 @@
     "tagSaleColor": "#e95144",
     "tagSoldOut": false,
     "collectionCardTextColor": "#000000",
-    "quickBuy": true,
+    "quickBuy": false,
     "ajaxType": "form",
     "dynamicCheckout": false,
     "cartAction": "minicart",
