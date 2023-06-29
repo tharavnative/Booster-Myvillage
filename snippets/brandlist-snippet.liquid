@@ -1,7 +1,7 @@
 {% assign bold_member = false %}
           {% if customer %}
             {% for tag in customer.tags %}
-            {% if tag == 'mvg-membership' or tag == 'Restricted Users' %}
+            {% if tag == 'mvg-membership' or tag == 'Restricted Users'  or tag == 'mvg-platinum'  or tag == 'mvg-membership-gold' %}
                 {% assign bold_member = true %}
                 {% break %}
               {% endif %}
@@ -55,7 +55,7 @@
         </div>
 
         <div class="instant-brand-page-grid">
- {% if bold_member %}           <div class="instant-brand-grid-block">
+           <div class="instant-brand-grid-block">
           <span>
                <h4 class="instant-brand-header" style="text-decoration: underline;"> 4   </h4>
           </span>
@@ -67,7 +67,7 @@
 
 
                 </div>
-  {% endif %}
+
 
             </div>
             <div class="instant-brand-grid-block">
