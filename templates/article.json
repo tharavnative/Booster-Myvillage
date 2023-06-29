@@ -1,1 +1,16 @@
-{"sections":{"article":{"type":"article","settings":{}}},"order":["article"]}
+{
+  "sections": {
+    "article": {
+      "type": "article",
+      "custom_css": [
+        "h2 {color: #006690; font-weight: 500; font-size: 28px; line-height: 38px;}",
+        "h3 {color: #73adc2; font-weight: 300; font-size: 24px; line-height: 38px;}"
+      ],
+      "settings": {
+      }
+    }
+  },
+  "order": [
+    "article"
+  ]
+}
