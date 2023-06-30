@@ -81,6 +81,7 @@ console.log('Running third',mutation);
             $('#bta-product-holder').append($(".bta-product-widget"));
            $('#bta-product-holder').removeClass('loading-blue');
                          console.log('Online Cclicked.....');
+                         jQuery("#thirty-holder button")..css('display','none');
                          }, 500);
 
                      }
