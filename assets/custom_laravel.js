@@ -223,15 +223,15 @@ jQuery(function ($) {
             main_page_html = main_page_html +'<option value="-1">No Answer</option>';
            
            if(page_content.value === '1'){
-             main_page_html = main_page_html +'<option value="' + page_content.input_id + '" selected>' + page_content.smart_prompt + '</option>';
+             main_page_html = main_page_html +'<option value="' + page_content.input_id + '" selected>' + page_content.prompt + '</option>';
            }else{
-            main_page_html = main_page_html +'<option value="' + page_content.input_id + '">' + page_content.smart_prompt + '</option>';
+            main_page_html = main_page_html +'<option value="' + page_content.input_id + '">' + page_content.prompt + '</option>';
            }
          }else{
          	if(page_content.value === '1'){
-             main_page_html = main_page_html +'<option value="' + page_content.input_id + '" selected>' + page_content.smart_prompt + '</option>';
+             main_page_html = main_page_html +'<option value="' + page_content.input_id + '" selected>' + page_content.prompt + '</option>';
            }else{
-            main_page_html = main_page_html +'<option value="' + page_content.input_id + '">' + page_content.smart_prompt + '</option>';
+            main_page_html = main_page_html +'<option value="' + page_content.input_id + '">' + page_content.prompt + '</option>';
            }
          }
        }else{
@@ -254,7 +254,7 @@ jQuery(function ($) {
          var no_checked = "" ;
          }
         main_page_html = main_page_html + '<div class="api-main-page-item" id="api-main-page-item-' + page_content.input_id + '">';
-        main_page_html = main_page_html + '<div class="api-page-title-header"><h3>' + page_content.smart_prompt + '</h3>';
+        main_page_html = main_page_html + '<div class="api-page-title-header"><h3>' + page_content.prompt + '</h3>';
         main_page_html = main_page_html + '</div>';
        main_page_html = main_page_html + '<div class="api-page-radio-main questions"  input-id="' + page_content.input_id + '"><div class="api-page-radio-item"><input type="radio"  name="question-radio-id-' + page_content.input_id + '-lane-' + lane_id + '" value="1" class="expandpage form-radio api-radio-input question-radio-id-' + page_content.input_id + '" input_id="' + page_content.input_id + '" data-checked = "' + yes_checked + '" > <label class="option">Yes</label></div>';
         main_page_html = main_page_html + '<div class="api-page-radio-item"><input type="radio" name="question-radio-id-' + page_content.input_id + '-lane-' + lane_id + '" value="0" class="expandpage form-radio api-radio-input question-radio-id-' + page_content.input_id + '" input_id="' + page_content.input_id + '" data-checked = "' + no_checked + '"> <label class="option">No</label></div>';
@@ -311,15 +311,15 @@ jQuery(function ($) {
             main_page_html = main_page_html +'<option value="-1">No Answer</option>';
            
            if(page_content.value === '1'){
-             main_page_html = main_page_html +'<option value="' + page_content.input_id + '" selected>' + page_content.smart_prompt + '</option>';
+             main_page_html = main_page_html +'<option value="' + page_content.input_id + '" selected>' + page_content.prompt + '</option>';
            }else{
-            main_page_html = main_page_html +'<option value="' + page_content.input_id + '">' + page_content.smart_prompt + '</option>';
+            main_page_html = main_page_html +'<option value="' + page_content.input_id + '">' + page_content.prompt + '</option>';
            }
          }else{
          	if(page_content.value === '1'){
-             main_page_html = main_page_html +'<option value="' + page_content.input_id + '" selected>' + page_content.smart_prompt + '</option>';
+             main_page_html = main_page_html +'<option value="' + page_content.input_id + '" selected>' + page_content.prompt + '</option>';
            }else{
-            main_page_html = main_page_html +'<option value="' + page_content.input_id + '">' + page_content.smart_prompt + '</option>';
+            main_page_html = main_page_html +'<option value="' + page_content.input_id + '">' + page_content.prompt + '</option>';
            }
          }
        }else{
@@ -337,7 +337,7 @@ jQuery(function ($) {
          var no_checked = "" ;
          }
         main_page_html = main_page_html + '<div class="api-main-page-item questions-radio" id="api-main-page-item-' + page_content.input_id + '" input_id="' + page_content.input_id + '">';
-        main_page_html = main_page_html + '<div class="api-page-title-header"><h3>' + page_content.smart_prompt + '</h3>';
+        main_page_html = main_page_html + '<div class="api-page-title-header"><h3>' + page_content.prompt + '</h3>';
         main_page_html = main_page_html + '</div>';
         main_page_html = main_page_html + '<div class="api-page-radio-main questions"  input-id="' + page_content.input_id + '"><div class="api-page-radio-item"><input type="radio" name="question-radio-id-' + page_content.input_id + '-lane-' + lane_id + '" value="1" class="expandpage form-radio api-radio-input question-radio-id-' + page_content.input_id + '" input_id="' + page_content.input_id + '" data-checked = "' + yes_checked + '" > <label class="option">Yes</label></div>';
         main_page_html = main_page_html + '<div class="api-page-radio-item"><input type="radio" name="question-radio-id-' + page_content.input_id + '-lane-' + lane_id + '" value="0" class="expandpage form-radio api-radio-input question-radio-id-' + page_content.input_id + '" input_id="' + page_content.input_id + '" data-checked = "' + no_checked + '"> <label class="option">No</label></div>';
@@ -372,15 +372,15 @@ jQuery(function ($) {
             main_page_html = main_page_html +'<option value="-1">No Answer</option>';
            
             if(page_content.value === '1'){
-             main_page_html = main_page_html +'<option value="' + page_content.input_id + '" selected>' + page_content.smart_prompt + '</option>';
+             main_page_html = main_page_html +'<option value="' + page_content.input_id + '" selected>' + page_content.prompt + '</option>';
            }else{
-            main_page_html = main_page_html +'<option value="' + page_content.input_id + '">' + page_content.smart_prompt + '</option>';
+            main_page_html = main_page_html +'<option value="' + page_content.input_id + '">' + page_content.prompt + '</option>';
            }
          }else{
          	if(page_content.value === '1'){
-             main_page_html = main_page_html +'<option value="' + page_content.input_id + '" selected>' + page_content.smart_prompt + '</option>';
+             main_page_html = main_page_html +'<option value="' + page_content.input_id + '" selected>' + page_content.prompt + '</option>';
            }else{
-            main_page_html = main_page_html +'<option value="' + page_content.input_id + '">' + page_content.smart_prompt + '</option>';
+            main_page_html = main_page_html +'<option value="' + page_content.input_id + '">' + page_content.prompt + '</option>';
            }
          }
        }else{
@@ -398,7 +398,7 @@ jQuery(function ($) {
          var no_checked = "" ;
          }
         main_page_html = main_page_html + '<div class="api-main-page-item questions-radio" id="api-main-page-item-' + page_content.input_id + '"  input_id="' + page_content.input_id + '">';
-        main_page_html = main_page_html + '<div class="api-page-title-header"><h3>' + page_content.smart_prompt + '</h3>';
+        main_page_html = main_page_html + '<div class="api-page-title-header"><h3>' + page_content.prompt + '</h3>';
         main_page_html = main_page_html + '</div>';
         main_page_html = main_page_html + '<div class="api-page-radio-main questions"  input-id="' + page_content.input_id + '"><div class="api-page-radio-item"><input type="radio"  name="question-radio-id-' + page_content.input_id + '-lane-' + lane_id + '" value="1" class="expandpage form-radio api-radio-input question-radio-id-' + page_content.input_id + '" input_id="' + page_content.input_id + '" data-checked = "' + yes_checked + '" > <label class="option">Yes</label></div>';
         main_page_html = main_page_html + '<div class="api-page-radio-item"><input type="radio"  name="question-radio-id-' + page_content.input_id + '-lane-' + lane_id + '" value="0" class="expandpage form-radio api-radio-input question-radio-id-' + page_content.input_id + '" input_id="' + page_content.input_id + '" data-checked = "' + no_checked + '"> <label class="option">No</label></div>';
@@ -436,15 +436,15 @@ jQuery(function ($) {
             main_page_html = main_page_html +'<option value="-1">No Answer</option>';
            
             if(page_content.value === '1'){
-             main_page_html = main_page_html +'<option value="' + page_content.input_id + '" selected>' + page_content.smart_prompt + '</option>';
+             main_page_html = main_page_html +'<option value="' + page_content.input_id + '" selected>' + page_content.prompt + '</option>';
            }else{
-            main_page_html = main_page_html +'<option value="' + page_content.input_id + '">' + page_content.smart_prompt + '</option>';
+            main_page_html = main_page_html +'<option value="' + page_content.input_id + '">' + page_content.prompt + '</option>';
            }
          }else{
          	if(page_content.value === '1'){
-             main_page_html = main_page_html +'<option value="' + page_content.input_id + '" selected>' + page_content.smart_prompt + '</option>';
+             main_page_html = main_page_html +'<option value="' + page_content.input_id + '" selected>' + page_content.prompt + '</option>';
            }else{
-            main_page_html = main_page_html +'<option value="' + page_content.input_id + '">' + page_content.smart_prompt + '</option>';
+            main_page_html = main_page_html +'<option value="' + page_content.input_id + '">' + page_content.prompt + '</option>';
            }
          }
        }else{
@@ -462,7 +462,7 @@ jQuery(function ($) {
          var no_checked = "" ;
          }
         main_page_html = main_page_html + '<div class="api-main-page-item questions-radio" id="api-main-page-item-' + page_content.input_id + '"  input_id="' + page_content.input_id + '">';
-        main_page_html = main_page_html + '<div class="api-page-title-header"><h3>' + page_content.smart_prompt + '</h3>';
+        main_page_html = main_page_html + '<div class="api-page-title-header"><h3>' + page_content.prompt + '</h3>';
         main_page_html = main_page_html + '</div>';
         main_page_html = main_page_html + '<div class="api-page-radio-main questions"  input-id="' + page_content.input_id + '"><div class="api-page-radio-item"><input type="radio" name="question-radio-id-' + page_content.input_id + '-lane-' + lane_id + '" value="1" class="expandpage form-radio api-radio-input question-radio-id-' + page_content.input_id + '" input_id="' + page_content.input_id + '" data-checked = "' + yes_checked + '" > <label class="option">Yes</label></div>';
         main_page_html = main_page_html + '<div class="api-page-radio-item"><input type="radio" name="question-radio-id-' + page_content.input_id + '-lane-' + lane_id + '" value="0" class="expandpage form-radio api-radio-input question-radio-id-' + page_content.input_id + '" input_id="' + page_content.input_id + '" data-checked = "' + no_checked + '"> <label class="option">No</label></div>';
