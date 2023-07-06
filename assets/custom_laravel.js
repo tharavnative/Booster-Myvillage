@@ -3328,8 +3328,12 @@ jQuery(function ($) {
   }
   function sendRequest(method, url, content, callback) {
    $(".laravel-recommendation-outer").addClass('loading-blue');
- 
-      url = url + '?user_key='+window.cus_id;
+ if(url =='https://api.iqyouhealth.com/api/v1/lab-results'){
+   url = url + '?user_key=vga576741';
+ }else{
+   url = url + '?user_key='+window.cus_id;
+ }
+      
 
     
     //url = url + '?user_key=vga575162';
