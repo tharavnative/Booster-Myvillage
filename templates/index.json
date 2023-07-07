@@ -642,36 +642,6 @@
     "ae474166-b4b4-4acd-a4a1-071d52042f17": {
       "type": "section__content",
       "blocks": {
-        "f3e5fa6c-f4fa-4158-a10f-011850a7ff9c": {
-          "type": "title",
-          "settings": {
-            "blockWidth": "col-md-12",
-            "vertPadding": 0,
-            "horPadding": 4,
-            "horAlign": "start",
-            "vertAlign": "middle",
-            "content": "Stay Informed",
-            "textColor": "rgba(0,0,0,0)",
-            "fontFamily": "title",
-            "fontSize": "medium"
-          }
-        },
-        "47478705-7c8e-4b34-a898-bae3dcd26f1e": {
-          "type": "richText",
-          "settings": {
-            "blockWidth": "col-md-12",
-            "vertPadding": 0,
-            "horPadding": 5,
-            "horAlign": "start",
-            "vertAlign": "middle",
-            "maxBWidth": 100,
-            "content": "<p>Join our mailing list for the latest news & exclusive discounts + FREE shipping on your first order.<\/p>",
-            "detectLists": true,
-            "textColor": "rgba(0,0,0,0)",
-            "fontFamily": "base",
-            "fontSize": "base"
-          }
-        },
         "260214c4-6615-4892-bb81-1c1fe7cf0239": {
           "type": "html",
           "settings": {
@@ -686,8 +656,6 @@
         }
       },
       "block_order": [
-        "f3e5fa6c-f4fa-4158-a10f-011850a7ff9c",
-        "47478705-7c8e-4b34-a898-bae3dcd26f1e",
         "260214c4-6615-4892-bb81-1c1fe7cf0239"
       ],
       "settings": {
