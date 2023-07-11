@@ -13,10 +13,10 @@
 </style>
 
 {% capture layoutConfig %}{% render 'common-layout' with section as section %}{% endcapture %}
-
+{% render 'custom-newsletter' %}
 <div class="inherit footer layout__{{-layoutConfig}}">
     <div class="layout__content row">
-      {% render 'custom-newsletter' %}
+      
     {% for block in section.blocks %}
     <div class="col-12 col-md col-md-{{-block.settings.width}} footer__block {{block.settings.horizontalAlignment}} {{block.settings.verticalAlignment-}}">
     {% render 'get-block' with block as block %}
