@@ -27,20 +27,7 @@ jQuery(document).ready(function($) {
     $('.health_plan.health_plan_new.annually .buy_btn').trigger('click');
     sessionStorage.removeItem('openGold');
   }
-  
-  // $(window).load(function ()  {
-  //         if($('#create_customer').find('.note.form-error').length){
-  //           console.log("Test Length");
-  //          $('#membership_popup').modal('show');
-            
-
-  //         }
-
-  // });
-
-  // Add a click event handler to the element with the specified class
 $('.go-to-membership').click(function() {
-  // Find the element with the specified ID and scroll to it
   $('#health_box_plan').get(0).scrollIntoView({ behavior: 'smooth' });
 });
 
