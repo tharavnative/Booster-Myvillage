@@ -527,7 +527,7 @@ jQuery(function ($) {
         break;
       case 'smart':
         getSmartQuestions();
-          loadPopUp('laravel_qstn_smart_modal');
+          loadPopUp('qstn_smart_modal');
         break;
     }
     }
