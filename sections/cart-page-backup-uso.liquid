@@ -31,10 +31,7 @@
                 </div>
             </a>
             <div class="cart__info--text">
-                <a href="{{ item.url }}">{{ item.product.title }}
-  <span class="saso-cart-item-discount-notes" data-key="{{item.key}}"></span>
-  <span class="saso-cart-item-upsell-notes" data-key="{{item.key}}"></span>
-                                  </a>
+                <a href="{{ item.url }}">{{ item.product.title }}</a>
                 <span
                     class="cart__info--variant">{% unless item.product.has_only_default_variant %}{{ item.variant.title }}{% endunless %}</span>
       {% assign property_size = item.properties | size %}
@@ -115,9 +112,7 @@
         </div>
         <div class="col-md-2 cart__punit hide-mobile">
       <span class="Bold-theme-hook-DO-NOT-DELETE bold_cart_item_price" data-item-key="{{item.key}}" style="display:none !important;"></span>
-            <span class="jsPrice">
-<span class="saso-cart-item-price" data-key="{{item.key}}">{{ item.price | money | strip_html }}</span>
-</span>
+            <span class="jsPrice">{{ item.price | money | strip_html }}</span>
             {% if product.compare_at_price > 0 %}
             <span class="cart__compare-price cart__compare-price--punit jsPrice">{{product.compare_at_price | money | strip_html}}</span>
             {% endif %}
@@ -140,11 +135,9 @@
             <div class="col-12 col-md-5 cart__ptotal center unflex">
                 {%- if item.original_line_price != item.line_price -%}
                     <div class="cart-item__discounted-prices">
-                        
-<span class="saso-cart-item-line-price" data-key="{{item.key}}"><s class="cart-item__old-price product-option jsPrice">
+                        <s class="cart-item__old-price product-option jsPrice">
                             {{ item.original_line_price | money | strip_html }}
-                        </s></span>
-
+                        </s>
                         <strong class="cart-item__final-price product-option">
                             <span class="jsPrice">{{- item.line_price | money | strip_html -}}</span>
                         </strong>
@@ -201,13 +194,7 @@
                     </span>
                 </span>
                 {% endif %}
-                <span class="cart__grandtotal">{{'cart.page.grand_total' | t}}: <span class="jsPrice">
-<span class="saso-cart-original-total"><span class="Bold-theme-hook-DO-NOT-DELETE bold_cart_total" style="display:none !important;">
-<span class="saso-cart-original-total"></span>{{ cart.total_price | money | strip_html }}</span></span>
-<span class="saso-cart-total"></span>
-
-<span class="saso-cart-total"></span>
-</span></span>
+                <span class="cart__grandtotal">{{'cart.page.grand_total' | t}}: <span class="jsPrice"><span class="Bold-theme-hook-DO-NOT-DELETE bold_cart_total" style="display:none !important;"></span>{{ cart.total_price | money | strip_html }}</span></span>
   
                 {% render 'button__submit', text: tran_checkout, name: 'checkout', class: 'button--full-width' %}
             </div>
