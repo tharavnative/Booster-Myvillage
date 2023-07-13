@@ -1,10 +1,5 @@
 jQuery.noConflict();
 jQuery(function ($) {
-  //old api laravel.iqyouhealth.com
-//$('#laravel_qstn_confirm_modal').modal('show');
-//$('#membership_popup').modal('hide');
-//$("#no_iqyou_account").modal({'show':true});
-
   function clickLabResults(){
     $('#allresults').click(function() {
       $('.values-allresults').show();
@@ -2839,7 +2834,6 @@ jQuery(function ($) {
     var obj = recommendations;
     var recom_body_html='';
     $.each(obj, function(key,val) {
-      // console.log("dosage",val.dose_amount);
       if(val.dose_amount !== '' && val.dose_amount !== 'none found'){ var dose_amount = parseFloat(val.dose_amount).toFixed(2);}else{var dose_amount = '';}
       recom_body_html = recom_body_html + '<div class="recommendation-items ' + val.category.replace(/ /g,"_") + '" rec-id="' + val.recommendation_id + '">';
       if(val.how != ''){
@@ -3243,7 +3237,6 @@ jQuery(function ($) {
                   data.intake_type = ''; 
                   data.rec_name = rec_name;
                   data.custom_url = rec_url;
-                  // console.log(recom_data);
                   sendRequest('post', 'https://api.iqyouhealth.com/api/v1/recommendations', recom_data, '');
                }
             else{                     
@@ -3300,15 +3293,12 @@ jQuery(function ($) {
               }
           });
             if(intake_time.indexOf("AM") === -1){ 
-                 // data.AM_dosage = ''; 
                  $('#laravel-am-dosage-input-' + rec_id).val('null');            
               }
                if(intake_time.indexOf("Mid") === -1){  
-                  // data.Midday_dosage = ''; 
                   $('#laravel-md-dosage-input-' + rec_id).val('null');
               }
               if(intake_time.indexOf("PM") === -1){ 
-                // data.PM_dosage = ''; 
                 $('#laravel-pm-dosage-input-' + rec_id).val('null');
               }
           var AM_dosage = $('#laravel-am-dosage-input-' + rec_id).val();
@@ -3328,15 +3318,7 @@ jQuery(function ($) {
   }
   function sendRequest(method, url, content, callback) {
    $(".laravel-recommendation-outer").addClass('loading-blue');
- // if(url =='https://api.iqyouhealth.com/api/v1/lab-results'){
- //   url = url + '?user_key=vga576741';
- // }else{
    url = url + '?user_key='+window.cus_id;
- // }
-      
-
-    
-    //url = url + '?user_key=vga575162';
     var request = {
       	"Content-Type":"application/json",
       	"accept": "application/json",
@@ -3380,7 +3362,6 @@ jQuery(function ($) {
   function getHealthQuestionsCallback(status, data, request){
    displayPercentage(data);
    displayMainPage(data.main.get_lane.page,data.input.get_inputs);
-    //displayQuestions(data.input.get_inputs);
     loadingCompletion();
   }
   function getFamilyHistory() {
@@ -3419,7 +3400,6 @@ jQuery(function ($) {
       sendRequest('get', url, '', getMedicationCallback) ;
     }
   function getMedicationCallback(status, data, request){
-    //console.log("medications",data);
     displayPercentage(data);
     storeMedications(data.intakeform_data.get_inputs.input);
     loadingCompletion();
@@ -3442,17 +3422,13 @@ jQuery(function ($) {
       sendRequest('get', url, '', getRecommendationsCallback) ;
     }
   function getRecommendationsCallback(status, data, request){
-    //console.log("getRecommendationsCallback!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!",data);
     if(data){
-      //console.log("INSIDE IF getRecommendationsCallback!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!",data);
       listRecommendations(data.allrecs,data.rec_urls);
       listRecommendationFilters(data.allcats);
       getMyPlan();
     }else{
       $(".laravel-recommendation-outer").removeClass('loading-blue');
     }
-    
-    //loadingCompletion();
   }
   function getMyPlan() {
     $('#api-questionnaire-body').addClass('loading-blue');
@@ -3460,7 +3436,6 @@ jQuery(function ($) {
       sendRequest('get', url, '', getMyPlanCallback) ;
     }
   function getMyPlanCallback(status, data, request){
-    //console.log("getMyPlanCallback!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!",data);
     var all_list_html ='';
     if(data){
       var list = data.list;
@@ -3476,21 +3451,12 @@ jQuery(function ($) {
       $('#api-questionnaire-body').removeClass('loading-blue');
     }
     
-    //loadingCompletion();
   }
   $('.api-health_box').click(function(){
     
     var data_lane = $(this).attr('data-lane');
     localStorage.setItem('upcoming_lane', data_lane);
     checkUnAnsweredHealthBox();
-//     if(!($(this).hasClass('active'))){
-//          if(!($(this).hasClass('loaded'))){
-//        		changeActiveLane($(this).attr('data-lane'));
-//          }else{
-//          displayLoadedLane($(this).attr('data-lane'));
-          
-//          }
-//   }
     hidePrevNextButton();
   });
   $('#api-laravel-next').click(function(){   
@@ -3554,8 +3520,7 @@ jQuery(function ($) {
            displayLoadedLane($('.api-health_box[data-lane="' + data_lane + '"]').attr('data-lane'));
              
            }
-     //getHealthQuestions();
-    //getFamilyHistory();
+
 	});
   function dna_result_callback(status,arr,summery)
   {
@@ -3592,28 +3557,25 @@ jQuery(function ($) {
       $(".desc-short").each(function() {
         var $descShort = $(this);
         var $firstParagraph = $descShort.find("p:first");
-      
-        // Remove all tags except for the first paragraph
+
         $descShort.children().not($firstParagraph).remove();
       $descShort.contents().filter(function() {
           return this !== $firstParagraph[0];
         }).remove();
-        // Append "show more" link
+
         var showMoreLink = '<a href="#" class="show-more">Show more...</a>';
         $firstParagraph.after(showMoreLink);
-      
-        // Click event for "show more" link
+
         $descShort.find('.show-more').click(function(e) {
           e.preventDefault();
-          $descShort.hide(); // Hide the clicked element (desc-short)
+          $descShort.hide(); 
           $('.desc-full').hide();
           $descShort.next(".desc-full").show(); // Show the next sibling element with class desc-full
         });
-      
-        // Click event for "show less" link
+
         $descShort.next(".desc-full").find('.show-less').click(function(e) {
           e.preventDefault();
-          $descShort.show(); // Show the sibling element (desc-short)
+          $descShort.show(); 
           $descShort.next(".desc-full").hide(); // Hide the full description element
         });
       });
@@ -3640,7 +3602,7 @@ jQuery(function ($) {
     }else{
       $('.lab_results_new').show();
     }
-    // var arr = JSON.parse(arr);
+
     var data='';
     for (var key in arr['inputordinalvalues']){
       var res_id = key;
@@ -3661,7 +3623,7 @@ jQuery(function ($) {
             //data+='<div rel="' + key + '" class="lessdata lessdata-' + key + ' title">' + value3 + '</div><div rel="' + key + '" class="moredata moredata-' + key + ' title" style="display:none">' + value3 + '</div>';                                                                 
         }
     }
-    // data+=" " + 'ordinal_value' + ": " + value2+' ';
+
       temp_data+='<div rel="' + key + '" class="lessdata lessdata-' + key + '" id="lessdata-' + key + '" >Show more</div><div rel="' + key + '" class="moredata moredata-' + key + '" id="moredata-' + key + '" style="display:none">Show less</div>';
            if(arr['referenceranges'][res_id]){
                  var reference_range = arr['referenceranges'][res_id]['1'];
@@ -3741,7 +3703,7 @@ temp_data+='<div class="ordinal-value-outer"><input type="text" name="ordinal-va
 
 
       var data='';
-    // for (let i = 0; i < arr['allproducts'].length; i++ ){
+
       for(let key in arr['nodeinputs']){
 
       if(arr['nodeinputs'][key][0]['type'] === 'input'){
@@ -3761,11 +3723,9 @@ temp_data+='<div class="ordinal-value-outer"><input type="text" name="ordinal-va
     for (var key3 in value){
         if(key3 =='name')
         {
-           // console.log(value[key3]);
+
             var value3 = value[key3];
             public_desc = value['descr_prof'];
-            // data+=" - " + key3 + ": " + value3+' ';
-            //data+='<div rel="' + res_id + '" class="lessdata lessdata-' + res_id + ' title">' + value3 + '</div><div rel="' + res_id + '" class="moredata moredata-' + res_id + ' title" style="display:none"> </div>';                                                                 
         }
     }
 
@@ -3848,14 +3808,13 @@ temp_data+='<div class="ordinal-value-outer"><input type="text" name="ordinal-va
         {
             var value3 = value[0][key3];
             public_desc = value[0]['body'];
-            // data+=" - " + key3 + ": " + value3+' ';
             data+='<div rel="' + res_id + '" class="lessdata lessdata-' + res_id + ' title">' + value3 + '</div><div rel="' + res_id + '" class="moredata moredata-' + res_id + ' title" style="display:none">' + value3 + '</div>';                                                                 
         }
     }
-    // data+=" " + 'ordinal_value' + ": " + value2+' ';
+
       data+='<div rel="' + res_id + '" class="lessdata lessdata-' + res_id + '" id="lessdata-' + res_id + '" >Show more</div><div rel="' + res_id + '" class="moredata moredata-' + res_id + '" id="moredata-' + res_id + '" style="display:none">Show less</div>';
       var public_desc_obj = JSON.parse(JSON.stringify(public_desc));
-      //console.log(public_desc_obj);
+
       var public_desc = public_desc_obj.split('value":"');
 
       if(public_desc[1] ){
@@ -3889,28 +3848,13 @@ temp_data+='<div class="ordinal-value-outer"><input type="text" name="ordinal-va
         {
             var value3 = value[0][key3];
             public_desc = value[0]['body'];
-            // data+=" - " + key3 + ": " + value3+' ';
+
             data+='<div rel="' + res_id + '" class="lessdata lessdata-' + res_id + ' title">' + value3 + '</div><div rel="' + res_id + '" class="moredata moredata-' + res_id + ' title" style="display:none">' + value3 + '</div>';                                                                 
         }
     }
-    // data+=" " + 'ordinal_value' + ": " + value2+' ';
-      data+='<div rel="' + res_id + '" class="lessdata lessdata-' + res_id + '" id="lessdata-' + res_id + '" >Show more</div><div rel="' + res_id + '" class="moredata moredata-' + res_id + '" id="moredata-' + res_id + '" style="display:none">Show less</div>';
-      // var public_desc_obj = JSON.parse(JSON.stringify(public_desc));
-      //   if (data.und && data.und.length > 0) {
-      //       var public_desc = data.und[0].value;
-      //       console.log(public_desc);
-      //     } else {
-      //       var public_desc = '';
-      //       console.log('No value found.');
-      //     }
-     
-      // var public_desc = public_desc_obj.split('value":"');
 
-      // if(public_desc[1] ){
-      //   public_desc = public_desc[1].split('","');
-      // }else{
-      //   public_desc = '';
-      // }
+      data+='<div rel="' + res_id + '" class="lessdata lessdata-' + res_id + '" id="lessdata-' + res_id + '" >Show more</div><div rel="' + res_id + '" class="moredata moredata-' + res_id + '" id="moredata-' + res_id + '" style="display:none">Show less</div>';
+
       var inner_main='';
       
       if(typeof(nodeinputs) != "undefined"){
@@ -3929,26 +3873,6 @@ temp_data+='<div class="ordinal-value-outer"><input type="text" name="ordinal-va
                 if ((typeof(current_data) != "undefined") && (current_data.hasOwnProperty("descr_public"))) {
                   var inner_public_desc = current_data.descr_public;
                 }
-                    //console.log(current_data.descr_public); 
-                 // var inner_public_desc = current_data.descr_public;
-                  // for (var key3 in value){
-                  //     if(key3 =='descr_prof')
-                  //     {
-                  //         //console.log(value[key3]);
-
-                  //         inner_public_desc = value['descr_prof'];
-                  //         var public_desc_obj = JSON.parse(JSON.stringify(inner_public_desc));
-                  //         //console.log(public_desc_obj);
-                  //         var public_desc = public_desc_obj.split('value":"');
-                    
-                  //         if(public_desc[1] ){
-                  //           inner_public_desc = public_desc[1].split('","');
-                  //         }else{
-                  //           inner_public_desc = '';
-                  //         }
-                  //         temp_data_inner+='<div class="values values-' + key + '" style="display:none">' + inner_public_desc + '</div></div>';                         
-                  //     }
-                  // }
                temp_data_inner+='<div class="values values-' + key + '" style="display:none">' + inner_public_desc + '</div>';
               }else{
               var group_id = nodeinputs[i]['groupid'];
@@ -3961,28 +3885,8 @@ temp_data+='<div class="ordinal-value-outer"><input type="text" name="ordinal-va
               if ((typeof(current_data) != "undefined") && (current_data.hasOwnProperty("descr_public"))) {
                 var inner_public_desc = current_data.descr_public;
               }
-              
-                    // for (var key3 in value){
-                    //     if(key3 =='descr_prof')
-                    //     {
-                    //         //console.log(value[key3]);
-
-                    //         inner_public_desc = value['descr_prof'];
-                    //           var public_desc_obj = JSON.parse(JSON.stringify(inner_public_desc));
-                    //         //console.log(public_desc_obj);
-                    //         var public_desc = public_desc_obj.split('value":"');
-                      
-                    //         if(public_desc[1] ){
-                    //           inner_public_desc = public_desc[1].split('","');
-                    //         }else{
-                    //           inner_public_desc = '';
-                    //         }
-                    //         temp_data_inner+='<div class="values values-' + key + '" style="display:none">' + inner_public_desc + '</div></div>';                        
-                    //     }
-                    // }
               temp_data_inner+='<div class="values values-' + key + '" style="display:none">' + inner_public_desc + '</div>';
               }
-           //console.log("NNNNNNNNNNNNNNNNNNNNNNN!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!",temp_data_inner); 
          inner_main += title_data + temp_data_inner + '</div>';
             }  
         
@@ -3990,28 +3894,14 @@ temp_data+='<div class="ordinal-value-outer"><input type="text" name="ordinal-va
       }else{
         data+='<div class="values values-' + main_res_id + '" style="display:none">' + public_desc + '</div></div>';
       }
-      
-      
+        
   }
-
-
      $('.recommended-labs-results-laravel-womens-panel').html(data);
      clickLabResults();
-  
-    
-      
-    
-    
-
   }
 
   function lab_result()
     {
-      // var data = {
-      //   'api_key' :'c6701296-5027-4076-b80c-d64a77c2ddc7',
-      // }; 
-      //var url1='https://laravel.iqyouhealth.com/api/v1/lab-results';
-      //var url1= 'https://api.iqyouhealth.com/api/v1/lab-results';
       var url1= 'https://api.iqyouhealth.com/api/v1/lab-results';
       sendRequest('get', url1,'', lab_result_callback); 
     }
@@ -4031,7 +3921,6 @@ function dna_result()
               "api-key": "c6701296-5027-4076-b80c-d64a77c2ddc7"
         };
       $.ajax({
-
           url: 'https://api.iqyouhealth.com/api/v1/user-data?user_key=' + window.cus_id + '',
           type: 'GET',
           crossDomain: true,
@@ -4040,23 +3929,19 @@ function dna_result()
               var healthscore = res.healthscore;
               var metabolicscore = res.metabolic.score;
               var toxinsscore = res.toxins.score;
-
               var health_html = '<span>Health Score</span>' + healthscore;
               var metabolic_html = '<span>Metabolic Score</span>' + metabolicscore;
               var toxin_html = '<span>Toxin Score</span>' + toxinsscore;
-
               $(".member_clickhere_sec a[data-target='#health_score']").html(health_html);
               $(".member_clickhere_sec a[data-target='#health_score']").addClass('score_value_dis');
               $("#health_score .your_score_detail h2 span").text(healthscore);
               $("#health_score .your_score_detail .complete_qtns").remove();
               $("#health_score .your_score_detail .complete_qtns").text('See Detailed Info on IQYou');
-
               $(".member_clickhere_sec a[data-target='#metabolic_score']").html(metabolic_html);
               $(".member_clickhere_sec a[data-target='#metabolic_score']").addClass('score_value_dis');
               $("#metabolic_score .your_score_detail h2 span").text(metabolicscore);
               $("#metabolic_score .your_score_detail .complete_qtns").remove();
               $("#metabolic_score .your_score_detail .complete_qtns").text('See Detailed Info on IQYou');
-
               $(".member_clickhere_sec a[data-target='#toxin_score']").html(toxin_html);
               $(".member_clickhere_sec a[data-target='#toxin_score']").addClass('score_value_dis');
               $("#toxin_score .your_score_detail h2 span").text(toxinsscore);
@@ -4081,15 +3966,11 @@ function dna_result()
           }
       });
     $.ajax({
-
           url: 'https://api.iqyouhealth.com/api/v1/physiological_causes?user_key=' + window.cus_id + '&api_key=c6701296-5027-4076-b80c-d64a77c2ddc7',
           type: 'GET',
           crossDomain: true,
           success: function (res) {
-            //console.log(res.report);
             var wrapper = $("#health-report");
-              //console.log(res.recommendations);
-             //wrapper.html(res.report);
             var htm_report = $(res.report);
             htm_report.find('h2').remove();
             htm_report.find('script').remove();
@@ -4110,26 +3991,15 @@ function dna_result()
             $('#health-report').find('#banner').remove();
             $('.your_score_detail').next('p').text("Your health score is a scientific measurement of your overall health and can serve as a directional indicator on how your health is evolving. It takes into account all of the numerous factors in your life, including your demographics, health conditions, family history, diet and lifestyle habits, lab results, and DNA. The more data you provide, the more accurate your health score will be. Based on a scale of 0-100, a higher score is suggestive of better health. As you make positive health changes and improve your lab values, remember to update your health questionnaire so that your health score can reflect your progress. ");
             $('<p>Schedule a nutrition consultation for an in-depth look into your health score and the steps you can take to help improve your health</p>').insertAfter('#whycontent').find('ul');
-//                   $(".colorbox-load").each(function(idx) {
-//                          var url = $(this).attr("href");
-//                          url = "https://staging.api.iqyouhealth.com" + url;
-//                          $(this).attr("href", url);
-//                          $(this).attr('target','_blank');
-                  
-                   
-//                      });
+                  });
              $('#health-report').find(".colorbox-load").each(function(idx) {
-            
-                  //console.log($(this).attr('href'));
                   $(this).removeAttr("href");
-              });
-           
+              });      
           },
           error: function (xhr, status, err) {
                   console.log(err);
               }
           });
-
   }
    console.log('syncing..2');
 
@@ -4140,8 +4010,6 @@ function dna_result()
 		if(!($("#mvg_customer_first_name").val().length)){
 			fname=email;
 		}
-
-
               url = 'https://api.iqyouhealth.com/api/v1/get_salu_ids?uid=' + email + '&user_key=vga575451';
                           var request = {
                                 "Content-Type":"application/json",
@@ -4176,15 +4044,11 @@ function dna_result()
                                                }).done(function(data, status, xhr) {
                                                   if (data.completion >= 100 && !data.newuser) {
                                                     console.log("Calling !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!! api_user_data");
-                                                      api_user_data();
-                                                      
+                                                      api_user_data();                                                  
                                                       getRecommendations();
                                                       lab_result();
                                                       dna_result();
-                                                      //api_recommend_sec();
-                                                      //metabolic_risk();
-                                                  } else {
-                                                   
+                                                  } else {                                             
                                                       getRecommendations();
                                                       dna_result();
                                                       lab_result();
