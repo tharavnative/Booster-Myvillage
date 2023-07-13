@@ -403,23 +403,6 @@ console.log('Mutation Else 76187--');
 
             completedrow = true;
         } else if (proceed) {
-   //         console.log(parseInt(step.substring(4), 'Hiii'));
-//             if (parseInt(step.substring(4)) == 1) {
-//                 $('#qstn_family_modal').modal('show');
-//                 //                
-
-//             }
-//             if (parseInt(step.substring(4)) == 3) {
-//                 if (id == 'edit-previous') {
-//                     $('#qstn_family_modal').modal('show');
-//                 }
-
-//                 //                
-
-//             }
-          
-          
-
             if (id == 'edit-save') {
 
                 box = "box" + parseInt(parseInt(step.substring(4)) + 1);
@@ -453,9 +436,9 @@ console.log('Mutation Else 76187--');
                 },
                 complete: function (response) {
                     $('#qstn_confirm_modal').modal('hide');
-				//	 console.log('Before complete if');
+
                     if (window.savedlast === true) {
-				//		console.log('Inside complete if');
+
                         window.savedlast = false;
                         window.location.reload();
 
@@ -468,7 +451,7 @@ console.log('Mutation Else 76187--');
         } else {
 
             if (parseInt(step.substring(4)) == 5) {
-              //  console.log('hi');
+ 
                 if (id == 'edit-save') {
 
                     box = "box" + parseInt(parseInt(step.substring(4)) + 1);
@@ -489,10 +472,6 @@ console.log('Mutation Else 76187--');
                         $(".questn_list form").find(".msg").remove();
                         $(".health_top #" + box).click();
                         $(".questn_list ." + step + " form").append("<p class='msg'>" + response.message + "</p>");
-
-
-
-
 
 
                     },
