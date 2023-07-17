@@ -1,6 +1,13 @@
 #thirty-holder .bta-widget-show-button{
   display: none !important;
 }
+.page__header--sticky .page__header--width:not(.header__bottom) {
+    display: none !important;
+}
+
+.page__header--sticky .notice_hdr {
+    display: none;
+}
 tr:hover {
     background-color: unset;
 }
