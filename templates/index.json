@@ -193,7 +193,7 @@
             "backgroundSize": "cover",
             "overlayOpacity": 0,
             "overlayColor": "#000000",
-            "imageText": "Helping you live your<br> healthiest life",
+            "imageText": "<div style=\" font-size: 36px; line-height: 40px; font-weight: 300; padding: 20px; letter-spacing: -1px;\">Helping you<br>live your<br>healthiest life<\/div>",
             "textColor": "#ffffff",
             "textFillColor": "rgba(0,0,0,0)",
             "fullwidthText": false,
