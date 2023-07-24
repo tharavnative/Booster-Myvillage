@@ -189,11 +189,11 @@
           "settings": {
             "hide": "show-both",
             "url": "https:\/\/myvillagegreen.com\/pages\/semi-annual-sale",
-            "backgroundImage": "shopify:\/\/shop_images\/Semi-AnnualSale2023banner_158538b4-437d-45e9-9386-e1724df825b4.jpg",
+            "backgroundImage": "shopify:\/\/shop_images\/block6.png",
             "backgroundSize": "cover",
             "overlayOpacity": 0,
             "overlayColor": "#000000",
-            "imageText": "",
+            "imageText": "Helping you live your<br> healthiest life",
             "textColor": "#ffffff",
             "textFillColor": "rgba(0,0,0,0)",
             "fullwidthText": false,
