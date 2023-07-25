@@ -144,6 +144,9 @@ h2 { font-size: 30px; line-height: 35px; font-family: Montserrat; font-weight: 6
   bottom: auto;
 }
 @media(max-width:767px){
+  .instant-brand-listing {
+    width: 100%;
+}
   .template-collection .page-header h1 {
     line-height: 45px;
     text-transform: uppercase;
