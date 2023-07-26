@@ -157,6 +157,9 @@
         "b2ddb55b-83a5-485f-a11f-033a10d37725",
         "3ca11f65-d217-4b81-8c68-1f156db9a071"
       ],
+      "custom_css": [
+        ".slide--product img {height:480px;}"
+      ],
       "settings": {
         "view": "default",
         "layout": "max-width",
