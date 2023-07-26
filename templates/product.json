@@ -164,7 +164,7 @@
         "galleryPosition": "left",
         "autoZoom": false,
         "autoChange": true,
-        "galleryImageFit": "cover",
+        "galleryImageFit": "contain",
         "galleryImageGap": 16,
         "productNavigation": false,
         "display_vendor": true,
@@ -172,7 +172,7 @@
         "text_sku": "SKU",
         "display_availability": false,
         "text_availability": "Availability",
-        "productMainImageSize": "full_ratio"
+        "productMainImageSize": "crop"
       }
     },
     "1661487737e8d46d13": {
