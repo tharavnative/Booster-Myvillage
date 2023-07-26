@@ -197,7 +197,8 @@ pintrk('page');
       {% render 'layout__template--specific' %}
 
       <main role="main">
-        {% comment %}{{ content_for_layout }}{% endcomment %}{% include 'easylockdown_body' %}
+        {% include 'easylockdown_body' %}
+       {{ content_for_layout }}
 
         <div class="wrapper--bottom">
           {% section 'info-badges' %}
