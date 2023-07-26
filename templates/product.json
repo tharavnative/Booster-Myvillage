@@ -164,7 +164,7 @@
         "galleryPosition": "left",
         "autoZoom": true,
         "autoChange": false,
-        "galleryImageFit": "contain",
+        "galleryImageFit": "cover",
         "galleryImageGap": 16,
         "productNavigation": false,
         "display_vendor": true,
