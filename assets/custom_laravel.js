@@ -3625,15 +3625,15 @@ jQuery(function ($) {
     }
 
       temp_data+='<div rel="' + key + '" class="lessdata lessdata-' + key + '" id="lessdata-' + key + '" >Show more</div><div rel="' + key + '" class="moredata moredata-' + key + '" id="moredata-' + key + '" style="display:none">Show less</div>';
-           if(arr['referenceranges'][res_id]){
-                 var reference_range = arr['referenceranges'][res_id]['1'];
-                if(ordinal_value < reference_range['lessthan'] &&  ordinal_value > reference_range['greaterthan']){
-                  temp_data+='<div class="result-colour-outer" lessthan-reference=' + reference_range['lessthan'] + ' greaterthan-refrence=' + reference_range['greaterthan'] + '><span class="green"></span></div>';
-                  temp_reference_text = "Your test results currently have a value inside normal references range for your age and/or gender (" + reference_range['lessthan'] + "- " + reference_range['greaterthan'];
+           if(arr['minmax'][res_id]){
+                 var reference_range = arr['minmax'][res_id];
+                if(ordinal_value < reference_range['min'] &&  ordinal_value > reference_range['max']){
+                  temp_data+='<div class="result-colour-outer" lessthan-reference=' + reference_range['min'] + ' greaterthan-refrence=' + reference_range['max'] + '><span class="green"></span></div>';
+                  temp_reference_text = "Your test results currently have a value inside normal references range for your age and/or gender (" + reference_range['min'] + "- " + reference_range['max'];
                   temp_flag_text = "which is why this test has been flagged green.";
                 }else{
                   temp_data+='<div class="result-colour-outer"><span class="red"></span></div>';
-                 temp_reference_text = "Your test results currently have a value out of normal references range for your age and/or gender (" + reference_range['lessthan'] + "- " + reference_range['greaterthan'];
+                 temp_reference_text = "Your test results currently have a value out of normal references range for your age and/or gender (" + reference_range['min'] + "- " + reference_range['max'];
                 temp_flag_text = "which is why this test has been flagged red.";
                 }
              
@@ -3730,7 +3730,7 @@ temp_data+='<div class="ordinal-value-outer"><input type="text" name="ordinal-va
     }
 
       temp_data+='<div rel="' + res_id + '" class="lessdata lessdata-' + res_id + '" id="lessdata-' + res_id + '" >Show more</div><div rel="' + res_id + '" class="moredata moredata-' + res_id + '" id="moredata-' + res_id + '" style="display:none">Show less</div>';
-      if(arr['reference_range'][res_id]){
+      if(arr['minmax'][res_id]){
                  var reference_range = arr['referenceranges'][res_id]['1'];
                   var minmax = arr['minmax'][res_id];
                   //temp_data+='<div class="result-colour-outer" lessthan-reference=' + reference_range['lessthan'] + ' greaterthan-refrence=' + reference_range['greaterthan'] + '><span class="green"></span></div>';
