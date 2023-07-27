@@ -3731,11 +3731,10 @@ temp_data+='<div class="ordinal-value-outer"><input type="text" name="ordinal-va
 
       temp_data+='<div rel="' + res_id + '" class="lessdata lessdata-' + res_id + '" id="lessdata-' + res_id + '" >Show more</div><div rel="' + res_id + '" class="moredata moredata-' + res_id + '" id="moredata-' + res_id + '" style="display:none">Show less</div>';
       if(arr['minmax'][res_id]){
-                 var reference_range = arr['referenceranges'][res_id];
-        console.log("reference rage !!!!!!!!!!!!!!!!!!!!!!!!!!",reference_range);
-
+                 var reference_range = arr['referenceranges'][res_id]['1'];
+                  var minmax = arr['minmax'][res_id];
                   //temp_data+='<div class="result-colour-outer" lessthan-reference=' + reference_range['lessthan'] + ' greaterthan-refrence=' + reference_range['greaterthan'] + '><span class="green"></span></div>';
-                  temp_reference_text = "Your test results references range for your age and/or gender (" + reference_range['min'] + "- " + reference_range['max'];
+                  temp_reference_text = "Your test results references range for your age and/or gender (" + minmax['min'] + "- " + minmax['max'];
            
              
            }
