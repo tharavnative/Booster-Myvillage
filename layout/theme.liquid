@@ -112,7 +112,7 @@ pintrk('page');
 <meta name="facebook-domain-verification" content="405lnt6xbxbxks96d1l83ffp5ri4uu" />  
 {{ 'device-mockups.css' | asset_url | stylesheet_tag }} 
 
-{% include 'aio-script' %}
+
 <script type="text/javascript" defer="defer"  src="https://musicplayer.shopifyappexperts.com/js/musicplayer.js"></script>{% include 'swift_core' %} 
  
 {% render 'bookthatapp-widgets' %}
@@ -441,7 +441,7 @@ pintrk('page');
   {% include 'mw_GP_objects' %}  <script type="text/javascript" charset="utf-8">
   var shappify_customer_tags = {{ customer.tags | json }}
   </script>
-{% render 'aio_loyalty_snippet' %}   
+ 
   
     {{ 'custom.js' | asset_url | script_tag }}
   {%- render 'bold-pr' -%}
