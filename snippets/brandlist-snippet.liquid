@@ -562,6 +562,28 @@
                                <div class="instant-brand-listing">
                     <a href="/collections/nutrition-now" class="instant-brand-item">NUTRITION NOW</a>
                 </div>
+                          {% assign bold_member = false %}
+                {% if customer %}
+
+                {% for tag in customer.tags %}
+                {% if tag == 'mvg-membership' or tag == 'Restricted Users'%}
+                {% assign bold_member = true %}
+                {% break %}
+                {% endif %}
+                {% endfor %}
+                {% if bold_member %}
+                <div class="instant-brand-listing">
+                    <a href="/collections/nutrafol" class="instant-brand-item brand_access">NUTRAFOL</a>
+                </div>
+
+
+                {% else %}
+
+                {% endif %}
+
+                {% else %}
+
+                {% endif %}
             </div>
             <div class="instant-brand-grid-block">
                 <span class="anchor"><a name="zzO">O</a></span> <span>
