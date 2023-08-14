@@ -115,7 +115,9 @@ pintrk('page');
   <meta name="p:domain_verify" content="a694c29af1f552ae31816149b78a4930"/>
 <meta name="facebook-domain-verification" content="405lnt6xbxbxks96d1l83ffp5ri4uu" />  
 {{ 'device-mockups.css' | asset_url | stylesheet_tag }} 
-
+{{ 'unicons.css' | asset_url | stylesheet_tag }}
+    {{ 'custom-styles.css' | asset_url | stylesheet_tag }}
+    {{ 'custom-api-style.css' | asset_url | stylesheet_tag }}
 
 {% include 'swift_core' %} 
 {% assign page_title =  page_title | handle %}
@@ -219,9 +221,7 @@ pintrk('page');
     {% comment %} If you want to serve the non-minified version, remove .min extension {% endcomment %}
     {{ 'booster.min.js' | asset_url | script_tag }}
      {{ 'bootstrap.min.js' | asset_url | script_tag }}   
-    {{ 'unicons.css' | asset_url | stylesheet_tag }}
-    {{ 'custom-styles.css' | asset_url | stylesheet_tag }}
-    {{ 'custom-api-style.css' | asset_url | stylesheet_tag }}
+    
     {% unless settings.bodyHTML == blank %}
       {{settings.bodyHTML}}
     {% endunless %}
