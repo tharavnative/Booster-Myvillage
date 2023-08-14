@@ -118,9 +118,10 @@ pintrk('page');
 
 
 {% include 'swift_core' %} 
- 
+{% assign page_title =  page_title | handle %}
+ {% if page_title ==  'membership-dashboard' %}
 {% render 'bookthatapp-widgets' %}
-    
+  {% endif %}  
 </head>
 {% assign bold_member = false %}
  			{% if customer %}
