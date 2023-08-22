@@ -1,3 +1,15 @@
+@font-face {
+    font-family: 'susies_handregular';
+    src: url('https://cdn.shopify.com/s/files/1/0319/0960/9603/files/susie.eot?v=1692688286');
+    src: url('https://cdn.shopify.com/s/files/1/0319/0960/9603/files/susie.eot?v=1692688286') format('embedded-opentype'),
+         url('https://cdn.shopify.com/s/files/1/0319/0960/9603/files/susie.woff?v=1692688285') format('woff'),
+         url('https://cdn.shopify.com/s/files/1/0319/0960/9603/files/susie.ttf?v=1692688285') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+  font-display: block;
+
+}
+
 #thirty-holder .bta-widget-show-button{
   display: none !important;
 }
