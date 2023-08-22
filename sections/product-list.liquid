@@ -5,6 +5,60 @@
 {% assign desktop = section.settings.cardDesktop %}
 {% endif %}
 <style>
+    .template--collection .page-header h1 {
+   line-height: 75px;
+   text-transform:uppercase;
+   border-bottom: none;
+   position: absolute;
+   bottom: 60px;
+   font-family: Montserrat;
+   font-size: 70px;
+   font-weight: 700;
+   color: #fff;
+   margin: 0;
+   left: 50px;
+   letter-spacing: 0;
+   z-index: 9;
+}
+.template--collection .page-header h1 span
+{
+font-family: 'susies_handregular';
+color: #00577f;
+text-transform: capitalize;
+font-weight: 500;
+}
+.template--collection .page-header { position: relative; }
+.template--collection .page-header h1 { position: absolute; bottom: 60px; font-family: Montserrat; font-size: 70px; font-weight: 700; color: #fff; margin: 0; left: 50px; letter-spacing: 0;}
+.template--collection .page-header h3 { position: absolute; bottom: 60px; font-family: Montserrat; font-size: 70px; font-weight: 700; color: #fff; margin: 0; left: 50px; letter-spacing: 0;}
+.template--collection .page-header h3 span { font-size: 86px; text-transform: capitalize; font-weight: 500; font-family: 'susies_handregular'; position: relative; left: -140px; bottom: -20px;color: #00577f;}
+.template--collection .page-header h1 span {font-size: 86px;text-transform: capitalize;font-weight: 500;font-family: 'susies_handregular';position: relative;/* left: -140px; */bottom: -20px;color: #00577f;}
+
+
+@media (max-width: 767px){
+.template-collection .page-header h1 {
+    line-height: 45px;
+    text-transform: uppercase;
+    border-bottom: none;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    font-family: Montserrat;
+    font-size: 40px;
+    font-weight: 700;
+    color: #fff;
+    margin: 0;
+    left: 50px;
+    letter-spacing: 0;
+    bottom: auto;
+}
+  .template--collection .page-header h1 span {
+    left: 0;
+    font-size: 40px;
+        bottom: 0px;
+}
+
+  
+}
 .filter__bar {
     margin-top: 40px;
 }
