@@ -42,6 +42,8 @@ font__family--{{-block.settings.fontFamily}} font__size--{{-block.settings.fontS
     {{ current_variant.price | money | strip_html }}
 {% endif %}
 </span>
+   {{ current_variant.price | money_with_currency | strip_html }}
+    {{ current_variant.price | money | strip_html }}
 <span data-product-price-sale="{{product.id}}" class="2 product__price--old jsPrice">{% if currsale %}{{ current_variant.compare_at_price | money | strip_html }}{% endif %}</span>
 {% if sale %}
 {%- unless s_type == 'none' or sale == false %}
