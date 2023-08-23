@@ -35,17 +35,17 @@ font__family--{{-block.settings.fontFamily}} font__size--{{-block.settings.fontS
 {% assign sale = false %}
 {% assign currsale = false %}
 {% endif %}
-<span data-product-price="{{product.id}}" class="product__price {% if currsale %}product__price--sale{% endif %} jsPrice money" data-product-id="{{ current_variant.id }}">
+<span data-product-price="{{product.id}}" class="1 product__price {% if currsale %}product__price--sale{% endif %} jsPrice money" data-product-id="{{ current_variant.id }}">
 {% if settings.currencyFormat == 'money_with_currency_format' %}
     {{ current_variant.price | money_with_currency | strip_html }}
 {% else %}
     {{ current_variant.price | money | strip_html }}
 {% endif %}
 </span>
-<span data-product-price-sale="{{product.id}}" class="product__price--old jsPrice">{% if currsale %}{{ current_variant.compare_at_price | money | strip_html }}{% endif %}</span>
+<span data-product-price-sale="{{product.id}}" class="2 product__price--old jsPrice">{% if currsale %}{{ current_variant.compare_at_price | money | strip_html }}{% endif %}</span>
 {% if sale %}
 {%- unless s_type == 'none' or sale == false %}
-<span data-tag-product="{{product.id}}" data-tag-type="{{s_type}}" class="tag tag--sale {% unless currsale %}hide{% endunless %} {% if s_type == 'amount' %}jsPrice{% endif %}">
+<span data-tag-product="{{product.id}}" data-tag-type="{{s_type}}" class="3 tag tag--sale {% unless currsale %}hide{% endunless %} {% if s_type == 'amount' %}jsPrice{% endif %}">
 {% if currsale %}
     {%- case s_type %}
         {% when 'percent' %}
