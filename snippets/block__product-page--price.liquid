@@ -35,7 +35,7 @@ font__family--{{-block.settings.fontFamily}} font__size--{{-block.settings.fontS
 {% assign sale = false %}
 {% assign currsale = false %}
 {% endif %}
-<span data-product-price="{{product.id}}" class="1 product__price {% if currsale %}product__price--sale{% endif %} jsPrice money" data-product-id="{{ current_variant.id }}">
+<span data-product-price="{{product.id}}" class="1 product__price {% if currsale %}product__price--sale{% endif %}  money" data-product-id="{{ current_variant.id }}">
 {% if settings.currencyFormat == 'money_with_currency_format' %}
     {{ current_variant.price | money_with_currency | strip_html }}
 {% else %}
