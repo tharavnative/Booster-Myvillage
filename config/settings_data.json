@@ -386,7 +386,7 @@
           "borderRadius": 0,
           "shadow": true,
           "notice_check": true,
-          "display_notice": "<p> <strong>FREE SHIPPING!<\/strong> On online orders of $74+. Use code: SHIP74<br>This offer is for standard shipping available in the continental U.S. <br>Cannot be combined with any other offers.<\/p>",
+          "display_notice": "<p> <strong>FREE SHIPPING!<\/strong> On online orders of $49+. <strong>Use code: SHIP49<\/strong><br>This offer is for standard shipping available in the continental U.S. <br>Cannot be combined with any other offers.<\/p>",
           "member_only_notice_check": true,
           "member_only_notice": "HUMANIZED+ MEMBER FREE SHIPPING on online orders!<br>This offer is for standard shipping available in the continental U.S.",
           "menuLinks": "main-menu",
@@ -471,12 +471,6 @@
       },
       "1309651709796516356": {
         "type": "shopify:\/\/apps\/back-in-stock-out-of-stock\/blocks\/app-embed\/903b5cdc-6e3f-4b2d-a8ea-d1ade7f41610",
-        "disabled": false,
-        "settings": {
-        }
-      },
-      "10746902591489815047": {
-        "type": "shopify:\/\/apps\/use-google-fonts-custom-fonts\/blocks\/app-embed\/2caf2c68-0038-455e-b0b9-066a7c2ad923",
         "disabled": false,
         "settings": {
         }
