@@ -2,7 +2,6 @@
   "sections": {
     "aa391eea-57f0-4d0f-8515-481fb5425f5d": {
       "type": "section__slider--adaptive",
-      "disabled": true,
       "blocks": {
         "template--16771356393710__aa391eea-57f0-4d0f-8515-481fb5425f5d-16795772786b6cfda2-0": {
           "type": "imageSlideAdaptive",
@@ -35,6 +34,7 @@
       "block_order": [
         "template--16771356393710__aa391eea-57f0-4d0f-8515-481fb5425f5d-16795772786b6cfda2-0"
       ],
+      "disabled": true,
       "settings": {
         "displayFor": "display--both",
         "layout": "default",
@@ -49,7 +49,6 @@
     },
     "8c07609b-b928-4b43-a745-4fb94a9f4de8": {
       "type": "section__content",
-      "disabled": true,
       "blocks": {
         "a6c6710c-a37c-4e92-aaf6-70ed0e991399": {
           "type": "liquidBlock",
@@ -67,6 +66,7 @@
       "block_order": [
         "a6c6710c-a37c-4e92-aaf6-70ed0e991399"
       ],
+      "disabled": true,
       "custom_css": [
 
       ],
@@ -188,12 +188,12 @@
           "type": "gridImage",
           "settings": {
             "hide": "show-both",
-            "url": "https:\/\/myvillagegreen.com\/pages\/august-sale",
-            "backgroundImage": "shopify:\/\/shop_images\/AugustSale-banner.jpg",
+            "url": "https:\/\/myvillagegreen.com\/pages\/shop-by-brands",
+            "backgroundImage": "shopify:\/\/shop_images\/block6.png",
             "backgroundSize": "cover",
             "overlayOpacity": 0,
             "overlayColor": "#000000",
-            "imageText": "",
+            "imageText": "<div style=\" font-size: 36px; line-height: 40px; font-weight: 300; padding: 20px; letter-spacing: -1px;\">Helping you<br>live your<br>healthiest life<\/div>",
             "textColor": "#ffffff",
             "textFillColor": "rgba(0,0,0,0)",
             "fullwidthText": false,
@@ -527,7 +527,6 @@
     },
     "16265531878648c50b": {
       "type": "section__testimonials",
-      "disabled": true,
       "blocks": {
         "16265531878648c50b-0": {
           "type": "testimonial",
@@ -559,6 +558,7 @@
         "16265531878648c50b-1",
         "16265531878648c50b-2"
       ],
+      "disabled": true,
       "settings": {
         "displayFor": "display--both",
         "layout": "default",
