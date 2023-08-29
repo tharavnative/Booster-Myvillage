@@ -230,7 +230,7 @@
           "settings": {
             "hide": "show-both",
             "url": "https:\/\/myvillagegreen.com\/pages\/august-sale",
-            "backgroundImage": "shopify:\/\/shop_images\/AugustSale-banner.jpg",
+            "backgroundImage": "shopify:\/\/shop_images\/block6-mobile.png",
             "backgroundSize": "cover",
             "overlayOpacity": 0,
             "overlayColor": "#000000",
