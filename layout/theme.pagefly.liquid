@@ -20,9 +20,12 @@ gtag('js', new Date());
 
 gtag('config', 'G-XW9YMN90D8');
 </script>
+
 {% include 'easylockdown_head' %}
+
 {% include 'gtmtrackinghead' %}
 {% include 'dataLayer-allPages' %}
+
 <!--
 888888b.                              888                88888888888 888                                      
 888  "88b                             888                    888     888                                      
@@ -112,15 +115,19 @@ pintrk('page');
   src="https://ct.pinterest.com/v3/?event=init&tid=2613629783250&pd[em]=<hashed_email_address>&noscript=1" />
 </noscript>
 <!-- end Pinterest Tag -->
+
   <meta name="p:domain_verify" content="a694c29af1f552ae31816149b78a4930"/>
 <meta name="facebook-domain-verification" content="405lnt6xbxbxks96d1l83ffp5ri4uu" />  
 {{ 'device-mockups.css' | asset_url | stylesheet_tag }} 
+{{ 'unicons.css' | asset_url | stylesheet_tag }}
+    {{ 'custom-styles.css' | asset_url | stylesheet_tag }}
+    {{ 'custom-api-style.css' | asset_url | stylesheet_tag }}
 
-{% include 'aio-script' %}
-<script type="text/javascript" defer="defer"  src="https://musicplayer.shopifyappexperts.com/js/musicplayer.js"></script>{% include 'swift_core' %} 
- 
+{% include 'swift_core' %} 
+{% assign page_title =  page_title | handle %}
+ {% if page_title ==  'membership-dashboard' %}
 {% render 'bookthatapp-widgets' %}
-    
+  {% endif %}  
 </head>
 {% assign bold_member = false %}
  			{% if customer %}
