@@ -1,7 +1,84 @@
 {
   "sections": {
+    "4c5dd269-7efd-4b15-9e10-e1c7c791c811": {
+      "type": "section__cta",
+      "blocks": {
+        "template--16865777352942__4c5dd269-7efd-4b15-9e10-e1c7c791c811-title-1": {
+          "type": "title",
+          "settings": {
+            "fullWidth": true,
+            "content": "Hey check this out!",
+            "textColor": "rgba(0,0,0,0)",
+            "fontFamily": "title",
+            "fontSize": "medium"
+          }
+        },
+        "template--16865777352942__4c5dd269-7efd-4b15-9e10-e1c7c791c811-richText-1": {
+          "type": "richText",
+          "settings": {
+            "fullWidth": true,
+            "maxBWidth": 100,
+            "content": "<p>This is for your text<\/p>",
+            "detectLists": true,
+            "textColor": "rgba(0,0,0,0)",
+            "fontFamily": "base",
+            "fontSize": "base"
+          }
+        },
+        "template--16865777352942__4c5dd269-7efd-4b15-9e10-e1c7c791c811-button-1": {
+          "type": "button",
+          "settings": {
+            "fullWidth": true,
+            "text": "Get this now!",
+            "url": "",
+            "icon": "",
+            "iconPosition": "icon--left",
+            "wideButton": false,
+            "buttonStyle": "primary",
+            "buttonType": "default",
+            "fontSize": "base",
+            "fontFamily": "base",
+            "animation": "none",
+            "animationDuration": 1000,
+            "animationInfinite": true
+          }
+        }
+      },
+      "block_order": [
+        "template--16865777352942__4c5dd269-7efd-4b15-9e10-e1c7c791c811-title-1",
+        "template--16865777352942__4c5dd269-7efd-4b15-9e10-e1c7c791c811-richText-1",
+        "template--16865777352942__4c5dd269-7efd-4b15-9e10-e1c7c791c811-button-1"
+      ],
+      "settings": {
+        "displayFor": "display--both",
+        "layout": "default",
+        "nomargin": false,
+        "scopedCSS": "",
+        "height": 290,
+        "padding": 25,
+        "lineMargin": 12,
+        "backgroundColor": "rgba(0,0,0,0)",
+        "backgroundPosition": "middle",
+        "backgroundFilter": "none",
+        "backdropIntensity": 50,
+        "parallax": false,
+        "backgroundPattern": false,
+        "overlayOpacity": 0,
+        "overlayColor": "#000000",
+        "contentColor": "rgba(0,0,0,0)",
+        "horizontalAlignment": "center",
+        "verticalAlignment": "middle",
+        "maxContentWidth": 100,
+        "heading": "",
+        "headingColor": "rgba(0,0,0,0)",
+        "subheading": "",
+        "subheadingColor": "rgba(0,0,0,0)",
+        "subheadingPosition": "above",
+        "headingAlignment": "center"
+      }
+    }
   },
   "order": [
-
+    "4c5dd269-7efd-4b15-9e10-e1c7c791c811"
   ]
 }
