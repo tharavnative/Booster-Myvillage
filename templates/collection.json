@@ -101,7 +101,7 @@
       "type": "product-list",
       "settings": {
         "cardDesktop": "default",
-        "cardsPerPage": 34
+        "cardsPerPage": 16
       }
     },
     "banner-bottom": {
