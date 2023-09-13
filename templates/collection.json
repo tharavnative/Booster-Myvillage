@@ -24,7 +24,6 @@
     },
     "f3f28cdd-2a36-4920-95e9-be25fa4d88d7": {
       "type": "section__content",
-      "disabled": true,
       "blocks": {
         "c84cfd91-8a9d-4624-b197-e8665c9fc230": {
           "type": "liquidBlock",
@@ -42,6 +41,7 @@
       "block_order": [
         "c84cfd91-8a9d-4624-b197-e8665c9fc230"
       ],
+      "disabled": true,
       "settings": {
         "displayFor": "display--both",
         "layout": "default",
@@ -101,7 +101,7 @@
       "type": "product-list",
       "settings": {
         "cardDesktop": "default",
-        "cardsPerPage": 16
+        "cardsPerPage": 34
       }
     },
     "banner-bottom": {
