@@ -68,7 +68,7 @@ All other supplements</h3><a href="https://myvillagegreen.com/pages/shop-by-bran
     assign max = 99999999999
     assign diff = max | minus: min
     assign swatches_count = "now" | date: "%N" | modulo: diff | plus: min
-  %}sw{{swatches_count}}" class="sc-jLuXOi gsrNrw pf-50_" data-pf-type="ProductVariantSwatches">
+  %}sw{{swatches_count}}" class="sc-jLuXOi gsrNrw pf-50_ pf-lg-hide pf-md-hide pf-sm-hide pf-hide" data-pf-type="ProductVariantSwatches">
                 {% liquid 
                     assign options_with_values = product.options_with_values
 					assign options = product.options_with_values
