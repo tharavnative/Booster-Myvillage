@@ -486,12 +486,6 @@
         "disabled": false,
         "settings": {
         }
-      },
-      "3790681992407032807": {
-        "type": "shopify:\/\/apps\/bolideai-upsell-marketing\/blocks\/upsell_cross_sell-embed\/be916d2f-a9b6-4f13-a881-f71af667d5ea",
-        "disabled": true,
-        "settings": {
-        }
       }
     }
   },
