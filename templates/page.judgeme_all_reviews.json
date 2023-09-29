@@ -30,7 +30,6 @@
       "block_order": [
         "01649d0e-92ac-40eb-bff1-226e65ffed85"
       ],
-      "disabled": true,
       "settings": {
       }
     },
@@ -51,6 +50,7 @@
       "block_order": [
         "4c48d030-4ea3-48a9-8962-10323bd2002b"
       ],
+      "disabled": true,
       "settings": {
       }
     },
