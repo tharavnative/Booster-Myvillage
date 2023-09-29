@@ -30,6 +30,27 @@
       "block_order": [
         "01649d0e-92ac-40eb-bff1-226e65ffed85"
       ],
+      "disabled": true,
+      "settings": {
+      }
+    },
+    "1696007643381c5d2d": {
+      "type": "apps",
+      "blocks": {
+        "4c48d030-4ea3-48a9-8962-10323bd2002b": {
+          "type": "shopify:\/\/apps\/reputon-for-google-reviews\/blocks\/carousel-widget-block\/8b378e9e-c56d-47ce-a754-feca5e0caf59",
+          "settings": {
+            "themeId": "light",
+            "autoscroll": true,
+            "showRating": true,
+            "showReviewPhotos": true,
+            "writeReview": true
+          }
+        }
+      },
+      "block_order": [
+        "4c48d030-4ea3-48a9-8962-10323bd2002b"
+      ],
       "settings": {
       }
     },
@@ -47,6 +68,7 @@
   "order": [
     "banner",
     "16960072740949a4c1",
+    "1696007643381c5d2d",
     "169600729345922b34",
     "judge"
   ]
