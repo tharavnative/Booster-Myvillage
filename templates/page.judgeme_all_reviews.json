@@ -19,10 +19,29 @@
       "type": "page-judgeme_all_reviews",
       "settings": {
       }
+    },
+    "16960072740949a4c1": {
+      "type": "apps",
+      "blocks": {
+        "01649d0e-92ac-40eb-bff1-226e65ffed85": {
+          "type": "shopify:\/\/apps\/reputon-for-google-reviews\/blocks\/grid-widget-block\/8b378e9e-c56d-47ce-a754-feca5e0caf59",
+          "settings": {
+            "themeId": "light",
+            "showReviewPhotos": true,
+            "writeReview": true
+          }
+        }
+      },
+      "block_order": [
+        "01649d0e-92ac-40eb-bff1-226e65ffed85"
+      ],
+      "settings": {
+      }
     }
   },
   "order": [
     "banner",
-    "judge"
+    "judge",
+    "16960072740949a4c1"
   ]
 }
