@@ -15,11 +15,6 @@
         "overlayColor": "#000000"
       }
     },
-    "judge": {
-      "type": "page-judgeme_all_reviews",
-      "settings": {
-      }
-    },
     "16960072740949a4c1": {
       "type": "apps",
       "blocks": {
@@ -37,11 +32,16 @@
       ],
       "settings": {
       }
+    },
+    "judge": {
+      "type": "page-judgeme_all_reviews",
+      "settings": {
+      }
     }
   },
   "order": [
     "banner",
-    "judge",
-    "16960072740949a4c1"
+    "16960072740949a4c1",
+    "judge"
   ]
 }
