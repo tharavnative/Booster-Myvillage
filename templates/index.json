@@ -189,11 +189,11 @@
           "settings": {
             "hide": "show-both",
             "url": "https:\/\/myvillagegreen.com\/pages\/best-brands",
-            "backgroundImage": "shopify:\/\/shop_images\/BestBrands23-banner.jpg",
+            "backgroundImage": "shopify:\/\/shop_images\/block6.png",
             "backgroundSize": "cover",
             "overlayOpacity": 0,
             "overlayColor": "#000000",
-            "imageText": "",
+            "imageText": "<div style=\" font-size: 36px; line-height: 40px; font-weight: 300; padding: 20px; letter-spacing: -1px;\">Helping you<br>live your<br>healthiest life<\/div>",
             "textColor": "#ffffff",
             "textFillColor": "rgba(0,0,0,0)",
             "fullwidthText": false,
@@ -627,7 +627,7 @@
       "type": "apps",
       "blocks": {
         "f4cb9386-8e20-4375-9dc3-13f453a08590": {
-          "type": "shopify:\/\/apps\/judge-me-product-reviews\/blocks\/featured_carousel\/61ccd3b1-a9f2-4160-9fe9-4fec8413e5d8",
+          "type": "shopify:\/\/apps\/judge-me-reviews\/blocks\/featured_carousel\/61ccd3b1-a9f2-4160-9fe9-4fec8413e5d8",
           "settings": {
             "maxwidth": 1080
           }
