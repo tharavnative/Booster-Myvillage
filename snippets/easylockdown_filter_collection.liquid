@@ -1,3 +1,4 @@
+{% unless request.design_mode %}
 {% assign easylockdownLocationsCan = '' | split: ',' %}{% assign easylockdownLocationsCannot = '' | split: ',' %}{% assign easylockdownPasswordItems = '' | split: ',' %}
 {% assign easylockdownNow = 'now' | date:'%s' | times: 1 %}{% assign easylockdownNowWeekDay = easylockdownNow | date:'%u' %}{% assign easylockdownNowMonthDay = easylockdownNow | date:'%d' %}{% assign easylockdownNowHM = easylockdownNow | date:'%H%M' | times: 1 %}{% if customer %}{% assign easylockdownPlacedOrder = customer.orders.first.created_at | date:'%s' %}{% assign easylockdownOldestPlacedOrder = customer.orders.last.created_at | date:'%s' %}{% assign easylockdownDateDifference = easylockdownNow | minus: easylockdownPlacedOrder %}{% endif %}
 {% for t in customer.tags %}
@@ -52,7 +53,7 @@
 {% if easylockdown_filter_collection.collections %}
 {% assign easylockdownItemOff = false %}
 {% for c in easylockdown_filter_collection.collections %}
-{% if c.id == 171815075971 or c.id == 413153231086 or c.id == 171820286083 or c.id == 171816812675 or c.id == 217221103765 or c.id == 413523935470 or c.id == 435170541806 or c.id == 432010592494 or c.id == 418591146222 or c.id == 171815338115 or c.id == 415469404398 or c.id == 171825463427 or c.id == 171816124547 %}
+{% if c.id == 171815075971 or c.id == 413153231086 or c.id == 171820286083 or c.id == 448391086318 or c.id == 171816812675 or c.id == 217221103765 or c.id == 413523935470 or c.id == 435170541806 or c.id == 432010592494 or c.id == 418591146222 or c.id == 171815338115 or c.id == 415469404398 or c.id == 171825463427 or c.id == 171816124547 %}
 {% assign easylockdownItemOff = true %}
 {% break %}
 {% endif %}
@@ -65,4 +66,6 @@
 {% endunless %}
 {% endif %}
 {% endif %}
+{% endunless %}
+
 {% endunless %}
