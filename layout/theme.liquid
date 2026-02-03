@@ -17,7 +17,7 @@ gtag('js', new Date());
 gtag('config', 'G-XW9YMN90D8');
 </script>
 
-{% include 'easylockdown_head' %}
+
 
 {% include 'gtmtrackinghead' %}
 {% include 'dataLayer-allPages' %}
@@ -204,7 +204,7 @@ pintrk('page');
       {% render 'layout__template--specific' %}
 
       <main role="main">
-        {% comment %}{{ content_for_layout }}{% endcomment %}{% include 'easylockdown_body' %}
+        {{ content_for_layout }}
 
         <div class="wrapper--bottom">
           {% section 'info-badges' %}
